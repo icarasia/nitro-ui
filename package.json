@@ -1,0 +1,29 @@
+{
+  "name": "@nitro-ui/css-components",
+  "version": "0.0.0",
+  "description": "Nitro UI CSS Components",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icarasia-engineering/nitro-ui"
+  },
+  "keywords": [
+    "Nitro",
+    "UI",
+    "CSS",
+    "Components",
+    "iCarAsia"
+  ],
+  "author": "Syaiful Shah Zinan <i.works@live.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+  },
+  "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+  "devDependencies": {
+    "lerna": "^3.15.0"
+  }
+}
