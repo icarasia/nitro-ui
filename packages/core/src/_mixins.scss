@@ -1,0 +1,287 @@
+//  ----------------------------------------------------------------------------
+//
+//  @MIXINS
+//
+//  Collections of mixins
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Mixin : Clearfix
+//      2.  Mixin : Font Icon
+//      3.  Mixin : Flag
+//      4.  Mixin : Gradient (Horizontal)
+//      5.  Mixin : Gradient (Vertical)
+//      6.  Mixin : Hidden
+//      7.  Mixin : Loader
+//      8.  Mixin : Media Query
+//      9.  Mixin : Rounded
+//      10. Mixin : Shadow
+//      11. Mixin : Text Truncate
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Mixin : Clearfix
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include clearfix();
+//      }
+
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+
+//  2. Mixin : Font Icon
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include font-icon();
+//      }
+
+@mixin font-icon {
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+//  3. Mixin : Flag
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include icon-flag($image-url, $repeat-property, $image-size);
+//      }
+//
+//  Required: $image-url / $repeat-property / $image-size
+
+@mixin icon-flag($image-url, $repeat-property, $image-size) {
+    background-image: url($image-url);
+    background-repeat: $repeat-property;
+    background-size: $image-size;
+}
+
+
+//  4. Mixin : Gradient (Horizontal)
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include horizontal-gradient($from, $to);
+//      }
+//
+//  Required: $from / $to
+
+@mixin horizontal-gradient($from, $to) {
+    background: $to;
+    background: -moz-linear-gradient(left, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(left, $from 0%,$to 100%);
+    background: -o-linear-gradient(left, $from 0%,$to 100%);
+    background: linear-gradient(to right, $from 0%,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+
+//  5. Mixin : Gradient (Vertical)
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include vertical-gradient($from, $to);
+//      }
+//
+//  Required: $from / $to
+
+@mixin vertical-gradient($from, $to) {
+    background: $to;
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background: -o-linear-gradient(top, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+
+//  6. Mixin : Hidden
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include hidden();
+//      }
+
+@mixin hidden {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+}
+
+
+//  7. Mixin : Loader
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package::before {
+//          @include loader-setup();
+//      }
+
+@mixin loader-setup($base: $haze-300, $highlight: $haze-600) {
+    animation: rotate 1.2s infinite linear;
+    border-color: $base;
+    border-left-color: $highlight;
+    border-radius: 100%;
+    border-style: dotted;
+    border-width: 2px;
+    display: inline-block;
+    content: '';
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px;
+}
+
+
+//  8. Mixin : Media Query
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      @include media-query('variable')
+//          .package {}
+//      }
+//
+//  Variable : 'mobile-small' / 'mobile-large' / 'mobile' / 'tablet' /
+//             'portable' / 'mobile-tablet' / 'tablet-desktop' / 'desktop'
+//
+//  NOTE: Should remove the 'portable' variable, duplicate with 'mobile-tablet'
+
+$desktop-start                 : 1081px !default;
+$tablet-end                    : $desktop-start - 1px !default;
+$tablet-start                  : 768px  !default;
+$mobile-end                    : $tablet-start - 1px !default;
+$mobile-small-start            : 321px  !default;
+
+@mixin media-query($media-query){
+    @if $media-query == 'mobile-small' {
+        @media only screen and (max-width:$mobile-small-start) { @content; }
+    }
+
+    @if $media-query == 'mobile-large' {
+        @media only screen and (min-width:$mobile-small-start) and (max-width:$mobile-end) { @content; }
+    }
+
+    @if $media-query == 'mobile' {
+        @media only screen and (max-width:$mobile-end) { @content; }
+    }
+
+    @if $media-query == 'tablet' {
+        @media only screen and (min-width:$tablet-start) and (max-width:$tablet-end) { @content; }
+    }
+
+    @if $media-query == 'portable' {
+        @media only screen and (max-width:$tablet-end) { @content; }
+    }
+
+    @if $media-query == 'mobile-tablet' {
+        @media only screen and (max-width:$tablet-end) { @content; }
+    }
+
+    @if $media-query == 'tablet-desktop' {
+        @media only screen and (min-width:$tablet-start) { @content; }
+    }
+
+    @if $media-query == 'desktop' {
+        @media only screen and (min-width:$desktop-start) { @content; }
+    }
+}
+
+
+//  9. Mixin : Rounded
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include rounded[-direction]('12px');
+//      }
+
+@mixin rounded($radius: 4px) {
+    border-radius: $radius !important;
+}
+
+@mixin rounded-top($radius: 4px) {
+    border-top-left-radius: $radius !important;
+    border-top-right-radius: $radius !important;
+}
+
+@mixin rounded-bottom($radius: 4px) {
+    border-bottom-left-radius: $radius !important;
+    border-bottom-right-radius: $radius !important;
+}
+
+@mixin rounded-left($radius: 4px) {
+    border-top-left-radius: $radius !important;
+    border-bottom-left-radius: $radius !important;
+}
+
+@mixin rounded-right($radius: 4px) {
+    border-top-right-radius: $radius !important;
+    border-bottom-right-radius: $radius !important;
+}
+
+
+//  10. Mixin : Shadow
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include shadow[-depth];
+//      }
+
+@mixin shadow-none {
+    box-shadow: none;
+}
+
+@mixin shadow-1dp {
+    box-shadow: 0 0 0 1px rgba($haze-500, .24);
+}
+
+@mixin shadow-2dp {
+    box-shadow: 0 0 0 1px rgba($haze-500, .2), 0 4px 20px rgba($haze-700,0.3);
+}
+
+@mixin shadow-3dp {
+    box-shadow: 0 2px 8px 0 rgba($haze-700,0.5), 0 1px 20px 0 rgba($haze-700,0.08);
+}
+
+@mixin shadow-4dp {
+    box-shadow: 0 14px 28px rgba($haze-700,0.3), 0 12px 12px rgba($haze-700,0.05);
+}
+
+
+//  11. Mixin : Text Truncate
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .package {
+//          @include text-truncate('80%');
+//      }
+
+@mixin text-truncate($truncation-boundary){
+    max-width:$truncation-boundary;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
