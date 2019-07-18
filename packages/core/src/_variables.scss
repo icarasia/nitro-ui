@@ -127,42 +127,49 @@ $font-8-height          : 16px !default;
 //  4. Font Colors
 //  ----------------------------------------------------------------------------
 
-$font-muted-color      : $haze-600 !default;
-$font-base-color       : $dark-200 !default;
-$font-dark-color       : $dark-400 !default;
+$font-muted-color       : $haze-600 !default;
+$font-base-color        : $dark-200 !default;
+$font-dark-color        : $dark-400 !default;
 
-$font-link-color       : $blue-500 !default;
+$font-link-color        : $blue-500 !default;
 
-$font-positive-color   : $green-600 !default;
-$font-negative-color   : $red-500 !default;
+$font-positive-color    : $green-600 !default;
+$font-negative-color    : $red-500 !default;
 
-$font-warning-color    : $orange-600 !default;
-$font-tips-color       : $purple-500 !default;
-$font-info-color       : $blue-500 !default;
+$font-warning-color     : $orange-600 !default;
+$font-tips-color        : $purple-500 !default;
+$font-info-color        : $blue-500 !default;
 
 
 //  5. Font Setup
 //  ----------------------------------------------------------------------------
 
-$font-base-family      : "Roboto", Arial, sans-serif !default;
-$font-base-height      : $font-6-height !default;
-$font-base-size        : $font-6-size !default;
-$font-base-weight      : $font-weight-normal !default;
+$font-base-family       : "Roboto", Arial, sans-serif !default;
+$font-base-height       : $font-6-height !default;
+$font-base-size         : $font-6-size !default;
+$font-base-weight       : $font-weight-normal !default;
 
-$font-heading-family   : $font-base-family !default;
-$font-heading-color    : $font-dark-color !default;
-$font-heading-weight   : $font-weight-medium !default;
+$font-heading-family    : $font-base-family !default;
+$font-heading-color     : $font-dark-color !default;
+$font-heading-weight    : $font-weight-medium !default;
 
-$font-mono-family      : SFMono-Regular, Menlo, Monaco, Consolas, monospace !default;
+$font-mono-family       : SFMono-Regular, Menlo, Monaco, Consolas, monospace !default;
 
 
 //  6. Spacing
 //  ----------------------------------------------------------------------------
 
-$spacing-xxl           : 64px !default;
-$spacing-xl            : 48px !default;
-$spacing-lg            : 24px !default;
-$spacing-md            : 16px !default;
-$spacing-sm            : 12px !default;
-$spacing-xs            : 8px  !default;
-$spacing-xxs           : 4px  !default;
+$spacing-xxl            : 64px !default;
+$spacing-xl             : 48px !default;
+$spacing-lg             : 24px !default;
+$spacing-md             : 16px !default;
+$spacing-sm             : 12px !default;
+$spacing-xs             : 8px  !default;
+$spacing-xxs            : 4px  !default;
+
+
+//  7. Base
+//  ----------------------------------------------------------------------------
+
+$base-background        : $haze-200;
+$base-link-underline    : false !default;
