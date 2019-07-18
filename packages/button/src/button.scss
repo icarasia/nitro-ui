@@ -7,3 +7,9 @@
  * @link: https://github.com/icarasia-engineering/nitro-ui
  * @since: 0.0.0-beta
  */
+
+@import '../node_modules/@nitro-ui/css-core/src/core';
+
+.btn {
+    font-family: $font-base-family;
+}
