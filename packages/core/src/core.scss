@@ -1,9 +1,8 @@
-/*!*
- * Nitro UI: Core
- * -----------------------------------------------------------------------------
- * Core CSS for Nitro UI.
- *
- * @author: Syaiful Shah Zinan (i.works@live.com)
- * @link: https://github.com/icarasia-engineering/nitro-ui
- * @since: 0.0.0-beta
- */
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+
+body {
+    background-color: yellow;
+    font-style: 'Comic Sans';
+}
