@@ -1,0 +1,54 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Container
+//
+//  Container component for Nitro UI.
+//  @link: https://github.com/icarasia-engineering/nitro-ui
+//  @since: 0.0.0-beta
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+//      3. Modifier
+//
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+ $container-spacing              : 12px;
+ $container-width-default        : 1080px;
+ $container-width-medium         : 800px;
+ $container-width-wide           : 1240px;
+
+//  ----------------------------------------------------------------------------
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+.o-container {
+    @include clearfix();
+    margin: 0 auto;
+    max-width: $container-width-default;
+    padding-left: $container-spacing;
+    padding-right: $container-spacing;
+    width: 100%;
+}
+
+//  ----------------------------------------------------------------------------
+//  3. Modifier
+//  ----------------------------------------------------------------------------
+
+.o-container--medium {
+    max-width: $container-width-medium;
+}
+
+.o-container--wide {
+    max-width: $container-width-wide;
+}
+
+
+.o-container--fluid {
+    max-width: 100%;
+}
