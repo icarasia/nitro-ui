@@ -4,10 +4,10 @@ Container component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-container](https://www.npmjs.com/package/@nitro-ui/css-container):
+Get latest version by installing via [NPM @nitro-ui/css-object-container](https://www.npmjs.com/package/@nitro-ui/css-object-container):
 
 ```sh
-npm install @nitro-ui/css-container
+npm install @nitro-ui/css-object-container
 ```
 
 Include this stylesheet code into your site:
@@ -18,11 +18,25 @@ Include this stylesheet code into your site:
 
 ## Usage:
 
-Example with `<a>` tag:
+Example with `<div>` tag:
 
 ```html
-<div class="container"></div>
+<div class="o-container"></div>
 ```
+
+```html
+<div class="o-container  o-container--medium"></div>
+```
+
+```html
+<div class="o-container  o-container--wide"></div>
+```
+
+```html
+<div class="o-container  o-container--fluid"></div>
+```
+
+
 
 ## Development
 
