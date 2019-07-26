@@ -1,15 +1,502 @@
-/*!*
- * Nitro UI: Button
- * -----------------------------------------------------------------------------
- * Button component for Nitro UI.
- *
- * @author: Syaiful Shah Zinan (i.works@live.com)
- * @link: https://github.com/icarasia-engineering/nitro-ui
- * @since: 0.0.0-beta
- */
+//  ----------------------------------------------------------------------------
+//
+//  @BUTTON
+//
+//  Component styling for button
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  DEPENDENCIES
+//      2.  VARIABLES - BASE
+//      3.  VARIABLES - COLORS
+//      4.  CORE
+//      5.  SIZE - LARGE
+//      6.  SIZE - SMALL
+//      7.  SIZE - EXTRA SMALL
+//      8.  SHAPE - FULL
+//      9.  SHAPE - PILL
+//      10. VARIANT - ACTION
+//      11. VARIANT - PRIMARY
+//      12. VARIANT - PRIMARY OUTLINE
+//      13. VARIANT - SECONDARY
+//      14. VARIANT - SECONDARY OUTLINE
+//      15. VARIANT - POSITIVE
+//      16. VARIANT - NEGATIVE
+//      17. APPLICATION - ICON
+//      18. APPLICATION - DROPDOWN
+//      19. APPLICATION - GROUP
+//
+//  ----------------------------------------------------------------------------
 
-@import '../node_modules/@nitro-ui/css-core/src/core';
 
-.btn {
-    font-family: $font-base-family;
+//  1. DEPENDENCIES
+//  ----------------------------------------------------------------------------
+
+@import '../node_modules/@nitro-ui/css-core/src/variables';
+@import '../node_modules/@nitro-ui/css-core/src/animations';
+@import '../node_modules/@nitro-ui/css-core/src/mixins';
+
+
+
+//  2. VARIABLES - BASE
+//  ----------------------------------------------------------------------------
+
+$button-radius                      : 4px !default;
+$button-font-color                  : $dark-400 !default;
+$button-font-family                 : $font-base-family !default;
+$button-font-height                 : 24px !default;
+$button-font-size                   : $font-base-size !default;
+$button-font-weight                 : $font-weight-medium !default;
+$button-icon-size                   : 16px !default;
+$button-padding-horizontal          : 24px !default;
+$button-padding-vertical            : 7px !default;
+$button-transition                  : all ease .4s !default;
+
+$button-lg-radius                   : 8px;
+$button-lg-font-size                : 16px !default;
+$button-lg-font-height              : 24px !default;
+$button-lg-icon-size                : 20px !default;
+$button-lg-padding-horizontal       : 32px !default;
+$button-lg-padding-vertical         : 11px !default;
+
+$button-sm-font-size                : 14px !default;
+$button-sm-font-height              : 24px !default;
+$button-sm-padding-horizontal       : 12px !default;
+$button-sm-padding-vertical         : 3px !default;
+
+$button-xs-font-size                : 12px !default;
+$button-xs-font-height              : 22px !default;
+$button-xs-padding-horizontal       : 8px !default;
+$button-xs-padding-vertical         : 0 !default;
+
+
+
+//  3. VARIABLES - COLORS
+//  ----------------------------------------------------------------------------
+
+$button-action                          : $yellow-400 !default;
+$button-action-hover                    : $yellow-500 !default;
+$button-action-active                   : $yellow-500 !default;
+$button-action-loader-first             : $yellow-600 !default;
+$button-action-loader-second            : $yellow-700 !default;
+
+$button-primary                         : $blue-500 !default;
+$button-primary-hover                   : $blue-600 !default;
+$button-primary-active                  : $blue-600 !default;
+$button-primary-loader-first            : $blue-300 !default;
+$button-primary-loader-second           : $blue-100 !default;
+
+$button-primary-outline                 : $blue-300 !default;
+$button-primary-outline-color           : $blue-400 !default;
+$button-primary-outline-border          : $blue-400 !default;
+$button-primary-outline-hover-border    : $blue-600 !default;
+$button-primary-outline-active          : $blue-400 !default;
+$button-primary-outline-active-border   : $blue-400 !default;
+$button-primary-outline-loader-first    : $blue-200 !default;
+$button-primary-outline-loader-second   : $blue-400 !default;
+
+$button-secondary                       : $haze-200 !default;
+$button-secondary-border                : $haze-300 !default;
+$button-secondary-hover                 : $haze-300 !default;
+$button-secondary-hover-border          : $haze-400 !default;
+$button-secondary-active                : $haze-300 !default;
+$button-secondary-active-border         : $haze-400 !default;
+$button-secondary-loader-first          : $haze-700 !default;
+$button-secondary-loader-second         : $haze-200 !default;
+
+$button-secondary-outline               : $white !default;
+$button-secondary-outline-border        : $haze-300 !default;
+$button-secondary-outline-hover         : $haze-200 !default;
+$button-secondary-outline-hover-border  : $haze-300 !default;
+$button-secondary-outline-active        : $haze-300 !default;
+$button-secondary-outline-active-border : $haze-300 !default;
+$button-secondary-outline-loader-first  : $haze-300 !default;
+$button-secondary-outline-loader-second : $haze-600 !default;
+
+$button-disable-opacity                 : 0.3 !default;
+$button-secondary-disable-opacity       : 0.4 !default;
+
+
+//  4. CORE
+//  ----------------------------------------------------------------------------
+
+.c-btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: $button-radius;
+    color: $button-font-color;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: $button-font-family;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    align-items: center;
+    justify-content: center;
+    line-height: $button-font-height;
+    padding: ($button-padding-vertical) ($button-padding-horizontal);
+    outline: none !important;
+    position: relative;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: $button-transition;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+// State : Active
+.c-btn:active,
+.c-btn:focus {
+    outline: none;
+}
+
+// State : Disabled
+.c-btn:disabled,
+.c-btn.is--disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+
+//  5. SIZE - LARGE
+//  ----------------------------------------------------------------------------
+
+.c-btn--lg {
+    border-radius: $button-lg-radius;
+    font-size: $button-lg-font-size;
+    line-height: $button-lg-font-height;
+    padding: ($button-lg-padding-vertical) ($button-lg-padding-horizontal);
+
+    > .icon {
+        font-size: $button-lg-icon-size;
+    }
+}
+
+
+//  6. SIZE - SMALL
+//  ----------------------------------------------------------------------------
+
+.c-btn--sm {
+    font-size: $button-sm-font-size;
+    line-height: $button-sm-font-height;
+    padding: ($button-sm-padding-vertical) ($button-sm-padding-horizontal);
+}
+
+
+//  7. SIZE - EXTRA SMALL
+//  ----------------------------------------------------------------------------
+
+.c-btn--xs {
+    font-size: $button-xs-font-size;
+    line-height: $button-xs-font-height;
+    padding: ($button-xs-padding-vertical) ($button-xs-padding-horizontal);
+}
+
+
+//  8. SHAPE - FULL
+//  ----------------------------------------------------------------------------
+
+.c-btn--full {
+    width: 100%;
+}
+
+
+//  9. SHAPE - PILL
+//  ----------------------------------------------------------------------------
+
+.c-btn--pill {
+    border-radius: 1000px;
+}
+
+
+//  10. VARIANT - ACTION
+//  ----------------------------------------------------------------------------
+//  Use this button as marketting button
+
+.c-btn--action {
+    background-color: $button-action;
+    color: color-yiq($button-action)!important;
+
+    &:hover,
+    &:active,
+    &.is--active {
+        background-color: $button-action-hover;
+    }
+
+    &.is--loading:before {
+        @include loader-setup($button-action-loader-first, $button-action-loader-second);
+    }
+
+    &:disabled,
+    &.is--disabled {
+        opacity: $button-disable-opacity;
+    }
+}
+
+
+//  11. VARIANT - PRIMARY
+//  ----------------------------------------------------------------------------
+//  Use this button as a dominant or go to button.
+
+.c-btn--primary {
+    background-color: $button-primary;
+    color: color-yiq($button-primary);
+
+    &:hover,
+    &:active,
+    &.is--active {
+        background-color: $button-primary-hover;
+    }
+
+    &.is--loading:before {
+        @include loader-setup($button-primary-loader-first, $button-primary-loader-second);
+    }
+
+    &:disabled,
+    &.is--disabled {
+        opacity: $button-disable-opacity;
+    }
+}
+
+
+//  12. VARIANT - PRIMARY OUTLINE
+//  ----------------------------------------------------------------------------
+//  TBD
+
+.c-btn--primary-outline {
+    background-color: transparent;
+    border-color: $button-primary-outline-border;
+    color: $button-primary-outline-color;
+
+    &:hover {
+        background-color: $button-primary-outline;
+        color: color-yiq($button-primary-outline);
+    }
+
+    &:active,
+    &.is--active,
+    .is--active > & {
+        background-color: $button-primary-outline-active;
+        border-color: $button-primary-outline-active-border;
+        color: color-yiq($button-primary-outline-active);
+    }
+
+    &.is--loading:before {
+        @include loader-setup($button-primary-outline-loader-first, $button-primary-outline-loader-second);
+    }
+
+    &:disabled,
+    &.is--disabled {
+        opacity: $button-disable-opacity;
+    }
+}
+
+
+//  13. VARIANT - SECONDARY
+//  ----------------------------------------------------------------------------
+//  Use this button as a normal button.
+
+.c-btn--secondary {
+    background-color: $button-secondary;
+    border-color: $button-secondary-border;
+    color: color-yiq($button-secondary);
+
+    &:hover {
+        background-color: $button-secondary-hover;
+        border-color: $button-secondary-hover-border;
+    }
+
+    &:active,
+    &.is--active {
+        background-color: $button-secondary-active;
+        border-color: $button-secondary-active-border;
+    }
+
+    &.is--loading:before {
+        @include loader-setup($button-secondary-loader-first, $button-secondary-loader-second);
+    }
+
+    &:disabled,
+    &.is--disabled {
+        opacity: $button-secondary-disable-opacity;
+    }
+}
+
+
+//  14. VARIANT - SECONDARY OUTLINE
+//  ----------------------------------------------------------------------------
+//  TBD
+
+.c-btn--secondary-outline {
+    background-color: $button-secondary-outline;
+    border-color: $button-secondary-outline-border;
+    color: color-yiq($button-secondary-outline);
+
+    &:hover {
+        background-color: $button-secondary-outline-hover;
+        border-color: $button-secondary-outline-hover-border;
+    }
+
+    &:active,
+    &:focus,
+    &.is--active,
+    .is--active > & {
+        background-color: $button-secondary-outline-active;
+        border-color: $button-secondary-outline-active-border;
+    }
+
+    &.is--loading:before {
+        @include loader-setup($button-primary-outline-loader-first, $button-primary-outline-loader-second);
+    }
+
+    &:disabled,
+    &.is--disabled {
+        opacity: $button-disable-opacity;
+    }
+}
+
+
+//  15. VARIANT - POSITIVE
+//  ----------------------------------------------------------------------------
+//  TBD
+
+.c-btn--positive {
+    background-color: $green-500;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &.is--active {
+        background-color: $green-600;
+    }
+
+    &.is--loading:before {
+        @include loader-setup($green-300, $white);
+    }
+
+    &:disabled,
+    &.is--disabled {
+        opacity: $button-disable-opacity;
+    }
+}
+
+
+//  16. VARIANT - NEGATIVE
+//  ----------------------------------------------------------------------------
+//  TBD
+
+.c-btn--negative {
+    background-color: $red-500;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &.is--active {
+        background-color: $red-600;
+    }
+
+    &.is--loading:before {
+        @include loader-setup($red-300, $white);
+    }
+
+    &:disabled,
+    &.is--disabled {
+        opacity: $button-disable-opacity;
+    }
+}
+
+
+//  17. APPLICATION - ICON
+//  ----------------------------------------------------------------------------
+
+// Icon's spacing
+.c-btn > .icon {
+    font-size: 16px;
+    margin-right: $spacing-sm;
+    margin-left: -$spacing-xxs;
+
+    &,
+    &::before {
+        height: auto;
+        line-height: inherit;
+    }
+
+    &:last-child {
+        margin-right: -$spacing-xxs;
+        margin-left: $spacing-sm;
+    }
+}
+
+// For icon only button, no text
+.c-btn--icon {
+    > .icon {
+        margin: 0 (-$spacing-xxs) !important;
+    }
+}
+
+
+//  18. APPLICATION - DROPDOWN
+//  ----------------------------------------------------------------------------
+//  NOTE: Need to resolve icons first OR maybe just use .icon instead, less dependency
+
+// .c-btn--dropdown {
+//     &:after {
+//         content: '\e313';
+//         display: inline-block;
+//         line-height: inherit;
+//         font-family: $base-font-icon;
+//         font-size: 20px;
+//         margin: 0 (-$spacing-xs) 0 $spacing-xxs;
+//         opacity: .5;
+//         vertical-align: top;
+//     }
+// }
+
+
+//  19. APPLICATION - GROUP
+//  ----------------------------------------------------------------------------
+
+.c-btn-group {
+    display: inline-flex;
+    vertical-align: middle;
+
+    > .c-btn,
+    > .c-dropdown > .c-btn {
+        border-radius: 0;
+        flex: 1;
+
+        &:hover,
+        &.is--active {
+            z-index: 1;
+        }
+
+        &.is--disabled,
+        &:disabled {
+            z-index: 0;
+        }
+    }
+
+    .c-btn,
+    .c-dropdown {
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+    }
+
+    > .c-btn:first-child,
+    > .c-dropdown:first-child > .c-btn {
+        border-top-left-radius: $button-radius;
+        border-bottom-left-radius: $button-radius;
+    }
+
+    > .c-btn:last-child,
+    > .c-dropdown:last-child > .c-btn {
+        border-top-right-radius: $button-radius;
+        border-bottom-right-radius: $button-radius;
+    }
+}
+
+.c-btn-group--full {
+    display: flex;
 }
