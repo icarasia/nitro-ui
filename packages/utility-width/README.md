@@ -1,6 +1,6 @@
-# Nitro UI: Utility Text
+# Nitro UI: Utility Width
 
-Utility Text component for Nitro UI.
+Utility Width component for Nitro UI.
 
 ## Getting Started
 
