@@ -77,41 +77,57 @@ $button-xs-padding-vertical         : 0 !default;
 //  ----------------------------------------------------------------------------
 
 $button-action                          : $yellow-400 !default;
+$button-action-color                    : $dark-400 !default;
 $button-action-hover                    : $yellow-500 !default;
 $button-action-active                   : $yellow-500 !default;
 $button-action-loader-first             : $yellow-600 !default;
 $button-action-loader-second            : $yellow-700 !default;
 
-$button-primary                         : $blue-500 !default;
-$button-primary-hover                   : $blue-600 !default;
-$button-primary-active                  : $blue-600 !default;
+$button-primary-fill                    : $blue-500 !default;
+$button-primary-color                   : $white !default;
+$button-primary-border                  : $blue-500 !default;
+$button-primary-hover-fill              : $blue-400 !default;
+$button-primary-hover-border            : $blue-400 !default;
+$button-primary-hover-color             : $white !default;
+$button-primary-active-fill             : $blue-600 !default;
+$button-primary-active-border           : $blue-600 !default;
+$button-primary-active-color            : $white !default;
 $button-primary-loader-first            : $blue-300 !default;
 $button-primary-loader-second           : $blue-100 !default;
 
-$button-primary-outline                 : $blue-300 !default;
-$button-primary-outline-color           : $blue-400 !default;
-$button-primary-outline-border          : $blue-400 !default;
-$button-primary-outline-hover-border    : $blue-600 !default;
-$button-primary-outline-active          : $blue-400 !default;
-$button-primary-outline-active-border   : $blue-400 !default;
+$button-primary-outline-fill            : transparent !default;
+$button-primary-outline-color           : $blue-500 !default;
+$button-primary-outline-border          : $blue-500 !default;
+$button-primary-outline-hover-fill      : $blue-200 !default;
+$button-primary-outline-hover-border    : $button-primary-outline-border !default;
+$button-primary-outline-hover-color     : $button-primary-outline-color !default;
+$button-primary-outline-active-fill     : $button-primary-active-fill !default;
+$button-primary-outline-active-border   : $button-primary-active-border !default;
+$button-primary-outline-active-color    : $button-primary-active-color !default;
 $button-primary-outline-loader-first    : $blue-200 !default;
 $button-primary-outline-loader-second   : $blue-400 !default;
 
-$button-secondary                       : $haze-200 !default;
+$button-secondary-fill                  : $haze-200 !default;
+$button-secondary-color                 : $dark-400 !default;
 $button-secondary-border                : $haze-300 !default;
-$button-secondary-hover                 : $haze-300 !default;
+$button-secondary-hover-fill            : $haze-100 !default;
 $button-secondary-hover-border          : $haze-400 !default;
-$button-secondary-active                : $haze-300 !default;
+$button-secondary-hover-color           : $dark-400 !default;
+$button-secondary-active-fill           : $haze-300 !default;
 $button-secondary-active-border         : $haze-400 !default;
+$button-secondary-active-color          : $dark-400 !default;
 $button-secondary-loader-first          : $haze-700 !default;
 $button-secondary-loader-second         : $haze-200 !default;
 
-$button-secondary-outline               : $white !default;
-$button-secondary-outline-border        : $haze-300 !default;
-$button-secondary-outline-hover         : $haze-200 !default;
-$button-secondary-outline-hover-border  : $haze-300 !default;
-$button-secondary-outline-active        : $haze-300 !default;
-$button-secondary-outline-active-border : $haze-300 !default;
+$button-secondary-outline-fill          : transparent !default;
+$button-secondary-outline-border        : $button-secondary-border !default;
+$button-secondary-outline-color         : $button-secondary-color !default;
+$button-secondary-outline-hover-fill    : $button-secondary-fill !default;
+$button-secondary-outline-hover-border  : $button-secondary-border !default;
+$button-secondary-outline-hover-color   : $button-secondary-color !default;
+$button-secondary-outline-active-fill   : $button-secondary-active-fill !default;
+$button-secondary-outline-active-border : $button-secondary-active-border !default;
+$button-secondary-outline-active-color  : $button-secondary-active-color !default;
 $button-secondary-outline-loader-first  : $haze-300 !default;
 $button-secondary-outline-loader-second : $haze-600 !default;
 
@@ -216,7 +232,7 @@ $button-secondary-disable-opacity       : 0.4 !default;
 
 .c-btn--action {
     background-color: $button-action;
-    color: color-yiq($button-action)!important;
+    color: $button-action-color;
 
     &:hover,
     &:active,
@@ -240,13 +256,22 @@ $button-secondary-disable-opacity       : 0.4 !default;
 //  Use this button as a dominant or go to button.
 
 .c-btn--primary {
-    background-color: $button-primary;
-    color: color-yiq($button-primary);
+    background-color: $button-primary-fill;
+    border-color: $button-primary-border;
+    color: $button-primary-color;
 
-    &:hover,
+    &:hover {
+        background-color: $button-primary-hover-fill;
+        border-color: $button-primary-hover-border;
+        color: $button-primary-hover-color;
+    }
+
+    &:focus,
     &:active,
     &.is--active {
-        background-color: $button-primary-hover;
+        background-color: $button-primary-active-fill;
+        border-color: $button-primary-active-border;
+        color: $button-primary-active-color;
     }
 
     &.is--loading:before {
@@ -265,21 +290,23 @@ $button-secondary-disable-opacity       : 0.4 !default;
 //  TBD
 
 .c-btn--primary-outline {
-    background-color: transparent;
+    background-color: $button-primary-outline-fill;
     border-color: $button-primary-outline-border;
     color: $button-primary-outline-color;
 
     &:hover {
-        background-color: $button-primary-outline;
-        color: color-yiq($button-primary-outline);
+        background-color: $button-primary-outline-hover-fill;
+        border-color: $button-primary-outline-hover-border;
+        color: $button-primary-outline-hover-color;
     }
 
     &:active,
+    &:focus,
     &.is--active,
     .is--active > & {
-        background-color: $button-primary-outline-active;
+        background-color: $button-primary-outline-active-fill;
         border-color: $button-primary-outline-active-border;
-        color: color-yiq($button-primary-outline-active);
+        color: $button-primary-outline-active-color;
     }
 
     &.is--loading:before {
@@ -298,19 +325,22 @@ $button-secondary-disable-opacity       : 0.4 !default;
 //  Use this button as a normal button.
 
 .c-btn--secondary {
-    background-color: $button-secondary;
+    background-color: $button-secondary-fill;
     border-color: $button-secondary-border;
-    color: color-yiq($button-secondary);
+    color: $button-secondary-color;
 
     &:hover {
-        background-color: $button-secondary-hover;
+        background-color: $button-secondary-hover-fill;
         border-color: $button-secondary-hover-border;
+        color: $button-secondary-hover-color;
     }
 
+    &:focus,
     &:active,
     &.is--active {
-        background-color: $button-secondary-active;
+        background-color: $button-secondary-active-fill;
         border-color: $button-secondary-active-border;
+        color: $button-secondary-active-color;
     }
 
     &.is--loading:before {
@@ -329,21 +359,23 @@ $button-secondary-disable-opacity       : 0.4 !default;
 //  TBD
 
 .c-btn--secondary-outline {
-    background-color: $button-secondary-outline;
+    background-color: $button-secondary-outline-fill;
     border-color: $button-secondary-outline-border;
-    color: color-yiq($button-secondary-outline);
+    color: $button-secondary-outline-color;
 
     &:hover {
-        background-color: $button-secondary-outline-hover;
+        background-color: $button-secondary-outline-hover-fill;
         border-color: $button-secondary-outline-hover-border;
+        color: $button-secondary-outline-hover-color;
     }
 
     &:active,
     &:focus,
     &.is--active,
     .is--active > & {
-        background-color: $button-secondary-outline-active;
+        background-color: $button-secondary-outline-active-fill;
         border-color: $button-secondary-outline-active-border;
+        color: $button-secondary-outline-active-color;
     }
 
     &.is--loading:before {
@@ -361,18 +393,39 @@ $button-secondary-disable-opacity       : 0.4 !default;
 //  ----------------------------------------------------------------------------
 //  TBD
 
-.c-btn--positive {
-    background-color: $green-500;
-    color: $white;
+$button-positive-fill                    : $green-500 !default;
+$button-positive-border                  : $green-500 !default;
+$button-positive-color                   : $white !default;
+$button-positive-hover-fill              : $green-400 !default;
+$button-positive-hover-border            : $green-400 !default;
+$button-positive-hover-color             : $white !default;
+$button-positive-active-fill             : $green-600 !default;
+$button-positive-active-border           : $green-600 !default;
+$button-positive-active-color            : $white !default;
+$button-positive-loader-first            : $green-300 !default;
+$button-positive-loader-second           : $white !default;
 
-    &:hover,
+.c-btn--positive {
+    background-color: $button-positive-fill;
+    border-color: $button-positive-border;
+    color: $button-positive-color;
+
+    &:hover {
+        background-color: $button-positive-hover-fill;
+        border-color: $button-positive-hover-border;
+        color: $button-positive-hover-color;
+    }
+
+    &:focus,
     &:active,
     &.is--active {
-        background-color: $green-600;
+        background-color: $button-positive-active-fill;
+        border-color: $button-positive-active-border;
+        color: $button-positive-active-color;
     }
 
     &.is--loading:before {
-        @include loader-setup($green-300, $white);
+        @include loader-setup($button-positive-loader-first, $button-positive-loader-second);
     }
 
     &:disabled,
@@ -386,18 +439,39 @@ $button-secondary-disable-opacity       : 0.4 !default;
 //  ----------------------------------------------------------------------------
 //  TBD
 
-.c-btn--negative {
-    background-color: $red-500;
-    color: $white;
+$button-negative-fill                    : $red-500 !default;
+$button-negative-border                  : $red-500 !default;
+$button-negative-color                   : $white !default;
+$button-negative-hover-fill              : $red-400 !default;
+$button-negative-hover-border            : $red-400 !default;
+$button-negative-hover-color             : $white !default;
+$button-negative-active-fill             : $red-600 !default;
+$button-negative-active-border           : $red-600 !default;
+$button-negative-active-color            : $white !default;
+$button-negative-loader-first            : $red-300 !default;
+$button-negative-loader-second           : $white !default;
 
-    &:hover,
+.c-btn--negative {
+    background-color: $button-negative-fill;
+    border-color: $button-negative-border;
+    color: $button-negative-color;
+
+    &:hover {
+        background-color: $button-negative-hover-fill;
+        border-color: $button-negative-hover-border;
+        color: $button-negative-hover-color;
+    }
+
+    &:focus,
     &:active,
     &.is--active {
-        background-color: $red-600;
+        background-color: $button-negative-active-fill;
+        border-color: $button-negative-active-border;
+        color: $button-negative-active-color;
     }
 
     &.is--loading:before {
-        @include loader-setup($red-300, $white);
+        @include loader-setup($button-negative-loader-first, $button-negative-loader-second);
     }
 
     &:disabled,
