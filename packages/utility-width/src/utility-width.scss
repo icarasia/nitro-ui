@@ -10,11 +10,16 @@
 //
 //      1. Variables
 //      2. Core
-//      3. Responsive - Portable & Mobile
+//      3. Responsive - Desktop
+//      4. Responsive - Portable
+//      5. Responsive - Mobile-Tablet
+//      6. Responsive - Mobile
 
 //  ----------------------------------------------------------------------------
 //  1. Variables
 //  ----------------------------------------------------------------------------
+@import '@nitro-ui/css-core/src/core';
+
 $responsive-width-desktop           : true   !default;
 $responsive-width-portable          : true   !default;
 $responsive-width-mobile-tablet     : true   !default;
@@ -23,9 +28,6 @@ $responsive-width-mobile            : true   !default;
 //  ----------------------------------------------------------------------------
 //  2. Core
 //  ----------------------------------------------------------------------------
-
-@import '@nitro-ui/css-core/src/core';
-
 @mixin width-setup($breakpoint: 'global') {
     $width-delimiter: \/ !default;
     $breakpoint-separator: \@ !default;
@@ -95,28 +97,39 @@ $responsive-width-mobile            : true   !default;
 
 
 //  ----------------------------------------------------------------------------
-//  3. Responsive - portable mobile
+//  3. Responsive - Desktop
 //  ----------------------------------------------------------------------------
-@if $responsive-width-desktop == true {
-    @include media-query(desktop){
-        @include width-setup('desktop');
+@if $responsive {
+    @if $responsive-width-desktop {
+        @include media-query(desktop){
+            @include width-setup('desktop');
+        }
     }
-}
 
-@if $responsive-width-portable == true {
-    @include media-query(portable){
-        @include width-setup('portable');
+//  ----------------------------------------------------------------------------
+//  4. Responsive - Portable
+//  ----------------------------------------------------------------------------
+    @if $responsive-width-portable {
+        @include media-query(portable){
+            @include width-setup('portable');
+        }
     }
-}
 
-@if $responsive-width-mobile-tablet == true {
-    @include media-query(mobile-tablet){
-        @include width-setup('mobile-tablet');
+//  ----------------------------------------------------------------------------
+//  3. Responsive - Mobile Tablet
+//  ----------------------------------------------------------------------------
+    @if $responsive-width-mobile-tablet {
+        @include media-query(mobile-tablet){
+            @include width-setup('mobile-tablet');
+        }
     }
-}
 
-@if $responsive-width-mobile == true {
-    @include media-query(mobile){
-        @include width-setup('mobile');
+//  ----------------------------------------------------------------------------
+//  4. Responsive - Mobile
+//  ----------------------------------------------------------------------------
+    @if $responsive-width-mobile {
+        @include media-query(mobile){
+            @include width-setup('mobile');
+        }
     }
 }
