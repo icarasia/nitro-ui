@@ -8,11 +8,23 @@
 //
 //  CONTENTS
 //
-//      1. Core
-//      2. Responsive - Portable & Mobile
+//      1. Variables
+//      2. Core
+//      3. Responsive - Portable & Mobile
+
 //  ----------------------------------------------------------------------------
-//  1. Core
+//  1. Variables
 //  ----------------------------------------------------------------------------
+$responsive-width-desktop           : true   !default;
+$responsive-width-portable          : true   !default;
+$responsive-width-mobile-tablet     : true   !default;
+$responsive-width-mobile            : true   !default;
+
+//  ----------------------------------------------------------------------------
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/css-core/src/core';
 
 @mixin width-setup($breakpoint: 'global') {
     $width-delimiter: \/ !default;
@@ -85,12 +97,25 @@
 //  ----------------------------------------------------------------------------
 //  3. Responsive - portable mobile
 //  ----------------------------------------------------------------------------
+@if $responsive-width-desktop == true {
+    @include media-query(desktop){
+        @include width-setup('desktop');
+    }
+}
 
-@if $responsive == true {
+@if $responsive-width-portable == true {
     @include media-query(portable){
         @include width-setup('portable');
     }
+}
 
+@if $responsive-width-mobile-tablet == true {
+    @include media-query(mobile-tablet){
+        @include width-setup('mobile-tablet');
+    }
+}
+
+@if $responsive-width-mobile == true {
     @include media-query(mobile){
         @include width-setup('mobile');
     }

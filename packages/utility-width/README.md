@@ -67,7 +67,8 @@ Include this stylesheet code into your site:
 
 <div class="u-width-11/12">width = 91.666%</div>
 
-<div class="u-width-1/2@portable">width = 50% when portable size</div>
+<div class="u-width-1/2@desktop">width = 50% when portable size</div>
+<div class="u-width-1/2@mobile-tablet">width = 50% when portable size</div>
 <div class="u-width-1/2@mobile">width = 50% when mobile size</div>
 ```
 
