@@ -18,10 +18,12 @@
 //  1. Variables
 //  ----------------------------------------------------------------------------
 
- $container-spacing              : 12px;
- $container-width-default        : 1080px;
- $container-width-medium         : 800px;
- $container-width-wide           : 1240px;
+@import '@nitro-ui/css-core/src/core';
+
+$container-spacing              : 12px;
+$container-width-default        : 1080px;
+$container-width-medium         : 800px;
+$container-width-wide           : 1240px;
 
 //  ----------------------------------------------------------------------------
 //  2. Core

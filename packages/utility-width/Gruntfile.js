@@ -17,18 +17,18 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/container.css': [
-                        'src/container.scss'
+                    'dist/utility-width.css': [
+                        'src/utility-width.scss'
                     ]
                 }
             },
             compressed: {
                 options: {
-                    style: 'compressed'
+                    outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/container.min.css': [
-                        'src/container.scss'
+                    'dist/utility-width.min.css': [
+                        'src/utility-width.scss'
                     ]
                 }
             }

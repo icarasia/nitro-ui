@@ -85,4 +85,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.0-beta] - 2019-07-18
 ### Added
-- Initial setup
+- Initial setup.
+
+## [1.0.0-beta] - 2019-07-26
+### Added
+- Install and setup `node-sass` and `grunt-sass` to support `includePath`, now we can use `@import "@nitro-ui/css-core/src/core"` directly in any sass file.
+- Import @nitro-ui/css-core to `container.scss`
