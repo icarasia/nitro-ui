@@ -1,0 +1,39 @@
+{
+    "name": "@nitro-ui/css-button",
+    "version": "0.0.0-beta",
+    "description": "Form component for Nitro UI.",
+    "main": "dist/form.min.css",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/icarasia-engineering/nitro-ui"
+    },
+    "keywords": [
+        "Form",
+        "Nitro",
+        "UI",
+        "CSS",
+        "Components",
+        "iCarAsia"
+    ],
+    "author": "Ikram Hakimi Mohd Zaki <ikramhakimi@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+    },
+    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "dependencies": {
+        "@nitro-ui/css-core": "^1.0.1-beta",
+        "grunt": "^1.0.4",
+        "grunt-cli": "^1.3.2",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-notify": "^0.4.5"
+    }
+}
