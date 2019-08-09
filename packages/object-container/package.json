@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/css-object-container",
-    "version": "1.0.0-beta.2",
+    "version": "1.0.0-beta.3",
     "description": "Container component for Nitro UI.",
     "main": "dist/container.min.css",
     "publishConfig": {
@@ -29,7 +29,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/css-core": "^1.0.0-beta.1",
+        "@nitro-ui/css-core": "^1.0.0-beta.2",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",
