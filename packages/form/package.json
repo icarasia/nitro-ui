@@ -1,5 +1,5 @@
 {
-    "name": "@nitro-ui/css-button",
+    "name": "@nitro-ui/css-form",
     "version": "0.0.0-beta",
     "description": "Form component for Nitro UI.",
     "main": "dist/form.min.css",
