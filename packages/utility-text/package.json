@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/css-utility-text",
-    "version": "1.0.0-beta.0",
+    "version": "1.0.0-beta.3",
     "description": "Utility Text component for Nitro UI.",
     "main": "dist/utility-text.min.css",
     "publishConfig": {
@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/css-core": "^1.0.0-beta.1",
+        "@nitro-ui/css-core": "^1.0.0-beta.2",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",
