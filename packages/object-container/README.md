@@ -16,7 +16,7 @@ Include this stylesheet code into your site:
 <link rel="stylesheet" href="dist/container.min.css" />
 ```
 
-## Usage:
+### Usage:
 
 Example with `<div>` tag:
 

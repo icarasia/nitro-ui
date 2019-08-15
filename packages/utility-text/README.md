@@ -12,15 +12,21 @@ npm install @nitro-ui/css-utility-text
 
 Include this stylesheet code into your site:
 
+
+### Text Size
 ```html
-<strong>Core</strong>
-<p class="u-text-truncate">Text Truncate</p>
-<p class="u-text-strike">Text Strike</p>
-<p class="u-text-clamp">Text Clamp</p>
-<p class="u-text-unstyled">Text Unstyled</p>
-<p class="u-icon-text">Icon Text</p>
-<br/>
-<strong>Text Color</strong>
+<p class="u-text-1">u-text-1</p>
+<p class="u-text-2">u-text-2</p>
+<p class="u-text-3">u-text-3</p>
+<p class="u-text-4">u-text-4</p>
+<p class="u-text-5">u-text-5</p>
+<p class="u-text-6">u-text-6</p>
+<p class="u-text-7">u-text-7</p>
+<p class="u-text-8">u-text-8</p>
+```
+
+#### Text Color
+```html
 <p class="u-color-base">Text color base</p>
 <p class="u-color-dark">Text color dark</p>
 <p class="u-color-link">Text color link</p>
@@ -29,22 +35,37 @@ Include this stylesheet code into your site:
 <p class="u-color-positive">Text color positive</p>
 <p class="u-color-negative">Text color negative</p>
 <p class="u-color-warning">Text color warning</p>
-<br/>
-<strong>Font Weight</strong>
+```
+
+#### Font Weight
+```html
 <p class="u-text-light">Font weight light</p>
 <p class="u-text-normal">Font weight normal</p>
 <p class="u-text-medium">Font weight medium</p>
 <p class="u-text-semibold">Font weight semibold</p>
 <p class="u-text-bold">Font weight bold</p>
-<br/>
-<strong>Responsive</strong>
+```
+
+#### Core
+```html
+<p class="u-text-truncate">Text Truncate</p>
+<p class="u-text-strike">Text Strike</p>
+<p class="u-text-clamp">Text Clamp</p>
+<p class="u-text-unstyled">Text Unstyled</p>
+<p class="u-icon-text">Icon Text</p>
+```
+
+#### Responsive
+```html
 `mobile, tablet, portable`
 Only availabble for `u-text-{size}` and `u-text-{uppercase/lowercase}`
 <p class="u-text-1  u-text-2@mobile">Text 2 when mobile size</p>
 <p class="u-text-7@tablet">Text 7 when tablet size</p>
 <p class="u-text-uppercase@portable">Text uppercase when tablet and mobile size</p>
-<br/>
-<strong>Case</strong>
+```
+
+#### Case
+```html
 <p class="u-text-uppercase">Text uppercase</p>
 <p class="u-text-lowercase">Text lowercase</p>
 ```
