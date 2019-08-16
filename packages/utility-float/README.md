@@ -13,7 +13,11 @@ npm install @nitro-ui/css-utility-float
 Include this stylesheet code into your site:
 
 ```html
-<div class="u-float-left"></div>
+<strong>Float</strong>
+<div class="u-float-left">Float Left</div>
+<div class="u-float-right">Float Right</div>
+<div class="u-float-right">Float None</div>
+
 <strong>Core</strong>
 <p class="u-text-truncate">Text Truncate</p>
 <p class="u-text-strike">Text Strike</p>

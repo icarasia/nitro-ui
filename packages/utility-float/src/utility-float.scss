@@ -48,34 +48,32 @@ $use-u-text--mobile         : true !default;
 }
 
 
+@mixin float-setup($breakpoint: 'global') {
 
-/**
- * Text colors
- */
+    $breakpoint-separator: \@ !default;
 
-.u-color-base           { color: $font-base-color !important; }
-.u-color-dark           { color: $font-dark-color !important; }
-.u-color-link           { color: $font-link-color !important; }
-.u-color-link:hover     { text-decoration: underline; }
-.u-color-muted          { color: $font-muted-color !important; }
-.u-color-white          { color: $white !important;  }
-.u-color-positive       { color: $font-positive-color !important;  }
-.u-color-negative       { color: $font-negative-color !important;  }
-.u-color-warning        { color: $font-warning-color !important;  }
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
 
+    .u-float-right#{$breakpoint-separator}#{$breakpoint}     { float: right !important }
+    .u-float-left#{$breakpoint-separator}#{$breakpoint}      { float: left  !important }
+    .u-float-none#{$breakpoint-separator}#{$breakpoint}      { float: none  !important }
+}
 
 
+@include float-setup();
 
-/**
- * Font weights
- */
+//  ----------------------------------------------------------------------------
+//  Responsive - Mobile
+//  ----------------------------------------------------------------------------
 
-.u-text-light           { font-weight: $font-weight-light  !important }
-.u-text-normal          { font-weight: $font-weight-normal  !important }
-.u-text-medium          { font-weight: $font-weight-medium  !important }
-.u-text-semibold        { font-weight: $font-weight-medium  !important }
-.u-text-bold            { font-weight: $font-weight-bold  !important }
-
+@if $responsive {
+    @include media-query(mobile) {
+        @include float-setup('mobile');
+    }
+}
 
 
 
