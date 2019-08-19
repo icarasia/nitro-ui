@@ -1,5 +1,3 @@
-const sass = require( 'node-sass' );
-
 module.exports = function( grunt ) {
 
     // Project configuration.
@@ -10,25 +8,20 @@ module.exports = function( grunt ) {
         },
 
         sass: {
-            options: {
-                includePaths: [ 'node_modules', '.' ],
-                implementation: sass,
-                sourceMap: true
-            },
             build: {
                 files: {
-                    'dist/utility-text.css': [
-                        'src/utility-text.scss'
+                    'dist/form.css': [
+                        'src/form.scss'
                     ]
                 }
             },
             compressed: {
                 options: {
-                    outputStyle: 'compressed'
+                    style: 'compressed'
                 },
                 files: {
-                    'dist/utility-text.min.css': [
-                        'src/utility-text.scss'
+                    'dist/form.min.css': [
+                        'src/form.scss'
                     ]
                 }
             }
@@ -76,7 +69,7 @@ module.exports = function( grunt ) {
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks( 'grunt-contrib-clean' );
-    grunt.loadNpmTasks( 'grunt-sass' );
+    grunt.loadNpmTasks( 'grunt-contrib-sass' );
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-notify' );
 

@@ -14,7 +14,7 @@
 //      4.  Font Colors
 //      5.  Font Setup
 //      6.  Spacing
-//
+//      7.  Base
 //  ----------------------------------------------------------------------------
 
 
@@ -173,3 +173,5 @@ $spacing-xxs            : 4px  !default;
 
 $base-background        : $haze-200;
 $base-link-underline    : false !default;
+
+$responsive             : true !default;
