@@ -52,14 +52,13 @@ Include this stylesheet code into your site:
 <p class="u-text-strike">Text Strike</p>
 <p class="u-text-clamp">Text Clamp</p>
 <p class="u-text-unstyled">Text Unstyled</p>
-<p class="u-icon-text">Icon Text</p>
 ```
 
 #### Responsive
 ```html
 `mobile, tablet, portable`
-Only availabble for `u-text-{size}` and `u-text-{uppercase/lowercase}`
-<p class="u-text-1  u-text-2@mobile">Text 2 when mobile size</p>
+Only available for `u-text-{size}` and `u-text-{uppercase/lowercase}`
+<p class="u-text-2@mobile">Text 2 when mobile size</p>
 <p class="u-text-7@tablet">Text 7 when tablet size</p>
 <p class="u-text-uppercase@portable">Text uppercase when tablet and mobile size</p>
 ```

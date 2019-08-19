@@ -32,20 +32,20 @@ $use-u-text--mobile         : true !default;
 .u-text-clamp           { overflow: hidden; word-break: break-word; }
 .u-text-unstyled        { text-decoration: none !important; }
 
-
-.u-icon-text {
-    align-items: center;
-    display: flex !important;
-    justify-content: center;
-
-    > .icon:first-child {
-        margin-right: $spacing-xs;
-    }
-
-    > .icon:last-child {
-        margin-left: $spacing-xs;
-    }
-}
+//Remove due to not using at the moment
+// .u-icon-text {
+//     align-items: center;
+//     display: flex !important;
+//     justify-content: center;
+//
+//     > .icon:first-child {
+//         margin-right: $spacing-xs;
+//     }
+//
+//     > .icon:last-child {
+//         margin-left: $spacing-xs;
+//     }
+// }
 
 
 
