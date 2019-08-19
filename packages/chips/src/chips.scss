@@ -1,0 +1,134 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Chips
+//
+//  Chips component for Nitro UI.
+//  @link: https://github.com/icarasia-engineering/nitro-ui
+//  @since: 0.0.0-beta
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Core
+//      2. Mixin : Colors
+//      3. Size
+//      4. Styles
+//
+
+@import '@nitro-ui/css-core/src/core';
+
+//  ----------------------------------------------------------------------------
+//  1. Core
+//  ----------------------------------------------------------------------------
+
+.c-chip {
+    background-color: $haze-200;
+    border-radius: 100px;
+    color: $font-base-color;
+    display: inline-flex;
+    font-size: $font-6-size;
+    line-height: 23px;
+    padding: 1px $spacing-xs 0px;
+    text-decoration: none !important;
+    vertical-align: middle;
+
+    &:not(a) {
+        cursor: default !important;
+    }
+
+    .c-chip__avatar {
+        margin: 0 $spacing-xs 0  (-$spacing-xs);
+    }
+
+    .icon,
+    .icon::before {
+        line-height: inherit;
+        height: auto;
+    }
+
+    .c-chip__icon {
+        font-size: $font-5-size;
+        margin: 0 $spacing-xs 0 0;
+
+        &.icon--muted {
+            color: inherit;
+            opacity: .4;
+        }
+    }
+
+    .c-chip__dismiss {
+        color: inherit;
+        margin: 0 (-$spacing-xxs) 0 0;
+        opacity: .6;
+        width: 24px;
+    }
+}
+
+
+//  ----------------------------------------------------------------------------
+//  2. Mixin : Colors
+//  ----------------------------------------------------------------------------
+
+@mixin chip-setup($theme, $background, $color) {
+    .c-chip--#{$theme} {
+        background-color: $background;
+        color: $color;
+    }
+
+    .c-chip--#{$theme}-inverted {
+        background-color: $color;
+        color: $white;
+    }
+}
+
+@include chip-setup('blue', $blue-100, $blue-600);
+@include chip-setup('blue-light', $blue-light-100, $blue-light-600);
+@include chip-setup('green', $green-100, $green-600);
+@include chip-setup('orange', $orange-100, $orange-600);
+@include chip-setup('pink', $pink-100, $pink-600);
+@include chip-setup('purple', $purple-100, $purple-600);
+@include chip-setup('red', $red-100, $red-400);
+@include chip-setup('yellow', $yellow-100, $yellow-600);
+
+
+//  ----------------------------------------------------------------------------
+//  3. Size
+//  ----------------------------------------------------------------------------
+.c-chip--sm {
+    line-height: 19px;
+    font-size: $font-7-size;
+}
+
+.c-chip--xs {
+    line-height: 15px;
+    font-size: $font-8-size;
+}
+
+
+//  ----------------------------------------------------------------------------
+//  4. Styles
+//  ----------------------------------------------------------------------------
+
+.c-input.c-input--chips {
+    line-height: 24px;
+    height: auto;
+    padding: 5px 8px;
+
+    .c-chip {
+        margin: 2px
+    }
+}
+
+// Ikram & Swee Ling
+// We are still working on below chip styling
+.c-chip--outline {
+    background-color: transparent;
+    border: 1px solid $haze-300;
+
+    &:hover {
+        background: $blue-400;
+        border-color: $blue-400;
+        color: $white;
+    }
+}
