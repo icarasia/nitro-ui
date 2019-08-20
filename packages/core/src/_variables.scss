@@ -171,7 +171,8 @@ $spacing-xxs            : 4px  !default;
 //  7. Base
 //  ----------------------------------------------------------------------------
 
-$base-background        : $haze-200;
+$base-background        : $haze-200 !default;
+$base-radius            : 4px !default;
 $base-link-underline    : false !default;
 
 $responsive             : true !default;

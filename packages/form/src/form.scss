@@ -1,8 +1,8 @@
 //  ----------------------------------------------------------------------------
 //
-//  @BUTTON
+//  @FORM
 //
-//  Component styling for button
+//  Component styling for form elements
 //
 //  ----------------------------------------------------------------------------
 //
@@ -10,23 +10,17 @@
 //
 //      1.  DEPENDENCIES
 //      2.  VARIABLES - BASE
-//      3.  VARIABLES - COLORS
-//      4.  CORE
-//      5.  SIZE - LARGE
-//      6.  SIZE - SMALL
-//      7.  SIZE - EXTRA SMALL
-//      8.  SHAPE - FULL
-//      9.  SHAPE - PILL
-//      10. VARIANT - ACTION
-//      11. VARIANT - PRIMARY
-//      12. VARIANT - PRIMARY OUTLINE
-//      13. VARIANT - SECONDARY
-//      14. VARIANT - SECONDARY OUTLINE
-//      15. VARIANT - POSITIVE
-//      16. VARIANT - NEGATIVE
-//      17. APPLICATION - ICON
-//      18. APPLICATION - DROPDOWN
-//      19. APPLICATION - GROUP
+//      3.  MIXINS
+//      4.  GENERAL
+//      5.  ELEMENT - TEXTAREA
+//      6.  ELEMENT - SELECT
+//      7.  ELEMENT - CHECBOX / RADIO / SWITCH
+//      8.  FIELD
+//      9.  STATE - DISABLED
+//      10. STATE - FOCUS
+//      11. STATE - ERROR
+//      12. SIZE - SMALL
+//      13. SIZE - LARGE
 //
 //  ----------------------------------------------------------------------------
 
@@ -43,460 +37,395 @@
 //  2. VARIABLES - BASE
 //  ----------------------------------------------------------------------------
 
-$button-radius                      : 4px !default;
-$button-font-color                  : $dark-400 !default;
-$button-font-family                 : $font-base-family !default;
-$button-font-height                 : 24px !default;
-$button-font-size                   : $font-base-size !default;
-$button-font-weight                 : $font-weight-medium !default;
-$button-icon-size                   : 16px !default;
-$button-padding-horizontal          : 24px !default;
-$button-padding-vertical            : 7px !default;
-$button-transition                  : all ease .4s !default;
+$input-background                   : $white !default;
+$input-border-color                 : $haze-400 !default;
+$input-border-width                 : 1px !default;
+$input-font-color                   : $font-base-color !default;
+$input-font-family                  : $font-base-family !default;
+$input-font-height                  : $font-base-height !default;
+$input-font-size                    : $font-base-size !default;
+$input-height                       : 40px !default;
+$input-radius                       : 4px !default;
+$input-transition-time              : .2s !default;
+$input-padding-vertical             : ($input-height - $input-font-height)/2 !default;
+$input-padding-horizontal           : $spacing-sm !default;
+$input-check-size                   : 16px !default;
+$input-switch-width                 : ($input-check-size*2) - 4 !default;
+$input-switch-height                : $input-check-size !default;
+$input-switch-circle-size           : $input-switch-height - 2 !default;
 
-$button-lg-radius                   : 8px;
-$button-lg-font-size                : 16px !default;
-$button-lg-font-height              : 24px !default;
-$button-lg-icon-size                : 20px !default;
-$button-lg-padding-horizontal       : 32px !default;
-$button-lg-padding-vertical         : 11px !default;
+$input-placholder-font-color        : $haze-300 !default;
 
-$button-sm-font-size                : 14px !default;
-$button-sm-font-height              : 24px !default;
-$button-sm-padding-horizontal       : 12px !default;
-$button-sm-padding-vertical         : 3px !default;
-
-$button-xs-font-size                : 12px !default;
-$button-xs-font-height              : 22px !default;
-$button-xs-padding-horizontal       : 8px !default;
-$button-xs-padding-vertical         : 0 !default;
-
+$input-hover-border-color           : $blue-400 !default;
+$input-focus-border-color           : $blue-400 !default;
+$input-error-border-color           : $red-300 !default;
+$input-error-font-color             : $font-negative-color !default;
+$input-disabled-background          : $haze-100 !default;
+$input-disabled-border              : $haze-300 !default;
+$input-disabled-color               : $haze-500 !default;
 
 
-//  3. VARIABLES - COLORS
+//  3. MIXINS
 //  ----------------------------------------------------------------------------
 
-$button-action                          : $yellow-400 !default;
-$button-action-hover                    : $yellow-500 !default;
-$button-action-active                   : $yellow-500 !default;
-$button-action-loader-first             : $yellow-600 !default;
-$button-action-loader-second            : $yellow-700 !default;
-
-$button-primary                         : $blue-500 !default;
-$button-primary-hover                   : $blue-600 !default;
-$button-primary-active                  : $blue-600 !default;
-$button-primary-loader-first            : $blue-300 !default;
-$button-primary-loader-second           : $blue-100 !default;
-
-$button-primary-outline                 : $blue-300 !default;
-$button-primary-outline-color           : $blue-400 !default;
-$button-primary-outline-border          : $blue-400 !default;
-$button-primary-outline-hover-border    : $blue-600 !default;
-$button-primary-outline-active          : $blue-400 !default;
-$button-primary-outline-active-border   : $blue-400 !default;
-$button-primary-outline-loader-first    : $blue-200 !default;
-$button-primary-outline-loader-second   : $blue-400 !default;
-
-$button-secondary                       : $haze-200 !default;
-$button-secondary-border                : $haze-300 !default;
-$button-secondary-hover                 : $haze-300 !default;
-$button-secondary-hover-border          : $haze-400 !default;
-$button-secondary-active                : $haze-300 !default;
-$button-secondary-active-border         : $haze-400 !default;
-$button-secondary-loader-first          : $haze-700 !default;
-$button-secondary-loader-second         : $haze-200 !default;
-
-$button-secondary-outline               : $white !default;
-$button-secondary-outline-border        : $haze-300 !default;
-$button-secondary-outline-hover         : $haze-200 !default;
-$button-secondary-outline-hover-border  : $haze-300 !default;
-$button-secondary-outline-active        : $haze-300 !default;
-$button-secondary-outline-active-border : $haze-300 !default;
-$button-secondary-outline-loader-first  : $haze-300 !default;
-$button-secondary-outline-loader-second : $haze-600 !default;
-
-$button-disable-opacity                 : 0.3 !default;
-$button-secondary-disable-opacity       : 0.4 !default;
-
-
-//  4. CORE
-//  ----------------------------------------------------------------------------
-
-.c-btn {
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: $button-radius;
-    color: $button-font-color;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: $button-font-family;
-    font-size: $button-font-size;
-    font-weight: $button-font-weight;
-    align-items: center;
-    justify-content: center;
-    line-height: $button-font-height;
-    padding: ($button-padding-vertical) ($button-padding-horizontal);
-    outline: none !important;
-    position: relative;
-    text-align: center !important;
-    text-decoration: none !important;
-    transition: $button-transition;
-    vertical-align: top;
-    white-space: nowrap;
-}
-
-// State : Active
-.c-btn:active,
-.c-btn:focus {
-    outline: none;
-}
-
-// State : Disabled
-.c-btn:disabled,
-.c-btn.is--disabled {
+@mixin input-disabled {
+    background-color: $input-disabled-background !important;
+    border-color: $input-disabled-border !important;
+    box-shadow: none !important;
+    color: $font-muted-color !important;
     cursor: default;
-    pointer-events: none;
+}
+
+@mixin input-focus {
+    border-color: $input-focus-border-color;
+    box-shadow: 0 0 0 2px rgba($input-focus-border-color,.2);
+    outline: none !important;
+}
+
+@mixin input-error {
+    border-color: $input-error-border-color;
+    box-shadow: 0 0 0 2px rgba($input-error-border-color,.2);
 }
 
 
-//  5. SIZE - LARGE
+
+
+//  4. GENERAL
 //  ----------------------------------------------------------------------------
 
-.c-btn--lg {
-    border-radius: $button-lg-radius;
-    font-size: $button-lg-font-size;
-    line-height: $button-lg-font-height;
-    padding: ($button-lg-padding-vertical) ($button-lg-padding-horizontal);
-
-    > .icon {
-        font-size: $button-lg-icon-size;
-    }
-}
-
-
-//  6. SIZE - SMALL
-//  ----------------------------------------------------------------------------
-
-.c-btn--sm {
-    font-size: $button-sm-font-size;
-    line-height: $button-sm-font-height;
-    padding: ($button-sm-padding-vertical) ($button-sm-padding-horizontal);
-}
-
-
-//  7. SIZE - EXTRA SMALL
-//  ----------------------------------------------------------------------------
-
-.c-btn--xs {
-    font-size: $button-xs-font-size;
-    line-height: $button-xs-font-height;
-    padding: ($button-xs-padding-vertical) ($button-xs-padding-horizontal);
-}
-
-
-//  8. SHAPE - FULL
-//  ----------------------------------------------------------------------------
-
-.c-btn--full {
+.c-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $input-background;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-radius;
+    color: $input-font-color;
+    font-family: $input-font-family;
+    font-size: $input-font-size;
+    height: $input-height;
+    line-height: $input-font-height;
+    padding: $input-padding-vertical $input-padding-horizontal;
+    transition: border-color ease-in-out $input-transition-time;
+    vertical-align: top;
     width: 100%;
-}
 
-
-//  9. SHAPE - PILL
-//  ----------------------------------------------------------------------------
-
-.c-btn--pill {
-    border-radius: 1000px;
-}
-
-
-//  10. VARIANT - ACTION
-//  ----------------------------------------------------------------------------
-//  Use this button as marketting button
-
-.c-btn--action {
-    background-color: $button-action;
-    color: color-yiq($button-action)!important;
-
-    &:hover,
-    &:active,
-    &.is--active {
-        background-color: $button-action-hover;
+    // Placeholder
+    &::-webkit-input-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
+    }
+    &::-moz-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
+    }
+    &:-ms-input-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
+    }
+    &:-moz-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
     }
 
-    &.is--loading:before {
-        @include loader-setup($button-action-loader-first, $button-action-loader-second);
-    }
-
-    &:disabled,
-    &.is--disabled {
-        opacity: $button-disable-opacity;
-    }
-}
-
-
-//  11. VARIANT - PRIMARY
-//  ----------------------------------------------------------------------------
-//  Use this button as a dominant or go to button.
-
-.c-btn--primary {
-    background-color: $button-primary;
-    color: color-yiq($button-primary);
-
-    &:hover,
-    &:active,
-    &.is--active {
-        background-color: $button-primary-hover;
-    }
-
-    &.is--loading:before {
-        @include loader-setup($button-primary-loader-first, $button-primary-loader-second);
-    }
-
-    &:disabled,
-    &.is--disabled {
-        opacity: $button-disable-opacity;
-    }
-}
-
-
-//  12. VARIANT - PRIMARY OUTLINE
-//  ----------------------------------------------------------------------------
-//  TBD
-
-.c-btn--primary-outline {
-    background-color: transparent;
-    border-color: $button-primary-outline-border;
-    color: $button-primary-outline-color;
-
+    // Hover
     &:hover {
-        background-color: $button-primary-outline;
-        color: color-yiq($button-primary-outline);
-    }
-
-    &:active,
-    &.is--active,
-    .is--active > & {
-        background-color: $button-primary-outline-active;
-        border-color: $button-primary-outline-active-border;
-        color: color-yiq($button-primary-outline-active);
-    }
-
-    &.is--loading:before {
-        @include loader-setup($button-primary-outline-loader-first, $button-primary-outline-loader-second);
-    }
-
-    &:disabled,
-    &.is--disabled {
-        opacity: $button-disable-opacity;
+        border-color: $input-hover-border-color;
     }
 }
 
 
-//  13. VARIANT - SECONDARY
-//  ----------------------------------------------------------------------------
-//  Use this button as a normal button.
-
-.c-btn--secondary {
-    background-color: $button-secondary;
-    border-color: $button-secondary-border;
-    color: color-yiq($button-secondary);
-
-    &:hover {
-        background-color: $button-secondary-hover;
-        border-color: $button-secondary-hover-border;
-    }
-
-    &:active,
-    &.is--active {
-        background-color: $button-secondary-active;
-        border-color: $button-secondary-active-border;
-    }
-
-    &.is--loading:before {
-        @include loader-setup($button-secondary-loader-first, $button-secondary-loader-second);
-    }
-
-    &:disabled,
-    &.is--disabled {
-        opacity: $button-secondary-disable-opacity;
-    }
-}
 
 
-//  14. VARIANT - SECONDARY OUTLINE
-//  ----------------------------------------------------------------------------
-//  TBD
-
-.c-btn--secondary-outline {
-    background-color: $button-secondary-outline;
-    border-color: $button-secondary-outline-border;
-    color: color-yiq($button-secondary-outline);
-
-    &:hover {
-        background-color: $button-secondary-outline-hover;
-        border-color: $button-secondary-outline-hover-border;
-    }
-
-    &:active,
-    &:focus,
-    &.is--active,
-    .is--active > & {
-        background-color: $button-secondary-outline-active;
-        border-color: $button-secondary-outline-active-border;
-    }
-
-    &.is--loading:before {
-        @include loader-setup($button-primary-outline-loader-first, $button-primary-outline-loader-second);
-    }
-
-    &:disabled,
-    &.is--disabled {
-        opacity: $button-disable-opacity;
-    }
-}
-
-
-//  15. VARIANT - POSITIVE
-//  ----------------------------------------------------------------------------
-//  TBD
-
-.c-btn--positive {
-    background-color: $green-500;
-    color: $white;
-
-    &:hover,
-    &:active,
-    &.is--active {
-        background-color: $green-600;
-    }
-
-    &.is--loading:before {
-        @include loader-setup($green-300, $white);
-    }
-
-    &:disabled,
-    &.is--disabled {
-        opacity: $button-disable-opacity;
-    }
-}
-
-
-//  16. VARIANT - NEGATIVE
-//  ----------------------------------------------------------------------------
-//  TBD
-
-.c-btn--negative {
-    background-color: $red-500;
-    color: $white;
-
-    &:hover,
-    &:active,
-    &.is--active {
-        background-color: $red-600;
-    }
-
-    &.is--loading:before {
-        @include loader-setup($red-300, $white);
-    }
-
-    &:disabled,
-    &.is--disabled {
-        opacity: $button-disable-opacity;
-    }
-}
-
-
-//  17. APPLICATION - ICON
+//  5. ELEMENT - TEXTAREA
 //  ----------------------------------------------------------------------------
 
-// Icon's spacing
-.c-btn > .icon {
-    font-size: 16px;
-    margin-right: $spacing-sm;
-    margin-left: -$spacing-xxs;
+textarea.c-input {
+    height: auto;
+    resize: vertical;
 
-    &,
-    &::before {
-        height: auto;
-        line-height: inherit;
-    }
-
-    &:last-child {
-        margin-right: -$spacing-xxs;
-        margin-left: $spacing-sm;
-    }
-}
-
-// For icon only button, no text
-.c-btn--icon {
-    > .icon {
-        margin: 0 (-$spacing-xxs) !important;
+    &[rows="1"] {
+        height: $input-height;
     }
 }
 
 
-//  18. APPLICATION - DROPDOWN
+
+
+//  6. ELEMENT - SELECT
 //  ----------------------------------------------------------------------------
-//  NOTE: Need to resolve icons first OR maybe just use .icon instead, less dependency
 
-// .c-btn--dropdown {
-//     &:after {
-//         content: '\e313';
-//         display: inline-block;
-//         line-height: inherit;
-//         font-family: $base-font-icon;
-//         font-size: 20px;
-//         margin: 0 (-$spacing-xs) 0 $spacing-xxs;
-//         opacity: .5;
-//         vertical-align: top;
-//     }
+select.c-input {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAyMCAxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5TaGFwZTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9Imljb25zOC1leHBhbmRfYXJyb3ciIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iIzhBOUJBRCI+ICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBwb2ludHM9IjEuNzE4NzUgMC43ODEyNSAwLjI4MTI1IDIuMjE4NzUgOS4yODEyNSAxMS4yMTg3NSAxMCAxMS45MDYyNSAxMC43MTg3NSAxMS4yMTg3NSAxOS43MTg3NSAyLjIxODc1IDE4LjI4MTI1IDAuNzgxMjUgMTAgOS4wNjI1Ij48L3BvbHlnb24+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=');
+    background-position: right 12px top 50%;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    padding-right: 32px;
+}
+
+
+
+
+//  7. ELEMENT - CHECBOX / RADIO / SWITCH
+//  ----------------------------------------------------------------------------
+
+.c-check,
+.c-switch {
+    display: block;
+    margin: ($input-height - $input-font-height)/2 0;
+    position: relative;
+    min-height: $font-base-height;
+
+    > label {
+        display: block;
+        margin: 0;
+        padding-left: $input-check-size + $spacing-sm;
+        position: relative;
+        user-select: none;
+        z-index: 2;
+        color: $font-base-color;
+        top: 0;
+        left: 0;
+    }
+
+    input {
+        -webkit-appearance: none;
+        border: 1px solid $input-border-color;
+        display: inline-block;
+        height: $input-check-size;
+        left: 0;
+        outline: none !important;
+        position: absolute;
+        vertical-align: top;
+        z-index: 1;
+        top: 2px;
+    }
+}
+
+.c-check {
+    input {
+        background-color: $white;
+        border-radius: $input-radius;
+        color: transparent;
+        text-align: center;
+        width: $input-check-size;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    > label{
+        color: $font-base-color;
+    }
+
+    &:hover > input {
+        border-color: $input-hover-border-color;
+    }
+
+    // Checkbox
+    input[type="checkbox"] {
+        &::before {
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            content: '';
+            width: 6px;
+            height: 11px;
+            margin: auto;
+            transform: rotate(40deg);
+        }
+
+        &:checked {
+            background: $input-focus-border-color;
+            border-color: $input-focus-border-color;
+
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+    // Radio
+    input[type="radio"] {
+        border-radius: 100%;
+
+        &:checked {
+            border-width: 5px;
+            border-color: $input-focus-border-color;
+        }
+    }
+}
+
+.c-check--static {
+    margin: 0;
+    min-height: 0;
+    line-height: 1;
+
+    > input {
+        position: static;
+    }
+}
+
+.c-check-inline {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .c-check {
+        float: left;
+        margin-right: $spacing-xl;
+    }
+}
+
+
+.c-switch {
+    > label {
+        padding-left: $input-switch-width + $spacing-md;
+    }
+
+    > input[type="checkbox"]{
+        background-color: $haze-300;
+        border-radius: 100px;
+        width: $input-switch-width;
+        top: 0;
+
+        &:before {
+            background-color: $white;
+            border-radius: 100px;
+            content: '';
+            display: block;
+            height: $input-switch-circle-size;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: $input-switch-circle-size;
+            transition: left ease $input-transition-time;
+        }
+
+        &:checked {
+            background: $input-focus-border-color;
+            border-color: $input-focus-border-color;
+
+            &:before {
+                left: ($input-switch-width - 2) - $input-switch-circle-size;
+            }
+        }
+
+        &:disabled {
+            background-color: $haze-200;
+            border-color: transparent;
+        }
+    }
+}
+
+.c-switch--right {
+    > label {
+        padding-left: 0;
+        padding-right: $input-switch-width + $spacing-md;
+    }
+
+    > input {
+        left: auto;
+        right: 0;
+    }
+}
+
+
+
+
+//  8. FIELD
+//  ----------------------------------------------------------------------------
+//  Grouped form elements with label and message
+
+.c-field {
+    margin-bottom: $spacing-lg;
+
+    > label{
+        font-size: $font-7-size;
+        line-height: $font-7-height;
+    }
+}
+
+.c-field__message {
+    color: $font-muted-color;
+    font-size: $font-7-size;
+    margin-top: $spacing-xxs;
+}
+
+
+
+//  9. STATE - DISABLED
+//  ----------------------------------------------------------------------------
+
+.c-input.is--disabled,
+.c-input:disabled,
+.c-input[readonly],
+.c-check > input:disabled,
+.c-check > input:disabled:checked {
+    @include input-disabled;
+}
+
+.c-check > input:disabled:checked::before {
+    border-color: $input-disabled-border;
+}
+
+.c-input[readonly],
+.c-check > input:disabled ~ label {
+    cursor: default;
+}
+
+
+
+
+//  10. STATE - FOCUS
+//  ----------------------------------------------------------------------------
+
+.c-input.is--focus,
+.c-input:not(disabled):focus,
+.c-input:not(readonly):focus,
+.c-check  input[type="checkbox"]:focus,
+.c-check  input[type="radio"]:focus,
+.c-switch input[type="checkbox"]:focus {
+    @include input-focus;
+}
+
+
+
+
+//  11. STATE - ERROR
+//  ----------------------------------------------------------------------------
+
+.c-input.is--error,
+.c-field--error .c-input {
+    @include input-error;
+}
+
+.c-input.is--error ~ .c-field__message,
+.c-field--error .c-field__message {
+    color: $input-error-font-color;
+}
+
+
+
+
+//  12. SIZE - SMALL
+//  ----------------------------------------------------------------------------
+
+// .c-input--sm {
+//     height: $input-sm-height;
+//     padding: $input-sm-padding-vertical $input-sm-padding-horizontal;
 // }
 
 
-//  19. APPLICATION - GROUP
+
+
+//  13. SIZE - LARGE
 //  ----------------------------------------------------------------------------
 
-.c-btn-group {
-    display: inline-flex;
-    vertical-align: middle;
-
-    > .c-btn,
-    > .c-dropdown > .c-btn {
-        border-radius: 0;
-        flex: 1;
-
-        &:hover,
-        &.is--active {
-            z-index: 1;
-        }
-
-        &.is--disabled,
-        &:disabled {
-            z-index: 0;
-        }
-    }
-
-    .c-btn,
-    .c-dropdown {
-        &:not(:first-child) {
-            margin-left: -1px;
-        }
-    }
-
-    > .c-btn:first-child,
-    > .c-dropdown:first-child > .c-btn {
-        border-top-left-radius: $button-radius;
-        border-bottom-left-radius: $button-radius;
-    }
-
-    > .c-btn:last-child,
-    > .c-dropdown:last-child > .c-btn {
-        border-top-right-radius: $button-radius;
-        border-bottom-right-radius: $button-radius;
-    }
-}
-
-.c-btn-group--full {
-    display: flex;
-}
+// .c-input--lg {
+//     font-size: $input-lg-font-size + 4;
+//     line-height: $input-lg-font-height;
+//     height: $input-lg-height;
+//     padding: $input-lg-padding-vertical $input-lg-padding-horizontal;
+// }
