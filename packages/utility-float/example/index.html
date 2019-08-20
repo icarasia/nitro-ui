@@ -2,24 +2,46 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Utility Float - Nitro UI</title>
+        <title>Button - Nitro UI</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../dist/utility-float.css">
+        <link rel="stylesheet" href="../dist/float.min.css">
     </head>
-    <body>
-        <div class="container py-5">
-
-            <div class="display-4 text-uppercase">
-                Nitro UI
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h2 class="font-weight-bold mb-3">Button</h2>
+                <div class="text-muted">Buttons communicate an action to happen on user interaction.</div>
             </div>
-            <h1>Utility: Float <span class="small text-danger">@nitro-ui/css-utility-float</span></h1>
-            <p class="text-muted">Utility Float component for Nitro UI.</p>
+        </header>
+        <article>
+            <div class="container  py-5">
+                <div class="u-float-left" style="border: 2px #cc0000 solid; padding: 10px;"></div>
+                <div class="u-float-none" style="border: 2px #cc0000 solid; padding: 10px;"></div>
 
-            <div class="u-float-left" style="border: 2px #cc0000 solid; padding: 10px;"></div>
-            <div class="" style="border: 2px #cc0000 solid; padding: 10px;"></div>
-
-        </div>
-
+                <!-- Styles -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Float Right</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="u-float-right" style="border: 2px #cc0000 solid; padding: 10px  100px;"></div>
+                    </div>
+                </div>
+​
+                <hr class="mt-4  mb-5">
+​
+                <!-- Sizes -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Float Left</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="u-float-left" style="border: 2px #cc0000 solid; padding: 10px  100px;"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+​
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/utility-float.css': [
-                        'src/utility-float.scss'
+                    'dist/float.css': [
+                        'src/float.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/utility-text.min.css': [
-                        'src/utility-text.scss'
+                    'dist/float.min.css': [
+                        'src/float.scss'
                     ]
                 }
             }
