@@ -1,8 +1,8 @@
 {
-    "name": "@nitro-ui/css-utility-float",
+    "name": "@nitro-ui/css-component-pagination",
     "version": "0.0.0",
-    "description": "Utility Float component for Nitro UI.",
-    "main": "dist/utility-float.min.css",
+    "description": "Utility Pagination component for Nitro UI.",
+    "main": "dist/component-pagination.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -17,7 +17,7 @@
         "Utility",
         "Nitro",
         "UI",
-        "Float",
+        "Pagination",
         "CSS",
         "Components",
         "iCarAsia"
