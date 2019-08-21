@@ -2,7 +2,7 @@
     "name": "@nitro-ui/css-utility-float",
     "version": "0.0.0",
     "description": "Utility Float component for Nitro UI.",
-    "main": "dist/utility-text.min.css",
+    "main": "dist/utility-float.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -22,7 +22,7 @@
         "Components",
         "iCarAsia"
     ],
-    "author": "Syaiful Shah Zinan <i.works@live.com>",
+    "author": "NUT Charoonchatapot <19atdesign@gmail.com>",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
