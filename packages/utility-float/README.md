@@ -13,10 +13,6 @@ npm install @nitro-ui/css-utility-float
 Include this stylesheet code into your site:
 
 ```html
-<strong>Float</strong>
-<div class="u-float-left">Float Left</div>
-<div class="u-float-right">Float Right</div>
-<div class="u-float-right">Float None</div>
 
 <strong>Core</strong>
 <p class="u-text-truncate">Text Truncate</p>
@@ -41,6 +37,11 @@ Include this stylesheet code into your site:
 <p class="u-text-medium">Font weight medium</p>
 <p class="u-text-semibold">Font weight semibold</p>
 <p class="u-text-bold">Font weight bold</p>
+<br/>
+<strong>Float</strong>
+<div class="u-float-left">Float Left</div>
+<div class="u-float-right">Float Right</div>
+<div class="u-float-right">Float None</div>
 <br/>
 <strong>Responsive</strong>
 `mobile, tablet, portable`
