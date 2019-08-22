@@ -15,9 +15,26 @@
     </head>
     <body class="bg-light">
         <header class="bg-white border-bottom">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
             <div class="container py-5">
                 <h1 class="font-weight-bold mb-3">Form</h1>
-                <div class="text-muted">Forms provide the most common control styles used in forms, including input, textarea, select, checkbox, radio and switch.</div>
+                <div class="text-muted">
+                    <p>
+                        Forms provide the most common control styles used in forms, including input, textarea, select, checkbox, radio and switch.
+                    </p>
+                    <p>
+                        Note
+                    </p>
+                    <ol>
+                        <li>Input size is still pending</li>
+                        <!-- <li>List</li> -->
+                    </ol>
+                </div>
             </div>
         </header>
         <article>
@@ -132,6 +149,60 @@
                         <div class="c-field">
                             <label>Error</label>
                             <textarea class="c-input  is--error" placeholder="Placeholder"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Select</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="c-field">
+                            <label>Default</label>
+                            <select class="c-input">
+                                <option>Pick a number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="c-field">
+                            <label>Disabled</label>
+                            <select class="c-input" disabled>
+                                <option>Pick a number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="c-field">
+                            <label>Focus</label>
+                            <select class="c-input  is--focus">
+                                <option>Pick a number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="c-field">
+                            <label>Error</label>
+                            <select class="c-input  is--error">
+                                <option>Pick a number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
                         </div>
                     </div>
                 </div>

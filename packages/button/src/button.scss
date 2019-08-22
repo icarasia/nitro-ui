@@ -9,24 +9,23 @@
 //  CONTENTS
 //
 //      1.  DEPENDENCIES
-//      2.  VARIABLES - BASE
-//      3.  VARIABLES - COLORS
-//      4.  CORE
-//      5.  SIZE - LARGE
-//      6.  SIZE - SMALL
-//      7.  SIZE - EXTRA SMALL
-//      8.  SHAPE - FULL
-//      9.  SHAPE - PILL
-//      10. VARIANT - ACTION
-//      11. VARIANT - PRIMARY
-//      12. VARIANT - PRIMARY OUTLINE
-//      13. VARIANT - SECONDARY
-//      14. VARIANT - SECONDARY OUTLINE
-//      15. VARIANT - POSITIVE
-//      16. VARIANT - NEGATIVE
-//      17. APPLICATION - ICON
-//      18. APPLICATION - DROPDOWN
-//      19. APPLICATION - GROUP
+//      2.  VARIABLES
+//      3.  CORE
+//      4.  SIZE - LARGE
+//      5.  SIZE - SMALL
+//      6.  SIZE - EXTRA SMALL
+//      7.  SHAPE - FULL
+//      8.  SHAPE - PILL
+//      9.  VARIANT - ACTION
+//      10. VARIANT - PRIMARY
+//      11. VARIANT - PRIMARY OUTLINE
+//      12. VARIANT - SECONDARY
+//      13. VARIANT - SECONDARY OUTLINE
+//      14. VARIANT - POSITIVE
+//      15. VARIANT - NEGATIVE
+//      16. APPLICATION - ICON
+//      17. APPLICATION - DROPDOWN
+//      18. APPLICATION - GROUP
 //
 //  ----------------------------------------------------------------------------
 
@@ -46,7 +45,7 @@
 @import 'variables';
 
 
-//  4. CORE
+//  3. CORE
 //  ----------------------------------------------------------------------------
 
 .c-btn {
@@ -89,7 +88,7 @@
     color: transparent !important;
 }
 
-//  5. SIZE - LARGE
+//  4. SIZE - LARGE
 //  ----------------------------------------------------------------------------
 
 .c-btn--lg {
@@ -104,7 +103,7 @@
 }
 
 
-//  6. SIZE - SMALL
+//  5. SIZE - SMALL
 //  ----------------------------------------------------------------------------
 
 .c-btn--sm {
@@ -114,7 +113,7 @@
 }
 
 
-//  7. SIZE - EXTRA SMALL
+//  6. SIZE - EXTRA SMALL
 //  ----------------------------------------------------------------------------
 
 .c-btn--xs {
@@ -124,7 +123,7 @@
 }
 
 
-//  8. SHAPE - FULL
+//  7. SHAPE - FULL
 //  ----------------------------------------------------------------------------
 
 .c-btn--full {
@@ -132,7 +131,7 @@
 }
 
 
-//  9. SHAPE - PILL
+//  8. SHAPE - PILL
 //  ----------------------------------------------------------------------------
 
 .c-btn--pill {
@@ -140,7 +139,7 @@
 }
 
 
-//  10. VARIANT - ACTION
+//  9. VARIANT - ACTION
 //  ----------------------------------------------------------------------------
 //  Use this button as marketting button
 
@@ -165,7 +164,7 @@
 }
 
 
-//  11. VARIANT - PRIMARY
+//  10. VARIANT - PRIMARY
 //  ----------------------------------------------------------------------------
 //  Use this button as a dominant or go to button.
 
@@ -199,7 +198,7 @@
 }
 
 
-//  12. VARIANT - PRIMARY OUTLINE
+//  11. VARIANT - PRIMARY OUTLINE
 //  ----------------------------------------------------------------------------
 //  TBD
 
@@ -234,7 +233,7 @@
 }
 
 
-//  13. VARIANT - SECONDARY
+//  12. VARIANT - SECONDARY
 //  ----------------------------------------------------------------------------
 //  Use this button as a normal button.
 
@@ -268,7 +267,7 @@
 }
 
 
-//  14. VARIANT - SECONDARY OUTLINE
+//  13. VARIANT - SECONDARY OUTLINE
 //  ----------------------------------------------------------------------------
 //  TBD
 
@@ -303,21 +302,9 @@
 }
 
 
-//  15. VARIANT - POSITIVE
+//  14. VARIANT - POSITIVE
 //  ----------------------------------------------------------------------------
 //  TBD
-
-$button-positive-fill                    : $green-500 !default;
-$button-positive-border                  : $green-500 !default;
-$button-positive-color                   : $white !default;
-$button-positive-hover-fill              : $green-400 !default;
-$button-positive-hover-border            : $green-400 !default;
-$button-positive-hover-color             : $white !default;
-$button-positive-active-fill             : $green-600 !default;
-$button-positive-active-border           : $green-600 !default;
-$button-positive-active-color            : $white !default;
-$button-positive-loader-first            : $green-300 !default;
-$button-positive-loader-second           : $white !default;
 
 .c-btn--positive {
     background-color: $button-positive-fill;
@@ -349,21 +336,9 @@ $button-positive-loader-second           : $white !default;
 }
 
 
-//  16. VARIANT - NEGATIVE
+//  15. VARIANT - NEGATIVE
 //  ----------------------------------------------------------------------------
 //  TBD
-
-$button-negative-fill                    : $red-500 !default;
-$button-negative-border                  : $red-500 !default;
-$button-negative-color                   : $white !default;
-$button-negative-hover-fill              : $red-400 !default;
-$button-negative-hover-border            : $red-400 !default;
-$button-negative-hover-color             : $white !default;
-$button-negative-active-fill             : $red-600 !default;
-$button-negative-active-border           : $red-600 !default;
-$button-negative-active-color            : $white !default;
-$button-negative-loader-first            : $red-300 !default;
-$button-negative-loader-second           : $white !default;
 
 .c-btn--negative {
     background-color: $button-negative-fill;
@@ -395,7 +370,7 @@ $button-negative-loader-second           : $white !default;
 }
 
 
-//  17. APPLICATION - ICON
+//  16. APPLICATION - ICON
 //  ----------------------------------------------------------------------------
 
 // Icon's spacing
@@ -424,7 +399,7 @@ $button-negative-loader-second           : $white !default;
 }
 
 
-//  18. APPLICATION - DROPDOWN
+//  17. APPLICATION - DROPDOWN
 //  ----------------------------------------------------------------------------
 //  NOTE: Need to resolve icons first OR maybe just use .icon instead, less dependency
 
@@ -442,7 +417,7 @@ $button-negative-loader-second           : $white !default;
 // }
 
 
-//  19. APPLICATION - GROUP
+//  18. APPLICATION - GROUP
 //  ----------------------------------------------------------------------------
 
 .c-btn-group {
