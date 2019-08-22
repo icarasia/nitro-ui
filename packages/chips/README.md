@@ -1,27 +1,54 @@
-# Nitro UI: Button
+# Nitro UI: Chips
 
-Button component for Nitro UI.
+Chips component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-button](https://www.npmjs.com/package/@nitro-ui/css-button):
+Get latest version by installing via [NPM @nitro-ui/css-chips](https://www.npmjs.com/package/@nitro-ui/css-chips):
 
 ```sh
-npm install @nitro-ui/css-button
+npm install @nitro-ui/css-chips
 ```
 
 Include this stylesheet code into your site:
 
 ```html
-<link rel="stylesheet" href="dist/button.min.css" />
+<link rel="stylesheet" href="dist/chips.min.css" />
 ```
 
 ## Usage:
 
-Example with `<a>` tag:
+Example with `<span>` tag:
 
 ```html
-<a href="#" class="">Button Example</a>
+<span class="c-chip" href="#">Chip</span>
+```
+
+Color options:
+
+```html
+<span class="c-chip" href="#">Chip</span>
+<span class="c-chip  c-chip--blue">Blue</span>
+<span class="c-chip  c-chip--blue-light">Blue Light</span>
+<span class="c-chip  c-chip--green">Green</span>
+<span class="c-chip  c-chip--orange">Orange</span>
+<span class="c-chip  c-chip--pink">Pink</span>
+<span class="c-chip  c-chip--purple">Purple</span>
+<span class="c-chip  c-chip--red">Red</span>
+<span class="c-chip  c-chip--yellow">Yellow</span>
+```
+
+Inverted Color options:
+
+```html
+<span class="c-chip  c-chip--blue-inverted">Blue</span>
+<span class="c-chip  c-chip--blue-light-inverted">Blue Light</span>
+<span class="c-chip  c-chip--green-inverted">Green</span>
+<span class="c-chip  c-chip--orange-inverted">Orange</span>
+<span class="c-chip  c-chip--pink-inverted">Pink</span>
+<span class="c-chip  c-chip--purple-inverted">Purple</span>
+<span class="c-chip  c-chip--red-inverted">Red</span>
+<span class="c-chip  c-chip--yellow-inverted">Yellow</span>
 ```
 
 ## Development
