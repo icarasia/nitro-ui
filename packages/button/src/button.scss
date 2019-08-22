@@ -40,99 +40,10 @@
 
 
 
-//  2. VARIABLES - BASE
+//  2. VARIABLES
 //  ----------------------------------------------------------------------------
 
-$button-radius                      : 4px !default;
-$button-font-color                  : $dark-400 !default;
-$button-font-family                 : $font-base-family !default;
-$button-font-height                 : 24px !default;
-$button-font-size                   : $font-base-size !default;
-$button-font-weight                 : $font-weight-medium !default;
-$button-icon-size                   : 16px !default;
-$button-padding-horizontal          : 24px !default;
-$button-padding-vertical            : 7px !default;
-$button-transition                  : all ease .4s !default;
-
-$button-lg-radius                   : 8px;
-$button-lg-font-size                : 16px !default;
-$button-lg-font-height              : 24px !default;
-$button-lg-icon-size                : 20px !default;
-$button-lg-padding-horizontal       : 32px !default;
-$button-lg-padding-vertical         : 11px !default;
-
-$button-sm-font-size                : 14px !default;
-$button-sm-font-height              : 24px !default;
-$button-sm-padding-horizontal       : 12px !default;
-$button-sm-padding-vertical         : 3px !default;
-
-$button-xs-font-size                : 12px !default;
-$button-xs-font-height              : 22px !default;
-$button-xs-padding-horizontal       : 8px !default;
-$button-xs-padding-vertical         : 0 !default;
-
-
-
-//  3. VARIABLES - COLORS
-//  ----------------------------------------------------------------------------
-
-$button-action                          : $yellow-400 !default;
-$button-action-color                    : $dark-400 !default;
-$button-action-hover                    : $yellow-500 !default;
-$button-action-active                   : $yellow-500 !default;
-$button-action-loader-first             : $yellow-600 !default;
-$button-action-loader-second            : $yellow-700 !default;
-
-$button-primary-fill                    : $blue-500 !default;
-$button-primary-color                   : $white !default;
-$button-primary-border                  : $blue-500 !default;
-$button-primary-hover-fill              : $blue-400 !default;
-$button-primary-hover-border            : $blue-400 !default;
-$button-primary-hover-color             : $white !default;
-$button-primary-active-fill             : $blue-600 !default;
-$button-primary-active-border           : $blue-600 !default;
-$button-primary-active-color            : $white !default;
-$button-primary-loader-first            : $blue-300 !default;
-$button-primary-loader-second           : $blue-100 !default;
-
-$button-primary-outline-fill            : transparent !default;
-$button-primary-outline-color           : $blue-500 !default;
-$button-primary-outline-border          : $blue-500 !default;
-$button-primary-outline-hover-fill      : $blue-200 !default;
-$button-primary-outline-hover-border    : $button-primary-outline-border !default;
-$button-primary-outline-hover-color     : $button-primary-outline-color !default;
-$button-primary-outline-active-fill     : $button-primary-active-fill !default;
-$button-primary-outline-active-border   : $button-primary-active-border !default;
-$button-primary-outline-active-color    : $button-primary-active-color !default;
-$button-primary-outline-loader-first    : $blue-200 !default;
-$button-primary-outline-loader-second   : $blue-400 !default;
-
-$button-secondary-fill                  : $haze-200 !default;
-$button-secondary-color                 : $dark-400 !default;
-$button-secondary-border                : $haze-300 !default;
-$button-secondary-hover-fill            : $haze-100 !default;
-$button-secondary-hover-border          : $haze-400 !default;
-$button-secondary-hover-color           : $dark-400 !default;
-$button-secondary-active-fill           : $haze-300 !default;
-$button-secondary-active-border         : $haze-400 !default;
-$button-secondary-active-color          : $dark-400 !default;
-$button-secondary-loader-first          : $haze-700 !default;
-$button-secondary-loader-second         : $haze-200 !default;
-
-$button-secondary-outline-fill          : transparent !default;
-$button-secondary-outline-border        : $button-secondary-border !default;
-$button-secondary-outline-color         : $button-secondary-color !default;
-$button-secondary-outline-hover-fill    : $button-secondary-fill !default;
-$button-secondary-outline-hover-border  : $button-secondary-border !default;
-$button-secondary-outline-hover-color   : $button-secondary-color !default;
-$button-secondary-outline-active-fill   : $button-secondary-active-fill !default;
-$button-secondary-outline-active-border : $button-secondary-active-border !default;
-$button-secondary-outline-active-color  : $button-secondary-active-color !default;
-$button-secondary-outline-loader-first  : $haze-300 !default;
-$button-secondary-outline-loader-second : $haze-600 !default;
-
-$button-disable-opacity                 : 0.3 !default;
-$button-secondary-disable-opacity       : 0.4 !default;
+@import 'variables';
 
 
 //  4. CORE
@@ -140,7 +51,7 @@ $button-secondary-disable-opacity       : 0.4 !default;
 
 .c-btn {
     background-color: transparent;
-    border: 1px solid transparent;
+    border: $button-border-width solid transparent;
     border-radius: $button-radius;
     color: $button-font-color;
     cursor: pointer;
