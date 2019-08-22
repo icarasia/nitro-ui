@@ -125,36 +125,33 @@ $use-mobile-pagination:      true !default;
             width: auto;
         }
 
-        [lang="en"] {
-            .c-pagination__item.is--active > a:before {
-                content: 'Page ';
-            }
-        }
-
-        [lang="ms"] {
-            .c-pagination__item.is--active > a:before {
-                content: 'Halaman '
-            }
-        }
-
-        [lang="zh"] {
-            .c-pagination__item.is--active > a:before {
-                content: '第 ';
-            }
-            .c-pagination__item.is--active > a:after {
-                content: ' 页';
-            }
-        }
-
-        [lang="th"] {
-            .pagination > li.active > a:before {
-                content: 'หน้า ';
-            }
-        }
+        // [lang="en"] {
+        //     .c-pagination__item.is--active > a:before {
+        //         content: 'Page ';
+        //     }
+        // }
+        //
+        // [lang="ms"] {
+        //     .c-pagination__item.is--active > a:before {
+        //         content: 'Halaman '
+        //     }
+        // }
+        //
+        // [lang="zh"] {
+        //     .c-pagination__item.is--active > a:before {
+        //         content: '第 ';
+        //     }
+        //     .c-pagination__item.is--active > a:after {
+        //         content: ' 页';
+        //     }
+        // }
+        //
+        // [lang="th"] {
+        //     .pagination > li.active > a:before {
+        //         content: 'หน้า ';
+        //     }
+        // }
     }
-
-
-
 }
 
 
