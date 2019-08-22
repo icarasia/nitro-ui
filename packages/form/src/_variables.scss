@@ -1,0 +1,26 @@
+$input-background                   : $white !default;
+$input-border-color                 : $haze-400 !default;
+$input-border-width                 : 1px !default;
+$input-font-color                   : $font-base-color !default;
+$input-font-family                  : $font-base-family !default;
+$input-font-height                  : $font-base-height !default;
+$input-font-size                    : $font-base-size !default;
+$input-height                       : 40px !default;
+$input-radius                       : 4px !default;
+$input-transition-time              : .2s !default;
+$input-padding-vertical             : ($input-height - $input-font-height)/2 !default;
+$input-padding-horizontal           : $spacing-sm !default;
+$input-check-size                   : 16px !default;
+$input-switch-width                 : ($input-check-size*2) - 4 !default;
+$input-switch-height                : $input-check-size !default;
+$input-switch-circle-size           : $input-switch-height - 2 !default;
+
+$input-placholder-font-color        : $haze-300 !default;
+
+$input-hover-border-color           : $blue-400 !default;
+$input-focus-border-color           : $blue-400 !default;
+$input-error-border-color           : $red-300 !default;
+$input-error-font-color             : $font-negative-color !default;
+$input-disabled-background          : $haze-100 !default;
+$input-disabled-border              : $haze-300 !default;
+$input-disabled-color               : $haze-500 !default;
