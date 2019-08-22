@@ -27,11 +27,6 @@ $button-xs-font-height              : 22px !default;
 $button-xs-padding-horizontal       : 8px !default;
 $button-xs-padding-vertical         : 0 !default;
 
-
-
-//  3. VARIABLES - COLORS
-//  ----------------------------------------------------------------------------
-
 $button-action                          : $yellow-400 !default;
 $button-action-color                    : $dark-400 !default;
 $button-action-hover                    : $yellow-500 !default;
@@ -86,6 +81,30 @@ $button-secondary-outline-active-border : $button-secondary-active-border !defau
 $button-secondary-outline-active-color  : $button-secondary-active-color !default;
 $button-secondary-outline-loader-first  : $haze-300 !default;
 $button-secondary-outline-loader-second : $haze-600 !default;
+
+$button-positive-fill                    : $green-500 !default;
+$button-positive-border                  : $green-500 !default;
+$button-positive-color                   : $white !default;
+$button-positive-hover-fill              : $green-400 !default;
+$button-positive-hover-border            : $green-400 !default;
+$button-positive-hover-color             : $white !default;
+$button-positive-active-fill             : $green-600 !default;
+$button-positive-active-border           : $green-600 !default;
+$button-positive-active-color            : $white !default;
+$button-positive-loader-first            : $green-300 !default;
+$button-positive-loader-second           : $white !default;
+
+$button-negative-fill                    : $red-500 !default;
+$button-negative-border                  : $red-500 !default;
+$button-negative-color                   : $white !default;
+$button-negative-hover-fill              : $red-400 !default;
+$button-negative-hover-border            : $red-400 !default;
+$button-negative-hover-color             : $white !default;
+$button-negative-active-fill             : $red-600 !default;
+$button-negative-active-border           : $red-600 !default;
+$button-negative-active-color            : $white !default;
+$button-negative-loader-first            : $red-300 !default;
+$button-negative-loader-second           : $white !default;
 
 $button-disable-opacity                 : 0.3 !default;
 $button-secondary-disable-opacity       : 0.4 !default;
