@@ -2,26 +2,36 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Button - Nitro UI</title>
+        <title>Pagination - Nitro UI</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="../dist/pagination.min.css">
     </head>
     <body class="bg-light">
         <header class="bg-white border-bottom">
             <div class="container py-5">
-                <h2 class="font-weight-bold mb-3">Float</h2>
-                <div class="text-muted">Float need import mixins for responsive</div>
+                <h2 class="font-weight-bold mb-3">Pagination</h2>
+                <div class="text-muted">Pagination indicate a series of related content exists across multiple pages</div>
             </div>
         </header>
         <article>
             <div class="container  py-5">
-                <!-- Float Right -->
+                <!-- Pagination -->
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="text-muted">Float Right</div>
+                        <div class="text-muted">Basic</div>
                     </div>
                     <div class="col-md-8">
-                        <div class="u-float-right" style="border: 2px #cc0000 solid; padding: 10px  100px;">Float Right</div>
+                        <ul class="c-pagination">
+                    <li class="c-pagination__first"><span class="c-btn  c-btn--sm  c-btn--secondary-outline  is--disabled">First</span></li>
+                    <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--secondary-outline">Prev</a></li>
+                    <li class="c-pagination__item  is--active"><a href="#">1</a></li>
+                    <li class="c-pagination__item"><a href="#">2</a></li>
+                    <li class="c-pagination__item"><a href="#">3</a></li>
+                    <li class="c-pagination__item"><a href="#">4</a></li>
+                    <li class="c-pagination__item"><a href="#">5</a></li>
+                    <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--secondary-outline">Next</a></li>
+                    <li class="c-pagination__last"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Last</a></li>
+                </ul>
                     </div>
                 </div>
 ​

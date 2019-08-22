@@ -1,8 +1,8 @@
 //  ----------------------------------------------------------------------------
 //
-//  Nitro UI: Utility Float
+//  Nitro UI: Utility Pagination
 //
-//  Utility Float component for Nitro UI.
+//  Utility Pagination component for Nitro UI.
 //
 //  ----------------------------------------------------------------------------
 //
@@ -18,24 +18,24 @@
 
 
 
-
 //  1. Dependencies
 //  ----------------------------------------------------------------------------
 
 @import '@nitro-ui/css-core/src/mixins';
+@import '@nitro-ui/css-core/src/variables';
 
 
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
-$use-portable-float:    true !default;
-$use-mobile-float:      true !default;
+$use-portable-pagination:    true !default;
+$use-mobile-pagination:      true !default;
 
 
 //  3. Mixin
 //  ----------------------------------------------------------------------------
 
-@mixin float-setup($breakpoint: 'global') {
+@mixin pagination-setup($breakpoint: 'global') {
 
     $breakpoint-separator: \@ !default;
 
@@ -44,29 +44,137 @@ $use-mobile-float:      true !default;
         $breakpoint: '';
     }
 
-    .u-float-right#{$breakpoint-separator}#{$breakpoint}     { float: right !important }
-    .u-float-left#{$breakpoint-separator}#{$breakpoint}      { float: left  !important }
-    .u-float-none#{$breakpoint-separator}#{$breakpoint}      { float: none  !important }
+    .c-pagination {
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        list-style: none;
+        margin: 16px 0 0;
+
+        .disabled {
+            .c-btn {
+                background-color: transparent !important;
+                border-color: $haze-300 !important;
+                color: $dark-100;
+            }
+        }
+    }
+
+    .c-pagination__item {
+        display: flex;
+        margin: 0 $spacing-xxs;
+
+        > a {
+            align-self: center;
+            border-radius: 1000px;
+            display: block;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            text-decoration: none !important;
+            min-width: 24px;
+            padding: 0 $spacing-xs;
+        }
+
+        &.is--active {
+            > a {
+                background-color: $haze-300;
+                color: $font-muted-color;
+            }
+        }
+    }
+
+    .c-pagination__first {
+        margin: 0 $spacing-md;
+    }
+
+    .c-pagination__last {
+        margin: 0 $spacing-md;
+    }
+
+    .c-pagination__previous {
+        margin-right: auto;
+        order: -1;
+    }
+
+    .c-pagination__next {
+        margin-left: auto;
+        order: 100;
+    }
+
+    .c-pagination__previous,
+    .c-pagination__next {
+        .c-btn {
+            min-width: 88px;
+        }
+    }
+
+    .c-pagination--inline {
+        display: inline-flex;
+    }
+
+    @include media-query('mobile') {
+        .c-pagination__item:not(.is--active),
+        .c-pagination__first,
+        .c-pagination__last {
+            display: none !important;
+        }
+
+        .c-pagination__item.is--active > a {
+            background-color: transparent;
+            width: auto;
+        }
+
+        [lang="en"] {
+            .c-pagination__item.is--active > a:before {
+                content: 'Page ';
+            }
+        }
+
+        [lang="ms"] {
+            .c-pagination__item.is--active > a:before {
+                content: 'Halaman '
+            }
+        }
+
+        [lang="zh"] {
+            .c-pagination__item.is--active > a:before {
+                content: '第 ';
+            }
+            .c-pagination__item.is--active > a:after {
+                content: ' 页';
+            }
+        }
+
+        [lang="th"] {
+            .pagination > li.active > a:before {
+                content: 'หน้า ';
+            }
+        }
+    }
+
+
+
 }
 
 
 //  4. Default
 //  ----------------------------------------------------------------------------
 
-@include float-setup();
+@include pagination-setup();
 
 
 //  5. Responsive
 //  ----------------------------------------------------------------------------
 
-@if $use-portable-float {
+@if $use-portable-pagination {
     @include media-query('portable') {
-        @include float-setup('portable');
+        @include pagination-setup('portable');
     }
 }
 
-@if $use-mobile-float {
+@if $use-mobile-pagination {
     @include media-query('mobile') {
-        @include float-setup('mobile');
+        @include pagination-setup('mobile');
     }
 }
