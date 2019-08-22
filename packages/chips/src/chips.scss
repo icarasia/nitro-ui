@@ -3,8 +3,6 @@
 //  Nitro UI: Chips
 //
 //  Chips component for Nitro UI.
-//  @link: https://github.com/icarasia-engineering/nitro-ui
-//  @since: 0.0.0-beta
 //
 //  ----------------------------------------------------------------------------
 //
@@ -16,11 +14,10 @@
 //      4. Styles
 //
 
-@import '@nitro-ui/css-core/src/core';
-
 //  ----------------------------------------------------------------------------
 //  1. Core
 //  ----------------------------------------------------------------------------
+@import '@nitro-ui/css-core/src/core';
 
 .c-chip {
     background-color: $haze-200;

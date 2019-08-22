@@ -4,17 +4,85 @@
         <meta charset="utf-8">
         <title>Chips - Nitro UI</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../dist/chips.min.css">
     </head>
-    <body>
-        <div class="container py-5">
-
-            <div class="display-4 text-uppercase">
-                Nitro UI
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h2 class="font-weight-bold mb-3">Chips</h2>
+                <div class="text-muted">Chips are complex entities in small blocks.</div>
             </div>
-            <h1>Button <span class="small text-danger">@nitro-ui/css-chips</span></h1>
-            <p class="text-muted">Chips component for Nitro UI.</p>
+        </header>
+        <article>
+            <div class="container py-5">
+                <!-- Basic -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Basic</div>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="c-chip" href="#">Chip</span>
+                    </div>
+                </div>
 
-        </div>
+                <hr class="mt-4  mb-5">
+
+                <!-- Colors -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Colors</div>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="c-chip" href="#">Chip</span>
+                        <span class="c-chip  c-chip--blue">Blue</span>
+                        <span class="c-chip  c-chip--blue-light">Blue Light</span>
+                        <span class="c-chip  c-chip--green">Green</span>
+                        <span class="c-chip  c-chip--orange">Orange</span>
+                        <span class="c-chip  c-chip--pink">Pink</span>
+                        <span class="c-chip  c-chip--purple">Purple</span>
+                        <span class="c-chip  c-chip--red">Red</span>
+                        <span class="c-chip  c-chip--yellow">Yellow</span>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Inverted -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Inverted</div>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="c-chip  c-chip--blue-inverted">Blue</span>
+                        <span class="c-chip  c-chip--blue-light-inverted">Blue Light</span>
+                        <span class="c-chip  c-chip--green-inverted">Green</span>
+                        <span class="c-chip  c-chip--orange-inverted">Orange</span>
+                        <span class="c-chip  c-chip--pink-inverted">Pink</span>
+                        <span class="c-chip  c-chip--purple-inverted">Purple</span>
+                        <span class="c-chip  c-chip--red-inverted">Red</span>
+                        <span class="c-chip  c-chip--yellow-inverted">Yellow</span>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Options -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Options</div>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="c-chip">
+                            <span class="c-chip__avatar  c-avatar  c-avatar--24">
+                                <img src="mockups/images/avatars/avatar-1.png">
+                            </span>
+                            Bruce Lee
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </article>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
