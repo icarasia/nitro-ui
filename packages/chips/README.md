@@ -85,7 +85,7 @@ grunt
 
 # TODO
 
-Nothing todo for now.
+- Adding Chips option with Icons & Avatar
 
 ---
 
