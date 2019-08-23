@@ -1,6 +1,6 @@
-# Nitro UI: Utility Spacing
+# Nitro UI: Utility Text
 
-Utility Spacing component for Nitro UI.
+Utility Text component for Nitro UI.
 
 ## Getting Started
 
