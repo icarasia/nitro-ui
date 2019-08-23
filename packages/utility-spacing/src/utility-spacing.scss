@@ -18,7 +18,8 @@
 //  1. Variables
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/css-core/src/core';
+@import '@nitro-ui/css-core/src/variables';
+@import '@nitro-ui/css-core/src/mixins';
 
 $spacing-xxl                    : 64px !default;
 $spacing-xl                     : 48px !default;
@@ -28,8 +29,8 @@ $spacing-sm                     : 12px !default;
 $spacing-xs                     : 8px  !default;
 $spacing-xxs                    : 4px  !default;
 
-$use-spacing--portable          : true !default;
-$use-spacing--mobile-tablet     : false !default; //other names for portable. Will be true on next version to get rid of portable
+$use-spacing--portable          : true !default; //portable will need to be removed on next release
+$use-spacing--mobile-tablet     : true !default;
 
 $use-spacing--tablet            : true !default;
 $use-spacing--mobile            : true !default;
@@ -177,7 +178,6 @@ $use-spacing--mobile-small      : false !default;
         }
     }
 
-    // currently mobile-tablet in false state - will be true on next version
     @if $use-spacing--mobile-tablet{
 
         @include media-query('mobile-tablet') {
