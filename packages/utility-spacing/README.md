@@ -87,14 +87,12 @@ Spacing also supports the responsive abilities for non-desktop devices. Just add
 
 List of responsive breakpoint available
 
-```html
-@portable (starts on 1080px and below)
-@mobile-tablet (starts on 1080px and below)
-@tablet (starts on 768px to 1080px)
-@mobile (starts on 767px and below)
-@mobile-small (starts on 321px and below)
 
-```
+`@portable`     : starts at 1080px and below <br/>
+`@mobile-tablet` : starts at 1080px and below <br/>
+`@tablet` : starts at 768px to 1080px<br/>
+`@mobile` : starts at 767px and below<br/>
+`@mobile-small` : starts at 321px and below<br/>
 
 ## Development
 
