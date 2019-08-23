@@ -1,29 +1,66 @@
-# Nitro UI: Utility Text
+# Nitro UI: Utility Spacing
 
-Utility Text component for Nitro UI.
+Utility Spacing component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-text](https://www.npmjs.com/package/@nitro-ui/css-utility-text):
+Get latest version by installing via [NPM @nitro-ui/css-utility-spacing](https://www.npmjs.com/package/@nitro-ui/css-utility-spacing):
 
 ```sh
-npm install @nitro-ui/css-utility-text
+npm install @nitro-ui/css-utility-spacing
 ```
 
-Include this stylesheet code into your site:
+### Spacing type
+
+The spacing consist of 7 spacing sizes:
 
 ```html
-<p class="text-primary">Text Primary</p>
-<p class="text-muted">Text Muted</p>
+xxl - 64px
+xl - 48px
+lg - 24px
+md - 16px
+sm - 12px
+xs - 8px
+xxs - 4px
 ```
 
-## Usage:
-
-Example with `<a>` tag:
+### Usage for padding
 
 ```html
-<a href="#" class="text-primary">Text Link Primary</a>
-<a href="#" class="text-muted">Text Link Muted</a>
+<div class="u-padding-lg"></div>
+<div class="u-padding-sides-sm"></div>
+<div class="u-padding-bottom-xl"></div>
+```
+
+
+### Usage for margin
+
+```html
+<div class="u-margin-lg"></div>
+<div class="u-margin-sides-sm"></div>
+<div class="u-margin-bottom-xl"></div>
+```
+
+### Usage for Responsiveness
+
+Spacing also supports the responsive abilities for non-desktop devices. Just add the classname with breakpoint property `u-[spacing-type]-[spacing-size]@[responsive-breakpoint]`.
+
+```html
+<div class="u-margin-lg  u-margin-bottom-xs@mobile"></div>
+<div class="u-padding-sides-sm  u-padding-sides-lg@mobile-tablet"></div>
+<div class="u-margin-bottom-xl  u-margin-bottom-xs@mobile"></div>
+<div class="u-margin-bottom-xs@mobile-small"></div>
+```
+
+List of responsive breakpoint available
+
+```html
+@portable (starts on 1080px and below)
+@mobile-tablet (starts on 1080px and below)
+@tablet (starts on 768px to 1080px)
+@mobile (starts on 767px and below)
+@mobile-small (starts on 321px and below)
+
 ```
 
 ## Development
@@ -71,6 +108,6 @@ All notable changes to this project will be documented in this file. **For now, 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.0.0-beta] - 2019-07-18
+## [0.0.0-beta] - 2019-08-23
 ### Added
-- Initial setup
+- Initial setup for spacing

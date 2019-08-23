@@ -285,3 +285,22 @@ $mobile-small-start            : 321px  !default;
     overflow:hidden;
     text-overflow:ellipsis;
 }
+
+
+//  11. FUNCTION : Text contrast
+//  ----------------------------------------------------------------------------
+//  Color contrast function to return text dark / text light based on its background color
+
+@function color-yiq($color) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+
+    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+    @if ($yiq >= $yiq-contrasted-threshold) {
+        @return $yiq-text-dark;
+    } @else {
+        @return $yiq-text-light;
+    }
+}

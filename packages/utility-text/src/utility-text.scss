@@ -10,12 +10,16 @@
 //
 //      1. Variables
 //      2. Core
-//      3. Responsive - Tablet & Mobile
+//      3. Responsive - Portable
+//      4. Responsive - Tablet
+//      5. Responsive - Mobile
 //
 //  ----------------------------------------------------------------------------
 //  1. Variables
 //  ----------------------------------------------------------------------------
+@import '@nitro-ui/css-core/src/core';
 
+$responsive-text-portable   : true !default;
 $use-u-text--tablet         : false !default;
 $use-u-text--mobile         : true !default;
 
@@ -23,7 +27,7 @@ $use-u-text--mobile         : true !default;
 //  2. Core
 //  ----------------------------------------------------------------------------
 
-.u-text-truncate        { @include truncate(100%) }
+.u-text-truncate        { @include text-truncate(100%) }
 .u-text-strike          { text-decoration: line-through; }
 .u-text-clamp           { overflow: hidden; word-break: break-word; }
 .u-text-unstyled        { text-decoration: none !important; }
@@ -156,17 +160,32 @@ $use-u-text--mobile         : true !default;
 
 
 //  ----------------------------------------------------------------------------
-//  3. Responsive - tablet mobile
+//  3. Responsive - Portable
+//  ----------------------------------------------------------------------------
+@if $responsive{
+    @if $responsive-text-portable {
+        @include media-query(portable) {
+            @include text-size-setup('portable');
+        }
+    }
+
+
+//  ----------------------------------------------------------------------------
+//  4. Responsive - Tablet
 //  ----------------------------------------------------------------------------
 
-@if $responsive {
-
+// we plan to use $responsive-text-tablet please change the variable name on next update.
+//currently $use-u-text--tablet using at Autospinn, SPC, iCarSuite project
+//Please update accordingly
     @if $use-u-text--tablet {
         @include media-query(tablet) {
             @include text-size-setup('tablet');
         }
     }
 
+//  ----------------------------------------------------------------------------
+//  5. Responsive - Mobile
+//  ----------------------------------------------------------------------------
     @if $use-u-text--mobile {
         @include media-query(mobile) {
             @include text-size-setup('mobile');
