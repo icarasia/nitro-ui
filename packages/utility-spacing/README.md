@@ -1,6 +1,6 @@
-# Nitro UI: Utility Text
+# Nitro UI: Utility Spacing
 
-Utility Text component for Nitro UI.
+Utility Spacing component for Nitro UI.
 
 ## Getting Started
 
@@ -69,6 +69,7 @@ Use `none` to reset margin
 
 Margin support `auto` property
 ```html
+Spacing
 <div class="u-margin-auto"></div>
 <div class="u-margin-sides-auto"></div>
 <div class="u-margin-sides-auto@mobile"></div>
