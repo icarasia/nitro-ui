@@ -20,6 +20,7 @@ Available property class
 `top` : to add padding / margin on top<br/>
 `bottom` : to add padding / margin on bottom<br/>
 `left` : to add padding / margin on left<br/>
+`right` : to add padding / margin on right<br/>
 
 ### Spacing size
 
