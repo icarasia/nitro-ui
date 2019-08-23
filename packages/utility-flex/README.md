@@ -1,98 +1,102 @@
-# Nitro UI: Utility Text
+# Nitro UI: Utility Flex
 
-Utility Text component for Nitro UI.
+Utility Flex component for Nitro UI. Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-spacing](https://www.npmjs.com/package/@nitro-ui/css-utility-spacing):
+Get latest version by installing via [NPM @nitro-ui/css-utility-flex](https://www.npmjs.com/package/@nitro-ui/css-utility-spacing):
 
 ```sh
-npm install @nitro-ui/css-utility-spacing
+npm install @nitro-ui/css-utility-flex
 ```
 
+### Enable Flex behaviors
 
-### Property classes
-
-Available property class
-
-`sides` : to add padding / margin on left & right<br/>
-`ends` : to add padding / margin on top & bottom<br/>
-`top` : to add padding / margin on top<br/>
-`bottom` : to add padding / margin on bottom<br/>
-`left` : to add padding / margin on left<br/>
-`right` : to add padding / margin on right<br/>
-
-### Spacing size
-
-The spacing consist of 7 spacing sizes:
+To make the flexbox enable apply `u-flex` class to create a flexbox container and transform direct child elements into flex items.
 
 ```html
-xxl - 64px
-xl - 48px
-lg - 24px
-md - 16px
-sm - 12px
-xs - 8px
-xxs - 4px
+<div class="u-flex">I am a flexbox container</div>
+```
+```html
+<div class="u-inline-flex">I am an inline flexbox container</div>
 ```
 
-### Usage for padding
+Responsive variations class also exist for display `u-flex` and `u-inline-flex`
 
 ```html
-<div class="u-padding-lg"></div>
-<div class="u-padding-sides-sm"></div>
-<div class="u-padding-bottom-xl"></div>
+.u-flex@desktop
+.u-flex@portable
+.u-flex@tablet
+.u-flex@mobile
+
+.u-inline-flex@desktop
+.u-inline-flex@portable
+.u-inline-flex@tablet
+.u-inline-flex@mobile
 ```
 
-Use `none` to reset padding
-```html
-<div class="u-padding-none"></div>
-<div class="u-padding-sides-none"></div>
-<div class="u-padding-bottom-none@mobile"></div>
-```
+### Direction
 
-
-### Usage for margin
-
-```html
-<div class="u-margin-lg"></div>
-<div class="u-margin-sides-sm"></div>
-<div class="u-margin-bottom-xl"></div>
-```
-
-Use `none` to reset margin
-```html
-<div class="u-margin-none"></div>
-<div class="u-margin-sides-none"></div>
-<div class="u-margin-bottom-none@mobile"></div>
-```
-
-Margin support `auto` property
-```html
-<div class="u-margin-auto"></div>
-<div class="u-margin-sides-auto"></div>
-<div class="u-margin-sides-auto@mobile"></div>
-```
-
-### Usage for Responsiveness
-
-Spacing also supports the responsive abilities for non-desktop devices. Just add the classname with breakpoint property `u-[spacing-type]-[spacing-size]@[responsive-breakpoint]`.
+Use `.u-flex--row` or `u-direction-row` to set a horizontal direction (the browser default), or `.u-flex--row-reverse` or `u-direction-row-reverse` to start the horizontal direction from the opposite side.
 
 ```html
-<div class="u-margin-lg  u-margin-bottom-xs@mobile"></div>
-<div class="u-padding-sides-sm  u-padding-sides-lg@mobile-tablet"></div>
-<div class="u-margin-bottom-xl  u-margin-bottom-xs@mobile"></div>
-<div class="u-margin-bottom-xs@mobile-small"></div>
+<div class="u-flex u-flex--row">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="u-flex u-flex--row-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
 ```
 
-List of responsive breakpoint available
+Use `.u-flex--column` or `.u-direction-column`  to set a vertical direction, or `.u-flex--column-reverse` or `u-direction-column-reverse` to start the vertical direction from the opposite side.
+
+```html
+<div class="u-flex u-flex--colum">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="u-flex u-flex--column-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+```
+
+Responsive variations also exist for flex direction.
+
+```html
+.u-flex--row / .u-direction-row
+.u-flex--row@desktop / .u-direction-row@desktop
+.u-flex--row@portable / .u-direction-row@portable
+.u-flex--row@tablet / .u-direction-row@tablet
+.u-flex--row@mobile / .u-direction-row@mobile
+
+.u-flex--row-reverse / .u-direction-row-reverse
+.u-flex--row-reverse@desktop / .u-direction-row-reverse@desktop
+.u-flex--row-reverse@portable / .u-direction-row-reverse@portable
+.u-flex--row-reverse@tablet / .u-direction-row-reverse@tablet
+.u-flex--row-reverse@mobile / .u-direction-row-reverse@mobile
+
+.u-flex--column / .u-direction-column
+.u-flex--column@desktop / .u-direction-column@desktop
+.u-flex--column@portable / .u-direction-column@portable
+.u-flex--column@tablet / .u-direction-column@tablet
+.u-flex--column@mobile / .u-direction-column@mobile
+
+.u-flex--column-reverse / .u-direction-column-reverse
+.u-flex--column-reverse@desktop / .u-direction-column-reverse@desktop
+.u-flex--column-reverse@portable / .u-direction-column-reverse@portable
+.u-flex--column-reverse@tablet / .u-direction-column-reverse@tablet
+.u-flex--column-reverse@mobile / .u-direction-column-reverse@mobile
 
 
-`@portable`     : starts at 1080px and below <br/>
-`@mobile-tablet` : starts at 1080px and below <br/>
-`@tablet` : starts at 768px to 1080px<br/>
-`@mobile` : starts at 767px and below<br/>
-`@mobile-small` : starts at 321px and below<br/>
+```
+
 
 ## Development
 

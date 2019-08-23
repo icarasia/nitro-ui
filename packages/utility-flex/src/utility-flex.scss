@@ -14,11 +14,15 @@
 //      4. Responsive - Tablet
 //      5. Responsive - Mobile
 //
-//  ----------------------------------------------------------------------------
-//  1. Variables
-//  ----------------------------------------------------------------------------
 
-$use-u-flex : true !default;
+@import '@nitro-ui/css-core/src/variables';
+@import '@nitro-ui/css-core/src/mixins';
+
+$use-u-flex             : true !default;
+$use-u-flex--desktop    : true !default;
+$use-u-flex--portable   : true !default;
+$use-u-flex--tablet     : true !default;
+$use-u-flex--mobile     : true !default;
 
 
 @mixin flex-setup($breakpoint: 'global') {
@@ -163,4 +167,4 @@ $use-u-flex : true !default;
             }
         }
     }
-} // End : @mixin tile-setup($size, $breakpoint: 'global')
+}
