@@ -10,7 +10,18 @@ Get latest version by installing via [NPM @nitro-ui/css-utility-spacing](https:/
 npm install @nitro-ui/css-utility-spacing
 ```
 
-### Spacing type
+
+### Property classes
+
+Available property class
+
+`sides` : to add padding / margin on left & right<br/>
+`ends` : to add padding / margin on top & bottom<br/>
+`top` : to add padding / margin on top<br/>
+`bottom` : to add padding / margin on bottom<br/>
+`left` : to add padding / margin on left<br/>
+
+### Spacing size
 
 The spacing consist of 7 spacing sizes:
 
@@ -32,6 +43,13 @@ xxs - 4px
 <div class="u-padding-bottom-xl"></div>
 ```
 
+Use `none` to reset padding
+```html
+<div class="u-padding-none"></div>
+<div class="u-padding-sides-none"></div>
+<div class="u-padding-bottom-none@mobile"></div>
+```
+
 
 ### Usage for margin
 
@@ -39,6 +57,20 @@ xxs - 4px
 <div class="u-margin-lg"></div>
 <div class="u-margin-sides-sm"></div>
 <div class="u-margin-bottom-xl"></div>
+```
+
+Use `none` to reset margin
+```html
+<div class="u-margin-none"></div>
+<div class="u-margin-sides-none"></div>
+<div class="u-margin-bottom-none@mobile"></div>
+```
+
+Margin support `auto` property
+```html
+<div class="u-margin-auto"></div>
+<div class="u-margin-sides-auto"></div>
+<div class="u-margin-sides-auto@mobile"></div>
 ```
 
 ### Usage for Responsiveness
