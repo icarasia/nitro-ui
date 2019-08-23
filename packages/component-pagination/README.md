@@ -1,19 +1,19 @@
 # Nitro UI: Utility Float
 
-Utility Float component for Nitro UI.
+Utility Pagination component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-float](https://www.npmjs.com/package/@nitro-ui/css-utility-float):
+Get latest version by installing via [NPM @nitro-ui/css-utility-pagination](https://www.npmjs.com/package/@nitro-ui/css-utility-pagination):
 
 ```sh
-npm install @nitro-ui/css-utility-float
+npm install @nitro-ui/css-utility-pagination
 ```
 
 Include this stylesheet code into your site:
 
 ```html
-<strong>Float</strong>
+<strong>Pagination</strong>
 <div class="u-float-left">Float Left</div>
 <div class="u-float-right">Float Right</div>
 <div class="u-float-none">Float None</div>
