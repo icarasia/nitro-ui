@@ -17,18 +17,18 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/object-container.css': [
-                        'src/object-container.scss'
+                    'dist/object-grid.css': [
+                        'src/object-grid.scss'
                     ]
                 }
             },
             compressed: {
                 options: {
-                    style: 'compressed'
+                    outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/object-container.min.css': [
-                        'src/object-container.scss'
+                    'dist/object-grid.min.css': [
+                        'src/object-grid.scss'
                     ]
                 }
             }
