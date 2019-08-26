@@ -268,6 +268,68 @@ Responsive variations also exist for `u-flex--items`.
 .u-flex--items-stretch@mobile / .u-align-items-stretch@mobile
 ```
 
+### Align content
+
+Use `u-flex--content-*` or `u-align-content-*` utilities on flexbox containers to align flex items together on the cross axis. Choose *  from `start` (browser default), `end`, `center`, `between`, `around`, or `stretch`.
+
+Heads up! This property has no effect on single rows of flex items.
+
+```html
+<div class="u-flex u-flex--content-start  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-flex--content-end  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-flex--content-center  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-flex--content-between  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-flex--content-around  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-flex--content-stretch  u-flex--wrap">
+  ...
+</div>
+```
+
+or
+
+```html
+<div class="u-flex u-align-content-start  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-align-content-end  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-align-content-center  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-align-content-between  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-align-content-around  u-flex--wrap">
+  ...
+</div>
+
+<div class="u-flex u-align-content-stretch  u-flex--wrap">
+  ...
+</div>
+```
+
+## Flex Child items utilities
+
 ### Align self
 
 Use `u-flex__self` utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if `flex-direction: column`). Choose from the same options as align-items: `auto`, `start`, `end`, `center`, `baseline`, or `stretch` (browser default). Align self is a utilities class that apply to the Flex children thus the class modifier will be using `__`
@@ -431,8 +493,96 @@ Unfortunately, **IE10** and **IE11** do not properly support auto margins on fle
 </div>
 ```
 
+### Order
 
+Change the visual order of specific flex items with a handful of `order` utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As order takes any integer value (e.g., 5), add custom CSS for any additional values needed. Choose from `0` to `12` or `first` and `last`.
 
+```html
+<div class="u-flex  u-flex--nowrap">
+  <div class="u-order-3">First flex item</div>
+  <div class="u-order-2">Second flex item</div>
+  <div class="u-order-1">Third flex item</div>
+</div>
+```
+
+Responsive variations also exist for `order`.
+
+```html
+.u-order-first
+.u-order-last
+.u-order-1
+.u-order-2
+.u-order-3
+.u-order-4
+.u-order-5
+.u-order-6
+.u-order-7
+.u-order-8
+.u-order-9
+.u-order-10
+.u-order-11
+.u-order-12
+
+.u-order-first@desktop
+.u-order-last@desktop
+.u-order-1@desktop
+.u-order-2@desktop
+.u-order-3@desktop
+.u-order-4@desktop
+.u-order-5@desktop
+.u-order-6@desktop
+.u-order-7@desktop
+.u-order-8@desktop
+.u-order-9@desktop
+.u-order-10@desktop
+.u-order-11@desktop
+.u-order-12@desktop
+
+.u-order-first@portable
+.u-order-last@portable
+.u-order-1@portable
+.u-order-2@portable
+.u-order-3@portable
+.u-order-4@portable
+.u-order-5@portable
+.u-order-6@portable
+.u-order-7@portable
+.u-order-8@portable
+.u-order-9@portable
+.u-order-10@portable
+.u-order-11@portable
+.u-order-12@portable
+
+.u-order-first@tablet
+.u-order-last@tablet
+.u-order-1@tablet
+.u-order-2@tablet
+.u-order-3@tablet
+.u-order-4@tablet
+.u-order-5@tablet
+.u-order-6@tablet
+.u-order-7@tablet
+.u-order-8@tablet
+.u-order-9@tablet
+.u-order-10@tablet
+.u-order-11@tablet
+.u-order-12@tablet
+
+.u-order-first@mobile
+.u-order-last@mobile
+.u-order-1@mobile
+.u-order-2@mobile
+.u-order-3@mobile
+.u-order-4@mobile
+.u-order-5@mobile
+.u-order-6@mobile
+.u-order-7@mobile
+.u-order-8@mobile
+.u-order-9@mobile
+.u-order-10@mobile
+.u-order-11@mobile
+.u-order-12@mobile
+```
 
 ## Development
 
