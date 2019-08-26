@@ -4,27 +4,28 @@ Utility Pagination component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-pagination](https://www.npmjs.com/package/@nitro-ui/css-utility-pagination):
+Get latest version by installing via [NPM @nitro-ui/css-component-pagination](https://www.npmjs.com/package/@nitro-ui/css-component-pagination):
 
 ```sh
-npm install @nitro-ui/css-utility-pagination
+npm install @nitro-ui/css-component-pagination
 ```
 
 Include this stylesheet code into your site:
 
 ```html
 <strong>Pagination</strong>
-<div class="u-float-left">Float Left</div>
-<div class="u-float-right">Float Right</div>
-<div class="u-float-none">Float None</div>
-<br/>
+<ul class="c-pagination" style="padding-left:0;">
+    <li class="c-pagination__first"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">First</a></li>
+    <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Prev</a></li>
+    <li class="c-pagination__item"><a href="#">1</a></li>
+    <li class="c-pagination__item  is--active"><a href="#">2</a></li>
+    <li class="c-pagination__item"><a href="#">3</a></li>
+    <li class="c-pagination__item"><a href="#">4</a></li>
+    <li class="c-pagination__item"><a href="#">5</a></li>
+    <li class="c-pagination__last"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Last</a></li>
+    <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Next</a></li>
+</ul>
 
-<strong>Responsive</strong>
-`mobile, portable`
-<p class="u-float-left@mobile">Float left @ Mobile</p>
-<p class="u-float-left@portable">Float left @ Portable</p>
-<p class="u-float-left">Float left @ All screen</p>
-<br/>
 ```
 
 ## Usage:
@@ -32,7 +33,7 @@ Include this stylesheet code into your site:
 Example with `<a>` tag:
 
 ```html
-<div href="#" class="u-float-left  u-float-right@portable  u-float-none@mobile">Float Left Primary, Float Right @ Portable, Float None @ Mobile</div>
+
 ```
 
 ## Development

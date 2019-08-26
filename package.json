@@ -25,5 +25,8 @@
   "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
   "devDependencies": {
     "lerna": "^3.15.0"
+  },
+  "dependencies": {
+    "@nitro-ui/css-button": "^1.0.0-beta.1"
   }
 }

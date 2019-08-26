@@ -25,118 +25,97 @@
 //  2. Mixin
 //  ----------------------------------------------------------------------------
 
-@mixin pagination-setup($breakpoint: 'global') {
 
-    $breakpoint-separator: \@ !default;
+.c-pagination {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    margin: 16px 0 0;
 
-    @if $breakpoint == 'global' {
-        $breakpoint-separator: '';
-        $breakpoint: '';
-    }
-
-    .c-pagination#{$breakpoint-separator}#{$breakpoint} {
-        align-items: center;
-        justify-content: space-around;
-        display: flex;
-        list-style: none;
-        margin: 16px 0 0;
-
-        .disabled {
-            .c-btn {
-                background-color: transparent !important;
-                border-color: $haze-300 !important;
-                color: $dark-100;
-            }
-        }
-
-        .c-pagination__first {
-            margin: 0 $spacing-md;
-        }
-
-        .c-pagination__last {
-            margin: 0 $spacing-md;
-        }
-
-        .c-pagination__previous {
-            margin-right: auto;
-            order: -1;
-        }
-
-        .c-pagination__next {
-            margin-left: auto;
-            order: 100;
-        }
-
-        .c-pagination__previous,
-        .c-pagination__next {
-            .c-btn {
-                min-width: 88px;
-            }
+    .disabled {
+        .c-btn {
+            background-color: transparent !important;
+            border-color: $haze-300 !important;
+            color: $dark-100;
         }
     }
 
-    .c-pagination--inline {
-        display: inline-flex;
+    .c-pagination__first {
+        margin: 0 $spacing-md;
+        order: -1;
+        margin-right: auto;
     }
 
-    .c-pagination__item {
-        display: flex;
-        margin: 0 $spacing-xxs;
+    .c-pagination__last {
+        margin: 0 $spacing-md;
+        order: 100;
+        margin-left: auto;
+    }
 
+    .c-pagination__previous {
+        margin: 0 $spacing-md;
+    }
+
+    .c-pagination__next {
+        margin: 0 $spacing-md;
+    }
+}
+
+.c-pagination--inline {
+    display: inline-flex;
+}
+
+.c-pagination__item {
+    display: flex;
+    margin: 0 $spacing-xxs;
+
+    > a {
+        align-self: center;
+        border-radius: 1000px;
+        display: block;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        text-decoration: none !important;
+        min-width: 24px;
+        padding: 0 $spacing-xs;
+    }
+
+    &.is--active {
         > a {
-            align-self: center;
-            border-radius: 1000px;
-            display: block;
-            height: 24px;
-            line-height: 24px;
-            text-align: center;
-            text-decoration: none !important;
-            min-width: 24px;
-            padding: 0 $spacing-xs;
-        }
-
-        &.is--active {
-            > a {
-                background-color: $haze-300;
-                color: $font-muted-color;
-            }
-        }
-    }
-    @include media-query('mobile') {
-        .c-pagination__item:not(.is--active),
-        .c-pagination__first,
-        .c-pagination__last {
-           display: none !important;
-        }
-
-        .c-pagination__item {
-            &.is--active {
-                > a {
-                    background-color: transparent;
-                    width: auto;
-                }
-            }
+            background-color: $haze-300;
+            color: $font-muted-color;
         }
     }
 }
+
+
 
 //  3. Default
 //  ----------------------------------------------------------------------------
 
 
-
-@include pagination-setup();
-
 //  4. Variables
 //  ----------------------------------------------------------------------------
 
-$use-mobile-pagination:      true !default;
 
 //  5. Responsive
 //  ----------------------------------------------------------------------------
 
-@if $use-mobile-pagination {
-    @include media-query('mobile') {
-        @include pagination-setup('mobile');
+@include media-query('mobile') {
+    .c-pagination__item:not(.is--active),
+    .c-pagination__first,
+    .c-pagination__last {
+       display: none !important;
+    }
+
+    .c-pagination__item {
+        &.is--active {
+            > a {
+                background-color: transparent;
+                width: auto;
+            }
+        }
     }
 }
