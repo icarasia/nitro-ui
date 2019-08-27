@@ -153,22 +153,11 @@ $use-u-flex--mobile     : true !default;
     @include flex-setup();
 
     @if $responsive {
-        @if $use-u-flex--desktop {
-            @include media-query(desktop) {
-                @include flex-setup('desktop');
-            }
-        }
 
         // will proceed on mobile-tablet on next version
         @if $use-u-flex--portable {
             @include media-query(portable) {
                 @include flex-setup('portable');
-            }
-        }
-
-        @if $use-u-flex--tablet {
-            @include media-query(tablet) {
-                @include flex-setup('tablet');
             }
         }
 
