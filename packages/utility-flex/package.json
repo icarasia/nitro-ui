@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/css-utility-flex",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.0",
     "description": "Flex component for Nitro UI.",
     "main": "dist/utility-flex.min.css",
     "publishConfig": {
@@ -23,7 +23,7 @@
         "Flex",
         "Flexbox"
     ],
-    "author": "Syaiful Shah Zinan <i.works@live.com>",
+    "author": "Hafizuddin Othman <zick.mho@gmail.com>",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
