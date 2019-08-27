@@ -110,17 +110,17 @@ $use-u-flex--mobile     : true !default;
     // Ikram :
     // Making the classnames more general so that it can be reusable
     // with other components and utilities styling
-    .u-self-auto#{$breakpoint-separator}#{$breakpoint}
+    .u-self-auto#{$breakpoint-separator}#{$breakpoint},
     .u-flex__self-auto#{$breakpoint-separator}#{$breakpoint}       { align-self: auto; }
-    .u-self-start#{$breakpoint-separator}#{$breakpoint}
+    .u-self-start#{$breakpoint-separator}#{$breakpoint},
     .u-flex__self-start#{$breakpoint-separator}#{$breakpoint}      { align-self: flex-start; }
-    .u-self-end#{$breakpoint-separator}#{$breakpoint}
+    .u-self-end#{$breakpoint-separator}#{$breakpoint},
     .u-flex__self-end#{$breakpoint-separator}#{$breakpoint}        { align-self: flex-end; }
-    .u-self-center#{$breakpoint-separator}#{$breakpoint}
+    .u-self-center#{$breakpoint-separator}#{$breakpoint},
     .u-flex__self-center#{$breakpoint-separator}#{$breakpoint}     { align-self: center; }
-    .u-self-baseline#{$breakpoint-separator}#{$breakpoint}
+    .u-self-baseline#{$breakpoint-separator}#{$breakpoint},
     .u-flex__self-baseline#{$breakpoint-separator}#{$breakpoint}   { align-self: baseline; }
-    .u-self-stretch#{$breakpoint-separator}#{$breakpoint}
+    .u-self-stretch#{$breakpoint-separator}#{$breakpoint},
     .u-flex__self-stretch#{$breakpoint-separator}#{$breakpoint}    { align-self: stretch; }
 
     // Ikram :

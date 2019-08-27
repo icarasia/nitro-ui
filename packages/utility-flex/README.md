@@ -270,7 +270,7 @@ Responsive variations also exist for `u-flex--items`.
 
 ### Align content
 
-Use `u-flex--content-*` or `u-align-content-*` utilities on flexbox containers to align flex items together on the cross axis. Choose *  from `start` (browser default), `end`, `center`, `between`, `around`, or `stretch`.
+Use `u-flex--content-*` or `u-align-content-*` utilities on flexbox containers to align flex items together on the cross axis. Choose *  from `start` (browser default), `end`, `center`, `between`, `around`, or `stretch`. In order to see it, require `flex-wrap: wrap;` and increase the number of flex items.
 
 Heads up! This property has no effect on single rows of flex items.
 
