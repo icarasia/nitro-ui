@@ -18,8 +18,8 @@
 //  ----------------------------------------------------------------------------
 @import '@nitro-ui/css-core/src/core';
 
-$responsive-width-portable          : true   !default;
-$responsive-width-mobile            : true   !default;
+$responsive-align-portable          : true   !default;
+$responsive-align-mobile            : true   !default;
 
 //  ----------------------------------------------------------------------------
 //  2. Core
@@ -70,7 +70,7 @@ $responsive-width-mobile            : true   !default;
 //  ----------------------------------------------------------------------------
 
 @if $responsive {
-    @if $responsive-width-portable {
+    @if $responsive-align-portable {
         @include media-query(portable) {
             @include align-setup('portable');
         }
@@ -80,7 +80,7 @@ $responsive-width-mobile            : true   !default;
 //  4. Responsive - Mobile
 //  ----------------------------------------------------------------------------
 
-    @if $responsive-width-mobile {
+    @if $responsive-align-mobile {
         @include media-query(mobile) {
             @include align-setup('mobile');
         }

@@ -21,6 +21,22 @@ Include this stylesheet code into your site:
 <div class="u-valign-middle">u-valign-middle</div>
 <div class="u-valign-bottom">u-valign-bottom</div>
 
+<div class="u-align-left@portable">u-align-left@portable</div>
+<div class="u-align-center@portable">u-align-center@portable</div>
+<div class="u-align-right@portable">u-align-right@portable</div>
+
+<div class="u-valign-top@portable">u-valign-top@portable</div>
+<div class="u-valign-middle@portable">u-valign-middle@portable</div>
+<div class="u-valign-bottom@portable">u-valign-bottom@portable</div>
+
+<div class="u-align-left@mobile">u-align-left@mobile</div>
+<div class="u-align-center@mobile">u-align-center@mobile</div>
+<div class="u-align-right@mobile">u-align-right@mobile</div>
+
+<div class="u-valign-top@mobile">u-valign-top@mobile</div>
+<div class="u-valign-middle@mobile">u-valign-middle@mobile</div>
+<div class="u-valign-bottom@mobile">u-valign-bottom@mobile</div>
+
 <div class="u-center">u-center</div>
 ```
 
@@ -29,11 +45,11 @@ Include this stylesheet code into your site:
 Example with `<div>` tag:
 
 ```html
-<div class="u-align-left">u-align-left</div>
+<div class="u-align-left  u-align-center@portable">u-align-left</div>
 
 
 <div class="o-tile">
-    <div class="o-tile__item  u-valign-bottom">
+    <div class="o-tile__item  u-valign-bottom  u-valign-middle@mobile">
         u-valign-bottom
     </div>
 </div>
