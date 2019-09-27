@@ -1,0 +1,88 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility align
+//
+//  Utility align component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+//      3. Responsive - Portable
+//      4. Responsive - Mobile
+
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+@import '@nitro-ui/css-core/src/core';
+
+$responsive-width-portable          : true   !default;
+$responsive-width-mobile            : true   !default;
+
+//  ----------------------------------------------------------------------------
+//  2. Core
+//  ----------------------------------------------------------------------------
+@mixin align-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .u-align-left#{$breakpoint-separator}#{$breakpoint}      { text-align: left    !important }
+    .u-align-center#{$breakpoint-separator}#{$breakpoint}    { text-align: center  !important }
+    .u-align-right#{$breakpoint-separator}#{$breakpoint}     { text-align: right   !important }
+}
+
+
+@mixin valign-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .u-valign-top#{$breakpoint-separator}#{$breakpoint}      { vertical-align: top    !important; }
+    .u-valign-middle#{$breakpoint-separator}#{$breakpoint}   { vertical-align: middle !important; }
+    .u-valign-bottom#{$breakpoint-separator}#{$breakpoint}   { vertical-align: bottom !important; }
+}
+
+
+
+
+@include align-setup();
+@include valign-setup();
+
+
+.u-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//  ----------------------------------------------------------------------------
+//  3. Responsive - Portable
+//  ----------------------------------------------------------------------------
+
+@if $responsive {
+    @if $responsive-width-portable {
+        @include media-query(portable) {
+            @include align-setup('portable');
+        }
+    }
+
+//  ----------------------------------------------------------------------------
+//  4. Responsive - Mobile
+//  ----------------------------------------------------------------------------
+
+    @if $responsive-width-mobile {
+        @include media-query(mobile) {
+            @include align-setup('mobile');
+        }
+    }
+}
