@@ -20,7 +20,8 @@
 //  ----------------------------------------------------------------------------
 //  1. Variables
 //  ----------------------------------------------------------------------------
-@import '@nitro-ui/css-core/src/core';
+@import '@nitro-ui/css-core/src/variables';
+@import '@nitro-ui/css-core/src/mixins';
 
 $responsive-display-desktop           : true   !default;
 $responsive-display-tablet-desktop    : true   !default;
