@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/css-utility-background",
-    "version": "1.0.0-beta.2",
+    "version": "1.0.0-beta.3",
     "description": "Utility background component for Nitro UI.",
     "main": "dist/utility-background.min.css",
     "publishConfig": {

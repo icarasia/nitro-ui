@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/css-utility-clearfix",
-    "version": "1.0.0-beta",
+    "version": "1.0.0-beta.0",
     "description": "Utility clearfix component for Nitro UI.",
     "main": "dist/utility-clearfix.min.css",
     "publishConfig": {
