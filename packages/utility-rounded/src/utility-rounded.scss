@@ -8,21 +8,33 @@
 //
 //  CONTENTS
 //
-//      1.  DEPENDENCIES
-//      2.  VARIABLES
-//      3.  MIXINS
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Mixins
+//      4.  Setup
 //
 //  ----------------------------------------------------------------------------
 
 
-//  1. DEPENDENCIES
+//  1. Dependencies
 //  ----------------------------------------------------------------------------
 
 @import '../node_modules/@nitro-ui/css-core/src/variables';
 @import '../node_modules/@nitro-ui/css-core/src/mixins';
 
 
-//  2. MIXINS
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$responsive-rounded-desktop             : true   !default;
+$responsive-rounded-tablet-desktop      : true   !default;
+$responsive-rounded-portable            : true   !default;
+$responsive-rounded-mobile-tablet       : true   !default;
+$responsive-rounded-tablet              : true   !default;
+$responsive-rounded-mobile              : true   !default;
+
+
+//  3. Mixins
 //  ----------------------------------------------------------------------------
 
 @mixin rounded-setup($breakpoint: 'global') {
@@ -55,11 +67,45 @@
 }
 
 
-//  3. SETUP
+//  4. Setup
 //  ----------------------------------------------------------------------------
 
 @include rounded-setup();
 
-@include media-query(mobile) {
-    @include rounded-setup('mobile');
+@if $responsive {
+    @if $responsive-rounded-desktop {
+        @include media-query(desktop) {
+            @include rounded-setup('desktop');
+        }
+    }
+
+    @if $responsive-rounded-tablet-desktop {
+        @include media-query(tablet-desktop) {
+            @include rounded-setup('tablet-desktop');
+        }
+    }
+
+    @if $responsive-rounded-portable {
+        @include media-query(portable) {
+            @include rounded-setup('portable');
+        }
+    }
+
+    @if $responsive-rounded-mobile-tablet {
+        @include media-query(mobile-tablet) {
+            @include rounded-setup('mobile-tablet');
+        }
+    }
+
+    @if $responsive-rounded-tablet {
+        @include media-query(tablet) {
+            @include rounded-setup('tablet');
+        }
+    }
+
+    @if $responsive-rounded-mobile {
+        @include media-query(mobile) {
+            @include rounded-setup('mobile');
+        }
+    }
 }
