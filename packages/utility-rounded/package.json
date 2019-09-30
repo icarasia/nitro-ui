@@ -1,6 +1,6 @@
 {
-    "name": "@nitro-ui/css-utility-background",
-    "version": "1.0.0-beta.0",
+    "name": "@nitro-ui/css-utility-rounded",
+    "version": "0.0.0",
     "description": "Utility background component for Nitro UI.",
     "main": "dist/utility-background.min.css",
     "publishConfig": {
