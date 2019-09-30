@@ -1,6 +1,6 @@
-# Nitro UI: Utility Border
+# Nitro UI: Utility Overflow
 
-Utility Border component for Nitro UI.
+Utility Overflow component for Nitro UI.
 
 ## Getting Started
 
