@@ -1,0 +1,84 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility background
+//
+//  Utility background component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+@import '@nitro-ui/css-core/src/core';
+
+$base-background-primary        : $blue-light-500 !default;
+
+$background-white               : $white !default;
+$background-haze-light          : $haze-100 !default;
+$background-haze-dark           : $haze-200 !default;
+$background-dark                : $dark-400 !default;
+
+$background-gradient-light      : $white !default;
+$background-gradient-dark       : $dark-600 !default;
+
+//  ----------------------------------------------------------------------------
+//  2. Core
+//  ----------------------------------------------------------------------------
+@mixin vertical-gradient($from, $to) {
+    background: $to;
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background: -o-linear-gradient(top, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+@mixin horizontal-gradient($from, $to) {
+    background: $to;
+    background: -moz-linear-gradient($left, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(left, $from 0%,$to 100%);
+    background: -o-linear-gradient(left, $from 0%,$to 100%);
+    background: linear-gradient(to right, $from 0%,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+.u-bg-primary {
+    background-color: $base-background-primary;
+}
+
+.u-bg-white {
+    background-color: $background-white;
+}
+
+.u-bg-haze-light {
+    background-color: $background-haze-light;
+}
+
+.u-bg-haze-dark {
+    background-color: $background-haze-dark;
+}
+
+.u-bg-dark {
+    background-color: $background-dark;
+}
+
+.u-bg-gradient-light {
+    @include vertical-gradient(rgba($background-gradient-light,0), $background-gradient-light);
+}
+
+.u-bg-gradient-dark {
+    @include vertical-gradient(rgba($background-gradient-dark,0), $background-gradient-dark);
+}
+
+.u-bg-cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
