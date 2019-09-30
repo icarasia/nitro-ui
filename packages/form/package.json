@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/css-form",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.2",
     "description": "Form component for Nitro UI.",
     "main": "dist/form.min.css",
     "publishConfig": {
