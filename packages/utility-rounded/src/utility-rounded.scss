@@ -1,0 +1,111 @@
+//  ----------------------------------------------------------------------------
+//
+//  @UTILITY - Rounded
+//
+//  Utility styling for rounded corners
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Mixins
+//      4.  Setup
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '../node_modules/@nitro-ui/css-core/src/variables';
+@import '../node_modules/@nitro-ui/css-core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$responsive-rounded-desktop             : true   !default;
+$responsive-rounded-tablet-desktop      : true   !default;
+$responsive-rounded-portable            : true   !default;
+$responsive-rounded-mobile-tablet       : true   !default;
+$responsive-rounded-tablet              : true   !default;
+$responsive-rounded-mobile              : true   !default;
+
+
+//  3. Mixins
+//  ----------------------------------------------------------------------------
+
+@mixin rounded-setup($breakpoint: 'global') {
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .u-rounded#{$breakpoint-separator}#{$breakpoint} { @include rounded(); }
+    .u-rounded-top#{$breakpoint-separator}#{$breakpoint} { @include rounded-top(); }
+    .u-rounded-right#{$breakpoint-separator}#{$breakpoint} { @include rounded-right(); }
+    .u-rounded-bottom#{$breakpoint-separator}#{$breakpoint} { @include rounded-bottom(); }
+    .u-rounded-left#{$breakpoint-separator}#{$breakpoint} { @include rounded-left(); }
+
+    .u-rounded-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded($base-radius-sm); }
+    .u-rounded-top-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-top($base-radius-sm); }
+    .u-rounded-right-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-right($base-radius-sm); }
+    .u-rounded-bottom-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-bottom($base-radius-sm); }
+    .u-rounded-left-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-left($base-radius-sm); }
+
+    .u-rounded-0#{$breakpoint-separator}#{$breakpoint} { @include rounded(0); }
+    .u-rounded-top-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-top(0); }
+    .u-rounded-right-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-right(0); }
+    .u-rounded-bottom-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-bottom(0); }
+    .u-rounded-left-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-left(0); }
+
+    .u-circle#{$breakpoint-separator}#{$breakpoint} { @include rounded(100%); }
+}
+
+
+//  4. Setup
+//  ----------------------------------------------------------------------------
+
+@include rounded-setup();
+
+@if $responsive {
+    @if $responsive-rounded-desktop {
+        @include media-query(desktop) {
+            @include rounded-setup('desktop');
+        }
+    }
+
+    @if $responsive-rounded-tablet-desktop {
+        @include media-query(tablet-desktop) {
+            @include rounded-setup('tablet-desktop');
+        }
+    }
+
+    @if $responsive-rounded-portable {
+        @include media-query(portable) {
+            @include rounded-setup('portable');
+        }
+    }
+
+    @if $responsive-rounded-mobile-tablet {
+        @include media-query(mobile-tablet) {
+            @include rounded-setup('mobile-tablet');
+        }
+    }
+
+    @if $responsive-rounded-tablet {
+        @include media-query(tablet) {
+            @include rounded-setup('tablet');
+        }
+    }
+
+    @if $responsive-rounded-mobile {
+        @include media-query(mobile) {
+            @include rounded-setup('mobile');
+        }
+    }
+}
