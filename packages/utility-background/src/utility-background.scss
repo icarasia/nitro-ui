@@ -1,0 +1,64 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility background
+//
+//  Utility background component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+@import '@nitro-ui/css-core/src/core';
+
+$base-background-primary        : $blue-light-500 !default;
+
+$background-white               : $white !default;
+$background-haze-light          : $haze-100 !default;
+$background-haze-dark           : $haze-200 !default;
+$background-dark                : $dark-400 !default;
+
+$background-gradient-light      : $white !default;
+$background-gradient-dark       : $dark-600 !default;
+
+//  ----------------------------------------------------------------------------
+//  2. Core
+//  ----------------------------------------------------------------------------
+.u-bg-primary {
+    background-color: $base-background-primary;
+}
+
+.u-bg-white {
+    background-color: $background-white;
+}
+
+.u-bg-haze-light {
+    background-color: $background-haze-light;
+}
+
+.u-bg-haze-dark {
+    background-color: $background-haze-dark;
+}
+
+.u-bg-dark {
+    background-color: $background-dark;
+}
+
+.u-bg-gradient-light {
+    @include vertical-gradient(rgba($background-gradient-light,0), $background-gradient-light);
+}
+
+.u-bg-gradient-dark {
+    @include vertical-gradient(rgba($background-gradient-dark,0), $background-gradient-dark);
+}
+
+.u-bg-cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
