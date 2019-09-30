@@ -33,6 +33,8 @@ $responsive-rounded-mobile-tablet       : true   !default;
 $responsive-rounded-tablet              : true   !default;
 $responsive-rounded-mobile              : true   !default;
 
+$base-radius-sm                         : $base-radius - 1 !default;
+
 
 //  3. Mixins
 //  ----------------------------------------------------------------------------
