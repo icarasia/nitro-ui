@@ -11,7 +11,7 @@
 //      3. Positions
 //      4. Pin
 //      5. Z-index
-//      6. Responsive Mobile
+//      6. Usage
 //
 //  ----------------------------------------------------------------------------
 //  1. Variables
@@ -87,16 +87,17 @@ $responsive-position-mobile         : false !default;
 }
 
 
-@include positions-setup();
-@include pin-setup();
-@include zindex-setup();
-
 
 //  ----------------------------------------------------------------------------
-//  6. Responsive Mobile
+//  6. Usage
 //  ----------------------------------------------------------------------------
 
 @if $use-utility-position {
+
+    @include positions-setup();
+    @include pin-setup();
+    @include zindex-setup();
+
     @if $responsive {
         @if $responsive-position-mobile {
             @include media-query(mobile) {
