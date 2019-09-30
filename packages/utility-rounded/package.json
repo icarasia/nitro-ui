@@ -1,8 +1,8 @@
 {
     "name": "@nitro-ui/css-utility-rounded",
     "version": "0.0.0",
-    "description": "Utility background component for Nitro UI.",
-    "main": "dist/utility-background.min.css",
+    "description": "Utility rounded styling for Nitro UI.",
+    "main": "dist/utility-rounded.min.css",
     "publishConfig": {
         "access": "public"
     },

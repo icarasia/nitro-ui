@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Opacity - Nitro UI</title>
+        <title>Utility - Rounded</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../dist/utility-opacity.css">
+        <link rel="stylesheet" href="../dist/utility-rounded.css">
         <style>
             .container .col-md-8 {
                 font-family: Roboto;
@@ -15,6 +15,12 @@
             .container img {
                 max-width: 100%;
                 height: auto;
+            }
+
+            .square {
+                border: 1px solid #ccc;
+                background-color: #eee;
+                padding-bottom: 100%;
             }
         </style>
     </head>
@@ -27,10 +33,10 @@
                 <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
             </div>
             <div class="container py-5">
-                <h1 class="font-weight-bold mb-3">Opacity</h1>
+                <h1 class="font-weight-bold mb-3">Rounded</h1>
                 <div class="text-muted">
                     <p>
-                        Set opacity level for an element.
+                        Set radius of element's corners
                     </p>
                 </div>
             </div>
@@ -39,20 +45,34 @@
             <div class="container  py-5">
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="example.jpg" class="u-opacity-1">
-                        <div class="mt-3  small  text-center"><code>.u-opacity-1</code></div>
+                        <div class="square  u-rounded"></div>
+                        <div class="mt-2  small  text-center"><code>.u-rounded</code></div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="square  u-circle"></div>
+                        <div class="mt-2  small  text-center"><code>.u-circle</code></div>
+                    </div>
+                </div>
+
+                <hr class="mt-5  mb-5">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="square  u-rounded-top"></div>
+                        <div class="mt-2  small  text-center"><code>.u-rounded-top</code></div>
                     </div>
                     <div class="col-md-3">
-                        <img src="example.jpg" class="u-opacity-2">
-                        <div class="mt-3  small  text-center"><code>.u-opacity-2</code></div>
+                        <div class="square  u-rounded-right"></div>
+                        <div class="mt-2  small  text-center"><code>.u-rounded-right</code></div>
                     </div>
                     <div class="col-md-3">
-                        <img src="example.jpg" class="u-opacity-3">
-                        <div class="mt-3  small  text-center"><code>.u-opacity-3</code></div>
+                        <div class="square  u-rounded-bottom"></div>
+                        <div class="mt-2  small  text-center"><code>.u-rounded-bottom</code></div>
                     </div>
                     <div class="col-md-3">
-                        <img src="example.jpg" class="u-opacity-4">
-                        <div class="mt-3  small  text-center"><code>.u-opacity-4</code></div>
+                        <div class="square  u-rounded-left"></div>
+                        <div class="mt-2  small  text-center"><code>.u-rounded-left</code></div>
                     </div>
                 </div>
         </article>
