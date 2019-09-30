@@ -30,7 +30,7 @@ npm install @nitro-ui/css-utility-position
 
 ### Z indexes
 
-z-index support up to 5 number. Use `u-zindex-auto` for auto property.
+z-index support up to 5 ordering. Use `u-zindex-auto` for auto property.
 
 ```html
 <div class="u-zindex-0">Z index 0</div>
@@ -44,7 +44,7 @@ z-index support up to 5 number. Use `u-zindex-auto` for auto property.
 
 ## Responsive Usage
 
-By default the support for responsive is `false` by default; To turn it on you will need to overwrite the $variable `$responsive-position-mobile` to `true` in your project level.
+By default the responsive support for position is `false`. To turn it on you will need to overwrite the variable value `$responsive-position-mobile` to `true` in your project level.
 
 ```html
 <div class="u-relative@mobile">u-relative</div>
