@@ -4,41 +4,30 @@ Utility Border component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-border](https://www.npmjs.com/package/@nitro-ui/css-utility-border):
+Get latest version by installing via [NPM @nitro-ui/css-utility-overflow](https://www.npmjs.com/package/@nitro-ui/css-utility-overflow):
 
 ```sh
 npm install @nitro-ui/css-utility-overflow
 ```
 
-Include this stylesheet code into your site:
-
-```html
-<div class="u-border">u-border</div>
-<div class="u-border-top">u-border-top</div>
-<div class="u-border-right">u-border-right</div>
-<div class="u-border-bottom">u-border-bottom</div>
-<div class="u-border-left">u-border-left</div>
-<div class="u-border-dark">u-border-dark</div>
-<div class="u-border-dark-top">u-border-dark-top</div>
-<div class="u-border-dark-right">u-border-dark-right</div>
-<div class="u-border-dark-bottom">u-border-dark-bottom</div>
-<div class="u-border-dark-left">u-border-dark-left</div>
-<div class="u-border-0">u-border-0</div>
-<div class="u-border-top-0">u-border-top-0</div>
-<div class="u-border-right-0">u-border-right-0</div>
-<div class="u-border-bottom-0">u-border-bottom-0</div>
-<div class="u-border-left-0">u-border-left-0</div>
-```
-
 ## Usage:
 
-Example with `<div>` tag:
+```html
+<div class="u-overflow-hidden">div with overflow hidden</div>
+<div class="u-overflow-x-auto">div with overflow x auto</div>
+<div class="u-overflow-y-auto">div with overflow y auto</div>
+```
+
+## Responsive Support
+
+Overflow also support responsive for `mobile`
 
 ```html
-<div class="u-border">u-border</div>
-
-<button class="u-border-0">Click Me</button>
+<div class="u-overflow-hidden@mobile">div with overflow hidden on mobile</div>
+<div class="u-overflow-x-auto@mobile">div with overflow x auto on mobile</div>
+<div class="u-overflow-y-auto@mobile">div with overflow y auto on mobile</div>
 ```
+
 
 ## Development
 
