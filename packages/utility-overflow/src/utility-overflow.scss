@@ -41,9 +41,9 @@ $use-u-overflow           : true !default;
 //  2. Setup
 //  ----------------------------------------------------------------------------
 
-@include overflow-setup();
-
 @if $use-u-overflow {
+
+    @include overflow-setup();
 
     @if $responsive {
 
