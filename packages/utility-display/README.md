@@ -13,61 +13,19 @@ npm install @nitro-ui/css-utility-display
 Include this stylesheet code into your site:
 
 ```html
-<div class="u-width-1">width = 100%</div>
+<div class="u-hidden">u-hidden</div>
+<div class="u-inline">u-inline</div>
+<div class="u-inline-block">u-inline-block</div>
+<div class="u-block">u-block</div>
 
-<div class="u-width-1/2">width = 50%</div>
+Responsive breakpoint
+Example:
+u-block@desktop
+u-inline-block@tablet-desktop
+u-hidden@mobile-tablet
+u-hidden@tablet
+u-hidden@mobile
 
-<div class="u-width-1/3">width = 33.333%</div>
-<div class="u-width-2/3">width = 66.666%</div>
-
-<div class="u-width-1/4">width = 25%</div>
-<div class="u-width-2/4">width = 50%</div>
-<div class="u-width-3/4">width = 75%</div>
-
-<div class="u-width-1/5">width = 20%</div>
-<div class="u-width-2/5">width = 40%</div>
-<div class="u-width-3/5">width = 60%</div>
-<div class="u-width-4/5">width = 80%</div>
-
-<div class="u-width-1/6">width = 16.666%</div>
-<div class="u-width-2/6">width = 33.333%</div>
-<div class="u-width-3/6">width = 50%</div>
-<div class="u-width-4/6">width = 66.666%</div>
-<div class="u-width-5/6">width = 83.333%</div>
-
-<div class="u-width-1/8">width = 12.5%</div>
-<div class="u-width-2/8">width = 25%</div>
-<div class="u-width-3/8">width = 37.5%</div>
-<div class="u-width-4/8">width = 50%</div>
-<div class="u-width-5/8">width = 62.5%</div>
-<div class="u-width-6/8">width = 75%</div>
-<div class="u-width-7/8">width = 87.5%</div>
-
-<div class="u-width-1/10">width = 10%</div>
-<div class="u-width-2/10">width = 20%</div>
-<div class="u-width-3/10">width = 30%</div>
-<div class="u-width-4/10">width = 40%</div>
-<div class="u-width-5/10">width = 50%</div>
-<div class="u-width-6/10">width = 60%</div>
-<div class="u-width-7/10">width = 70%</div>
-<div class="u-width-8/10">width = 80%</div>
-<div class="u-width-9/10">width = 90%</div>
-
-<div class="u-width-1/12">width = 8.333%</div>
-<div class="u-width-2/12">width = 16.666%</div>
-<div class="u-width-3/12">width = 25%</div>
-<div class="u-width-4/12">width = 33.333%</div>
-<div class="u-width-5/12">width = 41.666%</div>
-<div class="u-width-6/12">width = 50%</div>
-<div class="u-width-7/12">width = 58.333%</div>
-<div class="u-width-8/12">width = 66.666%</div>
-<div class="u-width-9/12">width = 75%</div>
-<div class="u-width-10/12">width = 83.333%</div>
-<div class="u-width-11/12">width = 91.666%</div>
-
-<div class="u-width-1/2@desktop">width = 50% when portable size</div>
-<div class="u-width-1/2@mobile-tablet">width = 50% when portable size</div>
-<div class="u-width-1/2@mobile">width = 50% when mobile size</div>
 ```
 
 ## Usage:
@@ -75,15 +33,9 @@ Include this stylesheet code into your site:
 Example with `<div>` tag:
 
 ```html
-<div class="o-grid">
-    <div class="o-grid__item  u-width-1-3  u-width-1/2@mobile">
-        width 1/3
-    </div>
+<div class="u-inline-block">u-inline-block</div>
 
-    <div class="o-grid__item  u-width-2-3  u-width-1/2@mobile">
-        width 2/3
-    </div>
-</div>
+<div class="u-block  u-hidden@mobile">This div will hidden on mobile</div>
 ```
 
 ## Development
