@@ -1,4 +1,4 @@
-# Nitro UI: Utility Background
+# Nitro UI: Utility Rounded
 
 Utility Background component for Nitro UI.
 
@@ -13,10 +13,12 @@ npm install @nitro-ui/css-utility-rounded
 Include this stylesheet code into your site:
 
 ```html
-<div class="u-opacity-1">...</div>
-<div class="u-opacity-2">...</div>
-<div class="u-opacity-3">...</div>
-<div class="u-opacity-4">...</div>
+<div class="u-rounded">...</div>
+<div class="u-rounded-top">...</div>
+<div class="u-rounded-right">...</div>
+<div class="u-rounded-bottom">...</div>
+<div class="u-rounded-left">...</div>
+<div class="u-circle">...</div>
 ```
 
 ## Development
