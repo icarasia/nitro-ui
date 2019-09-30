@@ -1,3 +1,5 @@
+const sass = require( 'node-sass' );
+
 module.exports = function( grunt ) {
 
     // Project configuration.
@@ -8,6 +10,11 @@ module.exports = function( grunt ) {
         },
 
         sass: {
+            options: {
+                includePaths: [ 'node_modules', '.' ],
+                implementation: sass,
+                sourceMap: true
+            },
             build: {
                 files: {
                     'dist/button.css': [
@@ -69,7 +76,7 @@ module.exports = function( grunt ) {
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks( 'grunt-contrib-clean' );
-    grunt.loadNpmTasks( 'grunt-contrib-sass' );
+    grunt.loadNpmTasks( 'grunt-sass' );
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-notify' );
 
