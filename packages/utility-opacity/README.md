@@ -4,35 +4,19 @@ Utility Background component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-background](https://www.npmjs.com/package/@nitro-ui/css-utility-background):
+Get latest version by installing via [NPM @nitro-ui/css-utility-opacity](https://www.npmjs.com/package/@nitro-ui/css-utility-opacity):
 
 ```sh
-npm install @nitro-ui/css-utility-background
+npm install @nitro-ui/css-utility-opacity
 ```
 
 Include this stylesheet code into your site:
 
 ```html
-<div class="u-bg-primary">u-bg-primary</div>
-<div class="u-bg-white">u-bg-white</div>
-<div class="u-bg-haze-light">u-bg-haze-light</div>
-<div class="u-bg-haze-dark">u-bg-haze-dark</div>
-<div class="u-bg-dark">u-bg-dark</div>
-<div class="u-bg-gradient-light">u-bg-gradient-light</div>
-<div class="u-bg-gradient-dark">u-bg-gradient-dark</div>
-<img src="your-image.jpg"  class="u-bg-cover"/>
-```
-
-## Usage:
-
-Example with `<div>` tag:
-
-```html
-<div class="u-bg-primary">u-bg-primary</div>
-
-
-<img src="./images.jpg" class="u-bg-cover" style="width: 100%;"/>
-
+<div class="u-opacity-1">...</div>
+<div class="u-opacity-2">...</div>
+<div class="u-opacity-3">...</div>
+<div class="u-opacity-4">...</div>
 ```
 
 ## Development
