@@ -1,4 +1,4 @@
-# Nitro UI: Utility Background
+# Nitro UI: Utility Opacity
 
 Utility Background component for Nitro UI.
 
