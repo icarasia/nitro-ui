@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/css-button": ">1.0.0-beta",
+        "@nitro-ui/css-button": "^1.0.0-beta.3",
         "@nitro-ui/css-chips": ">1.0.0-beta",
         "@nitro-ui/css-core": ">1.0.0-beta",
         "@nitro-ui/css-form": ">1.0.0-beta",
