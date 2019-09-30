@@ -1,0 +1,65 @@
+//  ----------------------------------------------------------------------------
+//
+//  @UTILITY - Rounded
+//
+//  Utility styling for rounded corners
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  DEPENDENCIES
+//      2.  VARIABLES
+//      3.  MIXINS
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. DEPENDENCIES
+//  ----------------------------------------------------------------------------
+
+@import '../node_modules/@nitro-ui/css-core/src/variables';
+@import '../node_modules/@nitro-ui/css-core/src/mixins';
+
+
+//  2. MIXINS
+//  ----------------------------------------------------------------------------
+
+@mixin rounded-setup($breakpoint: 'global') {
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .u-rounded#{$breakpoint-separator}#{$breakpoint} { @include rounded(); }
+    .u-rounded-top#{$breakpoint-separator}#{$breakpoint} { @include rounded-top(); }
+    .u-rounded-right#{$breakpoint-separator}#{$breakpoint} { @include rounded-right(); }
+    .u-rounded-bottom#{$breakpoint-separator}#{$breakpoint} { @include rounded-bottom(); }
+    .u-rounded-left#{$breakpoint-separator}#{$breakpoint} { @include rounded-left(); }
+
+    .u-rounded-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded($base-radius-sm); }
+    .u-rounded-top-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-top($base-radius-sm); }
+    .u-rounded-right-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-right($base-radius-sm); }
+    .u-rounded-bottom-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-bottom($base-radius-sm); }
+    .u-rounded-left-sm#{$breakpoint-separator}#{$breakpoint} { @include rounded-left($base-radius-sm); }
+
+    .u-rounded-0#{$breakpoint-separator}#{$breakpoint} { @include rounded(0); }
+    .u-rounded-top-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-top(0); }
+    .u-rounded-right-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-right(0); }
+    .u-rounded-bottom-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-bottom(0); }
+    .u-rounded-left-0#{$breakpoint-separator}#{$breakpoint} { @include rounded-left(0); }
+
+    .u-circle#{$breakpoint-separator}#{$breakpoint} { @include rounded(100%); }
+}
+
+
+//  3. SETUP
+//  ----------------------------------------------------------------------------
+
+@include rounded-setup();
+
+@include media-query(mobile) {
+    @include rounded-setup('mobile');
+}
