@@ -1,7 +1,7 @@
 {
     "name": "@nitro-ui/css-object-grid",
     "version": "1.0.0-beta.4",
-    "description": "Utility Width component for Nitro UI.",
+    "description": "Grid styling for Nitro UI.",
     "main": "dist/object-grid.min.css",
     "publishConfig": {
         "access": "public"
@@ -21,7 +21,7 @@
         "Components",
         "iCarAsia"
     ],
-    "author": "Syaiful Shah Zinan <i.works@live.com>",
+    "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
