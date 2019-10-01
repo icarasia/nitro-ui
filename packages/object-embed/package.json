@@ -1,8 +1,8 @@
 {
-    "name": "@nitro-ui/css-object-grid",
-    "version": "1.0.0-beta.4",
-    "description": "Grid styling for Nitro UI.",
-    "main": "dist/object-grid.min.css",
+    "name": "@nitro-ui/css-object-embed",
+    "version": "0.0.0",
+    "description": "Utility shadow styling for Nitro UI.",
+    "main": "dist/object-embed.min.css",
     "publishConfig": {
         "access": "public"
     },
