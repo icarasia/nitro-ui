@@ -256,19 +256,32 @@ $mobile-small-start            : 321px  !default;
 }
 
 @mixin shadow-1dp {
-    box-shadow: 0 0 0 1px rgba($haze-500, .24);
+    box-shadow: 0 0 0 1px rgba($dark-700, .05),
+                0 2px 4px rgba($dark-700, .05);
 }
 
 @mixin shadow-2dp {
-    box-shadow: 0 0 0 1px rgba($haze-500, .2), 0 4px 20px rgba($haze-700,0.3);
+    box-shadow: 0 0 0 1px rgba($dark-700, .05),
+                0 2px 4px rgba($dark-700, .05),
+                0 4px 8px rgba($dark-700, .05);
 }
 
 @mixin shadow-3dp {
-    box-shadow: 0 2px 8px 0 rgba($haze-700,0.5), 0 1px 20px 0 rgba($haze-700,0.08);
+    box-shadow: 0 0 0 1px   rgba($dark-700, .05),
+                0 2px 4px   rgba($dark-700, .05),
+                0 4px 8px   rgba($dark-700, .05),
+                0 8px 16px  rgba($dark-700, .05),
+                0 12px 24px rgba($dark-700, .05);
 }
 
 @mixin shadow-4dp {
-    box-shadow: 0 14px 28px rgba($haze-700,0.3), 0 12px 12px rgba($haze-700,0.05);
+    box-shadow: 0 0 0 1px   rgba($dark-700, .05),
+                0 2px 4px   rgba($dark-700, .05),
+                0 4px 8px   rgba($dark-700, .05),
+                0 8px 16px  rgba($dark-700, .05),
+                0 12px 24px rgba($dark-700, .05),
+                0 16px 32px rgba($dark-700, .05),
+                0 20px 40px rgba($dark-700, .05);
 }
 
 
