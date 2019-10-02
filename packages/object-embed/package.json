@@ -1,7 +1,7 @@
 {
     "name": "@nitro-ui/css-object-embed",
     "version": "0.0.0",
-    "description": "Utility shadow styling for Nitro UI.",
+    "description": "Object embed styling for Nitro UI.",
     "main": "dist/object-embed.min.css",
     "publishConfig": {
         "access": "public"
