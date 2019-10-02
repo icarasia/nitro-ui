@@ -1,7 +1,7 @@
 {
     "name": "@nitro-ui/css-object-menu",
     "version": "0.0.0",
-    "description": "Utility shadow styling for Nitro UI.",
+    "description": "Object menu styling for Nitro UI.",
     "main": "dist/object-menu.min.css",
     "publishConfig": {
         "access": "public"
