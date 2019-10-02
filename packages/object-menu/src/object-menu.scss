@@ -1,8 +1,8 @@
 //  ----------------------------------------------------------------------------
 //
-//  @UTILITY - Rounded
+//  @OBJECT - MENU
 //
-//  Utility styling for rounded corners
+//  Menu styling
 //
 //  ----------------------------------------------------------------------------
 //
@@ -11,10 +11,8 @@
 //      1.  Dependencies
 //      2.  Variables
 //      3.  Core
-//      4.  Modifiers - Ratio
-//      5.  Modifiers - Width
-//      6.  Setup - Global
-//      7.  Setup - Responsive
+//      4.  Modifiers
+//      5.  Responsive
 //
 //  ----------------------------------------------------------------------------
 
@@ -26,10 +24,16 @@
 @import '../node_modules/@nitro-ui/css-core/src/mixins';
 
 
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
 $menu-spacing-ends      : 8px !default;
 $menu-spacing-sides     : 16px !default;
 $menu-line-height       : 24px !default;
 
+
+//  3. Core
+//  ----------------------------------------------------------------------------
 
 .o-menu {
     align-items: center;
@@ -60,6 +64,9 @@ $menu-line-height       : 24px !default;
     }
 
 
+//  4. Modifiers
+//  ----------------------------------------------------------------------------
+
 .o-menu--center {
     justify-content: center;
 }
@@ -77,6 +84,8 @@ $menu-line-height       : 24px !default;
 }
 
 
+//  5. Responsive
+//  ----------------------------------------------------------------------------
 
 @mixin menu-responsive($breakpoint: 'global') {
 
