@@ -1,31 +1,33 @@
-# Nitro UI: Utility Shadow
+# Nitro UI: Embed
 
-Utility shadow styling for Nitro UI.
+Object embed styling for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-embed](https://www.npmjs.com/package/@nitro-ui/css-utility-embed):
+Get latest version by installing via [NPM @nitro-ui/css-object-embed](https://www.npmjs.com/package/@nitro-ui/css-object-embed):
 
 ```sh
-npm install @nitro-ui/css-utility-embed
+npm install @nitro-ui/css-object-embed
 ```
 
-Static Shadow
+Embed Ratio
 
 ```html
-<div class="u-shadow-1dp"></div>
-<div class="u-shadow-2dp"></div>
-<div class="u-shadow-3dp"></div>
-<div class="u-shadow-4dp"></div>
+<div class="o-embed  o-embed--3x1"></div>
+<div class="o-embed  o-embed--16x9"></div>
+<div class="o-embed  o-embed--4x3"></div>
+<div class="o-embed  o-embed--1x1"></div>
 ```
 
-Hover Shadow
+Embed Size
 
 ```html
-<div class="u-shadow-1dp@hover"></div>
-<div class="u-shadow-2dp@hover"></div>
-<div class="u-shadow-3dp@hover"></div>
-<div class="u-shadow-4dp@hover"></div>
+<div class="o-embed  o-embed--xs"></div>
+<div class="o-embed  o-embed--sm"></div>
+<div class="o-embed  o-embed--md"></div>
+<div class="o-embed  o-embed--lg"></div>
+<div class="o-embed  o-embed--xl"></div>
+<div class="o-embed  o-embed--xxl"></div>
 ```
 
 ## Development
