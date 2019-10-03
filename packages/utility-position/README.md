@@ -4,7 +4,7 @@ Utility Position component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-border](https://www.npmjs.com/package/@nitro-ui/css-utility-border):
+Get latest version by installing via [NPM @nitro-ui/css-utility-position](https://www.npmjs.com/package/@nitro-ui/css-utility-position):
 
 ```sh
 npm install @nitro-ui/css-utility-position
