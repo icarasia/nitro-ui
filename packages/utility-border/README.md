@@ -4,10 +4,10 @@ Utility Border component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-border](https://www.npmjs.com/package/@nitro-ui/css-utility-border):
+Get latest version by installing via [NPM @nitro-ui/utility-border](https://www.npmjs.com/package/@nitro-ui/utility-border):
 
 ```sh
-npm install @nitro-ui/css-utility-border
+npm install @nitro-ui/utility-border
 ```
 
 Include this stylesheet code into your site:

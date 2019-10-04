@@ -4,10 +4,10 @@ Chips component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-chips](https://www.npmjs.com/package/@nitro-ui/css-chips):
+Get latest version by installing via [NPM @nitro-ui/chips](https://www.npmjs.com/package/@nitro-ui/chips):
 
 ```sh
-npm install @nitro-ui/css-chips
+npm install @nitro-ui/chips
 ```
 
 Include this stylesheet code into your site:

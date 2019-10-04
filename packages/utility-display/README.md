@@ -4,10 +4,10 @@ Utility Display component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-display](https://www.npmjs.com/package/@nitro-ui/css-utility-display):
+Get latest version by installing via [NPM @nitro-ui/utility-display](https://www.npmjs.com/package/@nitro-ui/utility-display):
 
 ```sh
-npm install @nitro-ui/css-utility-display
+npm install @nitro-ui/utility-display
 ```
 
 Include this stylesheet code into your site:

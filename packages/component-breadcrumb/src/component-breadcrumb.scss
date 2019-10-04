@@ -1,0 +1,74 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Breadcrumb
+//
+//  Component styling for breadcrumb
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$breadcrumb-divider-width           : 1px !default;
+$breadcrumb-divider-color           : $haze-400 !default;
+$breadcrumb-divider-size            : 8px !default;
+$breadcrumb-divider-space-right     : 10px !default;
+$breadcrumb-divider-space-left      : 6px !default;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-breadcrumb {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+        align-items: center;
+        display: flex;
+        position: relative;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &:last-child  a {
+            color: inherit;
+        }
+    }
+
+    > li:not(:last-child) {
+        max-width: 160px;
+
+        &:after {
+            content: '';
+            display: block;
+            border-top: $breadcrumb-divider-width solid $breadcrumb-divider-color;
+            border-right: $breadcrumb-divider-width solid $breadcrumb-divider-color;
+            width: $breadcrumb-divider-size;
+            height: $breadcrumb-divider-size;
+            transform: rotate(45deg);
+            margin: 0 $breadcrumb-divider-space-right 0 $breadcrumb-divider-space-left;
+        }
+    }
+}

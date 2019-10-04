@@ -4,10 +4,10 @@ Container component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-object-container](https://www.npmjs.com/package/@nitro-ui/css-object-container):
+Get latest version by installing via [NPM @nitro-ui/object-container](https://www.npmjs.com/package/@nitro-ui/object-container):
 
 ```sh
-npm install @nitro-ui/css-object-container
+npm install @nitro-ui/object-container
 ```
 
 Include this stylesheet code into your site:
@@ -89,5 +89,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0-beta] - 2019-07-26
 ### Added
-- Install and setup `node-sass` and `grunt-sass` to support `includePath`, now we can use `@import "@nitro-ui/css-core/src/core"` directly in any sass file.
-- Import @nitro-ui/css-core to `container.scss`
+- Install and setup `node-sass` and `grunt-sass` to support `includePath`, now we can use `@import "@nitro-ui/core/src/core"` directly in any sass file.
+- Import @nitro-ui/core to `container.scss`

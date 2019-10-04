@@ -4,10 +4,10 @@ Button component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-form](https://www.npmjs.com/package/@nitro-ui/css-form):
+Get latest version by installing via [NPM @nitro-ui/form](https://www.npmjs.com/package/@nitro-ui/form):
 
 ```sh
-npm install @nitro-ui/css-form
+npm install @nitro-ui/form
 ```
 
 Include this stylesheet code into your site:

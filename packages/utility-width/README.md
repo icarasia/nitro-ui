@@ -4,10 +4,10 @@ Utility Width component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-width](https://www.npmjs.com/package/@nitro-ui/css-utility-width):
+Get latest version by installing via [NPM @nitro-ui/utility-width](https://www.npmjs.com/package/@nitro-ui/utility-width):
 
 ```sh
-npm install @nitro-ui/css-utility-width
+npm install @nitro-ui/utility-width
 ```
 
 Include this stylesheet code into your site:

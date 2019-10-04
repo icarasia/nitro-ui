@@ -4,10 +4,10 @@ Utility Float component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-float](https://www.npmjs.com/package/@nitro-ui/css-utility-float):
+Get latest version by installing via [NPM @nitro-ui/utility-float](https://www.npmjs.com/package/@nitro-ui/utility-float):
 
 ```sh
-npm install @nitro-ui/css-utility-float
+npm install @nitro-ui/utility-float
 ```
 
 Include this stylesheet code into your site:

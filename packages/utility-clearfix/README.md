@@ -4,10 +4,10 @@ Utility Clearfix component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-clearfix](https://www.npmjs.com/package/@nitro-ui/css-utility-clearfix):
+Get latest version by installing via [NPM @nitro-ui/utility-clearfix](https://www.npmjs.com/package/@nitro-ui/utility-clearfix):
 
 ```sh
-npm install @nitro-ui/css-utility-clearfix
+npm install @nitro-ui/utility-clearfix
 ```
 
 Include this stylesheet code into your site:

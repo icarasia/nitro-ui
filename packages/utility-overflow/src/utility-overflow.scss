@@ -20,8 +20,8 @@ $use-u-overflow           : true !default;
 //  ----------------------------------------------------------------------------
 //  2. Mixins & Import
 //  ----------------------------------------------------------------------------
-@import '@nitro-ui/css-core/src/variables';
-@import '@nitro-ui/css-core/src/mixins';
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
 
 @mixin overflow-setup($breakpoint: 'global') {
 
