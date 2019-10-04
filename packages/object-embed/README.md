@@ -4,10 +4,10 @@ Object embed styling for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-object-embed](https://www.npmjs.com/package/@nitro-ui/css-object-embed):
+Get latest version by installing via [NPM @nitro-ui/object-embed](https://www.npmjs.com/package/@nitro-ui/object-embed):
 
 ```sh
-npm install @nitro-ui/css-object-embed
+npm install @nitro-ui/object-embed
 ```
 
 Embed Ratio

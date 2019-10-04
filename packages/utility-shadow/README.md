@@ -4,10 +4,10 @@ Utility shadow styling for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-shadow](https://www.npmjs.com/package/@nitro-ui/css-utility-shadow):
+Get latest version by installing via [NPM @nitro-ui/utility-shadow](https://www.npmjs.com/package/@nitro-ui/utility-shadow):
 
 ```sh
-npm install @nitro-ui/css-utility-shadow
+npm install @nitro-ui/utility-shadow
 ```
 
 Static Shadow

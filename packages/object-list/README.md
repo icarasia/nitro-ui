@@ -4,10 +4,10 @@ List styling for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-object-list](https://www.npmjs.com/package/@nitro-ui/css-object-list):
+Get latest version by installing via [NPM @nitro-ui/object-list](https://www.npmjs.com/package/@nitro-ui/object-list):
 
 ```sh
-npm install @nitro-ui/css-object-list
+npm install @nitro-ui/object-list
 ```
 
 Default

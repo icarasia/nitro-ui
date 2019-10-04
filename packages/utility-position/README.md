@@ -4,10 +4,10 @@ Utility Position component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-position](https://www.npmjs.com/package/@nitro-ui/css-utility-position):
+Get latest version by installing via [NPM @nitro-ui/utility-position](https://www.npmjs.com/package/@nitro-ui/utility-position):
 
 ```sh
-npm install @nitro-ui/css-utility-position
+npm install @nitro-ui/utility-position
 ```
 
 ## Usage:

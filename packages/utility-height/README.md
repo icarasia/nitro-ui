@@ -4,10 +4,10 @@ Utility Height component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-height](https://www.npmjs.com/package/@nitro-ui/css-utility-height):
+Get latest version by installing via [NPM @nitro-ui/utility-height](https://www.npmjs.com/package/@nitro-ui/utility-height):
 
 ```sh
-npm install @nitro-ui/css-utility-height
+npm install @nitro-ui/utility-height
 ```
 
 Include this stylesheet code into your site:

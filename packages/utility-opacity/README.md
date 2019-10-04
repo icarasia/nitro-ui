@@ -4,10 +4,10 @@ Utility Background component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-opacity](https://www.npmjs.com/package/@nitro-ui/css-utility-opacity):
+Get latest version by installing via [NPM @nitro-ui/utility-opacity](https://www.npmjs.com/package/@nitro-ui/utility-opacity):
 
 ```sh
-npm install @nitro-ui/css-utility-opacity
+npm install @nitro-ui/utility-opacity
 ```
 
 Include this stylesheet code into your site:

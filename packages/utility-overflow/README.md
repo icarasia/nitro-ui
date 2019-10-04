@@ -4,10 +4,10 @@ Utility Overflow component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-overflow](https://www.npmjs.com/package/@nitro-ui/css-utility-overflow):
+Get latest version by installing via [NPM @nitro-ui/utility-overflow](https://www.npmjs.com/package/@nitro-ui/utility-overflow):
 
 ```sh
-npm install @nitro-ui/css-utility-overflow
+npm install @nitro-ui/utility-overflow
 ```
 
 ## Usage:

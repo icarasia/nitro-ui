@@ -4,10 +4,10 @@ Utility Background component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-rounded](https://www.npmjs.com/package/@nitro-ui/css-utility-rounded):
+Get latest version by installing via [NPM @nitro-ui/utility-rounded](https://www.npmjs.com/package/@nitro-ui/utility-rounded):
 
 ```sh
-npm install @nitro-ui/css-utility-rounded
+npm install @nitro-ui/utility-rounded
 ```
 
 Include this stylesheet code into your site:

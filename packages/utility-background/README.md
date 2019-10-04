@@ -4,10 +4,10 @@ Utility Background component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-background](https://www.npmjs.com/package/@nitro-ui/css-utility-background):
+Get latest version by installing via [NPM @nitro-ui/utility-background](https://www.npmjs.com/package/@nitro-ui/utility-background):
 
 ```sh
-npm install @nitro-ui/css-utility-background
+npm install @nitro-ui/utility-background
 ```
 
 Include this stylesheet code into your site:

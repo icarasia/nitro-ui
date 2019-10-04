@@ -4,10 +4,10 @@ Utility Divider component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-divider](https://www.npmjs.com/package/@nitro-ui/css-utility-divider):
+Get latest version by installing via [NPM @nitro-ui/utility-divider](https://www.npmjs.com/package/@nitro-ui/utility-divider):
 
 ```sh
-npm install @nitro-ui/css-utility-divider
+npm install @nitro-ui/utility-divider
 ```
 
 Include this stylesheet code into your site:

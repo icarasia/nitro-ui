@@ -4,10 +4,10 @@ Object Grid component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-object-grid](https://www.npmjs.com/package/@nitro-ui/css-object-grid):
+Get latest version by installing via [NPM @nitro-ui/object-grid](https://www.npmjs.com/package/@nitro-ui/object-grid):
 
 ```sh
-npm install @nitro-ui/css-object-grid
+npm install @nitro-ui/object-grid
 ```
 
 Include this stylesheet code into your site:

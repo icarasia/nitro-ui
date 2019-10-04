@@ -4,10 +4,10 @@ Menu styling for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-object-menu](https://www.npmjs.com/package/@nitro-ui/css-object-menu):
+Get latest version by installing via [NPM @nitro-ui/object-menu](https://www.npmjs.com/package/@nitro-ui/object-menu):
 
 ```sh
-npm install @nitro-ui/css-object-menu
+npm install @nitro-ui/object-menu
 ```
 
 Default

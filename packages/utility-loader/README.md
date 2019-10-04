@@ -4,10 +4,10 @@ Utility Loader component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-loader](https://www.npmjs.com/package/@nitro-ui/css-utility-loader):
+Get latest version by installing via [NPM @nitro-ui/utility-loader](https://www.npmjs.com/package/@nitro-ui/utility-loader):
 
 ```sh
-npm install @nitro-ui/css-utility-loader
+npm install @nitro-ui/utility-loader
 ```
 
 Include this stylesheet code into your site:
