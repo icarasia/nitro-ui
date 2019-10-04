@@ -1,6 +1,6 @@
 {
-    "name": "@nitro-ui/css-utility-float",
-    "version": "1.0.0-beta.1",
+    "name": "@nitro-ui/utility-float",
+    "version": "0.0.0",
     "description": "Utility Float component for Nitro UI.",
     "main": "dist/utility-float.min.css",
     "publishConfig": {
@@ -15,6 +15,7 @@
     },
     "keywords": [
         "Utility",
+        "Float",
         "Nitro",
         "UI",
         "Float",
@@ -29,7 +30,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/css-core": "^1.0.0-beta.4",
+        "@nitro-ui/core": "^1.0.0",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",
