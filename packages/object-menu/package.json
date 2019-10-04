@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-menu",
-    "version": "0.0.0",
+    "version": "1.0.0-alpha.0",
     "description": "Object menu styling for Nitro UI.",
     "main": "dist/object-menu.min.css",
     "publishConfig": {

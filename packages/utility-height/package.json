@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-height",
-    "version": "0.0.0",
+    "version": "1.0.0-alpha.0",
     "description": "Utility height component for Nitro UI.",
     "main": "dist/utility-height.min.css",
     "publishConfig": {
