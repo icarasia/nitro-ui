@@ -13,15 +13,50 @@ npm install @nitro-ui/alert
 Include this stylesheet code into your site:
 
 ```html
-<link rel="stylesheet" href="dist/button.min.css" />
+<link rel="stylesheet" href="dist/alert.min.css" />
 ```
 
 ## Usage:
 
-Example with `<a>` tag:
+Example with `<div>` tag:
 
 ```html
-<a href="#" class="">Button Example</a>
+info
+tips
+success
+error
+warning
+
+Using Icon
+<div class="c-alert  c-alert--warning">
+    <div class="c-alert__left">
+        <span class="icon  icon--20  icon--info"></span>
+    </div>
+
+    <div class="c-alert__body">
+        This is Warning alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert"></a>
+</div>
+
+
+Using SVG Icon
+<div class="c-alert  c-alert--warning">
+    <div class="c-alert__left">
+        <svg class="icon-svg  icon-svg--20">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--info"></use>
+        </svg>
+    </div>
+
+    <div class="c-alert__body">
+        This is Warning alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close" data-dismiss="alert">
+        <svg class="icon-svg  icon-svg--16">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--close"></use>
+        </svg>
+    </a>
+</div>
 ```
 
 ## Development
