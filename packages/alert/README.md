@@ -19,29 +19,80 @@ Include this stylesheet code into your site:
 ## Usage:
 
 Example with `<div>` tag:
-
-```html
 info
 tips
 success
 error
 warning
 
+
 Using Icon
-<div class="c-alert  c-alert--warning">
+```html
+<!--c-alert--info-->
+<div class="c-alert  c-alert--info">
     <div class="c-alert__left">
         <span class="icon  icon--20  icon--info"></span>
     </div>
 
     <div class="c-alert__body">
-        This is Warning alert with an <a href="#">example link</a>
+        This is info alert with an <a href="#">example link</a>
     </div>
     <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert"></a>
 </div>
 
+<!--c-alert--tips-->
+<div class="c-alert  c-alert--tips">
+    <div class="c-alert__left">
+        <span class="icon  icon--20  icon--tips"></span>
+    </div>
+
+    <div class="c-alert__body">
+        This is tips alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert"></a>
+</div>
+
+<!--c-alert--success-->
+<div class="c-alert  c-alert--success">
+    <div class="c-alert__left">
+        <span class="icon  icon--20  icon--check-circle"></span>
+    </div>
+
+    <div class="c-alert__body">
+        This is success alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert"></a>
+</div>
+
+<!--c-alert--error-->
+<div class="c-alert  c-alert--error">
+    <div class="c-alert__left">
+        <span class="icon  icon--20  icon--error"></span>
+    </div>
+
+    <div class="c-alert__body">
+        This is error alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert"></a>
+</div>
+
+<!--c-alert--warning-->
+<div class="c-alert  c-alert--warning">
+    <div class="c-alert__left">
+        <span class="icon  icon--20  icon--warning"></span>
+    </div>
+
+    <div class="c-alert__body">
+        This is warning alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert"></a>
+</div>
+```
 
 Using SVG Icon
-<div class="c-alert  c-alert--warning">
+```html
+<!--c-alert--info-->
+<div class="c-alert  c-alert--info">
     <div class="c-alert__left">
         <svg class="icon-svg  icon-svg--20">
             <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--info"></use>
@@ -49,7 +100,79 @@ Using SVG Icon
     </div>
 
     <div class="c-alert__body">
-        This is Warning alert with an <a href="#">example link</a>
+        This is info alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close" data-dismiss="alert">
+        <svg class="icon-svg  icon-svg--16">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--close"></use>
+        </svg>
+    </a>
+</div>
+
+<!--c-alert--tips-->
+<div class="c-alert  c-alert--tips">
+    <div class="c-alert__left">
+        <svg class="icon-svg  icon-svg--20">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--tips"></use>
+        </svg>
+    </div>
+
+    <div class="c-alert__body">
+        This is tips alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close" data-dismiss="alert">
+        <svg class="icon-svg  icon-svg--16">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--close"></use>
+        </svg>
+    </a>
+</div>
+
+<!--c-alert--success-->
+<div class="c-alert  c-alert--success">
+    <div class="c-alert__left">
+        <svg class="icon-svg  icon-svg--20">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--check-circle"></use>
+        </svg>
+    </div>
+
+    <div class="c-alert__body">
+        This is success alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close" data-dismiss="alert">
+        <svg class="icon-svg  icon-svg--16">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--close"></use>
+        </svg>
+    </a>
+</div>
+
+<!--c-alert--error-->
+<div class="c-alert  c-alert--error">
+    <div class="c-alert__left">
+        <svg class="icon-svg  icon-svg--20">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--error"></use>
+        </svg>
+    </div>
+
+    <div class="c-alert__body">
+        This is error alert with an <a href="#">example link</a>
+    </div>
+    <a href="#" class="c-alert__close" data-dismiss="alert">
+        <svg class="icon-svg  icon-svg--16">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--close"></use>
+        </svg>
+    </a>
+</div>
+
+<!--c-alert--warning-->
+<div class="c-alert  c-alert--warning">
+    <div class="c-alert__left">
+        <svg class="icon-svg  icon-svg--20">
+            <use xlink:href="/YOUR_FOLDER/spritemap.svg#icon--warning"></use>
+        </svg>
+    </div>
+
+    <div class="c-alert__body">
+        This is warning alert with an <a href="#">example link</a>
     </div>
     <a href="#" class="c-alert__close" data-dismiss="alert">
         <svg class="icon-svg  icon-svg--16">
