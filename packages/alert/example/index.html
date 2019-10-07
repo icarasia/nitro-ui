@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Compoent Alert - Nitro UI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../dist/component-alert.min.css">
+        <style>
+            /*overwrite the class here because include bootstrap.min.css for documentation purpose*/
+            .alert{
+                border: none;
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Alert</h1>
+                <div class="text-muted">
+                    <p>
+                        Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="container  py-5">
+                <!-- Info -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Info</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="c-alert  c-alert--info  alert">
+                            <div class="c-alert__left">
+                                <span class="icon  icon--20  icon--check-info"></span>
+                            </div>
+
+                            <div class="c-alert__body">
+                                This is info alert with an <a href="#">example link</a>
+                            </div>
+                            <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert">x</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Tips -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Tips</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="c-alert  c-alert--tips  alert">
+                            <div class="c-alert__left">
+                                <span class="icon  icon--20  icon--check-tips"></span>
+                            </div>
+
+                            <div class="c-alert__body">
+                                This is Tips alert with an <a href="#">example link</a>
+                            </div>
+                            <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert">x</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+
+                <!-- Success -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Success</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="c-alert  c-alert--success  alert">
+                            <div class="c-alert__left">
+                                <span class="icon  icon--20  icon--check-circle"></span>
+                            </div>
+
+                            <div class="c-alert__body">
+                                This is Success alert with an <a href="#">example link</a>
+                            </div>
+                            <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert">x</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Error -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Error</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="c-alert  c-alert--error  alert">
+                            <div class="c-alert__left">
+                                <span class="icon  icon--20  icon--error"></span>
+                            </div>
+
+                            <div class="c-alert__body">
+                                This is Error alert with an <a href="#">example link</a>
+                            </div>
+                            <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert">x</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Warning -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Warning</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="c-alert  c-alert--warning  alert">
+                            <div class="c-alert__left">
+                                <span class="icon  icon--20  icon--warning"></span>
+                            </div>
+
+                            <div class="c-alert__body">
+                                This is Warning alert with an <a href="#">example link</a>
+                            </div>
+                            <a href="#" class="c-alert__close  icon  icon--16  icon--close" data-dismiss="alert" aria-label="Close">x</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4  mb-5">
+
+            </div>
+        </article>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="../node_modules/bootstrap/js/alert.js"></script>
+    </body>
+</html>
