@@ -1,0 +1,80 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Arrow
+//
+//  Arrow component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Core
+//      2. Modifier
+
+//  ----------------------------------------------------------------------------
+//  1. Core
+//  ----------------------------------------------------------------------------
+@import '@nitro-ui/core/src/variables';
+
+.c-arrow {
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    left: 50%;
+    bottom: 0;
+    margin: -8px -6px;
+    // transform: rotate(-90deg);
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid $haze-400;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+     &:after {
+        border-top-color: $white;
+        top: -1px;
+    }
+}
+
+//  ----------------------------------------------------------------------------
+//  2. Modifier
+//  ----------------------------------------------------------------------------
+.c-arrow--top {
+    bottom: auto;
+    top: 0;
+    transform: rotate(-180deg);
+}
+
+
+.c-arrow--right {
+    left: auto;
+    right: 0;
+    margin: -4px -10px;
+    transform: rotate(-90deg);
+    top: 50%;
+}
+
+
+.c-arrow--left {
+    left: 0;
+    margin: -4px -10px;
+    transform: rotate(90deg);
+    top: 50%;
+}
+
+
+.c-card--dark {
+    .c-arrow {
+        &:before,
+        &:after {
+            border-top-color: $dark-600;
+        }
+    }
+}
