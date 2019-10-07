@@ -1,8 +1,8 @@
 {
-    "name": "@nitro-ui/chips",
-    "version": "1.0.0-alpha.2",
-    "description": "Chips component for Nitro UI.",
-    "main": "dist/chips.min.css",
+    "name": "@nitro-ui/component-button",
+    "version": "1.0.0-alpha.0",
+    "description": "Button component for Nitro UI.",
+    "main": "dist/button.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -14,14 +14,17 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
-        "Chips",
+        "Button",
         "Nitro",
         "UI",
         "CSS",
         "Components",
         "iCarAsia"
     ],
-    "author": "Syaiful Shah Zinan <i.works@live.com>",
+    "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "contributors": [
+        "Syaiful Shah Zinan <i.works@live.com>"
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
