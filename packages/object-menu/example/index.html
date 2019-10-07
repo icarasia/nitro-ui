@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Object - Menu</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../dist/object-menu.css">
+        <style>
+            article {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Menu</h1>
+                <div class="text-muted">
+                    <p>
+                        Define standard menu layout
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="container  py-5">
+
+                <h6 class="mb-5">Default</h6>
+
+                <ul class="o-menu">
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--active">Menu One</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Two</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Three</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--disabled">Menu Four</a>
+                    </li>
+                </ul>
+
+                <hr class="mt-5  mb-5">
+
+                <h6 class="mb-5">Center Align <code>.o-menu  .o-menu--center</code></h6>
+
+
+                <ul class="o-menu  o-menu--center">
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--active">Menu One</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Two</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Three</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--disabled">Menu Four</a>
+                    </li>
+                </ul>
+
+                <hr class="mt-5  mb-5">
+
+                <h6 class="mb-5">Right Align <code>.o-menu  .o-menu--right</code></h6>
+
+
+                <ul class="o-menu  o-menu--right">
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--active">Menu One</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Two</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Three</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--disabled">Menu Four</a>
+                    </li>
+                </ul>
+
+                <hr class="mt-5  mb-5">
+
+                <h6 class="mb-5">Space Around <code>.o-menu .o-menu--space-around</code></h6>
+
+
+                <ul class="o-menu  o-menu--space-around">
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--active">Menu One</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Two</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Three</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--disabled">Menu Four</a>
+                    </li>
+                </ul>
+
+                <hr class="mt-5  mb-5">
+
+                <h6 class="mb-5">Space Between <code>.o-menu .o-menu--space-between</code></h6>
+
+                <ul class="o-menu  o-menu--space-between">
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--active">Menu One</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Two</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Three</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--disabled">Menu Four</a>
+                    </li>
+                </ul>
+
+                <hr class="mt-5  mb-5">
+
+                <h6 class="mb-5">Responsive <code>@mobile-tablet</code></h6>
+
+                <ul class="o-menu  o-menu--responsive@mobile-tablet">
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--active">Menu One</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Two</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Three</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--disabled">Menu Four</a>
+                    </li>
+                </ul>
+
+                <hr class="mt-5  mb-5">
+
+                <h6 class="mb-5">Responsive <code>@mobile</code></h6>
+
+                <ul class="o-menu  o-menu--responsive@mobile">
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--active">Menu One</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Two</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link">Menu Three</a>
+                    </li>
+                    <li class="o-menu__item">
+                        <a href="#" class="o-menu__link  is--disabled">Menu Four</a>
+                    </li>
+                </ul>
+        </article>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

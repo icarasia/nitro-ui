@@ -1,0 +1,224 @@
+//  ----------------------------------------------------------------------------
+//
+//  @OBJECT - Embed
+//
+//  Embed styling for Nitro UI
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Modifiers - Ratio
+//      5.  Modifiers - Width
+//      6.  Setup - Global
+//      7.  Setup - Responsive
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$responsive-embed-desktop           : true !default;
+$responsive-embed-tablet-desktop    : true !default;
+$responsive-embed-mobile-tablet     : true !default;
+$responsive-embed-tablet            : true !default;
+$responsive-embed-mobile            : true !default;
+
+$embed-background                   : $haze-300 !default;
+
+$embed-shade-top                    : rgba($dark-700, 0) 0% !default;
+$embed-shade-middle                 : rgba($dark-700, .4) 40% !default;
+$embed-shade-bottom                 : rgba($dark-700, 1) 100% !default;
+
+$embed-xxl                          : 280px !default;
+$embed-xl                           : 200px !default;
+$embed-lg                           : 148px !default;
+$embed-md                           : 100px !default;
+$embed-sm                           : 76px  !default;
+$embed-xs                           : 52px  !default;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.o-embed {
+    background-color: $embed-background;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-width: 20px;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+
+    img,
+    embed,
+    iframe,
+    object,
+    video {
+        bottom: 0;
+        display: block;
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        position: absolute !important;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.o-embed--video {
+    background-color: $dark-600;
+}
+
+
+.o-embed--shade::after {
+    background: linear-gradient(to bottom, $embed-shade-top, $embed-shade-middle, $embed-shade-bottom);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    padding-top: 75%;
+    position: absolute;
+    right: 0;
+}
+
+.o-embed--transparent {
+    background-color: transparent;
+}
+
+
+//  4. Modifiers - Ratio
+//  ----------------------------------------------------------------------------
+
+@mixin embed-ratio($breakpoint: 'global') {
+
+    $spacing: '';
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .o-embed--3x1#{$breakpoint-separator}#{$breakpoint}:before {
+        padding-top: 33.335%;
+    }
+
+    .o-embed--1x1#{$breakpoint-separator}#{$breakpoint}:before {
+        padding-top: 100%;
+    }
+
+    .o-embed--16x9#{$breakpoint-separator}#{$breakpoint}:before {
+        padding-top: 56.25%;
+    }
+
+    .o-embed--4x3#{$breakpoint-separator}#{$breakpoint}:before {
+        padding-top: 75%;
+    }
+}
+
+
+//  5. Modifiers - Width
+//  ----------------------------------------------------------------------------
+
+@mixin embed-width($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+    .o-embed--xxl#{$breakpoint-separator}#{$breakpoint} {
+        flex: 0 0 $embed-xxl;
+        max-width: $embed-xxl;
+        width: $embed-xxl;
+    }
+    .o-embed--xl#{$breakpoint-separator}#{$breakpoint} {
+        flex: 0 0 $embed-xl;
+        max-width: $embed-xl;
+        width: $embed-xl;
+    }
+    .o-embed--lg#{$breakpoint-separator}#{$breakpoint} {
+        flex: 0 0 $embed-lg;
+        max-width: $embed-lg;
+        width: $embed-lg;
+    }
+    .o-embed--md#{$breakpoint-separator}#{$breakpoint} {
+        flex: 0 0 $embed-md;
+        max-width: $embed-md;
+        width: $embed-md;
+    }
+    .o-embed--sm#{$breakpoint-separator}#{$breakpoint} {
+        flex: 0 0 $embed-sm;
+        max-width: $embed-sm;
+        width: $embed-sm;
+    }
+    .o-embed--xs#{$breakpoint-separator}#{$breakpoint} {
+        flex: 0 0 $embed-xs;
+        max-width: $embed-xs;
+        width: $embed-xs;
+    }
+}
+
+
+//  6. Setup - Global
+//  ----------------------------------------------------------------------------
+
+@include embed-ratio();
+@include embed-width();
+
+
+//  7. Setup - Responsive
+//  ----------------------------------------------------------------------------
+
+@if $responsive {
+    @if $responsive-embed-desktop {
+        @include media-query('desktop') {
+            @include embed-ratio('desktop');
+            @include embed-width('desktop');
+        }
+    }
+    @if $responsive-embed-tablet-desktop {
+        @include media-query('tablet-desktop') {
+            @include embed-ratio('tablet-desktop');
+            @include embed-width('tablet-desktop');
+        }
+    }
+    @if $responsive-embed-mobile-tablet {
+        @include media-query('mobile-tablet') {
+            @include embed-ratio('mobile-tablet');
+            @include embed-width('mobile-tablet');
+        }
+    }
+    @if $responsive-embed-tablet {
+        @include media-query('tablet') {
+            @include embed-ratio('tablet');
+            @include embed-width('tablet');
+        }
+    }
+    @if $responsive-embed-mobile {
+        @include media-query('mobile') {
+            @include embed-ratio('mobile');
+            @include embed-width('mobile');
+        }
+    }
+}

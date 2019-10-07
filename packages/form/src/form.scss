@@ -8,33 +8,33 @@
 //
 //  CONTENTS
 //
-//      1.  DEPENDENCIES
-//      2.  VARIABLES
-//      3.  MIXINS
-//      4.  GENERAL
-//      5.  ELEMENT - TEXTAREA
-//      6.  ELEMENT - SELECT
-//      7.  ELEMENT - CHECBOX / RADIO / SWITCH
-//      8.  FIELD
-//      9.  STATE - DISABLED
-//      10. STATE - FOCUS
-//      11. STATE - ERROR
-//      12. SIZE - SMALL
-//      13. SIZE - LARGE
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Mixins
+//      4.  General
+//      5.  Element - Textarea
+//      6.  Element - Select
+//      7.  Element - Checkbox / Radio / Switch
+//      8.  Field
+//      9.  State - Disabled
+//      10. State - Focus
+//      11. State - Error
+//      12. Size - Small
+//      13. Size - Large
 //
 //  ----------------------------------------------------------------------------
 
 
-//  1. DEPENDENCIES
+//  1. Dependencies
 //  ----------------------------------------------------------------------------
 
-@import '../node_modules/@nitro-ui/css-core/src/variables';
-@import '../node_modules/@nitro-ui/css-core/src/animations';
-@import '../node_modules/@nitro-ui/css-core/src/mixins';
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/animations';
+@import '@nitro-ui/core/src/mixins';
 
 
 
-//  2. VARIABLES
+//  2. Variables
 //  ----------------------------------------------------------------------------
 
 @import 'variables';
@@ -42,7 +42,7 @@
 
 
 
-//  3. MIXINS
+//  3. Mixins
 //  ----------------------------------------------------------------------------
 
 @mixin input-disabled {
@@ -67,7 +67,7 @@
 
 
 
-//  4. GENERAL
+//  4. General
 //  ----------------------------------------------------------------------------
 
 .c-input {
@@ -113,7 +113,7 @@
 
 
 
-//  5. ELEMENT - TEXTAREA
+//  5. Element - Textarea
 //  ----------------------------------------------------------------------------
 
 textarea.c-input {
@@ -128,7 +128,7 @@ textarea.c-input {
 
 
 
-//  6. ELEMENT - SELECT
+//  6. Element - Select
 //  ----------------------------------------------------------------------------
 
 select.c-input {
@@ -142,7 +142,7 @@ select.c-input {
 
 
 
-//  7. ELEMENT - CHECBOX / RADIO / SWITCH
+//  7. Element - Checkbox / Radio / Switch
 //  ----------------------------------------------------------------------------
 
 .c-check,
@@ -311,7 +311,7 @@ select.c-input {
 
 
 
-//  8. FIELD
+//  8. Field
 //  ----------------------------------------------------------------------------
 //  Grouped form elements with label and message
 
@@ -332,7 +332,7 @@ select.c-input {
 
 
 
-//  9. STATE - DISABLED
+//  9. State - Disabled
 //  ----------------------------------------------------------------------------
 
 .c-input.is--disabled,
@@ -355,7 +355,7 @@ select.c-input {
 
 
 
-//  10. STATE - FOCUS
+//  10. State - Focus
 //  ----------------------------------------------------------------------------
 
 .c-input.is--focus,
@@ -370,7 +370,7 @@ select.c-input {
 
 
 
-//  11. STATE - ERROR
+//  11. State - Error
 //  ----------------------------------------------------------------------------
 
 .c-input.is--error,
@@ -386,7 +386,7 @@ select.c-input {
 
 
 
-//  12. SIZE - SMALL
+//  12. Size - Small
 //  ----------------------------------------------------------------------------
 
 // .c-input--sm {
@@ -397,7 +397,7 @@ select.c-input {
 
 
 
-//  13. SIZE - LARGE
+//  13. Size - Large
 //  ----------------------------------------------------------------------------
 
 // .c-input--lg {

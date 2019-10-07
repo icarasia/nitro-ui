@@ -4,10 +4,10 @@ Utility Align component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-align](https://www.npmjs.com/package/@nitro-ui/css-utility-align):
+Get latest version by installing via [NPM @nitro-ui/utility-align](https://www.npmjs.com/package/@nitro-ui/utility-align):
 
 ```sh
-npm install @nitro-ui/css-utility-align
+npm install @nitro-ui/utility-align
 ```
 
 Include this stylesheet code into your site:

@@ -4,10 +4,10 @@ Utility Spacing component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-spacing](https://www.npmjs.com/package/@nitro-ui/css-utility-spacing):
+Get latest version by installing via [NPM @nitro-ui/utility-spacing](https://www.npmjs.com/package/@nitro-ui/utility-spacing):
 
 ```sh
-npm install @nitro-ui/css-utility-spacing
+npm install @nitro-ui/utility-spacing
 ```
 
 

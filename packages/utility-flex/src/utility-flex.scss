@@ -15,8 +15,8 @@
 //      5. Responsive - Mobile
 //
 
-@import '@nitro-ui/css-core/src/variables';
-@import '@nitro-ui/css-core/src/mixins';
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
 
 $flex-columns           : 12 !default;
 
@@ -139,7 +139,7 @@ $use-u-flex--mobile     : true !default;
 
 
     .u-order-first#{$breakpoint-separator}#{$breakpoint}           { order: -1; }
-    .u-order-last#{$breakpoint-separator}#{$breakpoint}            { order: $columns + 1; }
+    .u-order-last#{$breakpoint-separator}#{$breakpoint}            { order: $flex-columns + 1; }
 
     @for $i from 0 through $flex-columns {
       .u-order-#{$i}#{$breakpoint-separator}#{$breakpoint} { order: $i; }

@@ -4,10 +4,10 @@ Utility Text component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-text](https://www.npmjs.com/package/@nitro-ui/css-utility-text):
+Get latest version by installing via [NPM @nitro-ui/utility-text](https://www.npmjs.com/package/@nitro-ui/utility-text):
 
 ```sh
-npm install @nitro-ui/css-utility-text
+npm install @nitro-ui/utility-text
 ```
 
 Include this stylesheet code into your site:

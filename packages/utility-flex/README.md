@@ -4,10 +4,10 @@ Utility Flex component for Nitro UI. Quickly manage the layout, alignment, and s
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-utility-flex](https://www.npmjs.com/package/@nitro-ui/css-utility-spacing):
+Get latest version by installing via [NPM @nitro-ui/utility-flex](https://www.npmjs.com/package/@nitro-ui/utility-spacing):
 
 ```sh
-npm install @nitro-ui/css-utility-flex
+npm install @nitro-ui/utility-flex
 ```
 
 ### Enable Flex behaviors
@@ -481,7 +481,7 @@ Responsive variations also exist for `u-flex__grow` and `u-flex__shrink`.
 
 ### Auto Margins
 
-Flexbox can do some pretty awesome things when you mix flex alignments with `auto margins`. For more available properties for Nitro auto margins can check out [auto margins](https://www.npmjs.com/package/@nitro-ui/css-utility-spacing) and it supports responsive too.
+Flexbox can do some pretty awesome things when you mix flex alignments with `auto margins`. For more available properties for Nitro auto margins can check out [auto margins](https://www.npmjs.com/package/@nitro-ui/utility-spacing) and it supports responsive too.
 
 Unfortunately, **IE10** and **IE11** do not properly support auto margins on flex items whose parent has a non-default justify-content value. See this [StackOverflow answer](https://stackoverflow.com/a/37535548) for more details.
 
