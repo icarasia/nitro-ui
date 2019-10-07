@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-transition",
-    "version": "0.0.0",
+    "version": "1.0.0-alpha.0",
     "description": "Utility transition component for Nitro UI.",
     "main": "dist/utility-transition.min.css",
     "publishConfig": {
