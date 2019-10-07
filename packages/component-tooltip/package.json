@@ -1,8 +1,8 @@
 {
-    "name": "@nitro-ui/component-avatar",
-    "version": "1.0.0-alpha.3",
-    "description": "Avatar styling for Nitro UI.",
-    "main": "dist/component-avatar.min.css",
+    "name": "@nitro-ui/component-tooltip",
+    "version": "1.0.0-alpha.0",
+    "description": "Tooltip styling for Nitro UI.",
+    "main": "dist/component-tooltip.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -29,6 +29,7 @@
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/core": "^1.0.0-alpha.2",
+        "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",

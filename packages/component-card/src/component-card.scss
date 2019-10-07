@@ -26,10 +26,10 @@
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
-$card-spacing       : $spacing-md;
-$card-spacing-sm    : $spacing-sm;
-$card-spacing-xs    : $spacing-xs;
-$card-divider       : $haze-200;
+$card-spacing       : $spacing-md !default;
+$card-spacing-sm    : $spacing-sm !default;
+$card-spacing-xs    : $spacing-xs !default;
+$card-divider       : $haze-200 !default;
 
 //  3. Core
 //  ----------------------------------------------------------------------------
