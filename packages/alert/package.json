@@ -1,8 +1,8 @@
 {
-    "name": "@nitro-ui/alert",
+    "name": "@nitro-ui/component-alert",
     "version": "1.0.0-alpha.2",
-    "description": "Button component for Nitro UI.",
-    "main": "dist/alert.min.css",
+    "description": "Alert component for Nitro UI.",
+    "main": "dist/component-alert.min.css",
     "publishConfig": {
         "access": "public"
     },

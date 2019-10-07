@@ -1,19 +1,19 @@
-# Nitro UI: Alert
+# Nitro UI: Component > Alert
 
 Alert component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/alert](https://www.npmjs.com/package/@nitro-ui/alert):
+Get latest version by installing via [NPM @nitro-ui/component-alert](https://www.npmjs.com/package/@nitro-ui/component-alert):
 
 ```sh
-npm install @nitro-ui/alert
+npm install @nitro-ui/component-alert
 ```
 
 Include this stylesheet code into your site:
 
 ```html
-<link rel="stylesheet" href="dist/alert.min.css" />
+<link rel="stylesheet" href="dist/component-alert.min.css" />
 ```
 
 ## Usage:
