@@ -26,7 +26,8 @@
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
-$avatar-background-color        : $haze-300;
+$avatar-background-color        : $haze-300 !default;
+$avatar-sizes                   : 24px, 40px, 64px, 128px !default;
 
 
 
@@ -83,9 +84,6 @@ $avatar-background-color        : $haze-300;
 
 //  5. Modifier - Size
 //  ----------------------------------------------------------------------------
-
-
-$avatar-sizes: 24px, 40px, 64px, 128px !default;
 
 @mixin avatar-setup($breakpoint: 'global') {
 
