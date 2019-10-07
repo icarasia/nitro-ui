@@ -11,7 +11,7 @@ npm install @nitro-ui/utility-transition
 ```
 
 ## Usage:
-Transition contains 3 properties : `slow`, `default` and `fast`. Use the speed at where you think appropriate
+Transition utilities contains 3 properties : `slow`, `default` and `fast`. Use the speed at where you think appropriate
 
 ### Transition
 ```html
