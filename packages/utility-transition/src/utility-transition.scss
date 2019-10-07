@@ -1,0 +1,41 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility Transition
+//
+//  Utility Transition component for Nitro UI.
+
+//  CONTENTS
+//
+//      1. Variables
+//      2. Usage
+//
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+$use-utility-transition               : true !default;
+
+$transition-slow:       all .6s ease !default;
+$transition-default:    all .4s ease !default;
+$transition-fast:       all .2s ease !default;
+
+$transitions : () !default;
+
+//  ----------------------------------------------------------------------------
+//  2. Usage
+//  ----------------------------------------------------------------------------
+
+$transitions: map-merge(
+    (
+        'transition-slow' :     $transition-slow,
+        'transition-default' :  $transition-default,
+        'transition-fast' :     $transition-fast,
+    ),
+    $transitions
+);
+
+@each $transition, $value in $transitions {
+    .u-#{$transition} {
+        transition: $value
+    }
+}
