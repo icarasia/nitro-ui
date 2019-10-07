@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/component-alert.css': [
-                        'src/component-alert.scss'
+                    'dist/css/component-alert.css': [
+                        'src/sass/component-alert.scss'
                     ]
                 }
             },
@@ -27,17 +27,63 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/component-alert.min.css': [
-                        'src/component-alert.scss'
+                    'dist/css/component-alert.min.css': [
+                        'src/sass/component-alert.scss'
                     ]
                 }
             }
+        },
+
+        browserify: {
+            dist: {
+                files: {
+                    'dist/js/alert.js': [
+                        'src/js/alert.js'
+                    ]
+                },
+                options: {
+                    transform: [
+                        [
+                            'babelify', {
+                                presets: ['@babel/preset-env'],
+                                global: true,
+                                ignore: [ /\/node_modules\/(?!bootstrap\/)/ ]
+                            }
+                        ]
+                    ],
+                    browserifyOptions: {
+                        debug: true
+                    }
+                }
+            }
+        },
+
+        uglify: {
+            options: {
+                mangle: false
+            },
+            main: {
+                files: {
+                    'dist/js/alert.min.js': [
+                        'dist/js/alert.js',
+                    ]
+                }
+            },
         },
 
         watch: {
             css: {
                 files: [ '**/*.{sass,scss}' ],
                 tasks: [ 'sass', 'notify:css' ],
+                options: {
+                    spawn: false,
+                    livereload: true,
+                    interrupt: true
+                },
+            },
+            js: {
+                files: [ 'src/js/**/*.js' ],
+                tasks: [ 'browserify', 'uglify', 'notify:js' ],
                 options: {
                     spawn: false,
                     livereload: true,
@@ -79,7 +125,12 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-sass' );
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-notify' );
+    // grunt.loadNpmTasks( 'grunt-babel' );
+    grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+    grunt.loadNpmTasks( 'grunt-browserify' );
 
     // Default task(s).
-    grunt.registerTask( 'default', [ 'clean', 'sass', 'notify:css' ] );
+    // grunt.registerTask( 'default', [ 'clean', 'sass', 'babel', 'uglify', 'notify:css' ] );
+    grunt.registerTask( 'js', [ 'browserify', 'uglify', 'notify:js' ] );
+    grunt.registerTask( 'default', [ 'clean', 'sass', 'browserify', 'uglify', 'notify:css' ] );
 };
