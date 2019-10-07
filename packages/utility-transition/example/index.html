@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Utility Transition - Nitro UI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../dist/utility-transition.min.css">
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h2 class="font-weight-bold mb-3">Utility Transition</h2>
+                <div class="text-muted"></div>
+            </div>
+        </header>
+        <article>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card px-3  py-4  u-transition-fast">
+                            <h4>Transition Fast .2s</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card px-3  py-4  u-transition-default">
+                            <h4>Transition Default .4s</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card px-3  py-4  u-transition-slow">
+                            <h4>Transition Slow .6s</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <style>
+            .card {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+                            0 2px 2px rgba(0,0,0,0.05),
+                            0 4px 4px rgba(0,0,0,0.05),
+                            0 8px 8px rgba(0,0,0,0.05);
+            }
+
+            .card:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+                            0 2px 2px rgba(0,0,0,0.11),
+                            0 4px 4px rgba(0,0,0,0.11),
+                            0 8px 8px rgba(0,0,0,0.11),
+                            0 16px 16px rgba(0,0,0,0.11),
+                            0 32px 32px rgba(0,0,0,0.11);
+                transform: translate3d(0,-3px,0);
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
