@@ -1,0 +1,130 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Tooltip
+//
+//  Component styling for tooltip.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Modifiers
+//      5.  Responsive
+//
+//  ----------------------------------------------------------------------------
+//
+//  <div class="c-tooltip  c-tooltip--[direction]" data-tooltip="[content]">...</div>
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$tooltip-bg-color       : $dark-500 !default;
+$tooltip-radius         : $base-radius !default;
+$tooltip-font-height    : $font-7-height !default;
+$tooltip-font-size      : $font-7-size !default;
+$tooltip-font-weight    : $font-weight-normal !default;
+$tooltip-spacing-x      : $spacing-xxs !default;
+$tooltip-spacing-y      : $spacing-xs !default;
+$tooltip-origin         : 8px !default;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-tooltip {
+    position: relative;
+
+    &::after {
+        background-color: $tooltip-bg-color;
+        border-radius: $tooltip-radius;
+        bottom: 100%;
+        color: #fff;
+        content: attr(data-tooltip);
+        display: block;
+        font-size: $tooltip-font-size;
+        font-weight: $tooltip-font-weight;
+        line-height: $tooltip-font-height;
+        left: 50%;
+        max-width: 320px;
+        opacity: 0;
+        overflow: hidden;
+        padding: $tooltip-spacing-x $tooltip-spacing-y;
+        position: absolute;
+        text-overflow: ellipsis;
+        transform: translate(-50%, $tooltip-origin);
+        transition: all .2s ease;
+        white-space: pre;
+        z-index: 300;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transform: translate(-50%, -$tooltip-origin);
+    }
+}
+
+
+//  4. Modifiers
+//  ----------------------------------------------------------------------------
+
+.c-tooltip--right {
+    &::after {
+        bottom: 50%;
+        left: 100%;
+        transform: translate(-$tooltip-origin,50%);
+    }
+
+    &:hover::after {
+        transform: translate($tooltip-origin,50%);
+    }
+}
+
+.c-tooltip--bottom {
+    &::after {
+        bottom: auto;
+        top: 100%;
+        transform: translate(-50%,-$tooltip-origin);
+    }
+
+    &:hover::after {
+        transform: translate(-50%,$tooltip-origin);
+    }
+}
+
+.c-tooltip--left {
+    &::after {
+        bottom: 50%;
+        left: auto;
+        right: 100%;
+        transform: translate($tooltip-origin,50%);
+    }
+
+    &:hover::after {
+        transform: translate(-$tooltip-origin,50%);
+    }
+}
+
+
+//  5. Responsive
+//  ----------------------------------------------------------------------------
+
+@include media-query('portable') {
+    .c-tooltip {
+        &::after {
+            display: none !important;
+        }
+    }
+}
