@@ -30,7 +30,7 @@ Development tools required for this component are:
 
 - [NodeJS](https://nodejs.org/en/)
 - [Grunt CLI](https://gruntjs.com)
-- [Ruby](https://www.ruby-lang.org/en/) (optional)
+- [Ruby](https://www.ruby-lang.org/en/) (optionagl)
 - [SASS](https://sass-lang.com) (optional)
 
 Ruby and SASS are optional if you're fully using [node-sass](https://github.com/sass/node-sass) from npm for development.
@@ -65,6 +65,8 @@ All notable changes to this project will be documented in this file. **For now, 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.0.0-beta] - 2019-07-18
+## [0.0.0-beta] - 2019-10-07
 ### Added
 - Initial setup
+- Adding extra support class `u-transition-slow` and `u-transition-fast`
+- Revised on the transition speed duration for default, slow and fast
