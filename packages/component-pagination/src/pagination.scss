@@ -17,9 +17,11 @@
 
 
 //  1. Dependencies
-//  ----------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
 
-@import '@nitro-ui/component-button/src/button';
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/animations';
+@import '@nitro-ui/core/src/mixins';
 
 
 
@@ -101,6 +103,7 @@
     > a.is--disabled{
         background-color: inherit;
         border: 0;
+        cursor: disabled;
     }
 
     &.is--active {
