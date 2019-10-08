@@ -2,38 +2,54 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Chips - Nitro UI</title>
+        <title>Nitro UI : Rating</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="../dist/chips.min.css">
+        <style>
+            article {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+                color: #576A7F;
+            }
+
+            article h1,
+            article h2,
+            article h3,
+            article h4,
+            article h5,
+            article h6 {
+                color: #344251;
+            }
+        </style>
     </head>
     <body class="bg-light">
         <header class="bg-white border-bottom">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
             <div class="container py-5">
-                <h2 class="font-weight-bold mb-3">Chips</h2>
-                <div class="text-muted">Chips are complex entities in small blocks.</div>
+                <h1 class="font-weight-bold mb-3">Chips</h1>
+                <div class="text-muted">
+                    <p>
+                        Chips are complex entities in small blocks.
+                    </p>
+                </div>
             </div>
         </header>
         <article>
             <div class="container py-5">
-                <!-- Basic -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="text-muted">Basic</div>
-                    </div>
-                    <div class="col-md-8">
-                        <span class="c-chip" href="#">Chip</span>
-                    </div>
-                </div>
-
-                <hr class="mt-4  mb-5">
-
                 <!-- Colors -->
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="text-muted">Colors</div>
+                        <div class="text-muted">Default</div>
                     </div>
                     <div class="col-md-8">
-                        <span class="c-chip" href="#">Chip</span>
+                        <span class="c-chip">#Mercedes</span>
+                        <span class="c-chip">Default</span>
                         <span class="c-chip  c-chip--blue">Blue</span>
                         <span class="c-chip  c-chip--blue-light">Blue Light</span>
                         <span class="c-chip  c-chip--green">Green</span>
@@ -53,19 +69,18 @@
                         <div class="text-muted">Inverted</div>
                     </div>
                     <div class="col-md-8">
-                        <span class="c-chip  c-chip--blue-inverted">Blue</span>
-                        <span class="c-chip  c-chip--blue-light-inverted">Blue Light</span>
-                        <span class="c-chip  c-chip--green-inverted">Green</span>
-                        <span class="c-chip  c-chip--orange-inverted">Orange</span>
-                        <span class="c-chip  c-chip--pink-inverted">Pink</span>
-                        <span class="c-chip  c-chip--purple-inverted">Purple</span>
-                        <span class="c-chip  c-chip--red-inverted">Red</span>
-                        <span class="c-chip  c-chip--yellow-inverted">Yellow</span>
+                        <span class="c-chip  c-chip--outline">#Mercedes</span>
+                        <span class="c-chip  c-chip--outline">Default</span>
+                        <span class="c-chip  c-chip--blue-outline">Blue</span>
+                        <span class="c-chip  c-chip--blue-light-outline">Blue Light</span>
+                        <span class="c-chip  c-chip--green-outline">Green</span>
+                        <span class="c-chip  c-chip--orange-outline">Orange</span>
+                        <span class="c-chip  c-chip--pink-outline">Pink</span>
+                        <span class="c-chip  c-chip--purple-outline">Purple</span>
+                        <span class="c-chip  c-chip--red-outline">Red</span>
+                        <span class="c-chip  c-chip--yellow-outline">Yellow</span>
                     </div>
                 </div>
-
-                <hr class="mt-4  mb-5">
-
             </div>
         </article>
 
