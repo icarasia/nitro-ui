@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-pagination",
-    "version": "1.0.0-alpha.2",
+    "version": "1.0.0-alpha",
     "description": "Pagination styling for Nitro UI.",
     "main": "dist/component-pagination.min.css",
     "publishConfig": {
