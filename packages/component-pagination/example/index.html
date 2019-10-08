@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Pagination - Nitro UI</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../button/dist/button.min.css" />
         <link rel="stylesheet" href="../dist/pagination.min.css">
     </head>
     <body class="bg-light">
@@ -22,27 +21,64 @@
                         <div class="text-muted">Pagination</div>
                     </div>
                     <div class="col-md-9">
-                        <ul class="c-pagination" style="padding-left:0;">
-                            <li class="c-pagination__first"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">First</a></li>
-                            <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Prev</a></li>
-                            <li class="c-pagination__item"><a href="#">1</a></li>
-                            <li class="c-pagination__item  is--active"><a href="#">2</a></li>
-                            <li class="c-pagination__item"><a href="#">3</a></li>
-                            <li class="c-pagination__item"><a href="#">4</a></li>
-                            <li class="c-pagination__item"><a href="#">5</a></li>
-                            <li class="c-pagination__last"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Last</a></li>
-                            <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Next</a></li>
-                        </ul>
-                        <ul class="c-pagination" style="padding-left:0;">
-                            <li class="c-pagination__first"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">First</a></li>
-                            <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline">Prev</a></li>
-                            <li class="c-pagination__item"><a href="#">1</a></li>
+
+                        <ul class="c-pagination">
+                            <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--sm  c-btn--primary  is--disabled  c-btn--secondary-outline">Previous</a></li>
+                            <li class="c-pagination__item  is--active"><a href="#">1</a></li>
                             <li class="c-pagination__item"><a href="#">2</a></li>
                             <li class="c-pagination__item"><a href="#">3</a></li>
                             <li class="c-pagination__item"><a href="#">4</a></li>
-                            <li class="c-pagination__item  is--active"><a href="#">5</a></li>
-                            <li class="c-pagination__last"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline  is--disabled">Last</a></li>
-                            <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--sm  c-btn--secondary-outline  is--disabled">Next</a></li>
+                            <li class="c-pagination__item"><a href="#">5</a></li>
+                            <li class="c-pagination__item"><a href="#">6</a></li>
+                            <li class="c-pagination__item"><a href="#">7</a></li>
+                            <li class="c-pagination__item"><a href="#" class="is--disabled">...</a></li>
+                            <li class="c-pagination__item"><a href="#">5452</a></li>
+                            <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--sm  c-btn--primary">Next</a></li>
+                        </ul>
+
+                        <!-- step 2 -->
+                        <ul class="c-pagination">
+                            <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--sm  c-btn--primary">Previous</a></li>
+                            <li class="c-pagination__item"><a href="#">1</a></li>
+                            <li class="c-pagination__item   is--active"><a href="#">2</a></li>
+                            <li class="c-pagination__item"><a href="#">3</a></li>
+                            <li class="c-pagination__item"><a href="#">4</a></li>
+                            <li class="c-pagination__item"><a href="#">5</a></li>
+                            <li class="c-pagination__item"><a href="#">6</a></li>
+                            <li class="c-pagination__item"><a href="#">7</a></li>
+                            <li class="c-pagination__item"><a href="#" class="is--disabled">...</a></li>
+                            <li class="c-pagination__item"><a href="#">5452</a></li>
+                            <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--sm  c-btn--primary">Next</a></li>
+                        </ul>
+
+                        <!-- step 3 -->
+                        <ul class="c-pagination">
+                            <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--sm  c-btn--primary">Previous</a></li>
+                            <li class="c-pagination__item"><a href="#">1</a></li>
+                            <li class="c-pagination__item"><a href="#" class="is--disabled">...</a></li>
+                            <li class="c-pagination__item"><a href="#">5</a></li>
+                            <li class="c-pagination__item"><a href="#">6</a></li>
+                            <li class="c-pagination__item  is--active"><a href="#">7</a></li>
+                            <li class="c-pagination__item"><a href="#">8</a></li>
+                            <li class="c-pagination__item"><a href="#">9</a></li>
+                            <li class="c-pagination__item"><a href="#" class="is--disabled">...</a></li>
+                            <li class="c-pagination__item"><a href="#">5452</a></li>
+                            <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--sm  c-btn--primary">Next</a></li>
+                        </ul>
+
+                        <!-- step 4 -->
+                        <ul class="c-pagination">
+                            <li class="c-pagination__previous"><a href="#" class="c-btn  c-btn--sm  c-btn--primary">Previous</a></li>
+                            <li class="c-pagination__item"><a href="#">1</a></li>
+                            <li class="c-pagination__item"><a href="#">...</a></li>
+                            <li class="c-pagination__item"><a href="#">5446</a></li>
+                            <li class="c-pagination__item"><a href="#">5447</a></li>
+                            <li class="c-pagination__item"><a href="#">5448</a></li>
+                            <li class="c-pagination__item"><a href="#">5449</a></li>
+                            <li class="c-pagination__item"><a href="#">5450</a></li>
+                            <li class="c-pagination__item"><a href="#">5451</a></li>
+                            <li class="c-pagination__item  is--active"><a href="#">5452</a></li>
+                            <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--sm  c-btn--primary  is--disabled  c-btn--secondary-outline">Next</a></li>
                         </ul>
                     </div>
                 </div>

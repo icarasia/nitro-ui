@@ -24,7 +24,7 @@ module.exports = function( grunt ) {
             },
             compressed: {
                 options: {
-                    outputStyle: 'compressed'
+                    style: 'compressed'
                 },
                 files: {
                     'dist/pagination.min.css': [
