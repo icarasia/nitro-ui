@@ -1,6 +1,6 @@
 {
-    "name": "@nitro-ui/css-utility-width",
-    "version": "1.0.0-beta.2",
+    "name": "@nitro-ui/utility-width",
+    "version": "1.0.0-alpha.2",
     "description": "Utility Width component for Nitro UI.",
     "main": "dist/utility-width.min.css",
     "publishConfig": {
@@ -15,6 +15,7 @@
     },
     "keywords": [
         "Utility",
+        "Width",
         "Nitro",
         "UI",
         "CSS",
@@ -28,7 +29,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/css-core": "^1.0.0-beta.2",
+        "@nitro-ui/core": "^1.0.0-alpha.2",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",
