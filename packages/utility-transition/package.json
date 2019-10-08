@@ -1,8 +1,8 @@
 {
-    "name": "@nitro-ui/component-avatar",
-    "version": "1.0.0-alpha.3",
-    "description": "Avatar styling for Nitro UI.",
-    "main": "dist/component-avatar.min.css",
+    "name": "@nitro-ui/utility-transition",
+    "version": "1.0.0-alpha.0",
+    "description": "Utility transition component for Nitro UI.",
+    "main": "dist/utility-transition.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -14,14 +14,15 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
-        "Avatar",
+        "Utility",
+        "Position",
         "Nitro",
         "UI",
         "CSS",
         "Components",
         "iCarAsia"
     ],
-    "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "author": "Syaiful Shah Zinan <i.works@live.com>",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
