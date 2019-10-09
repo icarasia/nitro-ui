@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Component Tabs - Nitro UI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../dist/css/component-tabs.min.css">
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Tabs</h1>
+                <div class="text-muted">
+                    <p>
+                        Tabs enable quick switch between different views.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="container  py-5">
+
+                <ul class="c-tab">
+                    <li class="c-tab__item  is--active">
+                        <a data-toggle="tab" href="#sample-tab-content-0-1" class="u-flex" aria-expanded="false">
+                            <span class="icon  icon--16  u-margin-right-xs  icon--clock-fill"></span>
+                            <span>Shortlist</span>
+                        </a>
+                    </li>
+                    <li class="c-tab__item">
+                        <a data-toggle="tab" href="#sample-tab-content-0-2" class="u-flex" aria-expanded="true">
+                            <span class="icon  icon--16  u-margin-right-xs  icon--mail"></span>
+                            <span>Inbox</span>
+                        </a>
+                    </li>
+                    <li class="c-tab__item">
+                        <a data-toggle="tab" href="#sample-tab-content-0-3" class="u-flex" aria-expanded="false">
+                            <span class="icon  icon--16  u-margin-right-xs  icon--chat"></span>
+                            <span>Chat</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="c-tab-content">
+                    <div class="c-tab__pane  is--active" id="sample-tab-content-0-1">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="c-tab__pane" id="sample-tab-content-0-2">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress</p>
+                    </div>
+                    <div class="c-tab__pane" id="sample-tab-content-0-3">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia.</p>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <script src="../dist/js/tabs.js"></script>
+    </body>
+</html>
