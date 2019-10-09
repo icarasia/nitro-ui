@@ -1,13 +1,13 @@
-# Nitro UI: Component > Pagination
+dropdown# Nitro UI: Component > Dropdown
 
-Pagination styling for list or table
+Dropdown styling for list or table
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/component-pagination](https://www.npmjs.com/package/@nitro-ui/component-pagination):
+Get latest version by installing via [NPM @nitro-ui/component-pagination](https://www.npmjs.com/package/@nitro-ui/component-dropdown):
 
 ```sh
-npm install @nitro-ui/component-pagination
+npm install @nitro-ui/component-dropdown
 ```
 **Dependencies**
 
@@ -16,7 +16,7 @@ Pagination style requires Nitro Button Components which already defined inside p
 
 ## Usage
 
-Sample markup for pagination
+Sample markup for dropdown
 
 ```html
 <ul class="c-pagination">
@@ -48,7 +48,7 @@ To make the pagination inline add extra class name `c-pagination--inline` to the
     <li class="c-pagination__item"><a href="#">3</a></li>
     <li class="c-pagination__item"><a href="#">4</a></li>
     <li class="c-pagination__item"><a href="#">5</a></li>
-    <li class="c-pagination__next"><a href="#" class="c-btn  c-btn--secondary-outline">Next</a></li>
+    <li class="c-Dropdown__next"><a href="#" class="c-btn  c-btn--secondary-outline">Next</a></li>
     <li class="c-pagination__last"><a href="#" class="c-btn  c-btn--secondary-outline">Last</a></li>
 </ul>
 ```

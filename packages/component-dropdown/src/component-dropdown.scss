@@ -20,22 +20,21 @@
 @import '@nitro-ui/core/src/variables';
 @import '@nitro-ui/core/src/mixins';
 
-
 //  2. Core
 //  ----------------------------------------------------------------------------
 
-/* Grouped Buttons
-   ========================================================================== */
-/**
- * Wrap a series of buttons
- */
-
+//* Grouped Buttons
+//    ========================================================================== */
+// /**
+//  * Wrap a series of buttons
+//  */
+//
 .c-btn--dropdown {
     &:after {
         content: '\e313';
         display: inline-block;
         line-height: inherit;
-        font-family: $base-font-icon;
+        // font-family: $base-font-icon;
         font-size: 20px;
         margin: 0 (-$spacing-xs) 0 $spacing-xxs;
         opacity: .5;
