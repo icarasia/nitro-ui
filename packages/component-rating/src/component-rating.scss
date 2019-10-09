@@ -1,0 +1,89 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Rating
+//
+//  Component styling for rating
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '../node_modules/@nitro-ui/css-core/src/variables';
+@import '../node_modules/@nitro-ui/css-core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$use-rating                 : true !default;
+
+$rating-star-size           : 12px !default;
+$rating-star-spacing        : 2px !default;
+$rating-star-base-color     : $haze-300 !default;
+$rating-star-active-color   : $orange-500 !default;
+
+$rating-bar-height          : 4px !default;
+$rating-bar-radius          : 2px !default;
+$rating-bar-base-color      : $haze-300 !default;
+$rating-bar-active-color    : $purple-400 !default;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+@if $use-rating {
+    .c-rating--stars {
+        display: inline-block;
+        font-size: 0;
+        line-height: 1;
+        position: relative;
+        white-space: nowrap;
+
+        .star {
+            font-size: $rating-star-size;
+            display: inline-block;
+            padding: $rating-star-spacing;
+        }
+
+        .c-rating__base {
+            color: $rating-star-base-color;
+        }
+
+        .c-rating__value {
+            color: $rating-star-active-color;
+            min-width: 10%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .c-rating--bar {
+        background: $rating-bar-base-color;
+        border-radius: $rating-bar-radius;
+        height: $rating-bar-height;
+        overflow: hidden;
+        position: relative;
+        margin: 12px 0;
+
+        > .bar {
+            background-color: $rating-bar-active-color;
+            border-radius: $rating-bar-radius;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}//endif
