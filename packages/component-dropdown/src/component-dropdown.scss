@@ -1,0 +1,125 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Dropdown
+//
+//  Component Dropdown for list or tables.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+/* Grouped Buttons
+   ========================================================================== */
+/**
+ * Wrap a series of buttons
+ */
+
+.c-btn--dropdown {
+    &:after {
+        content: '\e313';
+        display: inline-block;
+        line-height: inherit;
+        font-family: $base-font-icon;
+        font-size: 20px;
+        margin: 0 (-$spacing-xs) 0 $spacing-xxs;
+        opacity: .5;
+        vertical-align: top;
+    }
+}
+
+
+
+
+/* Grouped Buttons
+   ========================================================================== */
+/**
+ * Wrap a series of buttons
+ */
+
+.c-btn-group {
+    display: inline-flex;
+    vertical-align: middle;
+
+    > .c-btn,
+    > .c-dropdown > .c-btn {
+        border-radius: 0;
+        flex: 1;
+        position: relative;
+        z-index: 1;
+
+        &:hover,
+        &.is--active {
+            z-index: 2;
+        }
+
+        &.is--disabled,
+        &:disabled {
+            z-index: 0;
+        }
+    }
+
+    .c-btn,
+    .c-dropdown {
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+    }
+
+    > .c-btn:first-child,
+    > .c-dropdown:first-child > .c-btn {
+        border-top-left-radius: $base-radius;
+        border-bottom-left-radius: $base-radius;
+    }
+
+    > .c-btn:last-child,
+    > .c-dropdown:last-child > .c-btn {
+        border-top-right-radius: $base-radius;
+        border-bottom-right-radius: $base-radius;
+    }
+
+
+}
+
+.c-btn-group--full {
+    display: flex;
+}
+
+// .c-field--error  .c-btn-group{
+//     .c-btn{
+//         border-color: $input-error-border-color;
+//     }
+// }
+
+
+
+/* Inline Buttons
+   ========================================================================== */
+/**
+ * Standardise spacings between buttons whenever they inlined
+ */
+
+.c-btn-inline {
+    font-size: 0;
+    white-space: nowrap;
+
+    > .c-btn:not(:first-child),
+    > .c-btn-group:not(:first-child) {
+        margin-left: $spacing-xs;
+    }
+}
