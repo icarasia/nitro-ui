@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-form",
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0-alpha.1",
     "description": "Form component for Nitro UI.",
     "main": "dist/form.min.css",
     "publishConfig": {
@@ -31,7 +31,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.2",
+        "@nitro-ui/core": "^1.0.0-alpha.3",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",
