@@ -2,7 +2,10 @@
 //
 //  @COMPONENT - Dropdown
 //
-//  Component Dropdown for list or tables.
+//  Component Dropdown
+//* Dropdown are used to toggle sections of content or options.
+//* -- Require Bootstrap 4.3 dropdown.js
+//*
 //
 //  ----------------------------------------------------------------------------
 //
@@ -13,112 +16,114 @@
 //
 //  ----------------------------------------------------------------------------
 
-
 //  1. Dependencies
 //  ----------------------------------------------------------------------------
 
 @import '@nitro-ui/core/src/variables';
 @import '@nitro-ui/core/src/mixins';
+@import '@nitro-ui/core/src/animations';
+@import '@nitro-ui/utility-shadow/src/utility-shadow';
+@import '@nitro-ui/component-button/src/button';
 
-//  2. Core
+//  2. VARIABLES
 //  ----------------------------------------------------------------------------
 
-//* Grouped Buttons
-//    ========================================================================== */
-// /**
-//  * Wrap a series of buttons
-//  */
-//
-.c-btn--dropdown {
-    &:after {
-        content: '\e313';
-        display: inline-block;
-        line-height: inherit;
-        // font-family: $base-font-icon;
-        font-size: 20px;
-        margin: 0 (-$spacing-xs) 0 $spacing-xxs;
-        opacity: .5;
-        vertical-align: top;
+@import 'variables';
+
+ //  3. CORE
+ //  ----------------------------------------------------------------------------
+
+
+.c-dropdown {
+    display: inline-block;
+    position: relative;
+    vertical-align: inherit;
+}
+    .c-btn--primary {
+        color: $white !important;
+    }
+
+
+    .c-dropdown__base {
+        animation: slide-down .2s ease 1;
+        display: none;
+        left: 0;
+        min-width: $dropdown-width;
+        padding-top: $spacing-xxs;
+        position: absolute;
+        top: 100%;
+        z-index: 9999;
+    }
+
+    .c-dropdown__menu {
+        @extend .u-shadow-2dp;
+        background-color: $white;
+        border-radius: $base-radius;
+        list-style: none;
+        padding: $spacing-xs 0;
+        margin: 0;
+        text-align: left;
+
+        li {
+            > a,
+            > div,
+            > span {
+                display: block;
+                padding: 8px 12px;
+            }
+
+            > a {
+                color: $font-base-color;
+                line-height: 20px;
+                outline: none !important;
+                text-decoration: none !important;
+
+                &:hover {
+                    background: $dropdown-hover-background;
+                    color: $dropdown-hover-font-color;
+                }
+            }
+
+            &.is--active > a {
+                background: $dropdown-active-background !important;
+                color: $dropdown-active-font-color !important;
+            }
+
+            &.u-divider {
+                margin: $spacing-xs 0 !important;
+            }
+        }
+    }
+
+
+.is--open > .c-dropdown__base,
+.c-dropdown--hover:hover > .c-dropdown__base {
+    display: block;
+}
+
+
+@mixin dropdown-alignment-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .c-dropdown--right#{$breakpoint-separator}#{$breakpoint} {
+        > .c-dropdown__base {
+            left: auto;
+            right: 0;
+        }
     }
 }
 
 
+@include dropdown-alignment-setup();
 
-
-/* Grouped Buttons
-   ========================================================================== */
-/**
- * Wrap a series of buttons
- */
-
-.c-btn-group {
-    display: inline-flex;
-    vertical-align: middle;
-
-    > .c-btn,
-    > .c-dropdown > .c-btn {
-        border-radius: 0;
-        flex: 1;
-        position: relative;
-        z-index: 1;
-
-        &:hover,
-        &.is--active {
-            z-index: 2;
-        }
-
-        &.is--disabled,
-        &:disabled {
-            z-index: 0;
-        }
-    }
-
-    .c-btn,
-    .c-dropdown {
-        &:not(:first-child) {
-            margin-left: -1px;
-        }
-    }
-
-    > .c-btn:first-child,
-    > .c-dropdown:first-child > .c-btn {
-        border-top-left-radius: $base-radius;
-        border-bottom-left-radius: $base-radius;
-    }
-
-    > .c-btn:last-child,
-    > .c-dropdown:last-child > .c-btn {
-        border-top-right-radius: $base-radius;
-        border-bottom-right-radius: $base-radius;
-    }
-
-
-}
-
-.c-btn-group--full {
-    display: flex;
-}
-
-// .c-field--error  .c-btn-group{
-//     .c-btn{
-//         border-color: $input-error-border-color;
-//     }
-// }
-
-
-
-/* Inline Buttons
-   ========================================================================== */
-/**
- * Standardise spacings between buttons whenever they inlined
- */
-
-.c-btn-inline {
-    font-size: 0;
-    white-space: nowrap;
-
-    > .c-btn:not(:first-child),
-    > .c-btn-group:not(:first-child) {
-        margin-left: $spacing-xs;
+@if $responsive {
+    @include media-query('mobile') {
+        @include dropdown-alignment-setup('mobile');
     }
 }

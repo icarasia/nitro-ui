@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Component Dropdown</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/core/dist/core.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/button.min.css">
         <link rel="stylesheet" href="../dist/component-dropdown.min.css">
         <style>
             article {
@@ -15,7 +15,7 @@
         </style>
     </head>
     <body class="bg-light">
-        <header class="bg-white border-bottom">
+        <header class="bg-white  border-bottom">
             <div class="pt-5  px-5">
                 <style>
                     .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -31,14 +31,14 @@
                 </div>
             </div>
         </header>
+
         <article>
             <div class="container  py-5">
                 <div class="row">
+                    <div class="col-md-4"></div>
                     <div class="col-md-8">
                         <div class="c-dropdown">
-                            <a class="c-dropdown__control" data-toggle="dropdown">
-                                Dropdown
-                            </a>
+                            <a class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Dropdown</a>
                             <div class="c-dropdown__base">
                                 <ul class="c-dropdown__menu">
                                     <li><a href="#">Menu One</a></li>
@@ -49,10 +49,8 @@
                             </div>
                         </div>
 
-                        <div class="c-dropdown  c-dropdown--right  u-float-right">
-                            <a class="c-dropdown__control" data-toggle="dropdown">
-                                Dropdown
-                            </a>
+                        <div class="c-dropdown  c-dropdown--right">
+                            <a class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="c-dropdown__base">
                                 <ul class="c-dropdown__menu">
                                     <li><a href="#">Menu One</a></li>
@@ -66,9 +64,7 @@
                         <hr class="u-divider  u-margin-ends-lg">
 
                         <div class="c-dropdown">
-                            <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown">
-                                Dropdown Button
-                            </a>
+                            <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
                             <div class="c-dropdown__base">
                                 <ul class="c-dropdown__menu">
                                     <li><a href="#">Menu One</a></li>
@@ -79,10 +75,8 @@
                             </div>
                         </div>
 
-                        <div class="c-dropdown  c-dropdown--right  u-float-right">
-                            <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown">
-                                Dropdown Button
-                            </a>
+                        <div class="c-dropdown  c-dropdown--right">
+                            <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
                             <div class="c-dropdown__base">
                                 <ul class="c-dropdown__menu">
                                     <li><a href="#">Menu One</a></li>
