@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <title>Component Dropdown</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/button.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/utility-shadow.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-divider/dist/utility-divider.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/component-button/dist/component-button.min.css">
         <link rel="stylesheet" href="../dist/component-dropdown.min.css">
         <style>
             article {
@@ -23,7 +25,7 @@
                 <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
             </div>
             <div class="container py-5">
-                <h1 class="font-weight-bold mb-3">Component Dropdown</h1>
+                <h1 class="font-weight-bold  mb-3">Component Dropdown</h1>
                 <div class="text-muted">
                     <p>
                         Toggle contextual overlays for displaying lists of links and more
@@ -34,71 +36,68 @@
 
         <article>
             <div class="container  py-5">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                            <div class="c-dropdown">
-                                <a class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Dropdown</a>
-                                <div class="c-dropdown__base">
-                                    <ul class="c-dropdown__menu">
-                                        <li><a href="#">Menu One</a></li>
-                                        <li><a href="#">Menu Two</a></li>
-                                        <li class="u-divider"></li>
-                                        <li><a href="#">Menu Three</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col-md-6  text-right">
-                            <div class="c-dropdown  c-dropdown--right">
-                                <a class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="c-dropdown__base">
-                                    <ul class="c-dropdown__menu">
-                                        <li><a href="#">Menu One</a></li>
-                                        <li><a href="#">Menu Two</a></li>
-                                        <li class="u-divider"></li>
-                                        <li><a href="#">Menu Three</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
 
-                        <hr class="u-divider">
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="c-dropdown">
-                                    <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
-                                    <div class="c-dropdown__base">
-                                        <ul class="c-dropdown__menu">
-                                            <li><a href="#">Menu One</a></li>
-                                            <li><a href="#">Menu Two</a></li>
-                                            <li class="u-divider"></li>
-                                            <li><a href="#">Menu Three</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6  text-right">
-                                <div class="c-dropdown  c-dropdown--right">
-                                    <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
-                                    <div class="c-dropdown__base">
-                                        <ul class="c-dropdown__menu">
-                                            <li><a href="#">Menu One</a></li>
-                                            <li><a href="#">Menu Two</a></li>
-                                            <li class="u-divider"></li>
-                                            <li><a href="#">Menu Three</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-md-6">
+                <div class="c-dropdown">
+                    <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Dropdown</a>
+                    <div class="c-dropdown__base">
+                        <ul class="c-dropdown__menu">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li class="u-divider"></li>
+                            <li><a href="#">Menu Three</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-6  text-right">
+                <div class="c-dropdown  c-dropdown--right">
+                    <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="c-dropdown__base">
+                        <ul class="c-dropdown__menu">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li class="u-divider"></li>
+                            <li><a href="#">Menu Three</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <hr class="u-divider">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="c-dropdown">
+                        <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
+                        <div class="c-dropdown__base">
+                            <ul class="c-dropdown__menu">
+                                <li><a href="#">Menu One</a></li>
+                                <li><a href="#">Menu Two</a></li>
+                                <li class="u-divider"></li>
+                                <li><a href="#">Menu Three</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6  text-right">
+                    <div class="c-dropdown  c-dropdown--right">
+                        <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
+                        <div class="c-dropdown__base">
+                            <ul class="c-dropdown__menu">
+                                <li><a href="#">Menu One</a></li>
+                                <li><a href="#">Menu Two</a></li>
+                                <li class="u-divider"></li>
+                                <li><a href="#">Menu Three</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
         </article>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -21,7 +21,7 @@
         "Components",
         "iCarAsia"
     ],
-    "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "author": "Nutc <19atdesign@gmail.com>",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
@@ -30,6 +30,7 @@
     "dependencies": {
         "@nitro-ui/component-button": "^1.0.0-alpha.0",
         "@nitro-ui/core": "^1.0.0-alpha.2",
+        "@nitro-ui/utility-divider": "^1.0.0-alpha.2",
         "@nitro-ui/utility-shadow": "^1.0.0-alpha.2",
         "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",
