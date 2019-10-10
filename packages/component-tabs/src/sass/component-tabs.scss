@@ -65,12 +65,26 @@ $card-spacing-sm        : $spacing-sm !default;
                 border-color: $haze-400;
             }
 
+            // not needed
             > a:not(.c-btn) {
                 color: $font-base-color;
                 line-height: 20px;
                 text-decoration: none !important;
                 outline: none !important;
-                padding: $spacing-xxs $spacing-sm;
+                padding: $spacing-xs $spacing-sm $spacing-sm;
+
+                .icon-svg{
+                    fill: $font-base-color;
+                }
+            }
+
+            // new
+            &:not(.c-btn) {
+                color: $font-base-color;
+                line-height: 20px;
+                text-decoration: none !important;
+                outline: none !important;
+                padding: $spacing-xs $spacing-sm $spacing-sm;
 
                 .icon-svg{
                     fill: $font-base-color;
@@ -80,10 +94,20 @@ $card-spacing-sm        : $spacing-sm !default;
             &.is--active {
                 border-color: $font-link-color;
 
+                // not needed
                 > a:not(.c-btn) {
                     color: $font-link-color;
 
                     .icon-svg{
+                        fill: $font-link-color;
+                    }
+                }
+
+                // new
+                &:not(.c-btn) {
+                    color: $font-link-color;
+
+                    .icon-svg {
                         fill: $font-link-color;
                     }
                 }

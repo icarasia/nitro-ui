@@ -2,13 +2,14 @@ import $ from 'jquery'
 import Tab from "bootstrap/js/src/tab";
 import Util from "bootstrap/js/src/util";
 
-const NAME               = 'tab'
-const DATA_KEY           = 'bs.tab'
+const NAME               = 'nitroTab'
+const DATA_KEY           = 'nitro.tab'
 const EVENT_KEY          = `.${DATA_KEY}`
 const DATA_API_KEY       = '.data-api'
 const JQUERY_NO_CONFLICT = $.fn[NAME]
 
 const Event = {
+    // ...Tab.Event,
   HIDE           : `hide${EVENT_KEY}`,
   HIDDEN         : `hidden${EVENT_KEY}`,
   SHOW           : `show${EVENT_KEY}`,
@@ -17,25 +18,59 @@ const Event = {
 }
 
 const ClassName = {
+    // ...Tab.ClassName,
   DROPDOWN_MENU : 'dropdown-menu',
   ACTIVE        : 'is--active',
-  DISABLED      : 'disabled',
+  DISABLED      : 'is--disabled',
   FADE          : 'fade',
   SHOW          : 'show'
 }
 
 const Selector = {
-  DROPDOWN              : '.dropdown',
-  NAV_LIST_GROUP        : '.nav, .list-group, .c-tab',
-  ACTIVE                : '.active',
-  ACTIVE_UL             : '> li > .active',
+    // ...Tab.Selector,
+  DROPDOWN              : '.c-dropdown',
+  NAV_LIST_GROUP        : '.c-tab',
+  ACTIVE                : '.is--active, .active',
+  ACTIVE_UL             : '> li > .is--active',
   DATA_TOGGLE           : '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]',
   DROPDOWN_TOGGLE       : '.dropdown-toggle',
-  DROPDOWN_ACTIVE_CHILD : '> .dropdown-menu .active'
+  DROPDOWN_ACTIVE_CHILD : '> .dropdown-menu .is--active'
 }
 
 class NitroTab extends Tab
 {
+
+    // Getters
+
+    // static get VERSION() {
+    //   return VERSION
+    // }
+    //
+    // static get NAME() {
+    //   return NAME
+    // }
+    //
+    // static get DATA_KEY() {
+    //   return DATA_KEY
+    // }
+    //
+    // static get Event() {
+    //   return Event
+    // }
+    //
+    // static get EVENT_KEY() {
+    //   return EVENT_KEY
+    // }
+    //
+    // static get Selector() {
+    //   return Selector
+    // }
+    //
+    // static get ClassName() {
+    //   return ClassName
+    // }
+
+
     show() {
       if (this._element.parentNode &&
           this._element.parentNode.nodeType === Node.ELEMENT_NODE &&
@@ -103,6 +138,39 @@ class NitroTab extends Tab
       }
     }
 
+    dispose() {
+      $.removeData(this._element, DATA_KEY)
+      this._element = null
+    }
+
+    // Private
+
+    _activate(element, container, callback) {
+      const activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL')
+        ? $(container).find(Selector.ACTIVE_UL)
+        : $(container).children(Selector.ACTIVE)
+
+      const active = activeElements[0]
+      const isTransitioning = callback && (active && $(active).hasClass(ClassName.FADE))
+      const complete = () => this._transitionComplete(
+        element,
+        active,
+        callback
+      )
+
+      if (active && isTransitioning) {
+        const transitionDuration = Util.getTransitionDurationFromElement(active)
+
+        $(active)
+          .removeClass(ClassName.SHOW)
+          .one(Util.TRANSITION_END, complete)
+          .emulateTransitionEnd(transitionDuration)
+      } else {
+        complete()
+      }
+    }
+
+
     _transitionComplete(element, active, callback) {
       if (active) {
         $(active).removeClass(ClassName.ACTIVE)
@@ -147,6 +215,27 @@ class NitroTab extends Tab
         callback()
       }
     }
+
+    // Static
+
+    static _jQueryInterface(config) {
+      return this.each(function () {
+        const $this = $(this)
+        let data = $this.data(DATA_KEY)
+
+        if (!data) {
+          data = new NitroTab(this)
+          $this.data(DATA_KEY, data)
+        }
+
+        if (typeof config === 'string') {
+          if (typeof data[config] === 'undefined') {
+            throw new TypeError(`No method named "${config}"`)
+          }
+          data[config]()
+        }
+      })
+    }
 }
 
 /**
@@ -174,4 +263,4 @@ $.fn[NAME].noConflict = () => {
   return NitroTab._jQueryInterface
 }
 
-export default NitroTab
+export default NitroTab;
