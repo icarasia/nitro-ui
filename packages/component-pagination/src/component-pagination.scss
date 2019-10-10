@@ -1,0 +1,145 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Pagination
+//
+//  Component pagination for list or tables.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+.c-pagination {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    margin: 16px 0 0;
+
+    // TECHNICAL DEBT
+    // Not properly done by Ikram.
+    // Better use disabled c-btn--secondary style
+    .disabled {
+        .c-btn {
+            background-color: transparent !important;
+            border-color: $haze-300 !important;
+            color: $dark-100;
+        }
+    }
+}
+
+    .c-pagination__item {
+        display: flex;
+        margin: 0 $spacing-xxs;
+
+        > a {
+            align-self: center;
+            border-radius: 1000px;
+            display: block;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            text-decoration: none !important;
+            min-width: 24px;
+            padding: 0 $spacing-xs;
+        }
+
+        &.is--active {
+            > a {
+                background-color: $haze-300;
+                color: $font-muted-color;
+            }
+        }
+    }
+
+    .c-pagination__first {
+        margin-right: auto;
+        order: -1;
+    }
+
+    .c-pagination__last {
+        margin-left: auto;
+        order: 100;
+    }
+
+    .c-pagination__previous {
+        margin: 0 $spacing-md;
+    }
+
+    .c-pagination__next {
+        margin: 0 $spacing-md;
+    }
+
+    .c-pagination__previous,
+    .c-pagination__next {
+        .c-btn {
+            min-width: 88px;
+        }
+    }
+
+.c-pagination--inline {
+    display: inline-flex;
+}
+
+@include media-query('mobile') {
+    .c-pagination__item:not(.is--active),
+    .c-pagination__first,
+    .c-pagination__last {
+        display: none !important;
+    }
+
+    .c-pagination__previous {
+        margin: 0 auto 0 0;
+    }
+
+    .c-pagination__next {
+        margin: 0 0 0 auto;
+    }
+
+    .c-pagination__item.is--active > a {
+        background-color: transparent;
+        width: auto;
+    }
+
+    [lang="en"] {
+        .c-pagination__item.is--active > a:before {
+            content: 'Page ';
+        }
+    }
+
+    [lang="ms"] {
+        .c-pagination__item.is--active > a:before {
+            content: 'Halaman '
+        }
+    }
+
+    [lang="zh"] {
+        .c-pagination__item.is--active > a:before {
+            content: '第 ';
+        }
+        .c-pagination__item.is--active > a:after {
+            content: ' 页';
+        }
+    }
+
+    [lang="th"] {
+        .pagination > li.active > a:before {
+            content: 'หน้า ';
+        }
+    }
+}
