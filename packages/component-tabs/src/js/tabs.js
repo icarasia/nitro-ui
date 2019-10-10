@@ -30,7 +30,7 @@ const Selector = {
     // ...Tab.Selector,
   DROPDOWN              : '.c-dropdown',
   NAV_LIST_GROUP        : '.c-tab',
-  ACTIVE                : '.is--active, .active',
+  ACTIVE                : '.is--active',
   ACTIVE_UL             : '> li > .is--active',
   DATA_TOGGLE           : '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]',
   DROPDOWN_TOGGLE       : '.dropdown-toggle',
@@ -244,17 +244,22 @@ class NitroTab extends Tab
  * ------------------------------------------------------------------------
  */
 
+//
 $(document)
-  .on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
-    event.preventDefault()
-    NitroTab._jQueryInterface.call($(this), 'show')
-  })
+    .unbind( 'click.bs.tab.data-api' ) // Unbind Bootstrap Tab API
+    .on( Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function ( event ) {
+        event.preventDefault()
+        NitroTab._jQueryInterface.call($(this), 'show')
+    } );
 
 /**
  * ------------------------------------------------------------------------
  * jQuery
  * ------------------------------------------------------------------------
  */
+
+// Remove Bootstrap Tab Plugin from jQuery
+delete $.fn[ 'tab' ];
 
 $.fn[NAME] = NitroTab._jQueryInterface
 $.fn[NAME].Constructor = NitroTab
