@@ -1,0 +1,404 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Modal
+//
+//  Component styling for modal.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Modifiers
+//      5.  Responsive
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$modal-backdrop                 : rgba($dark-700, .5) !default;
+$modal-backdrop-z-index         : 2000 !default;
+
+$modal-width-lg                 : 960px !default;
+$modal-width-md                 : 640px !default;
+$modal-width-base               : 480px !default;
+$modal-width-sm                 : 320px !default;
+
+$modal-spacing                  : $spacing-lg !default;
+$modal-spacing-alt              : $spacing-md !default;
+
+$modal-z-index                  : 2010 !default;
+$modal-z-index-parent           : 2020 !default;
+$modal-z-index-child            : 2030 !default;
+
+$dialog-radius                  : $base-radius !default;
+$dialog-background-color        : $white;
+$dialog-shade-color             : $haze-100 !default;
+$dialog-title-weight            : $font-weight-bold !default;
+
+$dialog-close-color             : $font-muted-color !default;
+$dialog-close-hover-color       : $font-link-color !default;
+$dialog-close-hover-background  : $haze-200 !default;
+$dialog-close-focus-background  : $blue-100 !default;
+$dialog-close-icon-size         : 16px !default;
+$dialog-close-icon-dimension    : 28px !default;
+$dialog-close-icon-margin       : 8px !default;
+
+
+//  3. Modal
+//  ----------------------------------------------------------------------------
+
+.modal-backdrop {
+    background-color: $modal-backdrop;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $modal-backdrop-z-index;
+
+    &:not(.show) {
+        display: none;
+    }
+
+    + .modal-backdrop {
+        z-index: $modal-backdrop-z-index + 1;
+    }
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.c-modal {
+    -webkit-overflow-scrolling: touch;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $modal-z-index;
+}
+
+
+//  3. Dialog
+//  ----------------------------------------------------------------------------
+
+.c-dialog {
+    animation: slide-down .2s ease 1;
+    background-clip: padding-box;
+    background-color: $dialog-background-color;
+    border-radius: $dialog-radius;
+    // display: none;
+    margin: $modal-spacing auto;
+    width: $modal-width-base;
+    outline: none !important;
+    position: relative;
+
+    &.is--shaking {
+        animation: shake-horizontal .5s ease-in-out;
+    }
+
+    &--sm {
+        width: $modal-width-sm;
+    }
+
+    &--md {
+        width: $modal-width-md;
+    }
+
+    &--lg {
+        width: $modal-width-lg;
+    }
+
+    .is--filled {
+        background-color: $dialog-shade-color;
+    }
+}
+
+    .c-dialog__head {
+        align-items: start;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-dialog__title {
+        font-weight: $dialog-title-weight;
+        margin: $modal-spacing;
+        margin-bottom: $modal-spacing-alt;
+    }
+
+    .c-dialog__close {
+        -webkit-appearance: none;
+        align-items: center;
+        background: transparent;
+        border: 0;
+        border-radius: 100%;
+        justify-content: center;
+        line-height: 1;
+        color: $dialog-close-color;
+        cursor: pointer;
+        display: flex;
+        font-size: $dialog-close-icon-size;
+        width: $dialog-close-icon-dimension;
+        height: $dialog-close-icon-dimension;
+        padding: 0;
+        margin: $dialog-close-icon-margin;
+
+        &:hover {
+            background-color: $dialog-close-hover-background;
+        }
+
+        &:focus {
+            background-color: $dialog-close-focus-background;
+            color: $dialog-close-hover-color;
+            outline: none;
+        }
+    }
+
+    .c-dialog__alert {
+        border-radius: 0;
+        padding-left: $modal-spacing;
+        margin-bottom: $modal-spacing-alt;
+    }
+
+    .c-dialog__body,
+    .c-dialog__foot {
+        padding: $modal-spacing;
+        padding-top: 0;
+
+        &:before,
+        &:after {
+            content: '';
+            display: table;
+            height: 0;
+            clear: both;
+        }
+    }
+
+    .c-dialog__foot {
+        border-radius: 0 0 $dialog-radius $dialog-radius;
+    }
+
+
+
+
+.c-drawer {
+    display: block !important;
+    outline: 0;
+    position: fixed;
+    z-index: $modal-z-index;
+
+    &.show {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+    .c-drawer__parent {
+        z-index: $modal-z-index-parent;
+    }
+    .c-drawer__child {
+        z-index: $modal-z-index-child;
+    }
+
+    .c-drawer__content {
+        background-color: $white;
+        position: fixed;
+        transition: transform .4s ease;
+    }
+
+    .c-drawer__menu {
+        > li {
+            margin-bottom: 1px;
+
+            > a {
+                color: $font-base-color;
+                outline: none !important;
+                padding: 8px 16px 8px 24px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color:  $haze-100;
+                }
+            }
+
+            .icon {
+                color: $haze-500;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+            }
+        }
+
+        .c-collapse-toggle:not(.collapsed) {
+            background-color: $haze-100;
+        }
+
+        .c-collapse {
+            &.collapse.in {
+                background-color: $haze-100;
+            }
+
+            > li {
+                &:first-child {
+                    margin-top: $spacing-xs
+                }
+
+                &:last-child {
+                    margin-bottom: $spacing-md
+                }
+
+                > a {
+                    color: $font-muted-color;
+                    display: block;
+                    font-size: $font-base-size - 1;
+                    line-height: 24px;
+                    padding-left: 80px;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: $haze-200;
+                        color: $font-base-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .c-drawer__close,
+    .c-dialog__close {
+        border-radius: 100%;
+        color: $font-muted-color;
+        cursor: pointer;
+        display: inline-block;
+        padding: $spacing-xxs;
+        text-decoration: none !important;
+    }
+
+.c-drawer--left,
+.c-drawer--right {
+    bottom: 0;
+    display: block !important;
+    height: 100%;
+    top: 0;
+
+    > .c-drawer__content {
+        height: 100%;
+        top: 0;
+        width: 320px;
+        max-width: 80%;
+    }
+
+    &.show > .c-drawer__content {
+        transform: translateX(0);
+    }
+}
+
+.c-drawer--left  {
+    left: 0;
+
+    > .c-drawer__content {
+        left: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.c-drawer--right {
+    right: 0;
+
+    > .c-drawer__content {
+        right: 0;
+        transform: translateX(100%);
+    }
+}
+
+
+.c-drawer--bottom,
+.c-drawer--top {
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    > .c-drawer__content {
+        left: 0;
+        width: 100%;
+    }
+}
+
+.c-drawer--bottom  {
+    bottom: 0;
+
+    > .c-drawer__content {
+        bottom: -100%;
+        transform: translateY(100%);
+    }
+
+    &.show > .c-drawer__content {
+        bottom: 0;
+        transform: translateY(0);
+    }
+}
+
+.c-drawer--top  {
+    top: 0;
+
+    > .c-drawer__content {
+        top: -100%;
+        transform: translateY(-100%);
+    }
+
+    &.show > .c-drawer__content {
+        top: 0;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@include media-query(portable){
+    .c-dialog--lg {
+        width: 100%;
+    }
+}
+
+
+@include media-query(mobile) {
+    /* In Mobile view, we apply background color to .c-modal to imitate .modal-backdrop behaviour */
+    .c-modal,
+    .c-drawer {
+        background: $modal-backdrop;
+    }
+
+    .c-modal {
+        padding: $spacing-xs;
+    }
+
+    .c-dialog {
+        width: 100%;
+    }
+
+    /* In Mobile view, we hide .modal-backdrop behaviour */
+    .modal-backdrop {
+        display: none;
+    }
+}
