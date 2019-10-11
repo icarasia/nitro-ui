@@ -33,6 +33,7 @@ $card-spacing-sm        : $spacing-sm !default;
 //  3. CORE
 //  ----------------------------------------------------------------------------
 
+// not needed
 .c-tab,
 .c-tab__item > a,
 .c-tab__item > .c-btn {
@@ -40,6 +41,25 @@ $card-spacing-sm        : $spacing-sm !default;
     display: flex;
 }
 
+.c-tab,,
+.c-tab__item {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.c-tab__item {
+    // flex: 1;
+    align-items: center;
+    justify-content: center;
+
+    &.is--disabled {
+        opacity: 0.4;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+// not needed
 .c-tab__item > a,
 .c-tab__item > .c-btn {
     flex: 1;
@@ -145,20 +165,24 @@ $card-spacing-sm        : $spacing-sm !default;
 
 .c-tab--buttons {
     > .c-tab__item {
-        > .c-btn {
-            border-radius: 0;
-        }
+        border-radius: 0;
+
+        // > .c-btn {
+        //     border-radius: 0;
+        // }
 
         &:first-child {
-            > .c-btn {
-                @include rounded-left();
-            }
+            // > .c-btn {
+            //     @include rounded-left();
+            // }
+            @include rounded-left();
         }
 
         &:last-child {
-            > .c-btn {
-                @include rounded-right();
-            }
+            // > .c-btn {
+            //     @include rounded-right();
+            // }
+            @include rounded-right();
         }
     }
 }

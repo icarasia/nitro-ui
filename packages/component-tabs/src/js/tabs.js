@@ -259,7 +259,7 @@ $(document)
  */
 
 // Remove Bootstrap Tab Plugin from jQuery
-delete $.fn[ 'tab' ];
+// delete $.fn[ 'tab' ];
 
 $.fn[NAME] = NitroTab._jQueryInterface
 $.fn[NAME].Constructor = NitroTab
