@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Component - Popover</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../component-card/dist/component-card.min.css">
+        <link rel="stylesheet" href="../dist/css/collapse.min.css">
+        <style>
+            article {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Collapse & Accordian</h1>
+                <div class="text-muted">
+                    <p>
+                        Toggle the visibility of content in the document
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="container  py-5">
+                <section>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>Basic</div>
+                        </div>
+                        <div class="col-sm-8">
+                            <a data-toggle="collapse" href="#collapse--example-0-1">
+                                Using [href]
+                            </a>
+
+                            <span class="text-muted">&ndash;</span>
+
+                            <a data-toggle="collapse" href="#" data-target="#collapse--example-0-2">
+                                Using [data-target]
+                            </a>
+
+                            <div id="collapse--example-0-1" class="c-collapse">
+                                <strong>Content 1</strong> Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                            </div>
+
+                            <div id="collapse--example-0-2" class="c-collapse">
+                                <strong>Content 2</strong> Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>Multiple Target</div>
+                        </div>
+                        <div class="col-sm-8">
+                            <a data-toggle="collapse" href="#collapse--example-1-1">
+                                Toggle One
+                            </a>
+
+                            <span class="text-muted">&ndash;</span>
+
+                            <a data-toggle="collapse" href="#" data-target="#collapse--example-1-2">
+                                Toggle Two
+                            </a>
+
+                            <span class="text-muted">&ndash;</span>
+
+                            <a data-toggle="collapse" href=".collapse-both-example">
+                                Toggle Both
+                            </a>
+
+                            <div id="collapse--example-1-1" class="c-collapse  collapse-both-example">
+                                <strong>Content 1</strong> Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                            </div>
+
+                            <div id="collapse--example-1-2" class="c-collapse  collapse-both-example">
+                                <strong>Content 2</strong> Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>Accordian</div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="accordion" id="accordion-parent">
+                                <div class="c-accordion">
+                                    <a href="#" data-toggle="collapse" data-target="#accordion-1" aria-expanded="true" aria-controls="accordion-1">
+                                        Accordian #1
+                                    </a>
+
+                                    <div id="accordion-1" class="c-collapse show" aria-labelledby="headingOne" data-parent="#accordion-parent">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                                <div class="c-accordion">
+                                    <a href="#" data-toggle="collapse" data-target="#accordion-2" aria-expanded="false" aria-controls="accordion-2">
+                                        Accordian #2
+                                    </a>
+                                    <div id="accordion-2" class="c-collapse" aria-labelledby="headingTwo" data-parent="#accordion-parent">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                                <div class="c-accordion">
+                                    <a href="#" data-toggle="collapse" data-target="#accordion-3" aria-expanded="false" aria-controls="accordion-3">
+                                        Accordian #3
+                                    </a>
+                                    <div id="accordion-3" class="c-collapse" aria-labelledby="headingThree" data-parent="#accordion-parent">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>Accordian <span class="text-muted">×</span> Card</div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="accordion" id="accordion-parent-2">
+                                <div class="c-accordion  c-card">
+                                    <a href="#" class="c-accordion__head" data-toggle="collapse" data-target="#accordion-4" aria-expanded="true" aria-controls="accordion-4">
+                                        <span>Accordian #4</span>
+                                        <span class="chevron"></span>
+                                    </a>
+                                    <div id="accordion-4" class="c-accordion__body  c-collapse show" data-parent="#accordion-parent-2">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                                <div class="c-accordion  c-card">
+                                    <a href="#" class="c-accordion__head" data-toggle="collapse" data-target="#accordion-5" aria-expanded="false" aria-controls="accordion-5">
+                                        <span>Accordian #5</span>
+                                        <span class="chevron"></span>
+                                    </a>
+                                    <div id="accordion-5" class="c-accordion__body  c-collapse" data-parent="#accordion-parent-2">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                                <div class="c-accordion  c-card">
+                                    <a href="#" class="c-accordion__head" data-toggle="collapse" data-target="#accordion-6" aria-expanded="false" aria-controls="accordion-6">
+                                        <span>Accordian #6</span>
+                                        <span class="chevron"></span>
+                                    </a>
+                                    <div id="accordion-6" class="c-accordion__body  c-collapse" data-parent="#accordion-parent-2">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </body>
+    <script src="../dist/js/collapse.min.js"></script>
+</html>
