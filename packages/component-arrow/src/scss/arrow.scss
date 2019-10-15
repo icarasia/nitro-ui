@@ -1,0 +1,83 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Arrow
+//
+//  Component styling for cards
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '../../node_modules/@nitro-ui/css-core/src/variables';
+@import '../../node_modules/@nitro-ui/css-core/src/mixins';
+
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$arrow-size     : 8px;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-arrow {
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    left: 50%;
+    bottom: 0;
+    margin: -8px -6px;
+    // transform: rotate(-90deg);
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid $haze-300;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+     &:after {
+        border-top-color: $white;
+        top: -1px;
+    }
+}
+
+.c-arrow--top {
+    bottom: auto;
+    top: 0;
+    transform: rotate(-180deg);
+}
+
+
+.c-arrow--right {
+    left: auto;
+    right: 0;
+    margin: -4px -10px;
+    transform: rotate(-90deg);
+    top: 50%;
+}
+
+
+.c-arrow--left {
+    left: 0;
+    margin: -4px -10px;
+    transform: rotate(90deg);
+    top: 50%;
+}

@@ -1,0 +1,215 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Modal
+//
+//  Component styling for modal.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Modifiers
+//      5.  Responsive
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$modal-backdrop                 : rgba($dark-700, .5) !default;
+$modal-backdrop-z-index         : 2000 !default;
+
+$modal-width-lg                 : 960px !default;
+$modal-width-md                 : 640px !default;
+$modal-width-base               : 480px !default;
+$modal-width-sm                 : 320px !default;
+
+$modal-spacing                  : $spacing-lg !default;
+$modal-spacing-alt              : $spacing-md !default;
+
+$modal-z-index                  : 2010 !default;
+$modal-z-index-parent           : 2020 !default;
+$modal-z-index-child            : 2030 !default;
+
+$dialog-radius                  : $base-radius !default;
+$dialog-background-color        : $white;
+$dialog-shade-color             : $haze-100 !default;
+$dialog-title-weight            : $font-weight-bold !default;
+
+$dialog-close-color             : $font-muted-color !default;
+$dialog-close-hover-color       : $font-link-color !default;
+$dialog-close-hover-background  : $haze-200 !default;
+$dialog-close-focus-background  : $blue-100 !default;
+$dialog-close-icon-size         : 16px !default;
+$dialog-close-icon-dimension    : 28px !default;
+$dialog-close-icon-margin       : 8px !default;
+
+
+//  3. Modal
+//  ----------------------------------------------------------------------------
+
+.modal-backdrop {
+    background-color: $modal-backdrop;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $modal-backdrop-z-index;
+
+    &:not(.show) {
+        display: none;
+    }
+
+    + .modal-backdrop {
+        z-index: $modal-backdrop-z-index + 1;
+    }
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.c-modal {
+    -webkit-overflow-scrolling: touch;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $modal-z-index;
+}
+
+
+//  3. Dialog
+//  ----------------------------------------------------------------------------
+
+.c-dialog {
+    animation: slide-down .2s ease 1;
+    background-clip: padding-box;
+    background-color: $dialog-background-color;
+    border-radius: $dialog-radius;
+    // display: none;
+    margin: $modal-spacing auto;
+    width: $modal-width-base;
+    outline: none !important;
+    position: relative;
+
+    &.is--shaking {
+        animation: shake-horizontal .5s ease-in-out;
+    }
+
+    &--sm {
+        width: $modal-width-sm;
+    }
+
+    &--md {
+        width: $modal-width-md;
+    }
+
+    &--lg {
+        width: $modal-width-lg;
+    }
+
+    .is--filled {
+        background-color: $dialog-shade-color;
+    }
+}
+
+    .c-dialog__head {
+        align-items: start;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-dialog__title {
+        font-weight: $dialog-title-weight;
+        margin: $modal-spacing;
+        margin-bottom: $modal-spacing-alt;
+    }
+
+    .c-dialog__close {
+        -webkit-appearance: none;
+        align-items: center;
+        background: transparent;
+        border: 0;
+        border-radius: 100%;
+        justify-content: center;
+        line-height: 1;
+        color: $dialog-close-color;
+        cursor: pointer;
+        display: flex;
+        font-size: $dialog-close-icon-size;
+        width: $dialog-close-icon-dimension;
+        height: $dialog-close-icon-dimension;
+        padding: 0;
+        margin: $dialog-close-icon-margin;
+
+        &:hover {
+            background-color: $dialog-close-hover-background;
+        }
+
+        &:focus {
+            background-color: $dialog-close-focus-background;
+            color: $dialog-close-hover-color;
+            outline: none;
+        }
+    }
+
+    .c-dialog__alert {
+        border-radius: 0;
+        padding-left: $modal-spacing;
+        margin-bottom: $modal-spacing-alt;
+    }
+
+    .c-dialog__body,
+    .c-dialog__foot {
+        padding: $modal-spacing;
+        padding-top: 0;
+
+        &:before,
+        &:after {
+            content: '';
+            display: table;
+            height: 0;
+            clear: both;
+        }
+    }
+
+    .c-dialog__foot {
+        border-radius: 0 0 $dialog-radius $dialog-radius;
+    }
+
+
+@include media-query('portable'){
+    .c-dialog--lg {
+        width: 100%;
+    }
+}
+
+
+@include media-query('mobile') {
+    .c-modal {
+        padding: $spacing-xs;
+    }
+
+    .c-dialog {
+        width: 100%;
+    }
+}
