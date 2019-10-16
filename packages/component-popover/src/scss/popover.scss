@@ -1,0 +1,129 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Tooltip
+//
+//  Component styling for tooltip.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Modifiers
+//      5.  Responsive
+//
+//  ----------------------------------------------------------------------------
+//
+//  <div class="c-tooltip  c-tooltip--[direction]" data-tooltip="[content]">...</div>
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$popover-container-width:  320px;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-popover {
+    position: relative;
+
+    .c-popover-container {
+        left: 50%;
+        opacity: 0;
+        padding: $spacing-md;
+        position: absolute;
+        top: 0;
+        color: $font-base-color;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform .2s ease;
+        text-align: left;
+        width: $popover-container-width;
+        z-index: 5;
+        white-space: normal;
+    }
+
+    *:focus + .c-popover-container,
+    &:hover .c-popover-container,
+    .c-popover-container:hover {
+        display: block;
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(1);
+    }
+}
+
+.c-popover--left {
+    .c-popover-container {
+        left: 0;
+        top: 50%;
+    }
+
+    :focus + .c-popover-container,
+    &:hover .c-popover-container,
+    .c-popover-container:hover {
+        transform: translate(-100%, -50%) scale(1);
+    }
+}
+.c-popover--right {
+    .c-popover-container {
+        left: 100%;
+        top: 50%;
+    }
+
+    :focus + .c-popover-container,
+    &:hover .c-popover-container,
+    .c-popover-container:hover {
+        transform: translate(0, -50%) scale(1);
+    }
+}
+.c-popover--top {
+    display: inline-block;
+    position: relative;
+
+    .c-popover-container {
+        left: 50%;
+        opacity: 0;
+        padding: $spacing-md;
+        position: absolute;
+        top: 0;
+        color: $font-base-color;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform .2s ease;
+        text-align: left;
+        width: $popover-container-width;
+        z-index: 5;
+        white-space: normal;
+    }
+
+    *:focus + .c-popover-container,
+    &:hover .c-popover-container,
+    .c-popover-container:hover {
+        display: block;
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(1);
+    }
+}
+.c-popover--bottom {
+    .c-popover-container {
+        left: 50%;
+        top: 100%;
+    }
+
+    :focus + .c-popover-container,
+    &:hover .c-popover-container,
+    .c-popover-container:hover {
+        transform: translate(-50%, 0) scale(1);
+    }
+ }
