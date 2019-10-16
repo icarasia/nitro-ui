@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/component-tabs.css': [
-                        'src/sass/component-tabs.scss'
+                    'dist/css/tab.css': [
+                        'src/scss/tab.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/css/component-tabs.min.css': [
-                        'src/sass/component-tabs.scss'
+                    'dist/css/tab.min.css': [
+                        'src/scss/tab.scss'
                     ]
                 }
             }
@@ -37,8 +37,8 @@ module.exports = function( grunt ) {
         browserify: {
             dist: {
                 files: {
-                    'dist/js/tabs.js': [
-                        'src/js/tabs.js'
+                    'dist/js/tab.js': [
+                        'src/js/tab.js'
                     ]
                 },
                 options: {
@@ -64,8 +64,8 @@ module.exports = function( grunt ) {
             },
             main: {
                 files: {
-                    'dist/js/tabs.min.js': [
-                        'dist/js/tabs.js',
+                    'dist/js/tab.min.js': [
+                        'dist/js/tab.js',
                     ]
                 }
             },

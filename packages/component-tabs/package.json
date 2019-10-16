@@ -1,8 +1,8 @@
 {
-    "name": "@nitro-ui/component-alert",
+    "name": "@nitro-ui/component-tab",
     "version": "1.0.0-alpha.0",
-    "description": "Alert component for Nitro UI.",
-    "main": "dist/component-alert.min.css",
+    "description": "Tab component for Nitro UI.",
+    "main": "dist/tab.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -14,16 +14,16 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
-        "Alert",
+        "Tab",
         "Nitro",
         "UI",
         "CSS",
         "Components",
         "iCarAsia"
     ],
-    "author": "SweeLing Lee <sllee_1004@yahoo.com>",
+    "author": "Hafizuddin Othman <zick.mho@gmail.com>",
     "contributors": [
-        "Syaiful Shah Zinan <i.works@live.com>"
+        "Hafizuddin Othman <zick.mho@gmail.com>"
     ],
     "license": "ISC",
     "bugs": {

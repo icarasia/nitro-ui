@@ -33,14 +33,6 @@ $card-spacing-sm        : $spacing-sm !default;
 //  3. CORE
 //  ----------------------------------------------------------------------------
 
-// not needed
-.c-tab,
-.c-tab__item > a,
-.c-tab__item > .c-btn {
-    display: -ms-flexbox;
-    display: flex;
-}
-
 .c-tab,,
 .c-tab__item {
     display: -ms-flexbox;
@@ -48,7 +40,6 @@ $card-spacing-sm        : $spacing-sm !default;
 }
 
 .c-tab__item {
-    // flex: 1;
     align-items: center;
     justify-content: center;
 
@@ -57,14 +48,6 @@ $card-spacing-sm        : $spacing-sm !default;
         pointer-events: none;
         cursor: default;
     }
-}
-
-// not needed
-.c-tab__item > a,
-.c-tab__item > .c-btn {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
 }
 
 .c-tab {
@@ -85,20 +68,6 @@ $card-spacing-sm        : $spacing-sm !default;
                 border-color: $haze-400;
             }
 
-            // not needed
-            > a:not(.c-btn) {
-                color: $font-base-color;
-                line-height: 20px;
-                text-decoration: none !important;
-                outline: none !important;
-                padding: $spacing-xs $spacing-sm $spacing-sm;
-
-                .icon-svg{
-                    fill: $font-base-color;
-                }
-            }
-
-            // new
             &:not(.c-btn) {
                 color: $font-base-color;
                 line-height: 20px;
@@ -114,16 +83,6 @@ $card-spacing-sm        : $spacing-sm !default;
             &.is--active {
                 border-color: $font-link-color;
 
-                // not needed
-                > a:not(.c-btn) {
-                    color: $font-link-color;
-
-                    .icon-svg{
-                        fill: $font-link-color;
-                    }
-                }
-
-                // new
                 &:not(.c-btn) {
                     color: $font-link-color;
 
@@ -167,21 +126,11 @@ $card-spacing-sm        : $spacing-sm !default;
     > .c-tab__item {
         border-radius: 0;
 
-        // > .c-btn {
-        //     border-radius: 0;
-        // }
-
         &:first-child {
-            // > .c-btn {
-            //     @include rounded-left();
-            // }
             @include rounded-left();
         }
 
         &:last-child {
-            // > .c-btn {
-            //     @include rounded-right();
-            // }
             @include rounded-right();
         }
     }
