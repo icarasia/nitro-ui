@@ -1,6 +1,6 @@
 dropdown# Nitro UI: Component > Dropdown
 
-Dropdown styling for list or table
+Toggle contextual overlays for displaying lists of links and more
 
 ## Getting Started
 

@@ -1,0 +1,177 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Dropdown
+//
+//  Component Dropdown
+//* Dropdown are used to toggle sections of content or options.
+//* -- Require Bootstrap 4.3 dropdown.js
+//*
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Core
+//
+//  ----------------------------------------------------------------------------
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+@import '@nitro-ui/core/src/animations';
+
+
+//  2. VARIABLES
+//  ----------------------------------------------------------------------------
+
+$dropdown-width                     : 240px !default;
+
+$dropdown-animation                 : slide-down .2s ease 1 !default;
+$dropdown-z-index                   : 9999 !default;
+
+$dropdown-divider-color             : $haze-200 !default;
+
+$dropdown-item-font-color           : $font-base-color !default;
+$dropdown-item-font-size            : $font-base-size !default;
+$dropdown-item-font-height          : 20px !default;
+$dropdwon-item-padding-x            : 16px !default;
+$dropdwon-item-padding-y            : 8px !default;
+$dropdown-item-hover-background     : $haze-100 !default;
+$dropdown-item-hover-font-color     : $font-base-color !default;
+$dropdown-item-hover-font-weight    : $font-weight-bold !default;
+$dropdown-item-active-background    : $haze-200 !default;
+$dropdown-item-active-font-color    : $font-base-color !default;
+
+$dropdown-heading-font-color        : $font-muted-color;
+$dropdown-heading-font-size         : $font-7-size;
+$dropdown-heading-font-height       : $font-7-height;
+
+
+ //  3. CORE
+ //  ----------------------------------------------------------------------------
+
+.c-dropdown {
+    position: relative;
+}
+
+    .c-dropdown__base {
+        display: none;
+        left: 0;
+        padding-top: $spacing-sm;
+        position: absolute;
+        top: 100%;
+        z-index: $dropdown-z-index;
+    }
+
+    .c-dropdown__mega,
+    .c-dropdown__menu {
+        box-shadow: 0 0 0 1px   rgba($dark-700, .05),
+                    0 2px 4px   rgba($dark-700, .05),
+                    0 4px 8px   rgba($dark-700, .05);
+        background-color: $white;
+        border-radius: $base-radius;
+        text-align: left;
+    }
+
+    .c-dropdown__mega {
+        display: flex;
+
+        .c-dropdown__menu {
+            background-color: transparent;
+            box-shadow: none;
+            border-radius: 0;
+
+            &:not(:first-child) {
+                border-left: 1px solid $dropdown-divider-color;
+            }
+        }
+    }
+
+    .c-dropdown__menu {
+        padding: $spacing-xs 0;
+        min-width: $dropdown-width;
+    }
+
+    .c-dropdown__item {
+        background-color: transparent;
+        color: $dropdown-item-font-color;
+        cursor: pointer;
+        display: block;
+        font-size: $dropdown-item-font-size;
+        line-height: $dropdown-item-font-height;
+        outline: none !important;
+        padding: $dropdwon-item-padding-y $dropdwon-item-padding-x;
+        text-decoration: none !important;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            background: $dropdown-item-hover-background;
+            color: $dropdown-item-hover-font-color;
+        }
+
+        &.is--active {
+            background: $dropdown-item-active-background !important;
+            color: $dropdown-item-active-font-color !important;
+            font-weight: $dropdown-item-hover-font-weight;
+        }
+    }
+
+    .c-dropdown__heading {
+        color: $dropdown-heading-font-color;
+        font-size: $dropdown-heading-font-size;
+        line-height: $dropdown-heading-font-height;
+        padding: $dropdwon-item-padding-y $dropdwon-item-padding-x;
+    }
+
+    .c-dropdown__divider {
+        height: 1px;
+        background-color: $dropdown-divider-color;
+        margin: $spacing-xs 0 !important;
+    }
+
+
+.c-dropdown:hover > .c-dropdown__base,
+.c-dropdown.is--open > [data-toggle="dropdown"] ~ .c-dropdown__base {
+    display: block;
+}
+
+.c-dropdown > [data-toggle="dropdown"] ~ .c-dropdown__base {
+    display: none;
+}
+
+@mixin dropdown-alignment-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .c-dropdown--right#{$breakpoint-separator}#{$breakpoint} {
+        > .c-dropdown__base {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    .c-dropdown--center#{$breakpoint-separator}#{$breakpoint} {
+        > .c-dropdown__base {
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+    }
+}
+
+
+@include dropdown-alignment-setup();
+
+@if $responsive {
+    @include media-query('mobile') {
+        @include dropdown-alignment-setup('mobile');
+    }
+}

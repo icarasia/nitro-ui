@@ -4,10 +4,8 @@
         <meta charset="utf-8">
         <title>Component Dropdown</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/utility-shadow.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-divider/dist/utility-divider.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/component-button/dist/button.min.css">
-        <link rel="stylesheet" href="../dist/component-dropdown.min.css">
+        <!-- <link rel="stylesheet" href="../node_modules/@nitro-ui/component-button/dist/button.min.css"> -->
+        <link rel="stylesheet" href="../dist/css/dropdown.min.css">
         <style>
             article {
                 font-family: Roboto;
@@ -25,7 +23,7 @@
                 <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
             </div>
             <div class="container py-5">
-                <h1 class="font-weight-bold  mb-3">Component Dropdown</h1>
+                <h1 class="font-weight-bold  mb-3">Dropdown</h1>
                 <div class="text-muted">
                     <p>
                         Toggle contextual overlays for displaying lists of links and more
@@ -36,72 +34,293 @@
 
         <article>
             <div class="container  py-5">
-
-
-            <div class="row">
-                <div class="col-md-6">
-                <div class="c-dropdown">
-                    <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Dropdown</a>
-                    <div class="c-dropdown__base">
-                        <ul class="c-dropdown__menu">
-                            <li><a href="#">Menu One</a></li>
-                            <li><a href="#">Menu Two</a></li>
-                            <li class="u-divider"></li>
-                            <li><a href="#">Menu Three</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-                <div class="col-md-6  text-right">
-                <div class="c-dropdown  c-dropdown--right">
-                    <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="c-dropdown__base">
-                        <ul class="c-dropdown__menu">
-                            <li><a href="#">Menu One</a></li>
-                            <li><a href="#">Menu Two</a></li>
-                            <li class="u-divider"></li>
-                            <li><a href="#">Menu Three</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-
-            <hr class="u-divider  my-5">
-
-            <div class="row">
-                <div class="col-md-6">
+                <div class="text-muted  mb-4">Hover</div>
+                <div class="d-flex  justify-content-between">
                     <div class="c-dropdown">
-                        <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
+                        <a href="#" class="c-dropdown__control">Dropdown</a>
                         <div class="c-dropdown__base">
-                            <ul class="c-dropdown__menu">
-                                <li><a href="#">Menu One</a></li>
-                                <li><a href="#">Menu Two</a></li>
-                                <li class="u-divider"></li>
-                                <li><a href="#">Menu Three</a></li>
-                            </ul>
+                            <div class="c-dropdown__menu">
+                                <div class="c-dropdown__heading">Menu</div>
+                                <a class="c-dropdown__item" href="#">Dashboard</a>
+                                <a class="c-dropdown__item" href="#">Saved Items</a>
+                                <a class="c-dropdown__item" href="#">Selling Items</a>
+                                <div class="c-dropdown__divider"></div>
+                                <div class="c-dropdown__heading">Account</div>
+                                <a class="c-dropdown__item" href="#">Settings</a>
+                                <a class="c-dropdown__item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--center">
+                        <a href="#" class="c-dropdown__control">Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__menu">
+                                <div class="c-dropdown__heading">Menu</div>
+                                <a class="c-dropdown__item" href="#">Dashboard</a>
+                                <a class="c-dropdown__item" href="#">Saved Items</a>
+                                <a class="c-dropdown__item" href="#">Selling Items</a>
+                                <div class="c-dropdown__divider"></div>
+                                <div class="c-dropdown__heading">Account</div>
+                                <a class="c-dropdown__item" href="#">Settings</a>
+                                <a class="c-dropdown__item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--right">
+                        <a href="#" class="c-dropdown__control">Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__menu">
+                                <div class="c-dropdown__heading">Menu</div>
+                                <a class="c-dropdown__item" href="#">Dashboard</a>
+                                <a class="c-dropdown__item" href="#">Saved Items</a>
+                                <a class="c-dropdown__item" href="#">Selling Items</a>
+                                <div class="c-dropdown__divider"></div>
+                                <div class="c-dropdown__heading">Account</div>
+                                <a class="c-dropdown__item" href="#">Settings</a>
+                                <a class="c-dropdown__item" href="#">Logout</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6  text-right">
-                    <div class="c-dropdown  c-dropdown--right">
-                        <a class="c-btn  c-btn--dropdown  c-btn--primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</a>
+
+                <hr class="my-4">
+
+                <div class="d-flex  justify-content-between">
+                    <div class="c-dropdown">
+                        <a href="#" class="c-dropdown__control">Mega Dropdown</a>
                         <div class="c-dropdown__base">
-                            <ul class="c-dropdown__menu">
-                                <li><a href="#">Menu One</a></li>
-                                <li><a href="#">Menu Two</a></li>
-                                <li class="u-divider"></li>
-                                <li><a href="#">Menu Three</a></li>
-                            </ul>
+                            <div class="c-dropdown__mega">
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section One</div>
+                                    <a class="c-dropdown__item" href="#">Menu One</a>
+                                    <a class="c-dropdown__item" href="#">Menu Two</a>
+                                    <a class="c-dropdown__item" href="#">Menu Three</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Two</div>
+                                    <a class="c-dropdown__item" href="#">Menu Four</a>
+                                    <a class="c-dropdown__item" href="#">Menu Five</a>
+                                    <div class="c-dropdown__divider"></div>
+                                    <div class="c-dropdown__heading">Section Three</div>
+                                    <a class="c-dropdown__item" href="#">Menu Six</a>
+                                    <a class="c-dropdown__item" href="#">Menu Seven</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Four</div>
+                                    <a class="c-dropdown__item" href="#">Menu Eight</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--center">
+                        <a href="#" class="c-dropdown__control">Mega Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__mega">
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section One</div>
+                                    <a class="c-dropdown__item" href="#">Menu One</a>
+                                    <a class="c-dropdown__item" href="#">Menu Two</a>
+                                    <a class="c-dropdown__item" href="#">Menu Three</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Two</div>
+                                    <a class="c-dropdown__item" href="#">Menu Four</a>
+                                    <a class="c-dropdown__item" href="#">Menu Five</a>
+                                    <div class="c-dropdown__divider"></div>
+                                    <div class="c-dropdown__heading">Section Three</div>
+                                    <a class="c-dropdown__item" href="#">Menu Six</a>
+                                    <a class="c-dropdown__item" href="#">Menu Seven</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Four</div>
+                                    <a class="c-dropdown__item" href="#">Menu Eight</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--right">
+                        <a href="#" class="c-dropdown__control">Mega Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__mega">
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section One</div>
+                                    <a class="c-dropdown__item" href="#">Menu One</a>
+                                    <a class="c-dropdown__item" href="#">Menu Two</a>
+                                    <a class="c-dropdown__item" href="#">Menu Three</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Two</div>
+                                    <a class="c-dropdown__item" href="#">Menu Four</a>
+                                    <a class="c-dropdown__item" href="#">Menu Five</a>
+                                    <div class="c-dropdown__divider"></div>
+                                    <div class="c-dropdown__heading">Section Three</div>
+                                    <a class="c-dropdown__item" href="#">Menu Six</a>
+                                    <a class="c-dropdown__item" href="#">Menu Seven</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Four</div>
+                                    <a class="c-dropdown__item" href="#">Menu Eight</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div class="text-muted  mb-4">Toggle</div>
+                <div class="d-flex  justify-content-between">
+                    <div class="c-dropdown">
+                        <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__menu">
+                                <div class="c-dropdown__heading">Menu</div>
+                                <a class="c-dropdown__item" href="#">Dashboard</a>
+                                <a class="c-dropdown__item" href="#">Saved Items</a>
+                                <a class="c-dropdown__item" href="#">Selling Items</a>
+                                <div class="c-dropdown__divider"></div>
+                                <div class="c-dropdown__heading">Account</div>
+                                <a class="c-dropdown__item" href="#">Settings</a>
+                                <a class="c-dropdown__item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--center">
+                        <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__menu">
+                                <div class="c-dropdown__heading">Menu</div>
+                                <a class="c-dropdown__item" href="#">Dashboard</a>
+                                <a class="c-dropdown__item" href="#">Saved Items</a>
+                                <a class="c-dropdown__item" href="#">Selling Items</a>
+                                <div class="c-dropdown__divider"></div>
+                                <div class="c-dropdown__heading">Account</div>
+                                <a class="c-dropdown__item" href="#">Settings</a>
+                                <a class="c-dropdown__item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--right">
+                        <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__menu">
+                                <div class="c-dropdown__heading">Menu</div>
+                                <a class="c-dropdown__item" href="#">Dashboard</a>
+                                <a class="c-dropdown__item" href="#">Saved Items</a>
+                                <a class="c-dropdown__item" href="#">Selling Items</a>
+                                <div class="c-dropdown__divider"></div>
+                                <div class="c-dropdown__heading">Account</div>
+                                <a class="c-dropdown__item" href="#">Settings</a>
+                                <a class="c-dropdown__item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-flex  justify-content-between">
+                    <div class="c-dropdown">
+                        <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__mega">
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section One</div>
+                                    <a class="c-dropdown__item" href="#">Menu One</a>
+                                    <a class="c-dropdown__item" href="#">Menu Two</a>
+                                    <a class="c-dropdown__item" href="#">Menu Three</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Two</div>
+                                    <a class="c-dropdown__item" href="#">Menu Four</a>
+                                    <a class="c-dropdown__item" href="#">Menu Five</a>
+                                    <div class="c-dropdown__divider"></div>
+                                    <div class="c-dropdown__heading">Section Three</div>
+                                    <a class="c-dropdown__item" href="#">Menu Six</a>
+                                    <a class="c-dropdown__item" href="#">Menu Seven</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Four</div>
+                                    <a class="c-dropdown__item" href="#">Menu Eight</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--center">
+                        <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__mega">
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section One</div>
+                                    <a class="c-dropdown__item" href="#">Menu One</a>
+                                    <a class="c-dropdown__item" href="#">Menu Two</a>
+                                    <a class="c-dropdown__item" href="#">Menu Three</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Two</div>
+                                    <a class="c-dropdown__item" href="#">Menu Four</a>
+                                    <a class="c-dropdown__item" href="#">Menu Five</a>
+                                    <div class="c-dropdown__divider"></div>
+                                    <div class="c-dropdown__heading">Section Three</div>
+                                    <a class="c-dropdown__item" href="#">Menu Six</a>
+                                    <a class="c-dropdown__item" href="#">Menu Seven</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Four</div>
+                                    <a class="c-dropdown__item" href="#">Menu Eight</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-dropdown  c-dropdown--right">
+                        <a href="#" class="c-dropdown__control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Dropdown</a>
+                        <div class="c-dropdown__base">
+                            <div class="c-dropdown__mega">
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section One</div>
+                                    <a class="c-dropdown__item" href="#">Menu One</a>
+                                    <a class="c-dropdown__item" href="#">Menu Two</a>
+                                    <a class="c-dropdown__item" href="#">Menu Three</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Two</div>
+                                    <a class="c-dropdown__item" href="#">Menu Four</a>
+                                    <a class="c-dropdown__item" href="#">Menu Five</a>
+                                    <div class="c-dropdown__divider"></div>
+                                    <div class="c-dropdown__heading">Section Three</div>
+                                    <a class="c-dropdown__item" href="#">Menu Six</a>
+                                    <a class="c-dropdown__item" href="#">Menu Seven</a>
+                                </div>
+                                <div class="c-dropdown__menu">
+                                    <div class="c-dropdown__heading">Section Four</div>
+                                    <a class="c-dropdown__item" href="#">Menu Eight</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
         </article>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../dist/js/dropdown.js"></script>
     </body>
 </html>
