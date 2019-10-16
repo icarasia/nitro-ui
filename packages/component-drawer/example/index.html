@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Component - Drawer</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../component-button/dist/button.min.css">
+        <link rel="stylesheet" href="../dist/css/drawer.min.css">
+        <style>
+            article,
+            .c-modal,
+            .c-drawer {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Drawer</h1>
+                <div class="text-muted">
+                    <p>
+                        TBD
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article class="container  py-5">
+            <div class="d-flex  justify-content-center">
+                <button type="button" class="c-btn c-btn--primary" data-toggle="modal" data-target="#drawer-sample-top" style="min-width: 140px;">
+                    Top Drawer
+                </button>
+            </div>
+            <div class="d-flex  justify-content-between">
+                <button type="button" class="c-btn c-btn--primary" data-toggle="modal" data-target="#drawer-sample-left" style="min-width: 140px;">
+                    Left Drawer
+                </button>
+
+                <button type="button" class="c-btn c-btn--primary" data-toggle="modal" data-target="#drawer-sample-right" style="min-width: 140px;">
+                    Right Drawer
+                </button>
+            </div>
+            <div class="d-flex  justify-content-center">
+                <button type="button" class="c-btn c-btn--primary" data-toggle="modal" data-target="#drawer-sample-bottom" style="min-width: 140px;">
+                    Bottom Drawer
+                </button>
+            </div>
+        </article>
+
+        <!-- Drawer : Left -->
+        <div class="c-drawer  c-drawer--left" id="drawer-sample-left" tabindex="-1" role="dialog">
+            <div class="c-drawer__content  u-padding-xl">Left Drawer</div>
+        </div>
+
+        <!-- Drawer : Right -->
+        <div class="c-drawer  c-drawer--right" id="drawer-sample-right" tabindex="-1" role="dialog">
+            <div class="c-drawer__content  u-padding-xl">Right Drawer</div>
+        </div>
+
+        <!-- Drawer : Top -->
+        <div class="c-drawer  c-drawer--top" id="drawer-sample-top" tabindex="-1" role="dialog">
+            <div class="c-drawer__content  u-padding-xl">Top Drawer</div>
+        </div>
+
+        <!-- Drawer : Bottom -->
+        <div class="c-drawer  c-drawer--bottom" id="drawer-sample-bottom" tabindex="-1" role="dialog">
+            <div class="c-drawer__content  u-padding-xl">Bottom Drawer</div>
+        </div>
+    </body>
+    <script src="../dist/js/drawer.min.js"></script>
+</html>

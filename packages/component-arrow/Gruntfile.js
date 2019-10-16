@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/card.css': [
-                        'src/scss/card.scss'
+                    'dist/arrow.css': [
+                        'src/scss/arrow.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/card.min.css': [
-                        'src/scss/card.scss'
+                    'dist/arrow.min.css': [
+                        'src/scss/arrow.scss'
                     ]
                 }
             }

@@ -1,0 +1,113 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Collapse & Accordion
+//
+//  Component styling for collapse & Accordion.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Collapse
+//      4.  Accordian
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$accordion-spacing: $spacing-md;
+$accordion-spacing-x: $spacing-sm;
+$accordion-spacing-y: $spacing-md;
+
+$accordion-chevron-border: 2px;
+$accordion-chevron-color: $base-ui-color;
+$accordion-chevron-size: 10px;
+
+
+//  3. Collapse
+//  ----------------------------------------------------------------------------
+
+.c-collapse {
+    // Overwrite the BS4 transition (Ikram)
+    transition: none !important;
+
+    &:not(.show) {
+        display: none
+    }
+
+    // For smooth collapsing, use below (Ikram)
+    //--------------------------------------------------------------------------
+
+    // &.collapsing {
+    //     position: relative;
+    //     height: 0;
+    //     overflow: hidden;
+    //     transition-duration: .4s;
+    //     transition-property: height, visibility;
+    //     transition-timing-function: ease;
+    // }
+    // &.collapsing.width {
+    //     transition-property: width, visibility;
+    //     width: 0;
+    //     height: auto;
+    // }
+}
+
+
+//  4. Accordion
+//  ----------------------------------------------------------------------------
+
+.c-accordion {
+    &.c-card {
+        &:not(:first-child) {
+            margin-top: $spacing-md;
+        }
+
+        .c-accordion__head {
+            @include rounded-top();
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: $spacing-sm $spacing-md;
+            text-decoration: none !important;
+            outline: none !important;
+        }
+
+        .c-accordion__body {
+            @include rounded-bottom();
+            border-top: 1px solid $haze-200;
+            padding: $spacing-md;
+        }
+    }
+}
+
+.c-accordion__head {
+    .chevron {
+        border-right: $accordion-chevron-border solid $accordion-chevron-color;
+        border-bottom: $accordion-chevron-border solid $accordion-chevron-color;
+        display: block;
+        width: $accordion-chevron-size;
+        height: $accordion-chevron-size;
+        transform: rotate(-45deg);
+        transition: transform .4s ease;
+    }
+
+    &[aria-expanded="true"] .chevron {
+        transform: rotate(45deg);
+    }
+}
+
+.c-accordion__title {
+    color: $font-base-color;
+}
