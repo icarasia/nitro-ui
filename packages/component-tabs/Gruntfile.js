@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/component-tabs.css': [
-                        'src/sass/component-tabs.scss'
+                    'dist/css/tabs.css': [
+                        'src/scss/tabs.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/css/component-tabs.min.css': [
-                        'src/sass/component-tabs.scss'
+                    'dist/css/tabs.min.css': [
+                        'src/scss/tabs.scss'
                     ]
                 }
             }
