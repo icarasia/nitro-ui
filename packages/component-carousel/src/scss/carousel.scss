@@ -1,0 +1,241 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Modal
+//
+//  Component styling for modal.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Modifiers
+//      5.  Responsive
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+@import 'owl.carousel/src/scss/core';
+@import 'owl.carousel/src/scss/autoheight';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$carousel-nav-bg-color              : transparent !default;
+$carousel-nav-border-color          : $haze-400 !default;
+$carousel-nav-hover-bg-color        : $haze-200 !default;
+$carousel-nav-hover-border-color    : $blue-400 !default;
+$carousel-nav-chevron-size          : 10px !default;
+$carousel-nav-chevron-border-size   : 2px !default;
+$carousel-nav-border-hover-color    : $blue-400 !default;
+$carousel-nav-border-disable-color  : $haze-400 !default;
+$carousel-nav-padding               : 8px !default;
+$carousel-nav-radius                : 100% !default;
+
+$carousel-dot-bg                    : $haze-300 !default;
+$carousel-dot-hover-bg              : $haze-500 !default;
+$carousel-dot-active-bg             : $haze-700 !default;
+$carousel-dot-height                : 4px !default;
+$carousel-dot-radius                : 2px !default;
+$carousel-dot-width                 : 24px !default;
+$carousel-dot-spacing-x             : 4px !default;
+$carousel-dot-spacing-y             : 12px !default;
+$carousel-nav-dot-spacing           : $spacing-xs !default;
+
+$carousel-nav-circle-size           : 40px;
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-carousel {
+    // Giving some space for the card's shadow to be visible
+    .c-card {
+        margin: 1px;
+    }
+
+    .owl-nav,
+    .owl-dots {
+        margin-top: $carousel-nav-dot-spacing;
+
+        > button {
+            border: 0;
+            padding: 0;
+            outline: none !important;
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .owl-nav > button {
+        background-color: $carousel-nav-bg-color;
+        border-radius: $carousel-nav-radius;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $carousel-nav-hover-bg-color;
+        }
+
+        &.owl-prev,
+        &.owl-next {
+            padding: $carousel-nav-padding !important;
+        }
+    }
+
+    .owl-prev:before,
+    .owl-next:before  {
+        content: '';
+        display: block;
+        width: $carousel-nav-chevron-size;
+        height: $carousel-nav-chevron-size;
+        border: solid $carousel-nav-border-color;
+    }
+
+    .owl-prev {
+        float: left;
+
+        &:before {
+            border-width: 0 0 $carousel-nav-chevron-border-size $carousel-nav-chevron-border-size;
+            transform: rotate(45deg) translate(1px,-1px);
+        }
+    }
+
+    .owl-next {
+        float: right;
+
+        &:before {
+            border-width: 0 $carousel-nav-chevron-border-size $carousel-nav-chevron-border-size 0;
+            transform: rotate(-45deg) translate(-1px,-1px);
+        }
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > button {
+            background-color: $carousel-dot-bg;
+            border-radius: $carousel-dot-radius;
+            display: block;
+            height: $carousel-dot-height;
+            width: $carousel-dot-width;
+            margin: $carousel-dot-spacing-y $carousel-dot-spacing-x;
+
+            &:hover {
+                background-color: $carousel-dot-hover-bg;
+            }
+
+            &.active {
+                background-color: $carousel-dot-active-bg;
+            }
+        }
+    }
+}
+
+
+//  4. Modifier : Banner
+//  ----------------------------------------------------------------------------
+
+.c-carousel--banner {
+    .owl-nav {
+        left: 20px;
+        right: 20px;
+
+        > button {
+            &.owl-prev,
+            &.owl-next {
+                background-color: rgba($white,.4);
+
+                &:hover {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    .owl-dots {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+//  4. Modifier : Card
+//  ----------------------------------------------------------------------------
+
+.c-carousel--card {
+    .owl-nav {
+        left: -20px;
+        right: -20px;
+
+        > button {
+            &.owl-prev,
+            &.owl-next {
+                background-color: $white;
+            }
+        }
+    }
+
+    .owl-dots {
+        bottom: -36px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+//  4. Shared : Banner & Card
+//  ----------------------------------------------------------------------------
+
+.c-carousel--banner,
+.c-carousel--card {
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        > button {
+            &.owl-prev,
+            &.owl-next {
+                @include shadow-1dp();
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                height: $carousel-nav-circle-size;
+                width: $carousel-nav-circle-size;
+
+                &:before {
+                    border-color: $dark-700;
+                }
+
+                &:hover {
+                    @include shadow-3dp();
+                    background-color: $white;
+
+                    &:before {
+                        border-color: $carousel-nav-border-hover-color;
+                    }
+                }
+            }
+
+            &.disabled {
+                &:before {
+                    border-color: $carousel-nav-border-disable-color !important;
+                }
+            }
+        }
+    }
+}
