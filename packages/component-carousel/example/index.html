@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Component - Carousel</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../component-card/dist/card.min.css">
+        <link rel="stylesheet" href="../../object-embed/dist/object-embed.min.css">
+        <link rel="stylesheet" href="../dist/css/carousel.min.css">
+        <style>
+            article {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            .container {
+                max-width: 1100px;
+                padding: 0 10px;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Carousel</h1>
+                <div class="text-muted">
+                    <p>
+                        Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article class="container  py-5">
+            <p class="text-muted  text-left  mb-4">Basic</p>
+            <div class="c-carousel  owl-carousel  js-carousel">
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-1.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-2.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-3.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-4.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-5.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-1.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-2.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-3.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-4.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-5.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-1.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-2.jpeg');"></div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <p class="text-muted  text-left  mb-4">Banner</p>
+            <div class="c-carousel  c-carousel--banner  owl-carousel  js-carousel-banner">
+                <div class="item">
+                    <div class="o-embed  o-embed--3x1" style="background-image: url('example-1.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="o-embed  o-embed--3x1" style="background-image: url('example-2.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="o-embed  o-embed--3x1" style="background-image: url('example-3.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="o-embed  o-embed--3x1" style="background-image: url('example-4.jpeg');"></div>
+                </div>
+                <div class="item">
+                    <div class="o-embed  o-embed--3x1" style="background-image: url('example-5.jpeg');"></div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <p class="text-muted  text-left  mb-4">Cards</p>
+            <div class="c-carousel  c-carousel--card  owl-carousel  js-carousel">
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image">
+                            <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-1.jpeg');"></div>
+                        </div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-2.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-3.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-4.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-5.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-1.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-2.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-3.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-4.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-5.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-1.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="c-card">
+                        <div class="c-card__image  o-embed  o-embed--4x3" style="background-image: url('example-2.jpeg');"></div>
+                        <div class="c-card__body">
+                            <h6>Sony A7iii</h6>
+                            <div>My first mirrorless camera. I always loved the small form factor of it, coupled with a small but useful table top tripod.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </article>
+    </body>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.js-carousel').owlCarousel({
+            loop: false,
+            margin: 16,
+            nav: true,
+            responsive:{
+                0:{
+                    items: 1
+                },
+                600:{
+                    items: 3,
+                    slideBy: 3
+                },
+                1000:{
+                    items: 5,
+                    slideBy: 5
+                }
+            }
+        });
+
+        $('.js-carousel-banner').owlCarousel({
+            loop: true,
+            margin: 16,
+            nav: true,
+            responsive:{
+                0:{
+                    items: 1
+                },
+            }
+        });
+    </script>
+</html>
