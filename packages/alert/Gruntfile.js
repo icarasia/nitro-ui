@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/component-alert.css': [
-                        'src/sass/component-alert.scss'
+                    'dist/css/alert.css': [
+                        'src/sass/alert.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/css/component-alert.min.css': [
-                        'src/sass/component-alert.scss'
+                    'dist/css/alert.min.css': [
+                        'src/sass/alert.scss'
                     ]
                 }
             }
