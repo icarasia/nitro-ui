@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/chips.css': [
-                        'src/chips.scss'
+                    'dist/css/chips.css': [
+                        'src/scss/chips.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/chips.min.css': [
-                        'src/chips.scss'
+                    'dist/css/chips.min.css': [
+                        'src/scss/chips.scss'
                     ]
                 }
             }
