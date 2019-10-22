@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-tab",
-    "version": "1.0.0-alpha.2",
+    "version": "1.0.0-alpha.3",
     "description": "Tab component for Nitro UI.",
     "main": "dist/css/tab.min.css",
     "publishConfig": {
