@@ -187,31 +187,6 @@ $sidebar-crm-chip-color         :   $white !default;
     }
 }
 
-//move it to module dashboard-header
-// .c-notification {
-//     .has--notification {
-//         background: $red-500;
-//         height: 8px;
-//         right: 2px;
-//         top: 2px;
-//         width: 8px;
-//     }
-//
-//     .c-dropdown__base {
-//         min-width: 300px;
-//         max-height: 400px;
-//         overflow-y: auto;
-//     }
-//
-//     .is--unread {
-//         background: $blue-100;
-//
-//         .icon-svg {
-//             fill: $blue-400;
-//         }
-//     }
-// }
-
 .c-sidebar__profile-name {
     color: $sidebar-profilename-color;
 }
