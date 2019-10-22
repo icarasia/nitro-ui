@@ -2,7 +2,7 @@
     "name": "@nitro-ui/component-carousel",
     "version": "0.0.0",
     "description": "Carousel styling for Nitro UI.",
-    "main": "dist/carousel.min.css",
+    "main": "dist/css/carousel.min.css",
     "publishConfig": {
         "access": "public"
     },
