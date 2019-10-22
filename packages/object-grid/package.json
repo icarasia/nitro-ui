@@ -24,6 +24,9 @@
         "iCarAsia"
     ],
     "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "contributors": [
+        "Syaiful Shah Zinan <i.works@live.com>"
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
