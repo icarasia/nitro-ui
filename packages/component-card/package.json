@@ -37,5 +37,8 @@
         "grunt-sass": "^3.0.2",
         "node-sass": "^4.12.0"
     },
-    "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"
+    "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321",
+    "devDependencies": {
+        "@nitro-ui/object-embed": "^1.0.0-alpha.3"
+    }
 }
