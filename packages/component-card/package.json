@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-card",
-    "version": "1.0.0-alpha.4",
+    "version": "1.0.0-alpha.5",
     "description": "Card styling for Nitro UI.",
     "main": "dist/component-card.min.css",
     "publishConfig": {
