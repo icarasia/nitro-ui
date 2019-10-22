@@ -1,3 +1,4 @@
+$use-component-button               : true !default;
 $button-border-width                : 1px !default;
 $button-radius                      : 4px !default;
 $button-font-color                  : $dark-400 !default;
@@ -47,11 +48,11 @@ $button-primary-loader-first            : $blue-300 !default;
 $button-primary-loader-second           : $blue-100 !default;
 
 $button-primary-outline-fill            : transparent !default;
-$button-primary-outline-color           : $blue-500 !default;
-$button-primary-outline-border          : $blue-500 !default;
-$button-primary-outline-hover-fill      : $blue-200 !default;
-$button-primary-outline-hover-border    : $button-primary-outline-border !default;
-$button-primary-outline-hover-color     : $button-primary-outline-color !default;
+$button-primary-outline-color           : $button-primary-fill !default;
+$button-primary-outline-border          : $button-primary-fill !default;
+$button-primary-outline-hover-fill      : $button-primary-fill !default;
+$button-primary-outline-hover-border    : $button-primary-fill !default;
+$button-primary-outline-hover-color     : $button-primary-hover-color !default;
 $button-primary-outline-active-fill     : $button-primary-active-fill !default;
 $button-primary-outline-active-border   : $button-primary-active-border !default;
 $button-primary-outline-active-color    : $button-primary-active-color !default;
