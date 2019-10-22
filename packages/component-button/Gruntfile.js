@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/button.css': [
-                        'src/button.scss'
+                    'dist/css/button.css': [
+                        'src/scss/button.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/button.min.css': [
-                        'src/button.scss'
+                    'dist/css/button.min.css': [
+                        'src/scss/button.scss'
                     ]
                 }
             }

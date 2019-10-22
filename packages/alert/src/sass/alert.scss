@@ -1,0 +1,129 @@
+//  ----------------------------------------------------------------------------
+//
+//  @ALERT
+//
+//  Component styling for alert
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  DEPENDENCIES
+//      2.  VARIABLES
+//      3.  MIXINS
+//      4.  CORE
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. DEPENDENCIES
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+
+
+
+//  2. VARIABLES
+//  ----------------------------------------------------------------------------
+
+$use-component-alert        : true !default;
+
+$alert-positive-font-color  : $font-positive-color !default;
+$alert-positive-background  : $green-100 !default;
+
+$alert-negative-font-color  : $font-negative-color !default;
+$alert-negative-background  : $red-100 !default;
+
+$alert-warning-font-color   : $font-warning-color !default;
+$alert-warning-background   : $orange-100 !default;
+
+$alert-info-font-color      : $font-info-color !default;
+$alert-tips-background      : $purple-100 !default;
+
+$alert-tips-font-color      : $font-tips-color !default;
+$alert-info-background      : $blue-100 !default;
+
+
+
+
+//  3. MIXINS
+//  ----------------------------------------------------------------------------
+
+@mixin alert-setup($theme, $background, $color) {
+    .c-alert--#{$theme} {
+        background-color: $background;
+        color: $color;
+
+        a {
+            color: inherit;
+            font-weight: $font-weight-medium;
+            text-decoration: underline;
+        }
+
+        .c-alert__close {
+            color: inherit;
+        }
+    }
+}
+
+
+
+
+//  4. CORE
+//  ----------------------------------------------------------------------------
+
+@if $use-component-alert {
+    .c-alert {
+        background-color: $haze-200;
+        border-color: $haze-400;
+        border-radius: $base-radius;
+        display: flex;
+        padding: $spacing-sm $spacing-md;
+
+        &.fade {
+            opacity: 0;
+            transition: opacity .15s linear;
+
+            &.in {
+                opacity: 1;
+            }
+        }
+    }
+
+    .c-alert__left {
+        margin-right: $spacing-sm;
+    }
+
+    .c-alert__body {
+        flex: 1 1 auto;
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .c-alert__close {
+        -webkit-appearance: none;
+        align-items: center;
+        background: transparent;
+        border: 0;
+        display: flex;
+        font-size: 14px;
+        height: 22px;
+        justify-content: center;
+        margin: 0 0 0 $spacing-sm;
+        opacity: .5;
+        padding: 0;
+        width: 22px;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    @include alert-setup('info', $alert-info-background, $alert-info-font-color);
+    @include alert-setup('tips', $alert-tips-background, $alert-tips-font-color);
+    @include alert-setup('success', $alert-positive-background, $alert-positive-font-color);
+    @include alert-setup('error', $alert-negative-background, $alert-negative-font-color);
+    @include alert-setup('warning', $alert-warning-background, $alert-warning-font-color);
+}

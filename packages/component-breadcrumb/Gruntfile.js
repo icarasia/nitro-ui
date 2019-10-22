@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/component-breadcrumb.css': [
-                        'src/component-breadcrumb.scss'
+                    'dist/css/breadcrumb.css': [
+                        'src/scss/breadcrumb.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/component-breadcrumb.min.css': [
-                        'src/component-breadcrumb.scss'
+                    'dist/css/breadcrumb.min.css': [
+                        'src/scss/breadcrumb.scss'
                     ]
                 }
             }

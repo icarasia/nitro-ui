@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/component-avatar.css': [
-                        'src/component-avatar.scss'
+                    'dist/css/avatar.css': [
+                        'src/scss/avatar.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/component-avatar.min.css': [
-                        'src/component-avatar.scss'
+                    'dist/css/avatar.min.css': [
+                        'src/scss/avatar.scss'
                     ]
                 }
             }

@@ -73,6 +73,7 @@ $card-divider       : $haze-200 !default;
 
     .c-card__head:first-child,
     .c-card__body:first-child,
+    .c-card__image:first-child,
     .c-card__image:first-child > img{
         border-top-left-radius: $base-radius;
         border-top-right-radius: $base-radius;
@@ -81,6 +82,7 @@ $card-divider       : $haze-200 !default;
     .c-card__head:last-child,
     .c-card__body:last-child,
     .c-card__action:last-child,
+    .c-card__image:last-child,
     .c-card__image:last-child > img {
         border-bottom-left-radius: $base-radius;
         border-bottom-right-radius: $base-radius;

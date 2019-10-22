@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Component Tabs - Nitro UI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/component-button/dist/button.min.css">
+        <link rel="stylesheet" href="../dist/css/tab.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <style>
+            .icon-svg--24 {
+                width: 24px;
+                height: 24px;
+            }
+
+            .icon-svg--16 {
+                width: 16px;
+                height: 16px;
+            }
+
+            ul {
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+            .c-card {
+                background-color: #FFFFFF;
+                border-radius: 4px;
+                list-style: none;
+                position: relative;
+                padding: 0;
+                margin: 0;
+                -webkit-box-shadow: 0 0 0 1px rgba(161, 174, 190, 0.24);
+                box-shadow: 0 0 0 1px rgba(161, 174, 190, 0.24);
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Tabs</h1>
+                <div class="text-muted">
+                    <p>
+                        Tabs enable quick switch between different views.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="container  py-5">
+
+
+                <!-- tab v2 -->
+                <h3>Normal Tab</h3>
+                <div class="c-tab" role="tablist">
+                    <a class="c-tab__item  is--active" data-toggle="tab" href="#nav-1" role="tab" aria-selected="true" aria-controls="nav-1">
+                        <span class="fas fa-award  mr-2"></span>
+                        <span>Shortlist</span>
+                    </a>
+                    <a class="c-tab__item" data-toggle="tab" href="#nav-2" role="tab" aria-selected="false" aria-controls="nav-2">
+                        <span class="icon  icon--16  u-margin-right-xs  icon--mail"></span>
+                        <span>Inbox</span>
+                    </a>
+                    <a class="c-tab__item" data-toggle="tab" href="#nav-3" role="tab" aria-selected="false" aria-controls="nav-3">
+                        <!-- <span class="icon  icon--16  u-margin-right-xs  icon--chat"></span> -->
+                        <svg class="icon-svg  icon-svg--24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M 5 3 C 3.895 3 3 3.895 3 5 L 3 6 L 3 7 L 3 19 C 3 20.105 3.895 21 5 21 L 14.171875 21 C 14.723875 21 15.171875 20.552 15.171875 20 C 15.171875 19.448 14.724875 19 14.171875 19 L 5 19 L 5 7 L 19 7 L 18.998047 14.171875 C 18.998047 14.723875 19.446047 15.171875 19.998047 15.171875 C 20.550047 15.171875 20.998047 14.723875 20.998047 14.171875 L 20.998047 7 L 21 7 L 21 5 C 21 3.895 20.105 3 19 3 L 5 3 z M 7.5 10 C 7.224 10 7 10.224 7 10.5 L 7 11.5 C 7 11.776 7.224 12 7.5 12 L 8.5 12 C 8.776 12 9 11.776 9 11.5 L 9 10.5 C 9 10.224 8.776 10 8.5 10 L 7.5 10 z M 12 10 C 11.448 10 11 10.448 11 11 C 11 11.552 11.448 12 12 12 L 16 12 C 16.552 12 17 11.552 17 11 C 17 10.448 16.552 10 16 10 L 12 10 z M 7.5 14 C 7.224 14 7 14.224 7 14.5 L 7 15.5 C 7 15.776 7.224 16 7.5 16 L 8.5 16 C 8.776 16 9 15.776 9 15.5 L 9 14.5 C 9 14.224 8.776 14 8.5 14 L 7.5 14 z M 12 14 C 11.448 14 11 14.448 11 15 C 11 15.552 11.448 16 12 16 L 13 16 L 13 14 L 12 14 z M 15 15 L 15 17 L 20.146484 22.146484 L 22.146484 20.146484 L 17 15 L 15 15 z M 22.853516 20.853516 L 20.853516 22.853516 L 21.853516 23.853516 C 22.048516 24.048516 22.365547 24.048516 22.560547 23.853516 L 23.853516 22.560547 C 24.048516 22.364547 24.048516 22.048516 23.853516 21.853516 L 22.853516 20.853516 z" fill="#000000"/>
+                        <span>Chat</span>
+                    </a>
+                </div>
+
+                <div class="c-tab-content  mb-5">
+                    <div class="c-tab__pane  is--active" id="nav-1">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="c-tab__pane" id="nav-2">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress</p>
+                    </div>
+                    <div class="c-tab__pane" id="nav-3">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia.</p>
+                    </div>
+                </div>
+
+                <!-- tab v2 -->
+                <h3>Justified Tab</h3>
+                <div class="c-tab  c-tab--justified" role="tablist">
+                    <a class="c-tab__item  is--active" data-toggle="tab" href="#nav-1-1" role="tab" aria-selected="true" aria-controls="nav-1-1">
+                        <span class="fas fa-award  mr-2"></span>
+                        <span>Shortlist</span>
+                    </a>
+                    <a class="c-tab__item" data-toggle="tab" href="#nav-2-1" role="tab" aria-selected="false" aria-controls="nav-2-1">
+                        <span class="icon  icon--16  u-margin-right-xs  icon--mail"></span>
+                        <span>Inbox</span>
+                    </a>
+                    <a class="c-tab__item  is--disabled" data-toggle="tab" href="#nav-3-1" role="tab" aria-selected="false" aria-controls="nav-3-1">
+                        <!-- <span class="icon  icon--16  u-margin-right-xs  icon--chat"></span> -->
+                        <svg class="icon-svg  icon-svg--24 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M 5 3 C 3.895 3 3 3.895 3 5 L 3 6 L 3 7 L 3 19 C 3 20.105 3.895 21 5 21 L 14.171875 21 C 14.723875 21 15.171875 20.552 15.171875 20 C 15.171875 19.448 14.724875 19 14.171875 19 L 5 19 L 5 7 L 19 7 L 18.998047 14.171875 C 18.998047 14.723875 19.446047 15.171875 19.998047 15.171875 C 20.550047 15.171875 20.998047 14.723875 20.998047 14.171875 L 20.998047 7 L 21 7 L 21 5 C 21 3.895 20.105 3 19 3 L 5 3 z M 7.5 10 C 7.224 10 7 10.224 7 10.5 L 7 11.5 C 7 11.776 7.224 12 7.5 12 L 8.5 12 C 8.776 12 9 11.776 9 11.5 L 9 10.5 C 9 10.224 8.776 10 8.5 10 L 7.5 10 z M 12 10 C 11.448 10 11 10.448 11 11 C 11 11.552 11.448 12 12 12 L 16 12 C 16.552 12 17 11.552 17 11 C 17 10.448 16.552 10 16 10 L 12 10 z M 7.5 14 C 7.224 14 7 14.224 7 14.5 L 7 15.5 C 7 15.776 7.224 16 7.5 16 L 8.5 16 C 8.776 16 9 15.776 9 15.5 L 9 14.5 C 9 14.224 8.776 14 8.5 14 L 7.5 14 z M 12 14 C 11.448 14 11 14.448 11 15 C 11 15.552 11.448 16 12 16 L 13 16 L 13 14 L 12 14 z M 15 15 L 15 17 L 20.146484 22.146484 L 22.146484 20.146484 L 17 15 L 15 15 z M 22.853516 20.853516 L 20.853516 22.853516 L 21.853516 23.853516 C 22.048516 24.048516 22.365547 24.048516 22.560547 23.853516 L 23.853516 22.560547 C 24.048516 22.364547 24.048516 22.048516 23.853516 21.853516 L 22.853516 20.853516 z" fill="#000000"/>
+                        <span>Chat is disabled</span>
+                    </a>
+                </div>
+
+                <div class="c-tab-content  mb-5">
+                    <div class="c-tab__pane  is--active" id="nav-1-1">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="c-tab__pane" id="nav-2-1">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress</p>
+                    </div>
+                    <div class="c-tab__pane" id="nav-3-1">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia.</p>
+                    </div>
+                </div>
+
+
+                <h3>Button Tab</h3>
+                <div class="c-tab  c-tab--buttons" role="tablist">
+                    <a data-toggle="tab" class="c-tab__item  c-btn  c-btn--secondary-outline" href="#sample-tab-content-2-1" role="tab" aria-controls="sample-tab-content-2-1"  aria-selected="false">
+                        <span>Shortlist</span>
+                    </a>
+                    <a data-toggle="tab" class="c-tab__item  c-btn  c-btn--secondary-outline" href="#sample-tab-content-2-2" role="tab" aria-controls="sample-tab-content-2-2"  aria-selected="false">
+                        <span>Inbox</span>
+                    </a>
+                    <a data-toggle="tab" class="c-tab__item is--active  c-btn  c-btn--secondary-outline" href="#sample-tab-content-2-3" role="tab" aria-controls="sample-tab-content-2-3" aria-selected="true">
+                        <span>Chat</span>
+                    </a>
+                </div>
+
+                <div class="c-tab-content mb-5">
+                    <div class="c-tab__pane" id="sample-tab-content-2-1">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="c-tab__pane" id="sample-tab-content-2-2">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress</p>
+                    </div>
+                    <div class="c-tab__pane is--active" id="sample-tab-content-2-3">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia.</p>
+                    </div>
+                </div>
+
+                <h3>Button Tab Justified</h3>
+                <div class="c-tab  c-tab--buttons  c-tab--justified" role="tablist">
+                    <a data-toggle="tab" class="c-tab__item  c-btn  c-btn--secondary-outline" href="#sample-tab-content-2-1-1" role="tab" aria-controls="sample-tab-content-2-1"  aria-selected="false">
+                        <span>Shortlist</span>
+                    </a>
+                    <a data-toggle="tab" class="c-tab__item  c-btn  c-btn--secondary-outline" href="#sample-tab-content-2-2-2" role="tab" aria-controls="sample-tab-content-2-2"  aria-selected="false">
+                        <span>Inbox</span>
+                    </a>
+                    <a data-toggle="tab" class="c-tab__item is--active  c-btn  c-btn--secondary-outline" href="#sample-tab-content-2-3-3" role="tab" aria-controls="sample-tab-content-2-3" aria-selected="true">
+                        <span>Chat</span>
+                    </a>
+                </div>
+
+                <div class="c-tab-content mb-5">
+                    <div class="c-tab__pane" id="sample-tab-content-2-1-1">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="c-tab__pane" id="sample-tab-content-2-2-2">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress</p>
+                    </div>
+                    <div class="c-tab__pane is--active" id="sample-tab-content-2-3-3">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia.</p>
+                    </div>
+                </div>
+
+                <h3>Card Tab</h3>
+                <div class="c-card c-card--lg">
+                    <div class="c-card__tabs">
+                        <div class="c-tab">
+                            <a class="c-tab__item  is--active" data-toggle="tab" href="#sample-tab-content-4-1" role="tab" aria-selected="true" aria-controls="sample-tab-content-4-1">
+                                <span class="fas fa-award  mr-2"></span>
+                                <span>Shortlist</span>
+                            </a>
+                            <a class="c-tab__item" data-toggle="tab" href="#sample-tab-content-4-2" role="tab" aria-selected="false" aria-controls="sample-tab-content-4-2">
+                                <span class="icon  icon--16  u-margin-right-xs  icon--mail"></span>
+                                <span>Inbox</span>
+                            </a>
+                            <a class="c-tab__item" data-toggle="tab" href="#sample-tab-content-4-3" role="tab" aria-selected="false" aria-controls="sample-tab-content-4-3">
+                                <!-- <span class="icon  icon--16  u-margin-right-xs  icon--chat"></span> -->
+                                <svg class="icon-svg  icon-svg--16  mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M 5 3 C 3.895 3 3 3.895 3 5 L 3 6 L 3 7 L 3 19 C 3 20.105 3.895 21 5 21 L 14.171875 21 C 14.723875 21 15.171875 20.552 15.171875 20 C 15.171875 19.448 14.724875 19 14.171875 19 L 5 19 L 5 7 L 19 7 L 18.998047 14.171875 C 18.998047 14.723875 19.446047 15.171875 19.998047 15.171875 C 20.550047 15.171875 20.998047 14.723875 20.998047 14.171875 L 20.998047 7 L 21 7 L 21 5 C 21 3.895 20.105 3 19 3 L 5 3 z M 7.5 10 C 7.224 10 7 10.224 7 10.5 L 7 11.5 C 7 11.776 7.224 12 7.5 12 L 8.5 12 C 8.776 12 9 11.776 9 11.5 L 9 10.5 C 9 10.224 8.776 10 8.5 10 L 7.5 10 z M 12 10 C 11.448 10 11 10.448 11 11 C 11 11.552 11.448 12 12 12 L 16 12 C 16.552 12 17 11.552 17 11 C 17 10.448 16.552 10 16 10 L 12 10 z M 7.5 14 C 7.224 14 7 14.224 7 14.5 L 7 15.5 C 7 15.776 7.224 16 7.5 16 L 8.5 16 C 8.776 16 9 15.776 9 15.5 L 9 14.5 C 9 14.224 8.776 14 8.5 14 L 7.5 14 z M 12 14 C 11.448 14 11 14.448 11 15 C 11 15.552 11.448 16 12 16 L 13 16 L 13 14 L 12 14 z M 15 15 L 15 17 L 20.146484 22.146484 L 22.146484 20.146484 L 17 15 L 15 15 z M 22.853516 20.853516 L 20.853516 22.853516 L 21.853516 23.853516 C 22.048516 24.048516 22.365547 24.048516 22.560547 23.853516 L 23.853516 22.560547 C 24.048516 22.364547 24.048516 22.048516 23.853516 21.853516 L 22.853516 20.853516 z" fill="#000000"/>
+                                <span>Chat</span>
+                            </a>
+                        </div>
+                        <div class="c-tab-content">
+                            <div class="c-tab__pane is--active" id="sample-tab-content-4-1">
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                            </div>
+                            <div class="c-tab__pane" id="sample-tab-content-4-2">
+                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress</p>
+                            </div>
+                            <div class="c-tab__pane" id="sample-tab-content-4-3">
+                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia.</p>
+                            </div>
+                        </div>
+
+                        <hr class="u-divider">
+
+                        <div class="c-tab  c-tab--justified">
+                            <a class="c-tab__item  is--active" data-toggle="tab" href="#sample-tab-content-5-1" role="tab" aria-selected="true" aria-controls="sample-tab-content-5-1">
+                                <span class="fas fa-award  mr-2"></span>
+                                <span>Shortlist</span>
+                            </a>
+                            <a class="c-tab__item" data-toggle="tab" href="#sample-tab-content-5-2" role="tab" aria-selected="false" aria-controls="sample-tab-content-5-2">
+                                <span class="icon  icon--16  u-margin-right-xs  icon--mail"></span>
+                                <span>Inbox</span>
+                            </a>
+                            <a class="c-tab__item" data-toggle="tab" href="#sample-tab-content-5-3" role="tab" aria-selected="false" aria-controls="sample-tab-content-5-3">
+                                <!-- <span class="icon  icon--16  u-margin-right-xs  icon--chat"></span> -->
+                                <svg class="icon-svg  icon-svg--16  mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M 5 3 C 3.895 3 3 3.895 3 5 L 3 6 L 3 7 L 3 19 C 3 20.105 3.895 21 5 21 L 14.171875 21 C 14.723875 21 15.171875 20.552 15.171875 20 C 15.171875 19.448 14.724875 19 14.171875 19 L 5 19 L 5 7 L 19 7 L 18.998047 14.171875 C 18.998047 14.723875 19.446047 15.171875 19.998047 15.171875 C 20.550047 15.171875 20.998047 14.723875 20.998047 14.171875 L 20.998047 7 L 21 7 L 21 5 C 21 3.895 20.105 3 19 3 L 5 3 z M 7.5 10 C 7.224 10 7 10.224 7 10.5 L 7 11.5 C 7 11.776 7.224 12 7.5 12 L 8.5 12 C 8.776 12 9 11.776 9 11.5 L 9 10.5 C 9 10.224 8.776 10 8.5 10 L 7.5 10 z M 12 10 C 11.448 10 11 10.448 11 11 C 11 11.552 11.448 12 12 12 L 16 12 C 16.552 12 17 11.552 17 11 C 17 10.448 16.552 10 16 10 L 12 10 z M 7.5 14 C 7.224 14 7 14.224 7 14.5 L 7 15.5 C 7 15.776 7.224 16 7.5 16 L 8.5 16 C 8.776 16 9 15.776 9 15.5 L 9 14.5 C 9 14.224 8.776 14 8.5 14 L 7.5 14 z M 12 14 C 11.448 14 11 14.448 11 15 C 11 15.552 11.448 16 12 16 L 13 16 L 13 14 L 12 14 z M 15 15 L 15 17 L 20.146484 22.146484 L 22.146484 20.146484 L 17 15 L 15 15 z M 22.853516 20.853516 L 20.853516 22.853516 L 21.853516 23.853516 C 22.048516 24.048516 22.365547 24.048516 22.560547 23.853516 L 23.853516 22.560547 C 24.048516 22.364547 24.048516 22.048516 23.853516 21.853516 L 22.853516 20.853516 z" fill="#000000"/>
+                                <span>Chat</span>
+                            </a>
+                        </div>
+                        <div class="c-tab-content">
+                            <div class="c-tab__pane  is--active" id="sample-tab-content-5-1">
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                            </div>
+                            <div class="c-tab__pane" id="sample-tab-content-5-2">
+                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress</p>
+                            </div>
+                            <div class="c-tab__pane" id="sample-tab-content-5-3">
+                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+        </article>
+
+        <script src="../dist/js/tab.js"></script>
+    </body>
+</html>
