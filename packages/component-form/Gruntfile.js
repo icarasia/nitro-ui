@@ -10,8 +10,8 @@ module.exports = function( grunt ) {
         sass: {
             build: {
                 files: {
-                    'dist/form.css': [
-                        'src/form.scss'
+                    'dist/css/form.css': [
+                        'src/scss/form.scss'
                     ]
                 }
             },
@@ -20,8 +20,8 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/form.min.css': [
-                        'src/form.scss'
+                    'dist/css/form.min.css': [
+                        'src/scss/form.scss'
                     ]
                 }
             }
