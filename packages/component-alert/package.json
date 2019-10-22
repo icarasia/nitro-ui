@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-alert",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.2",
     "description": "Alert component for Nitro UI.",
     "main": "dist/component-alert.min.css",
     "publishConfig": {
