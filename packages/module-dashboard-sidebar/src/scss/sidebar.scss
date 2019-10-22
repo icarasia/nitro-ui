@@ -1,0 +1,389 @@
+//  ----------------------------------------------------------------------------
+//
+//  @Module - Dashboard Sidebar
+//
+//  Module Dashboard Sidebar
+//* Sidebar is used for side navigation for all the products.
+//* Require collapse and drawer
+//*
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. VARIABLES
+//  ----------------------------------------------------------------------------
+
+$use-sidebar                    :   true !default;
+$use-crm                        :   false !default;
+
+$sidebar-profile-bgcolor        :   $dark-400 !default;
+$sidebar-icon-color             :   $blue-500 !default;
+$sidebar-hover-bgcolor          :   $blue-500 !default;
+$sidebar-second-level-bgcolor   :   $blue-600 !default;
+
+// if use-sidebar == true
+$sidebar-profilename-color      :   $white !default;
+$sidebar-bg-color               :   $haze-100 !default;
+$sidebar-first-level-color      :   $font-base-color !default;
+$sidebar-width                  :   60px !default;
+$sidebar-submenu-width          :   240px !default;
+
+// if use-crm == true
+$sidebar-crm-chip-bg            :   $blue-500 !default;
+$sidebar-crm-chip-color         :   $white !default;
+
+
+ //  3. CORE
+ //  ----------------------------------------------------------------------------
+
+.c-header {
+    height: 60px;
+
+    @if $use-sidebar == true {
+        margin-left: $sidebar-width;
+    }
+}
+
+.c-sidebar {
+    .c-sidebar__profile {
+        background: $sidebar-profile-bgcolor;
+    }
+
+    @if $use-sidebar == true {
+        .c-drawer__content {
+            background: $sidebar-bg-color;
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transform: translate(0, 0);
+            transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+            transform-origin: 0% 0%;
+            width: $sidebar-width;
+            direction: rtl;
+
+            > div {
+                direction: ltr;
+            }
+        }
+    }
+
+    .c-sidebar__bottom-menu {
+        .c-drawer__menu {
+            > li {
+
+                > ul {
+                    background: $haze-200!important;
+                }
+
+                a:before {
+                    background: $sidebar-hover-bgcolor !important;
+                }
+            }
+        }
+    }
+
+    .c-drawer__menu {
+        > li {
+
+            > ul {
+                background: $sidebar-second-level-bgcolor!important;
+            }
+
+            > a {
+                @if $use-sidebar == true {
+                    color: $sidebar-first-level-color;
+                    padding: $spacing-sm  $spacing-xs;
+                }
+
+                .icon-svg {
+                    fill: $sidebar-icon-color;
+
+                    @if $use-crm == true{
+                        opacity: 0.6;
+                    }
+                }
+
+                &:hover,
+                &.is--hover,
+                &.is--active {
+                    background: $sidebar-hover-bgcolor;
+                    color: $white;
+
+                    .icon-svg {
+                        fill: $white !important;
+
+                        @if $use-crm == true {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            > a[aria-expanded=true] {
+                background: $sidebar-hover-bgcolor;
+                color: $white;
+
+                .icon-svg {
+                    fill: $white !important;
+                }
+
+                .icon--chevron-down {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .c-collapse {
+            overflow: hidden;
+
+            li {
+                a {
+                    padding: 4px 16px 4px 56px;
+
+                    &:hover,
+                    &.is--active {
+                        background: transparent;
+                        opacity: 1;
+
+                        &:before {
+                            background: $white;
+                            border-radius: 50%;
+                            bottom: 45%;
+                            content: '';
+                            height: 6px;
+                            left: 42px;
+                            position: absolute;
+                            width: 6px;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 8px;
+                    }
+
+                }
+            }
+        }
+
+        .c-drawer__menu {
+            .is--active {
+                background: $sidebar-hover-bgcolor;
+            }
+        }
+    }
+}
+
+//move it to module dashboard-header
+// .c-notification {
+//     .has--notification {
+//         background: $red-500;
+//         height: 8px;
+//         right: 2px;
+//         top: 2px;
+//         width: 8px;
+//     }
+//
+//     .c-dropdown__base {
+//         min-width: 300px;
+//         max-height: 400px;
+//         overflow-y: auto;
+//     }
+//
+//     .is--unread {
+//         background: $blue-100;
+//
+//         .icon-svg {
+//             fill: $blue-400;
+//         }
+//     }
+// }
+
+.c-sidebar__profile-name {
+    color: $sidebar-profilename-color;
+}
+
+ @if $use-crm == true {
+     .c-chip--crm {
+         background-color: $sidebar-crm-chip-bg;
+         color: $sidebar-crm-chip-color;
+         white-space: nowrap;
+     }
+ }
+
+ @if $use-sidebar == true {
+     .modal-open  .c-sidebar.show {
+         .c-sidebar__hamburger {
+             display: none;
+         }
+
+         .c-sidebar__close {
+             display: block!important;
+         }
+
+         .c-sidebar__profile {
+             background: $sidebar-profile-bgcolor;
+         }
+
+         .c-drawer__content {
+             width: 320px!important;
+             direction: ltr;
+         }
+
+         .c-copyright {
+             display: block!important;
+         }
+
+         .c-drawer__menu {
+             > li > a  {
+                 justify-content: space-between;
+                 padding-left: 24px;
+                 padding-right: 16px;
+
+                 .c-sidebar__label,
+                 .icon-svg {
+                     display: block!important;
+                 }
+             }
+
+             a[aria-expanded=true] {
+                 background: $sidebar-hover-bgcolor;
+                 color: $white;
+
+                 .icon-svg {
+                     fill: $white !important;
+                 }
+
+                 .icon--chevron-down {
+                     transform: rotate(180deg);
+                 }
+             }
+         }
+
+         &.is--active {
+             .c-drawer__content {
+                 left: 0;
+             }
+         }
+
+         .c-sidebar__footer{
+             display: block!important;
+         }
+     }
+
+     .c-sidebar.show .c-collapse,
+     .c-sidebar__floating-menu{
+         li{
+             a{
+                 padding: 4px 16px 4px 56px;
+
+                 &:hover,
+                 &.is--active{
+                     background: transparent;
+                     opacity: 1;
+
+                     &:before{
+                         background: $white;
+                         border-radius: 50%;
+                         bottom: 45%;
+                         content: '';
+                         height: 6px;
+                         left: 42px;
+                         position: absolute;
+                         width: 6px;
+                     }
+                 }
+             }
+
+             &:last-child{
+                 margin-bottom: 8px;
+             }
+         }
+     }
+
+     .c-sidebar__floating-menu{
+         visibility: hidden;
+     }
+
+     .c-content{
+         margin-left: $sidebar-width;
+     }
+ }
+
+//  4. Responsive - tablet-desktop
+//  ----------------------------------------------------------------------------
+@if $use-sidebar == true {
+    @include media-query(tablet-desktop) {
+        .c-sidebar:not(.show)  .c-drawer__menu {
+            .c-sidebar__submenu{
+                position: absolute;
+                width: $sidebar-submenu-width;
+            }
+        }
+
+        .c-sidebar__floating-menu {
+            .c-sidebar__label{
+                background: $sidebar-hover-bgcolor;
+                display: block!important;
+                width: $sidebar-submenu-width;
+                border-radius: 0 4px 0 0;
+                // margin-left: 0!important;
+            }
+
+            ul.o-list {
+                background: $sidebar-second-level-bgcolor!important;
+                border-radius: 0 0 4px 0;
+
+                a {
+                    font-size: 13px;
+                    line-height: 24px;
+                    text-decoration: none;
+
+                    &.is--active,
+                    &:hover {
+                        &:before {
+                         left: 20px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  5. Responsive - Mobile
+//  ----------------------------------------------------------------------------
+@if $use-sidebar == true {
+    @include media-query(mobile) {
+        .c-header,
+        .c-content {
+            margin-left: 0;
+        }
+
+        .c-sidebar  .c-drawer__content {
+            transform: translate(-100%, 0);
+        }
+
+        .modal-open  .c-sidebar.show {
+            .c-sidebar__profile {
+                display: block!important;
+            }
+            .c-sidebar__close {
+                background: $sidebar-profile-bgcolor;
+            }
+        }
+    }
+}
