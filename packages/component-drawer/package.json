@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-drawer",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.2",
     "description": "Drawer styling for Nitro UI.",
     "main": "dist/css/drawer.min.css",
     "publishConfig": {

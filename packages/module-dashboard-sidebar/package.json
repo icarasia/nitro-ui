@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-sidebar",
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0-alpha.1",
     "description": "Sidebar module for all the products",
     "main": "dist/css/sidebar.min.css",
     "publishConfig": {
@@ -34,7 +34,7 @@
     "dependencies": {
         "@nitro-ui/component-avatar": "^1.0.0-alpha.7",
         "@nitro-ui/component-collapse": "^1.0.0-alpha.1",
-        "@nitro-ui/component-drawer": "^1.0.0-alpha.1",
+        "@nitro-ui/component-drawer": "^1.0.0-alpha.2",
         "@nitro-ui/core": "^1.0.0-alpha.2",
         "@nitro-ui/object-container": "^1.0.0-alpha.5",
         "@nitro-ui/object-list": "^1.0.0-alpha.3",
