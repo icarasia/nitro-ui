@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-sidebar",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
     "description": "Sidebar module for all the products",
     "main": "dist/css/sidebar.min.css",
     "publishConfig": {
@@ -32,9 +32,6 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "bootstrap": "^4.3.1",
-        "jquery": "^3.4.1",
-        "popper.js": "1.15.0",
         "@nitro-ui/component-avatar": "^1.0.0-alpha.7",
         "@nitro-ui/component-collapse": "^1.0.0-alpha.3",
         "@nitro-ui/component-drawer": "^1.0.0-alpha.2",
@@ -51,7 +48,10 @@
         "@nitro-ui/utility-shadow": "^1.0.0-alpha.3",
         "@nitro-ui/utility-spacing": "^1.0.0-alpha.3",
         "@nitro-ui/utility-text": "^1.0.0-alpha.3",
-        "@nitro-ui/utility-transition": "^1.0.0-alpha.1"
+        "@nitro-ui/utility-transition": "^1.0.0-alpha.1",
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1",
+        "popper.js": "1.15.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.6.2",
