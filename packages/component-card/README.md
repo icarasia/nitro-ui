@@ -22,6 +22,7 @@ Options
 TBD
 ```
 
+
 ## Development
 
 To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia-engineering/nitro-ui) and made a pull request.
@@ -55,6 +56,7 @@ grunt
 ---
 
 # TODO
+
 
 Nothing todo for now.
 

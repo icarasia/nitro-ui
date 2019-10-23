@@ -17,18 +17,18 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/form.css': [
-                        'src/scss/form.scss'
+                    'dist/step.css': [
+                        'src/step.scss'
                     ]
                 }
             },
             compressed: {
                 options: {
-                    outputStyle: 'compressed'
+                    style: 'compressed'
                 },
                 files: {
-                    'dist/css/form.min.css': [
-                        'src/scss/form.scss'
+                    'dist/step.min.css': [
+                        'src/step.scss'
                     ]
                 }
             }
