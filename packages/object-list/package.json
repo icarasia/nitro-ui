@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-list",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
     "description": "Object list styling for Nitro UI.",
     "main": "dist/object-list.min.css",
     "publishConfig": {
