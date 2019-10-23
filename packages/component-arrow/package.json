@@ -1,7 +1,7 @@
 {
     "name": "@nitro-ui/component-arrow",
     "version": "1.0.0-alpha.3",
-    "description": "Card styling for Nitro UI.",
+    "description": "Arrow styling for Nitro UI.",
     "main": "dist/arrow.min.css",
     "publishConfig": {
         "access": "public"
@@ -32,11 +32,11 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/component-card": "^1.0.0-alpha.6",
         "@nitro-ui/core": "^1.0.0-alpha.3"
     },
     "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321",
     "devDependencies": {
+        "@nitro-ui/component-card": "^1.0.0-alpha.6",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",
