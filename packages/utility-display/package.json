@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-display",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
     "description": "Utility Display component for Nitro UI.",
     "main": "dist/utility-display.min.css",
     "publishConfig": {
@@ -29,9 +29,6 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
-    "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3"
-    },
     "dependencies": {
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
