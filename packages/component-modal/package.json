@@ -2,11 +2,12 @@
     "name": "@nitro-ui/component-modal",
     "version": "1.0.0-alpha.1",
     "description": "Modal styling for Nitro UI.",
-    "main": "dist/modal.min.css",
+    "main": "dist/css/modal.min.css",
     "publishConfig": {
         "access": "public"
     },
     "scripts": {
+        "build": "grunt",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -14,7 +15,7 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
-        "Popover",
+        "Modal",
         "Nitro",
         "UI",
         "CSS",
@@ -22,16 +23,22 @@
         "iCarAsia"
     ],
     "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "contributors": [
+        "Syaiful Shah Zinan <i.works@live.com>"
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
+        "@nitro-ui/core": "^1.0.0-alpha.2"
+    },
+    "devDependencies": {
+        "@nitro-ui/component-button": "^1.0.0-alpha.4",
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/core": "^1.0.0-alpha.2",
         "babelify": "^10.0.0",
         "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",
