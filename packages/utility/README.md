@@ -1,63 +1,39 @@
-# Nitro UI: Utility Align
+# Nitro UI: Utility Bundle
 
-Utility Align component for Nitro UI.
+Utility Bundle component for Nitro UI.
 
 ## Getting Started
 
 Get latest version by installing via [NPM @nitro-ui/utility-align](https://www.npmjs.com/package/@nitro-ui/utility-align):
 
 ```sh
-npm install @nitro-ui/utility-align
+npm install @nitro-ui/utility
 ```
-
-Include this stylesheet code into your site:
-
-```html
-<div class="u-align-left">u-align-left</div>
-<div class="u-align-center">u-align-center</div>
-<div class="u-align-right">u-align-right</div>
-
-<div class="u-valign-top">u-valign-top</div>
-<div class="u-valign-middle">u-valign-middle</div>
-<div class="u-valign-bottom">u-valign-bottom</div>
-
-<div class="u-align-left@portable">u-align-left@portable</div>
-<div class="u-align-center@portable">u-align-center@portable</div>
-<div class="u-align-right@portable">u-align-right@portable</div>
-
-<div class="u-valign-top@portable">u-valign-top@portable</div>
-<div class="u-valign-middle@portable">u-valign-middle@portable</div>
-<div class="u-valign-bottom@portable">u-valign-bottom@portable</div>
-
-<div class="u-align-left@mobile">u-align-left@mobile</div>
-<div class="u-align-center@mobile">u-align-center@mobile</div>
-<div class="u-align-right@mobile">u-align-right@mobile</div>
-
-<div class="u-valign-top@mobile">u-valign-top@mobile</div>
-<div class="u-valign-middle@mobile">u-valign-middle@mobile</div>
-<div class="u-valign-bottom@mobile">u-valign-bottom@mobile</div>
-
-<div class="u-center">u-center</div>
-```
+## List of Utility in this Bundle:
+- [Utility Align](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-align)
+- [Utility Background](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-background)
+- [Utility Border](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-border)
+- [Utility Clearfix](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-clearfix)
+- [Utility Display](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-display)
+- [Utility Divider](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-divider)
+- [Utility Flex](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-flex)
+- [Utility Float](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-float)
+- [Utility Height](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-height)
+- [Utility Hide](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-hide)
+- [Utility Loader](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-loader)
+- [Utility Opacity](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-opacity)
+- [Utility Overflow](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-overflow)
+- [Utility Position](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-position)
+- [Utility Rounded](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-rounded)
+- [Utility Shadow](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-shadow)
+- [Utility Spacing](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-spacing)
+- [Utility Text](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-text)
+- [Utility Transition](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-transition)
+- [Utility Width](https://github.com/icarasia-engineering/nitro-ui/tree/master/packages/utility-width)
 
 ## Usage:
 
-Example with `<div>` tag:
-
-```html
-<div class="u-align-left  u-align-center@portable">u-align-left</div>
-
-
-<div class="o-tile">
-    <div class="o-tile__item  u-valign-bottom  u-valign-middle@mobile">
-        u-valign-bottom
-    </div>
-</div>
-
-
-<div class="u-center">u-center</div>
-
-```
+Example and usage can be found at the respective page.
 
 ## Development
 
