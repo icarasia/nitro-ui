@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-button",
-    "version": "1.0.0-alpha.4",
+    "version": "1.0.0-alpha.5",
     "description": "Button component for Nitro UI.",
     "main": "dist/css/button.min.css",
     "publishConfig": {

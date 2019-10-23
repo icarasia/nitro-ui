@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-flex",
-    "version": "1.0.0-alpha.4",
+    "version": "1.0.0-alpha.5",
     "description": "Flex component for Nitro UI.",
     "main": "dist/utility-flex.min.css",
     "publishConfig": {
