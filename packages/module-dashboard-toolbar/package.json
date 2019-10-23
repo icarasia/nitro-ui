@@ -2,11 +2,12 @@
     "name": "@nitro-ui/module-dashboard-toolbar",
     "version": "1.0.0-alpha",
     "description": "Sidebar module for all the products",
-    "main": "dist/css/sidebar.min.css",
+    "main": "dist/css/toolbar.min.css",
     "publishConfig": {
         "access": "public"
     },
     "scripts": {
+        "build": "grunt",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -14,7 +15,7 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
-        "Sidebar",
+        "Toolbar",
         "Nitro",
         "UI",
         "CSS",

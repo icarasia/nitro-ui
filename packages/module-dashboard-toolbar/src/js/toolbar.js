@@ -13,4 +13,4 @@ import Util from "bootstrap/js/src/util";
 import Modal from "bootstrap/js/src/modal";
 import Collapse from "bootstrap/js/src/collapse";
 import Dropdown from "bootstrap/js/src/dropdown";
-import "../../node_modules/@nitro-ui/module-dashboard-sidebar/src/js/sidebar.js";
+// import "../../node_modules/@nitro-ui/module-dashboard-sidebar/src/js/sidebar.js";
