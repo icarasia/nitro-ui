@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-dropdown",
-    "version": "1.0.0-alpha",
+    "version": "1.0.0-alpha.0",
     "description": "Dropdown styling for Nitro UI.",
     "main": "dist/css/dropdown.min.css",
     "publishConfig": {

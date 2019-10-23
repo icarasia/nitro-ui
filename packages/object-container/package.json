@@ -1,12 +1,13 @@
 {
     "name": "@nitro-ui/object-container",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
     "description": "Container component for Nitro UI.",
     "main": "dist/container.min.css",
     "publishConfig": {
         "access": "public"
     },
     "scripts": {
+        "build": "grunt",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -29,7 +30,9 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3",
+        "@nitro-ui/core": "^1.0.0-alpha.3"
+    },
+    "devDependencies": {
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",
