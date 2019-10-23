@@ -1,0 +1,45 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility Bundle
+//
+//  Utility Bundle component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Utility file import
+
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/mixins';
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/component-card/src/scss/card.scss';
+
+//  ----------------------------------------------------------------------------
+//  2. Utility file import
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/utility-align/src/utility-align.scss';
+@import '@nitro-ui/utility-background/src/utility-background.scss';
+@import '@nitro-ui/utility-border/src/utility-border.scss';
+@import '@nitro-ui/utility-clearfix/src/utility-clearfix.scss';
+@import '@nitro-ui/utility-display/src/utility-display.scss';
+@import '@nitro-ui/utility-divider/src/utility-divider.scss';
+@import '@nitro-ui/utility-flex/src/utility-flex.scss';
+@import '@nitro-ui/utility-float/src/float.scss';
+@import '@nitro-ui/utility-height/src/utility-height.scss';
+@import '@nitro-ui/utility-hide/src/utility-hide.scss';
+@import '@nitro-ui/utility-loader/src/utility-loader.scss';
+@import '@nitro-ui/utility-opacity/src/utility-opacity.scss';
+@import '@nitro-ui/utility-overflow/src/utility-overflow.scss';
+@import '@nitro-ui/utility-position/src/utility-position.scss';
+@import '@nitro-ui/utility-rounded/src/utility-rounded.scss';
+@import '@nitro-ui/utility-shadow/src/utility-shadow.scss';
+@import '@nitro-ui/utility-spacing/src/utility-spacing.scss';
+@import '@nitro-ui/utility-text/src/utility-text.scss';
+@import '@nitro-ui/utility-transition/src/utility-transition.scss';
+@import '@nitro-ui/utility-width/src/utility-width.scss';

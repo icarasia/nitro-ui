@@ -1,0 +1,64 @@
+{
+    "name": "@nitro-ui/utility",
+    "version": "0.0.0",
+    "description": "Utility Bundle components for Nitro UI.",
+    "main": "dist/css/utility.min.css",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "grunt",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/icarasia-engineering/nitro-ui"
+    },
+    "keywords": [
+        "Utility",
+        "Nitro",
+        "UI",
+        "CSS",
+        "Components",
+        "iCarAsia"
+    ],
+    "author": "Syaiful Shah Zinan <i.works@live.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+    },
+    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "dependencies": {
+        "@nitro-ui/component-card": "^1.0.0-alpha.5",
+        "@nitro-ui/core": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-align": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-background": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-border": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-clearfix": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-display": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-divider": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-flex": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-float": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-height": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-hide": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-loader": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-opacity": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-overflow": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-position": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-rounded": "^2.0.0-alpha.3",
+        "@nitro-ui/utility-shadow": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-spacing": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-text": "^1.0.0-alpha.3",
+        "@nitro-ui/utility-transition": "^1.0.0-alpha.1",
+        "@nitro-ui/utility-width": "^1.0.0-alpha.4"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.4",
+        "grunt-cli": "^1.3.2",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-notify": "^0.4.5",
+        "grunt-sass": "^3.0.2",
+        "node-sass": "^4.12.0"
+    }
+}
