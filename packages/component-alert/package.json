@@ -2,7 +2,7 @@
     "name": "@nitro-ui/component-alert",
     "version": "1.0.0-alpha.3",
     "description": "Alert component for Nitro UI.",
-    "main": "dist/component-alert.min.css",
+    "main": "dist/css/alert.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -31,11 +31,13 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "dependencies": {
+        "@nitro-ui/core": "^1.0.0-alpha.3"
+    },
     "devDependencies": {
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/core": "^1.0.0-alpha.3",
         "babelify": "^10.0.0",
         "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",
