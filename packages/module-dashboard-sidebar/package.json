@@ -7,6 +7,7 @@
         "access": "public"
     },
     "scripts": {
+        "main": "build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -28,9 +29,6 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@babel/cli": "^7.6.2",
-        "@babel/core": "^7.6.2",
-        "@babel/preset-env": "^7.6.2",
         "@nitro-ui/component-avatar": "^1.0.0-alpha.6",
         "@nitro-ui/component-collapse": "^1.0.0-alpha.0",
         "@nitro-ui/component-drawer": "^1.0.0-alpha.0",
@@ -47,7 +45,12 @@
         "@nitro-ui/utility-shadow": "^1.0.0-alpha.3",
         "@nitro-ui/utility-spacing": "^1.0.0-alpha.3",
         "@nitro-ui/utility-text": "^1.0.0-alpha.3",
-        "@nitro-ui/utility-transition": "^1.0.0-alpha.1",
+        "@nitro-ui/utility-transition": "^1.0.0-alpha.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.6.2",
+        "@babel/core": "^7.6.2",
+        "@babel/preset-env": "^7.6.2",
         "babelify": "^10.0.0",
         "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",
@@ -61,6 +64,5 @@
         "jquery": "^3.4.1",
         "node-sass": "^4.12.0",
         "popper.js": "1.15.0"
-    },
-    "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"
+    }
 }
