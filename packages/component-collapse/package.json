@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-collapse",
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0-alpha.1",
     "description": "Collapse & Accordian styling for Nitro UI.",
     "main": "dist/css/collapse.min.css",
     "publishConfig": {
@@ -48,6 +48,6 @@
     },
     "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321",
     "devDependencies": {
-        "@nitro-ui/component-card": "^1.0.0-alpha.2"
+        "@nitro-ui/component-card": "^1.0.0-alpha.6"
     }
 }

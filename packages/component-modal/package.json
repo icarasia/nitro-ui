@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-modal",
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0-alpha.1",
     "description": "Modal styling for Nitro UI.",
     "main": "dist/modal.min.css",
     "publishConfig": {
