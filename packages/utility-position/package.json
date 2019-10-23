@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-position",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
     "description": "Utility position component for Nitro UI.",
     "main": "dist/utility-position.min.css",
     "publishConfig": {
