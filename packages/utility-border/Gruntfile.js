@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/utility-border.css': [
-                        'src/utility-border.scss'
+                    'dist/css/utility-border.css': [
+                        'src/scss/utility-border.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/utility-border.min.css': [
-                        'src/utility-border.scss'
+                    'dist/css/utility-border.min.css': [
+                        'src/scss/utility-border.scss'
                     ]
                 }
             }

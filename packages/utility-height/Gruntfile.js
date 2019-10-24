@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/utility-height.css': [
-                        'src/utility-height.scss'
+                    'dist/css/utility-height.css': [
+                        'src/scss/utility-height.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/utility-height.min.css': [
-                        'src/utility-height.scss'
+                    'dist/css/utility-height.min.css': [
+                        'src/scss/utility-height.scss'
                     ]
                 }
             }

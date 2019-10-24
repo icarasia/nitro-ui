@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-overflow",
     "version": "1.0.0-alpha.3",
     "description": "Utility overflow component for Nitro UI.",
-    "main": "dist/utility-overflow.min.css",
+    "main": "dist/css/utility-overflow.min.css",
     "publishConfig": {
         "access": "public"
     },

@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/utility-opacity.css': [
-                        'src/utility-opacity.scss'
+                    'dist/css/utility-opacity.css': [
+                        'src/scss/utility-opacity.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/utility-opacity.min.css': [
-                        'src/utility-opacity.scss'
+                    'dist/css/utility-opacity.min.css': [
+                        'src/scss/utility-opacity.scss'
                     ]
                 }
             }

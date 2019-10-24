@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/utility-transition.css': [
-                        'src/utility-transition.scss'
+                    'dist/css/utility-transition.css': [
+                        'src/scss/utility-transition.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/utility-transition.min.css': [
-                        'src/utility-transition.scss'
+                    'dist/css/utility-transition.min.css': [
+                        'src/scss/utility-transition.scss'
                     ]
                 }
             }

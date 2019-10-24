@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-clearfix",
     "version": "1.0.0-alpha.3",
     "description": "Utility clearfix component for Nitro UI.",
-    "main": "dist/utility-clearfix.min.css",
+    "main": "dist/css/utility-clearfix.min.css",
     "publishConfig": {
         "access": "public"
     },

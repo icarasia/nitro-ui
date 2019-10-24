@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/utility-hide.css': [
-                        'src/utility-hide.scss'
+                    'dist/css/utility-hide.css': [
+                        'src/scss/utility-hide.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/utility-hide.min.css': [
-                        'src/utility-hide.scss'
+                    'dist/css/utility-hide.min.css': [
+                        'src/scss/utility-hide.scss'
                     ]
                 }
             }

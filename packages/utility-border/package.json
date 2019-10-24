@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-border",
     "version": "1.0.0-alpha.3",
     "description": "Utility border component for Nitro UI.",
-    "main": "dist/utility-border.min.css",
+    "main": "dist/css/utility-border.min.css",
     "publishConfig": {
         "access": "public"
     },
