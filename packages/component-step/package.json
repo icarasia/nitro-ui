@@ -2,7 +2,7 @@
     "name": "@nitro-ui/component-step",
     "version": "1.0.0-alpha.1",
     "description": "Step component for Nitro UI.",
-    "main": "dist/step.min.css",
+    "main": "dist/css/step.min.css",
     "publishConfig": {
         "access": "public"
     },
