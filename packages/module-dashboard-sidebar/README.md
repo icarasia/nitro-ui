@@ -6,6 +6,7 @@ Dashboard Sidebar from combination of modal and collapse
 
 Get latest version by installing via [NPM @nitro-ui/module-dashboard-sidebar](https://www.npmjs.com/package/@nitro-ui/module-dashboard-sidebar):
 
+
 ```sh
 npm install @nitro-ui/module-dashboard-sidebar
 ```
