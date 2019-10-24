@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/component-tooltip.css': [
-                        'src/component-tooltip.scss'
+                    'dist/css/tooltip.css': [
+                        'src/tooltip.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/component-tooltip.min.css': [
-                        'src/component-tooltip.scss'
+                    'dist/css/tooltip.min.css': [
+                        'src/tooltip.scss'
                     ]
                 }
             }
