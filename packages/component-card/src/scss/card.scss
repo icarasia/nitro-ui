@@ -29,14 +29,20 @@
 $card-spacing       : $spacing-md !default;
 $card-spacing-sm    : $spacing-sm !default;
 $card-spacing-xs    : $spacing-xs !default;
+
+$card-bg            : $white;
 $card-divider       : $haze-200 !default;
+$card-radius        : $base-radius !default;
+
+$card-title-font-size   : $font-5-size !default;
+$card-title-font-height : $font-5-height !default;
 
 //  3. Core
 //  ----------------------------------------------------------------------------
 
 .c-card {
-    background-color: $white;
-    border-radius: $base-radius;
+    background-color: $card-bg;
+    border-radius: $card-radius;
     list-style: none;
     position: relative;
     padding: 0;
@@ -75,8 +81,8 @@ $card-divider       : $haze-200 !default;
     .c-card__body:first-child,
     .c-card__image:first-child,
     .c-card__image:first-child > img{
-        border-top-left-radius: $base-radius;
-        border-top-right-radius: $base-radius;
+        border-top-left-radius: $card-radius;
+        border-top-right-radius: $card-radius;
     }
 
     .c-card__head:last-child,
@@ -84,8 +90,8 @@ $card-divider       : $haze-200 !default;
     .c-card__action:last-child,
     .c-card__image:last-child,
     .c-card__image:last-child > img {
-        border-bottom-left-radius: $base-radius;
-        border-bottom-right-radius: $base-radius;
+        border-bottom-left-radius: $card-radius;
+        border-bottom-right-radius: $card-radius;
     }
 
     .c-card__head {
@@ -95,8 +101,8 @@ $card-divider       : $haze-200 !default;
     }
 
     .c-card__title {
-        font-size: $font-5-size;
-        line-height: $font-5-height;
+        font-size: $card-title-font-size;
+        line-height: $card-title-font-height;
         margin-bottom: $card-spacing/2;
     }
 

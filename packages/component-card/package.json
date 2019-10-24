@@ -1,8 +1,8 @@
 {
     "name": "@nitro-ui/component-card",
-    "version": "1.0.0-alpha.5",
+    "version": "1.0.0-alpha.8",
     "description": "Card styling for Nitro UI.",
-    "main": "dist/component-card.min.css",
+    "main": "dist/css/card.min.css",
     "publishConfig": {
         "access": "public"
     },
@@ -23,13 +23,17 @@
         "iCarAsia"
     ],
     "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "contributors": [
+        "Syaiful Shah Zinan <i.works@live.com>"
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.0-alpha.3",
+        "@nitro-ui/object-embed": "^1.0.0-alpha.3"
     },
     "devDependencies": {
         "grunt": "^1.0.4",

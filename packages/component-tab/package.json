@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-tab",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.5",
     "description": "Tab component for Nitro UI.",
     "main": "dist/css/tab.min.css",
     "publishConfig": {
@@ -39,7 +39,7 @@
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/component-button": "^1.0.0-alpha.3",
+        "@nitro-ui/component-button": "^1.0.0-alpha.5",
         "babelify": "^10.0.0",
         "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",

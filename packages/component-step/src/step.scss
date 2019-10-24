@@ -1,0 +1,367 @@
+//  ----------------------------------------------------------------------------
+//
+//  @BUTTON
+//
+//  Component styling for button
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  DEPENDENCIES
+//      2.  VARIABLES
+//      3.  CORE
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. DEPENDENCIES
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. VARIABLES & FUNCTIONS
+//  ----------------------------------------------------------------------------
+
+$step-sm-width          : 280px !default;
+$step-md-width          : 400px !default;
+$step-lg-width          : 580px !default;
+
+$checked-fill           : $green-500 !default;
+
+$use-step-mobile-tablet : false !default;
+$use-step-mobile        : true !default;
+
+
+
+// functions to urlencode the svg string - for making fill color works for svg embed
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+@function url-encode($string) {
+  $map: (
+    "%": "%25",
+    "<": "%3C",
+    ">": "%3E",
+    " ": "%20",
+    "!": "%21",
+    "*": "%2A",
+    "'": "%27",
+    '"': "%22",
+    "(": "%28",
+    ")": "%29",
+    ";": "%3B",
+    ":": "%3A",
+    "@": "%40",
+    "&": "%26",
+    "=": "%3D",
+    "+": "%2B",
+    "$": "%24",
+    ",": "%2C",
+    "/": "%2F",
+    "?": "%3F",
+    "#": "%23",
+    "[": "%5B",
+    "]": "%5D"
+  );
+  $new: $string;
+  @each $search, $replace in $map {
+    $new: str-replace($new, $search, $replace);
+  }
+  @return $new;
+}
+
+@function inline-svg($string) {
+  @return url('data:image/svg+xml;charset=US-ASCII,#{url-encode($string)}');
+}
+
+
+//  3. CORE
+//  ----------------------------------------------------------------------------
+
+.c-step {
+    display: flex;
+}
+
+
+.c-step__item {
+    color: $haze-400;
+    text-decoration: none;
+    font-size: $font-7-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.is--active {
+        color: $dark-200;
+
+        > .c-step__indicator {
+            background-color: $haze-500;
+            color: $white;
+        }
+    }
+
+    &.is--success {
+        color: $green-600;
+
+        > .c-step__indicator {
+            background-color: $green-500;
+
+            &:before {
+                content: "";
+                background: inline-svg('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><path fill="'+$checked-fill+'" d="M23.926 7.386c.959-.959 2.397-.959 3.355 0s.959 2.397 0 3.355L14.339 24.402c-.959.959-2.397.959-3.355 0L4.753 18.65c-.959-.959-.959-2.397-.24-3.355s2.397-.959 3.355-.24l4.314 4.074L23.926 7.385z"/></svg>');
+                width: 16px;
+                height: 16px;
+                display: block;
+            }
+        }
+
+        .c-step__number {
+            display: none;
+        }
+    }
+
+    &.is--disabled {
+        cursor: default;
+        pointer-events: none;
+        color: $haze-400;
+    }
+}
+
+.c-step__indicator {
+    background-color: $haze-300;
+    width: 22px;
+    height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: $spacing-sm;
+}
+
+@include media-query(tablet-desktop) {
+
+    .c-step__item {
+        background-color: $white;
+        text-decoration: none;
+        padding: $spacing-xs $spacing-sm;
+        border-width: 3px;
+        border-style: solid;
+        border-color: $haze-300;
+
+        &:first-child {
+            border-radius: $base-radius 0 0 $base-radius;
+        }
+
+        &:last-child {
+            border-radius: 0 $base-radius  $base-radius 0;
+        }
+
+        &:not(:first-child) {
+            padding-left: $spacing-lg;
+            border-left: 0 !important;
+        }
+
+        &:not(:last-child) {
+            border-right-width: 2px;
+        }
+
+
+
+        &.is--active {
+            color: $white;
+            background-color: $haze-600;
+            border-color: $dark-100;
+
+            & ~ .c-step__item:not(.is--active):first-child {
+                padding-left: $spacing-lg + $spacing-sm;
+            }
+
+            &:before {
+                border-left-color: $dark-100 !important;
+            }
+
+            &:after {
+                border-left-color: $haze-600 !important;
+            }
+
+            > .c-step__indicator {
+                background-color: $white;
+                color: $dark-100;
+            }
+        }
+
+        &.is--success {
+            color: $white;
+            background-color: $green-500;
+            border-color: $green-600;
+
+            &:hover {
+                background-color: darken($green-500, 3);
+
+                &:after {
+                    border-left-color: darken($green-500, 3) !important;
+                }
+            }
+
+            &:before {
+                border-left-color: $green-600 !important;
+            }
+            &:after {
+                border-left-color: $green-500 !important;
+            }
+
+            > .c-step__indicator {
+                background-color: $white;
+            }
+
+        }
+
+        &.is--active:not(:last-child),
+        &.is--success:not(:last-child) {
+            position: relative;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                border-style: solid;
+                border-color: transparent;
+            }
+            &:before {
+                right: -21px;
+                border-width: 22px 0 22px 19px;
+                z-index: 1;
+            }
+
+            &:after {
+                right: -16px;
+                border-width: 19px 0 19px 16px;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+@include media-query(mobile) {
+
+    $checked-fill : $white;
+
+    .c-step {
+        align-items: flex-start;
+    }
+
+    .c-step__item {
+        text-align: center;
+        padding: 0 $spacing-xxs !important;
+        flex-direction: column;
+        position: relative;
+
+        &:before {
+            content: '';
+            height: 2px;
+            position: absolute;
+            background-color: $haze-300;
+            left: 0;
+            right: 0;
+            top: 10px;
+            z-index: -1;
+        }
+
+        &:first-child:before {
+            left: 50%;
+        }
+
+        &:last-child:before {
+            right: 50%;
+        }
+
+        &.is--success {
+
+            > .c-step__indicator:before {
+                background: inline-svg('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><path fill="'+$checked-fill+'" d="M23.926 7.386c.959-.959 2.397-.959 3.355 0s.959 2.397 0 3.355L14.339 24.402c-.959.959-2.397.959-3.355 0L4.753 18.65c-.959-.959-.959-2.397-.24-3.355s2.397-.959 3.355-.24l4.314 4.074L23.926 7.385z"/></svg>');
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+
+    .c-step__indicator {
+        margin-right: 0;
+        margin-bottom: $spacing-xs;
+    }
+}
+
+
+//  4. MIXIN
+//  ----------------------------------------------------------------------------
+
+@mixin step-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .c-step--sm#{$breakpoint-separator}#{$breakpoint} {
+        max-width: $step-sm-width;
+    }
+
+    .c-step--md#{$breakpoint-separator}#{$breakpoint} {
+        max-width: $step-md-width;
+    }
+
+    .c-step--lg#{$breakpoint-separator}#{$breakpoint} {
+        max-width: $step-lg-width;
+    }
+
+    .c-step--right#{$breakpoint-separator}#{$breakpoint} {
+        margin-left: auto;
+    }
+
+    .c-step--center#{$breakpoint-separator}#{$breakpoint} {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+//  4. DEFAULT
+//  ----------------------------------------------------------------------------
+
+@include step-setup();
+
+
+//  4. RESPONSIVE
+//  ----------------------------------------------------------------------------
+
+@if $responsive {
+    @if $use-step-mobile-tablet {
+        @include media-query(mobile-tablet){
+            @include step-setup('mobile-tablet');
+        }
+    }
+
+    @if $use-step-mobile {
+        @include media-query(mobile){
+            @include step-setup('mobile');
+        }
+    }
+}

@@ -1,0 +1,134 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Chips
+//
+//  Component styling for chips
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$chip-base-ui-color     : $haze-200 !default;
+$chip-base-radius       : $base-radius !default;
+$chip-base-font-color   : $font-base-color !default;
+$chip-base-font-size    : $font-7-size !default;
+$chip-base-font-height  : $font-7-height !default;
+$chip-base-spacing-x    : 2px !default;
+$chip-base-spacing-y    : $spacing-xs !default;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-chip {
+    background-color: $chip-base-ui-color;
+    border: 1px solid $chip-base-ui-color;
+    border-radius: $chip-base-radius;
+    color: $chip-base-font-color;
+    display: inline-flex;
+    font-size: $chip-base-font-size;
+    line-height: $chip-base-font-height + 1;
+    padding: $chip-base-spacing-x $chip-base-spacing-y;
+    text-decoration: none !important;
+    vertical-align: middle;
+
+    &:not(a) {
+        cursor: default !important;
+    }
+
+    .c-chip__dismiss {
+        content: "\2715";
+        color: inherit;
+        margin: 0 (-$spacing-xxs) 0 $spacing-xxs;
+        opacity: .6;
+        width: 24px;
+    }
+}
+
+.c-chip--outline {
+    background-color: transparent;
+    border: 1px solid $chip-base-font-color;
+
+    &:hover {
+        background: $chip-base-font-color;
+        border-color: $chip-base-font-color;
+        color: $white;
+    }
+}
+
+
+//  2. Mixin : Colors
+//  ----------------------------------------------------------------------------
+
+@mixin chip-setup($theme, $color) {
+    .c-chip--#{$theme} {
+        background-color: $color;
+        border-color: $color;
+        color: $white;
+    }
+
+    .c-chip--#{$theme}-outline {
+        background-color: transparent;
+        border: 1px solid $color;
+        color: $color;
+
+        &:hover {
+            background: $color;
+            color: $white;
+        }
+    }
+}
+
+@include chip-setup('blue', $blue-500);
+@include chip-setup('blue-light', $blue-light-500);
+@include chip-setup('green', $green-500);
+@include chip-setup('orange', $orange-500);
+@include chip-setup('pink', $pink-500);
+@include chip-setup('purple', $purple-500);
+@include chip-setup('red', $red-400);
+@include chip-setup('yellow', $yellow-500);
+
+
+//  3. Size
+//  ----------------------------------------------------------------------------
+
+.c-chip--sm {
+    line-height: $font-7-height;
+    font-size: $font-7-size;
+}
+
+.c-chip--xs {
+    line-height: $font-8-height;
+    font-size: $font-8-size;
+}
+
+
+//  ----------------------------------------------------------------------------
+//  4. Styles
+//  ----------------------------------------------------------------------------
+
+.c-input.c-input--chips {
+    line-height: 24px;
+    height: auto;
+    padding: 5px 8px;
+
+    .c-chip {
+        margin: 2px
+    }
+}

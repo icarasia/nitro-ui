@@ -4,16 +4,16 @@ Chips component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/chips](https://www.npmjs.com/package/@nitro-ui/chips):
+Get latest version by installing via [NPM @nitro-ui/chips](https://www.npmjs.com/package/@nitro-ui/component-chips):
 
 ```sh
-npm install @nitro-ui/chips
+npm install @nitro-ui/component-chips
 ```
 
 Include this stylesheet code into your site:
 
 ```html
-<link rel="stylesheet" href="dist/chips.min.css" />
+<link rel="stylesheet" href="dist/css/chips.min.css" />
 ```
 
 ## Usage:

@@ -17,7 +17,7 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/component-card.css': [
+                    'dist/css/card.css': [
                         'src/scss/card.scss'
                     ]
                 }
@@ -27,7 +27,7 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/component-card.min.css': [
+                    'dist/css/card.min.css': [
                         'src/scss/card.scss'
                     ]
                 }

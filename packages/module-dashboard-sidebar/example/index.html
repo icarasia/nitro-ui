@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Module Dashboard Sidebar</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/core/dist/core.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/component-drawer/dist/css/drawer.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/component-collapse/dist/css/collapse.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/component-avatar/dist/css/avatar.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/object-container/dist/object-container.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/object-list/dist/object-list.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-display/dist/utility-display.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-flex/dist/utility-flex.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-height/dist/utility-height.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-spacing/dist/utility-spacing.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-background/dist/utility-background.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-text/dist/utility-text.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-position/dist/utility-position.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-opacity/dist/utility-opacity.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-overflow/dist/utility-overflow.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/utility-shadow.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-transition/dist/utility-transition.min.css">
+        <link rel="stylesheet" href="../dist/css/sidebar.min.css">
+        <style>
+            article {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            /*Demo purpose*/
+            .header-margin {
+                margin-left:60px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .header-margin {
+                    margin-left:0px;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white  border-bottom  header-margin">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
+            <div class="container py-5">
+                <h1 class="font-weight-bold  mb-3">Dashboard Sidebar</h1>
+                <div class="text-muted">
+                    <p>
+                        Dashboard Sidebar from combination of modal and collapse
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <!-- Sidebar Start Here-->
+            <div class="c-sidebar  c-drawer  c-drawer--left" id="drawer-mobile-menu" tabindex="-1" role="dialog">
+                <div class="c-drawer__content  u-bg-haze-light  u-flex  u-flex--justify-between  u-flex--column  u-shadow-1dp">
+                    <div class="c-sidebar__top-menu">
+                        <a href="" data-toggle="modal"  data-target="#drawer-mobile-menu" class="c-sidebar__hamburger  u-padding-top-md  u-flex  u-flex--justify-center  js-sidebar-menu-btn">
+                            <!-- <svg class="icon-svg  icon-svg--24  icon-svg--muted  u-transition-default">
+                              <use xlink:href="./images/spritemap.svg#icon--menu"></use>
+                            </svg> -->
+                            Menu
+                        </a>
+
+                        <a href="#" data-dismiss="modal" class="c-sidebar__close  u-padding-ends-sm  u-padding-left-lg  u-hidden  js-menu-close">
+                            <!-- <svg class="icon-svg  icon-svg--20  icon-svg--muted">
+                              <use xlink:href="./images/spritemap.svg#icon--arrow-left"></use>
+                            </svg> -->
+                            arrow
+                        </a>
+
+                        <div class="c-sidebar__profile  u-padding-sides-lg  u-padding-bottom-lg  u-padding-top-none  u-hidden">
+                            <a class="u-flex  u-flex--items-center  no--underline" href="#">
+                                <div class="c-avatar  c-avatar--64px  u-margin-right-sm">
+                                    <img src="./images/avatar/avatar1.jpg" width="" height="" alt="">
+                                </div>
+                                <div>
+                                    <div class="c-sidebar__profile-name  u-text-semibold">
+                                        Jeremy Chong
+                                    </div>
+                                    <div class="u-text-7  u-color-muted">
+                                        Moderator
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <ul class="c-drawer__menu  o-list  u-margin-bottom-xl  u-margin-top-lg  u-margin-top-none@mobile  u-padding-top-sm@mobile">
+                            <li class="o-list__item">
+                                <a href="#" class="u-flex  u-flex--items-center  u-flex--justify-center" data-submenu="submenu-00">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--home"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm  u-hidden">Dashboard</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="o-list__item">
+                                <a href="#" class="u-flex  u-flex--items-center  u-flex--justify-center" data-submenu="submenu-0">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--listing"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm  u-hidden">Listing</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="o-list__item">
+                                <a href="#collapse-moderation" class="u-flex  u-flex--items-center  u-flex--justify-center  is--active"  data-toggle=""  data-submenu="submenu-1">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--moderation"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">Moderation</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-moderation">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="o-list__item">
+                                <a href="#collapse-lala2" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-2">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--bulk-upload"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">Bulk upload</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala2">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala3" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-3">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--bulk-removal"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm  u-hidden">Bulk Removal</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala3">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala4" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-4">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--user-management"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">User Management</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala4">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala5" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-5">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--report"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">Report</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala5">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala6" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-6">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--apps-2"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">lala6</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala6">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala7" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-7">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--apps-2"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">lala7</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala7">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala8" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-8">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--apps-2"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">lala8</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala8">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala9" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-9">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--apps-2"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">lala9</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala9">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#collapse-lala10" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle=""  data-submenu="submenu-10">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--apps-2"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">lala10</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+                                <ul class="c-collapse  collapse  o-list"  id="collapse-lala10">
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default  is--active">Pre Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Post Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Pre Video Moderation</a></li>
+                                    <li class="o-list__item"><a class="u-opacity-4  u-relative  u-color-white  u-transition-default">Vehicle Approval</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="c-sidebar__bottom-menu">
+                        <ul class="c-drawer__menu  o-list  u-padding-ends-sm  u-hidden@tablet-desktop">
+                            <li class="o-list__item">
+                                <a href="#collapse-language" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle="">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--muted  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--language"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">Language</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+
+                                <ul class="c-collapse  collapse  o-list  u-bg-white"  id="collapse-language">
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#"  class="u-color-base">English</a>
+                                    </li>
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#"  class="u-color-base">ภาษาไทย</a>
+                                    </li>
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#"  class="u-color-base">Bahasa Indonesia</a>
+                                    </li>
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#"  class="u-color-base">Bahasa Malaysia</a>
+                                    </li>
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#"  class="u-color-base">中文</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="o-list__item">
+                                <a href="#collapse-switch-to" class="u-flex  u-flex--items-center  u-flex--justify-center"  data-toggle="">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--muted  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--apps-2"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm   u-hidden">Switch to...</span>
+                                    </div>
+                                    <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--16  icon-svg--muted  icon--chevron-down  u-transition-default  u-hidden">
+                                      <use xlink:href="./images/spritemap.svg#icon--chevron-down"></use>
+                                    </svg> -->
+                                </a>
+
+                                <ul class="c-collapse  collapse  o-list  u-bg-white"  id="collapse-switch-to">
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#" class="u-flex  u-flex--items-center  u-padding-ends-sm"><img src="./images/logos/default/logo_dealership_default.svg" class="u-flex" height="18"/></a>
+                                    </li>
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#" class="u-flex  u-flex--items-center  u-padding-ends-sm"><img src="./images/logos/default/logo_bid_default.svg" class="u-flex" height="18"/></a>
+                                    </li>
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#" class="u-flex  u-flex--items-center  u-padding-ends-sm"><img src="./images/logos/default/logo_leads_default.svg" class="u-flex" height="18"/></a>
+                                    </li>
+                                    <li class="o-list__item  u-relative">
+                                        <a href="#" class="u-flex  u-flex--items-center  u-padding-ends-sm"><img src="./images/logos/default/logo_data_default.svg" class="u-flex" height="18"/></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#" class="u-flex  u-flex--items-center  u-flex--justify-center">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--muted  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--settings"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm  u-hidden">Settings</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="o-list__item">
+                                <a href="#" class="u-flex  u-flex--items-center  u-flex--justify-center">
+                                    <div class="u-flex  u-flex--items-center">
+                                        <!-- <svg class="icon-svg  icon-svg--inline  icon-svg--muted  icon-svg--20  u-transition-default">
+                                          <use xlink:href="./images/spritemap.svg#icon--off"></use>
+                                        </svg> -->
+                                        icon
+                                        <span class="c-sidebar__label  u-margin-left-sm  u-hidden">Log out</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="c-sidebar__footer  u-padding-sides-lg  u-padding-ends-lg  u-hidden">
+                            <img src="./images/logos/default/logo_icarsuite_default.svg" width="106.11" height="16" class="u-margin-bottom-sm"/>
+                            <div class="c-copyright  u-text-8  u-color-muted">Copyright © 2019 iCar Asia Sdn Bhd. </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Sidebar End Here-->
+
+
+            <!-- Floating Menu Start Here-->
+            <div class="u-hidden@mobile">
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-00">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">Dashboard</span></span>
+                    </a>
+
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-0">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">Listing</span></span>
+                    </a>
+
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-1">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">Moderation</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-2">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">Bulk Upload</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-3">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">Bulk Removal</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-4">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">User Management</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-5">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">Report</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-6">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">lala6</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-7">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">lala7</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-8">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">lala8</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-9">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">lala9</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+                <div class="c-sidebar__floating-menu  u-fixed  u-zindex-1" id="submenu-10">
+                    <a class="no--underline">
+                        <span class="c-sidebar__label  u-color-white  u-padding-ends-sm  u-padding-sides-lg  u-hidden"><span class="u-margin-left-sm">lala10</span></span>
+                    </a>
+                    <ul class="o-list  u-padding-top-sm  u-padding-bottom-xxs">
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg  is--active"><span class="u-margin-left-sm">Pre Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Post Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Pre Video Moderation</span></a></li>
+                        <li class="o-list__item"><a class="u-color-white  u-opacity-4  u-relative  u-block  u-padding-ends-xxs  u-padding-sides-lg"><span class="u-margin-left-sm">Vehicle Approval</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Floating Menu End Here-->
+        </article>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/bootstrap/js/dist/util.js"></script>
+        <script src="../node_modules/bootstrap/js/dist/modal.js"></script>
+        <script src="../node_modules/bootstrap/js/dist/collapse.js"></script>
+        <script src="../dist/js/sidebar-bundle.js"></script>
+    </body>
+</html>
