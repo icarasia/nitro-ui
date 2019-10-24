@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-sidebar",
-    "version": "1.0.0-alpha.18",
+    "version": "1.0.0-alpha.19",
     "description": "Sidebar module for all the products",
     "main": "dist/css/sidebar.min.css",
     "style": "dist/css/sidebar.min.css",
