@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-overflow.css': [
-                        'src/scss/utility-overflow.scss'
+                    'dist/css/overflow.css': [
+                        'src/scss/overflow.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-overflow.min.css': [
-                        'src/scss/utility-overflow.scss'
+                    'dist/css/overflow.min.css': [
+                        'src/scss/overflow.scss'
                     ]
                 }
             }

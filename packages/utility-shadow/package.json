@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-shadow",
     "version": "1.0.0-alpha.3",
     "description": "Utility shadow styling for Nitro UI.",
-    "main": "dist/css/utility-shadow.min.css",
+    "main": "dist/css/shadow.min.css",
     "publishConfig": {
         "access": "public"
     },

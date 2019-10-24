@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-background",
     "version": "1.0.0-alpha.3",
     "description": "Utility background component for Nitro UI.",
-    "main": "dist/css/utility-background.min.css",
+    "main": "dist/css/background.min.css",
     "publishConfig": {
         "access": "public"
     },

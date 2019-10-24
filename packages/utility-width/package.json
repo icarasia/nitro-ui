@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-width",
     "version": "1.0.0-alpha.5",
     "description": "Utility Width component for Nitro UI.",
-    "main": "dist/css/utility-width.min.css",
+    "main": "dist/css/width.min.css",
     "publishConfig": {
         "access": "public"
     },

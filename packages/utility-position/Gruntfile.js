@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-position.css': [
-                        'src/scss/utility-position.scss'
+                    'dist/css/position.css': [
+                        'src/scss/position.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-position.min.css': [
-                        'src/scss/utility-position.scss'
+                    'dist/css/position.min.css': [
+                        'src/scss/position.scss'
                     ]
                 }
             }

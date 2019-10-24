@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-align",
     "version": "1.0.0-alpha.3",
     "description": "Utility align component for Nitro UI.",
-    "main": "dist/css/utility-align.min.css",
+    "main": "dist/css/align.min.css",
     "publishConfig": {
         "access": "public"
     },

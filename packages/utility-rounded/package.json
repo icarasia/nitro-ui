@@ -2,7 +2,7 @@
     "name": "@nitro-ui/utility-rounded",
     "version": "2.0.0-alpha.3",
     "description": "Utility rounded styling for Nitro UI.",
-    "main": "dist/css/utility-rounded.min.css",
+    "main": "dist/css/rounded.min.css",
     "publishConfig": {
         "access": "public"
     },

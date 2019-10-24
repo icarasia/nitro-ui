@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-divider.css': [
-                        'src/scss/utility-divider.scss'
+                    'dist/css/divider.css': [
+                        'src/scss/divider.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-divider.min.css': [
-                        'src/scss/utility-divider.scss'
+                    'dist/css/divider.min.css': [
+                        'src/scss/divider.scss'
                     ]
                 }
             }

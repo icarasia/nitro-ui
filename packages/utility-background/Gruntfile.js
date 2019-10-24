@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-background.css': [
-                        'src/scss/utility-background.scss'
+                    'dist/css/background.css': [
+                        'src/scss/background.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-background.min.css': [
-                        'src/scss/utility-background.scss'
+                    'dist/css/background.min.css': [
+                        'src/scss/background.scss'
                     ]
                 }
             }

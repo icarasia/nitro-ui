@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-spacing.css': [
-                        'src/scss/utility-spacing.scss'
+                    'dist/css/spacing.css': [
+                        'src/scss/spacing.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-spacing.min.css': [
-                        'src/scss/utility-spacing.scss'
+                    'dist/css/spacing.min.css': [
+                        'src/scss/spacing.scss'
                     ]
                 }
             }

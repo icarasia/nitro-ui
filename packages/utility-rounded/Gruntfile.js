@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-rounded.css': [
-                        'src/scss/utility-rounded.scss'
+                    'dist/css/rounded.css': [
+                        'src/scss/rounded.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-rounded.min.css': [
-                        'src/scss/utility-rounded.scss'
+                    'dist/css/rounded.min.css': [
+                        'src/scss/rounded.scss'
                     ]
                 }
             }

@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-clearfix.css': [
-                        'src/scss/utility-clearfix.scss'
+                    'dist/css/clearfix.css': [
+                        'src/scss/clearfix.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-clearfix.min.css': [
-                        'src/scss/utility-clearfix.scss'
+                    'dist/css/clearfix.min.css': [
+                        'src/scss/clearfix.scss'
                     ]
                 }
             }

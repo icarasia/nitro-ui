@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/utility-align.css': [
-                        'src/scss/utility-align.scss'
+                    'dist/css/align.css': [
+                        'src/scss/align.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/utility-align.min.css': [
-                        'src/scss/utility-align.scss'
+                    'dist/css/align.min.css': [
+                        'src/scss/align.scss'
                     ]
                 }
             }
