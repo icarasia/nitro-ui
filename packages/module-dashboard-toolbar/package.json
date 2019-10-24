@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-toolbar",
-    "version": "1.0.0-alpha.7",
+    "version": "1.0.0-alpha.10",
     "description": "Toolbar module for all the products",
     "main": "dist/css/toolbar.min.css",
     "style": "dist/css/toolbar.min.css",
@@ -37,7 +37,7 @@
         "@nitro-ui/component-drawer": "^1.0.0-alpha.3",
         "@nitro-ui/component-dropdown": "^1.0.0-alpha.3",
         "@nitro-ui/core": "^1.0.0-alpha.2",
-        "@nitro-ui/module-dashboard-sidebar": "^1.0.0-alpha.19",
+        "@nitro-ui/module-dashboard-sidebar": "^1.0.0-alpha.21",
         "@nitro-ui/object-container": "^1.0.0-alpha.6",
         "@nitro-ui/object-list": "^1.0.0-alpha.5",
         "@nitro-ui/utility-background": "^1.0.0-alpha.7",
