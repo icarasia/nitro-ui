@@ -17,7 +17,7 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/table.css': [
+                    'dist/css/table.css': [
                         'src/scss/table.scss'
                     ]
                 }
@@ -27,7 +27,7 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/table.min.css': [
+                    'dist/css/table.min.css': [
                         'src/scss/table.scss'
                     ]
                 }
