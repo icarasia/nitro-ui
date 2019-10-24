@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-opacity",
-    "version": "1.0.0-alpha.5",
+    "version": "1.0.0-alpha.6",
     "description": "Utility opacity styling for Nitro UI.",
     "main": "dist/utility-opacity.min.css",
     "style": "dist/utility-opacity.min.css",

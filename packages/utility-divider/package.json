@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-divider",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
     "description": "Utility divider component for Nitro UI.",
     "main": "dist/utility-divider.min.css",
     "style": "dist/utility-divider.min.css",
