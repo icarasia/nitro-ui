@@ -3,6 +3,8 @@
     "version": "1.0.0-alpha.6",
     "description": "Flex component for Nitro UI.",
     "main": "dist/utility-flex.min.css",
+    "style": "dist/utility-flex.min.css",
+    "sass": "src/utility-flex.scss",
     "publishConfig": {
         "access": "public"
     },

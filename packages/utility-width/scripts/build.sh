@@ -3,7 +3,7 @@ set -e
 
 NITRO_VERSION=$(node -p "require('./package.json').version")
 PACKAGE_NAME=$(node -p "require('./package.json').name")
-FILE_NAME="utility-flex"
+FILE_NAME="utility-width"
 
 echo "Building ${PACKAGE_NAME} ${NITRO_VERSION}"
 echo ''
