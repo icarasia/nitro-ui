@@ -2,7 +2,7 @@
     "name": "@nitro-ui/object-embed",
     "version": "1.0.0-alpha.3",
     "description": "Object embed styling for Nitro UI.",
-    "main": "dist/object-embed.min.css",
+    "main": "dist/css/object-embed.min.css",
     "publishConfig": {
         "access": "public"
     },

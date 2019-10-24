@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/object-grid.css': [
-                        'src/object-grid.scss'
+                    'dist/css/object-grid.css': [
+                        'src/scss/object-grid.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/object-grid.min.css': [
-                        'src/object-grid.scss'
+                    'dist/css/object-grid.min.css': [
+                        'src/scss/object-grid.scss'
                     ]
                 }
             }

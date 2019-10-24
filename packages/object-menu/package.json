@@ -2,7 +2,7 @@
     "name": "@nitro-ui/object-menu",
     "version": "1.0.0-alpha.3",
     "description": "Object menu styling for Nitro UI.",
-    "main": "dist/object-menu.min.css",
+    "main": "dist/css/object-menu.min.css",
     "publishConfig": {
         "access": "public"
     },

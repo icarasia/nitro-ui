@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/object-menu.css': [
-                        'src/object-menu.scss'
+                    'dist/css/object-menu.css': [
+                        'src/scss/object-menu.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/object-menu.min.css': [
-                        'src/object-menu.scss'
+                    'dist/css/object-menu.min.css': [
+                        'src/scss/object-menu.scss'
                     ]
                 }
             }

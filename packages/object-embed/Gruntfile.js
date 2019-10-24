@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/object-embed.css': [
-                        'src/object-embed.scss'
+                    'dist/css/object-embed.css': [
+                        'src/scss/object-embed.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/object-embed.min.css': [
-                        'src/object-embed.scss'
+                    'dist/css/object-embed.min.css': [
+                        'src/scss/object-embed.scss'
                     ]
                 }
             }

@@ -2,7 +2,7 @@
     "name": "@nitro-ui/object-grid",
     "version": "1.0.0-alpha.6",
     "description": "Grid styling for Nitro UI.",
-    "main": "dist/object-grid.min.css",
+    "main": "dist/css/object-grid.min.css",
     "publishConfig": {
         "access": "public"
     },
