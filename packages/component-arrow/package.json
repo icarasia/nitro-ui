@@ -2,7 +2,7 @@
     "name": "@nitro-ui/component-arrow",
     "version": "1.0.0-alpha.3",
     "description": "Card styling for Nitro UI.",
-    "main": "dist/arrow.min.css",
+    "main": "dist/css/arrow.min.css",
     "publishConfig": {
         "access": "public"
     },
