@@ -17,18 +17,18 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/component-rating.css': [
-                        'src/component-rating.scss'
+                    'dist/css/rating.css': [
+                        'src/scss/rating.scss'
                     ]
                 }
             },
             compressed: {
                 options: {
-                    outputStyle: 'compressed'
+                    style: 'compressed'
                 },
                 files: {
-                    'dist/component-rating.min.css': [
-                        'src/component-rating.scss'
+                    'dist/css/rating.min.css': [
+                        'src/scss/rating.scss'
                     ]
                 }
             }
