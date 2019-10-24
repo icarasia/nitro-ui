@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-toolbar",
-    "version": "1.0.0-alpha.6",
+    "version": "1.0.0-alpha.7",
     "description": "Toolbar module for all the products",
     "main": "dist/css/toolbar.min.css",
     "style": "dist/css/toolbar.min.css",
