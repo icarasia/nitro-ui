@@ -4,7 +4,7 @@
     "description": "Utility position component for Nitro UI.",
     "main": "dist/utility-position.min.css",
     "style": "dist/utility-position.min.css",
-    "sass": "scss/utility-position.scss",
+    "sass": "src/utility-position.scss",
     "publishConfig": {
         "access": "public"
     },

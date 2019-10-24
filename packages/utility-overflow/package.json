@@ -4,7 +4,7 @@
     "description": "Utility overflow component for Nitro UI.",
     "main": "dist/utility-overflow.min.css",
     "style": "dist/utility-overflow.min.css",
-    "sass": "scss/utility-overflow.scss",
+    "sass": "src/utility-overflow.scss",
     "publishConfig": {
         "access": "public"
     },

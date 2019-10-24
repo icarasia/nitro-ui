@@ -4,7 +4,7 @@
     "description": "Utility clearfix component for Nitro UI.",
     "main": "dist/utility-clearfix.min.css",
     "style": "dist/utility-clearfix.min.css",
-    "sass": "scss/utility-clearfix.scss",
+    "sass": "src/utility-clearfix.scss",
     "publishConfig": {
         "access": "public"
     },

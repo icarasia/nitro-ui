@@ -4,7 +4,7 @@
     "description": "Utility shadow styling for Nitro UI.",
     "main": "dist/utility-shadow.min.css",
     "style": "dist/utility-shadow.min.css",
-    "sass": "scss/utility-shadow.scss",
+    "sass": "src/utility-shadow.scss",
     "publishConfig": {
         "access": "public"
     },

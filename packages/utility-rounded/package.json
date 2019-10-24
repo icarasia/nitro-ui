@@ -4,7 +4,7 @@
     "description": "Utility rounded styling for Nitro UI.",
     "main": "dist/utility-rounded.min.css",
     "style": "dist/utility-rounded.min.css",
-    "sass": "scss/Sutility-rounded.scss",
+    "sass": "src/utility-rounded.scss",
     "publishConfig": {
         "access": "public"
     },

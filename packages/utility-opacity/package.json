@@ -4,7 +4,7 @@
     "description": "Utility opacity styling for Nitro UI.",
     "main": "dist/utility-opacity.min.css",
     "style": "dist/utility-opacity.min.css",
-    "sass": "scss/utility-opacity.scss",
+    "sass": "src/utility-opacity.scss",
     "publishConfig": {
         "access": "public"
     },

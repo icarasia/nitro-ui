@@ -4,7 +4,7 @@
     "description": "Utility align component for Nitro UI.",
     "main": "dist/utility-align.min.css",
     "style": "dist/utility-align.min.css",
-    "sass": "scss/utility-align.scss",
+    "sass": "src/utility-align.scss",
     "publishConfig": {
         "access": "public"
     },

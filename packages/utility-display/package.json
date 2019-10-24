@@ -4,7 +4,7 @@
     "description": "Utility Display component for Nitro UI.",
     "main": "dist/utility-display.min.css",
     "style": "dist/utility-display.min.css",
-    "sass": "scss/utility-display.scss",
+    "sass": "src/utility-display.scss",
     "publishConfig": {
         "access": "public"
     },

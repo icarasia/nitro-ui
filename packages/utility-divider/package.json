@@ -4,7 +4,7 @@
     "description": "Utility divider component for Nitro UI.",
     "main": "dist/utility-divider.min.css",
     "style": "dist/utility-divider.min.css",
-    "sass": "scss/utility-divider.scss",
+    "sass": "src/utility-divider.scss",
     "publishConfig": {
         "access": "public"
     },

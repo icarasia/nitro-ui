@@ -4,7 +4,7 @@
     "description": "Utility Float component for Nitro UI.",
     "main": "dist/float.min.css",
     "style": "dist/float.min.css",
-    "sass": "scss/float.scss",
+    "sass": "src/float.scss",
     "publishConfig": {
         "access": "public"
     },

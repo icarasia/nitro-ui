@@ -3,11 +3,14 @@
     "version": "1.0.0-alpha.17",
     "description": "Sidebar module for all the products",
     "main": "dist/css/sidebar.min.css",
+    "style": "dist/css/sidebar.min.css",
+    "sass": "src/scss/sidebar.scss",
+    "module": "dist/js/sidebar.esm.js",
     "publishConfig": {
         "access": "public"
     },
     "scripts": {
-        "main": "build",
+        "build": "bash scripts/build.sh",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -56,16 +59,17 @@
     "devDependencies": {
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
-        "@babel/preset-env": "^7.6.2",
+        "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+        "@babel/preset-env": "^7.6.3",
         "babelify": "^10.0.0",
-        "grunt": "^1.0.4",
-        "grunt-browserify": "^5.3.0",
-        "grunt-cli": "^1.3.2",
-        "grunt-contrib-clean": "^2.0.0",
-        "grunt-contrib-uglify": "^4.0.1",
-        "grunt-contrib-watch": "^1.1.0",
-        "grunt-notify": "^0.4.5",
-        "grunt-sass": "^3.0.2",
-        "node-sass": "^4.12.0"
+        "browserify": "^16.5.0",
+        "node-sass": "^4.12.0",
+        "rollup": "^1.25.2",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-babel-minify": "^9.1.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-peer-deps-external": "^2.2.0",
+        "terser": "^4.3.9"
     }
 }

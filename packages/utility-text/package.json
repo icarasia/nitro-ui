@@ -4,7 +4,7 @@
     "description": "Utility Text component for Nitro UI.",
     "main": "dist/utility-text.min.css",
     "style": "dist/utility-text.min.css",
-    "sass": "scss/utility-text.scss",
+    "sass": "src/utility-text.scss",
     "publishConfig": {
         "access": "public"
     },

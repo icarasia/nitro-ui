@@ -4,7 +4,7 @@
     "description": "Utility loader component for Nitro UI.",
     "main": "dist/utility-loader.min.css",
     "style": "dist/utility-loader.min.css",
-    "sass": "scss/utility-loader.scss",
+    "sass": "src/utility-loader.scss",
     "publishConfig": {
         "access": "public"
     },

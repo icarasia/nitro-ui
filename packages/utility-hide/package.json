@@ -4,7 +4,7 @@
     "description": "Utility hide component for Nitro UI.",
     "main": "dist/utility-hide.min.css",
     "style": "dist/utility-hide.min.css",
-    "sass": "scss/utility-hide.scss",
+    "sass": "src/utility-hide.scss",
     "publishConfig": {
         "access": "public"
     },

@@ -4,7 +4,7 @@
     "description": "Utility border component for Nitro UI.",
     "main": "dist/utility-border.min.css",
     "style": "dist/utility-border.min.css",
-    "sass": "scss/utility-border.scss",
+    "sass": "src/utility-border.scss",
     "publishConfig": {
         "access": "public"
     },

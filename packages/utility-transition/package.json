@@ -4,7 +4,7 @@
     "description": "Utility transition component for Nitro UI.",
     "main": "dist/utility-transition.min.css",
     "style": "dist/utility-transition.min.css",
-    "sass": "scss/utility-transition.scss",
+    "sass": "src/utility-transition.scss",
     "publishConfig": {
         "access": "public"
     },
