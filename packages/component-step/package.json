@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-step",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.2",
     "description": "Step component for Nitro UI.",
     "main": "dist/css/step.min.css",
     "publishConfig": {

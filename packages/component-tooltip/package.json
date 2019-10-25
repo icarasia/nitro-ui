@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-tooltip",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
     "description": "Tooltip styling for Nitro UI.",
     "main": "dist/css/tooltip.min.css",
     "publishConfig": {

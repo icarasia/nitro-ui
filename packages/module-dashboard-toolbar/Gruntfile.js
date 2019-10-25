@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/css/sidebar.css': [
-                        'src/scss/sidebar.scss'
+                    'dist/css/toolbar.css': [
+                        'src/scss/toolbar.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/css/sidebar.min.css': [
-                        'src/scss/sidebar.scss'
+                    'dist/css/toolbar.min.css': [
+                        'src/scss/toolbar.scss'
                     ]
                 }
             }
@@ -37,8 +37,8 @@ module.exports = function( grunt ) {
         browserify: {
             dist: {
                 files: {
-                    'dist/js/sidebar.js': [
-                        'src/js/sidebar.js'
+                    'dist/js/toolbar.js': [
+                        'src/js/toolbar.js'
                     ]
                 },
                 options: {
@@ -64,8 +64,8 @@ module.exports = function( grunt ) {
             },
             main: {
                 files: {
-                    'dist/js/sidebar.min.js': [
-                        'dist/js/sidebar.js',
+                    'dist/js/toolbar.min.js': [
+                        'dist/js/toolbar.js',
                     ]
                 }
             },
