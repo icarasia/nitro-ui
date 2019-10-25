@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-overflow",
     "version": "1.0.0-alpha.7",
     "description": "Utility overflow component for Nitro UI.",
-    "main": "dist/utility-overflow.min.css",
-    "style": "dist/utility-overflow.min.css",
-    "sass": "src/utility-overflow.scss",
+    "main": "dist/css/overflow.min.css",
+    "style": "dist/css/overflow.min.css",
+    "sass": "src/scss/overflow.scss",
     "publishConfig": {
         "access": "public"
     },

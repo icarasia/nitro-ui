@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-float",
     "version": "1.0.0-alpha.5",
     "description": "Utility Float component for Nitro UI.",
-    "main": "dist/float.min.css",
-    "style": "dist/float.min.css",
-    "sass": "src/float.scss",
+    "main": "dist/css/float.min.css",
+    "style": "dist/css/float.min.css",
+    "sass": "src/scss/float.scss",
     "publishConfig": {
         "access": "public"
     },

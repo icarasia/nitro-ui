@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-flex",
     "version": "1.0.0-alpha.8",
     "description": "Flex component for Nitro UI.",
-    "main": "dist/utility-flex.min.css",
-    "style": "dist/utility-flex.min.css",
-    "sass": "src/utility-flex.scss",
+    "main": "dist/css/utility-flex.min.css",
+    "style": "dist/css/utility-flex.min.css",
+    "sass": "src/scss/utility-flex.scss",
     "publishConfig": {
         "access": "public"
     },

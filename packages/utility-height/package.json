@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-height",
     "version": "1.0.0-alpha.7",
     "description": "Utility height component for Nitro UI.",
-    "main": "dist/utility-height.min.css",
-    "style": "dist/utility-height.min.css",
-    "sass": "src/utility-height.scss",
+    "main": "dist/css/height.min.css",
+    "style": "dist/css/height.min.css",
+    "sass": "src/scss/height.scss",
     "publishConfig": {
         "access": "public"
     },
