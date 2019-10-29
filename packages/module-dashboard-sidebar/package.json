@@ -5,7 +5,6 @@
     "main": "dist/css/sidebar.min.css",
     "style": "dist/css/sidebar.min.css",
     "sass": "src/scss/sidebar.scss",
-    "module": "dist/js/sidebar.esm.js",
     "publishConfig": {
         "access": "public"
     },
