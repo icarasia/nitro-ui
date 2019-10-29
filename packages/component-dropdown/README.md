@@ -14,6 +14,7 @@ npm install @nitro-ui/component-dropdown
 Pagination style requires Nitro Button Components which already defined inside package.json. Use `c-btn-secondary` or `c-btn-secondary-outline` to render the button style. When pagination installed `@nitro-ui/component-button` will be installed together inside the node_modules. Use the button to include in your project.
 
 
+
 ## Usage
 
 Sample markup for dropdown
