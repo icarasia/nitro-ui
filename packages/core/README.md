@@ -4,10 +4,10 @@ Core CSS for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/css-core](https://www.npmjs.com/package/@nitro-ui/css-core):
+Get latest version by installing via [NPM @nitro-ui/core](https://www.npmjs.com/package/@nitro-ui/core):
 
 ```sh
-npm install @nitro-ui/css-core
+npm install @nitro-ui/core
 ```
 
 ## Development

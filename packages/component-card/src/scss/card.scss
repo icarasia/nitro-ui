@@ -1,0 +1,197 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Card
+//
+//  Component styling for cards
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$card-spacing       : $spacing-md !default;
+$card-spacing-sm    : $spacing-sm !default;
+$card-spacing-xs    : $spacing-xs !default;
+
+$card-bg            : $white;
+$card-divider       : $haze-200 !default;
+$card-radius        : $base-radius !default;
+
+$card-title-font-size   : $font-5-size !default;
+$card-title-font-height : $font-5-height !default;
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-card {
+    background-color: $card-bg;
+    border-radius: $card-radius;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    @include shadow-1dp;
+    @include clearfix();
+
+    > .is--filled {
+        background-color: $haze-100;
+    }
+}
+
+
+    .c-card__image,
+    .c-card__head,
+    .c-card__body,
+    .c-card__action {
+        display: block;
+        position: relative;
+        @include clearfix();
+    }
+
+    .c-card__head,
+    .c-card__body,
+    .c-card__action {
+        padding: $card-spacing;
+    }
+
+    .c-card__image {
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    .c-card__head:first-child,
+    .c-card__body:first-child,
+    .c-card__image:first-child,
+    .c-card__image:first-child > img{
+        border-top-left-radius: $card-radius;
+        border-top-right-radius: $card-radius;
+    }
+
+    .c-card__head:last-child,
+    .c-card__body:last-child,
+    .c-card__action:last-child,
+    .c-card__image:last-child,
+    .c-card__image:last-child > img {
+        border-bottom-left-radius: $card-radius;
+        border-bottom-right-radius: $card-radius;
+    }
+
+    .c-card__head {
+        border-bottom: 1px solid $card-divider;
+        padding-bottom: $card-spacing-sm;
+        padding-top: $card-spacing-sm;
+    }
+
+    .c-card__title {
+        font-size: $card-title-font-size;
+        line-height: $card-title-font-height;
+        margin-bottom: $card-spacing/2;
+    }
+
+
+
+
+
+
+
+
+
+    .c-card__menu {
+        list-style: none;
+        padding: $card-spacing-xs 0;
+        margin: 0;
+
+        > li {
+            > a {
+                align-items: center;
+                color: $font-muted-color;
+                display: flex;
+                justify-content: space-between;
+                padding: $card-spacing-xs $card-spacing;
+                text-decoration: none !important;
+
+                &:hover {
+                    background-color: $haze-100;
+                    color: $font-base-color;
+                }
+            }
+
+            .count {
+                margin-right: $spacing-xs;
+            }
+
+            .icon--chevron-right {
+                color: $haze-400;
+            }
+        }
+
+        // > li + li {
+        //     border-top: 1px solid $card-divider;
+        // }
+
+        > li.is--divider {
+            border-top: 1px solid $card-divider;
+            margin: $card-spacing-xs $card-spacing;
+        }
+
+        > li.is--active > a,
+        > li > a.is--active {
+            color: $font-base-color;
+            font-weight: $font-weight-medium;
+
+            .icon--chevron-right {
+                color: $font-link-color;
+            }
+        }
+    }
+
+    .c-card__submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        > li {
+            > a {
+                align-items: center;
+                color: $font-muted-color;
+                display: flex;
+                justify-content: space-between;
+                padding: $card-spacing-xs $card-spacing $card-spacing-xs ($card-spacing*2);
+                text-decoration: none !important;
+
+                font-size: $font-7-size;
+                line-height: $font-7-height;
+
+                &:hover {
+                    background-color: $haze-100;
+                    color: $font-base-color;
+                }
+            }
+
+            .count {
+                margin-right: $spacing-xs;
+            }
+
+            .icon--chevron-right {
+                color: $haze-400;
+            }
+        }
+    }

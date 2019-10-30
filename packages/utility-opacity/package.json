@@ -1,0 +1,41 @@
+{
+    "name": "@nitro-ui/utility-opacity",
+    "version": "1.0.0-alpha.7",
+    "description": "Utility opacity styling for Nitro UI.",
+    "main": "dist/utility-opacity.min.css",
+    "style": "dist/utility-opacity.min.css",
+    "sass": "src/utility-opacity.scss",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "bash scripts/build.sh",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/icarasia-engineering/nitro-ui"
+    },
+    "keywords": [
+        "Utility",
+        "Opacity",
+        "Nitro",
+        "UI",
+        "CSS",
+        "Components",
+        "iCarAsia"
+    ],
+    "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+    },
+    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "dependencies": {
+        "@nitro-ui/core": "^1.0.0-alpha.3"
+    },
+    "devDependencies": {
+        "node-sass": "^4.12.0"
+    },
+    "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"
+}

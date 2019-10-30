@@ -1,0 +1,216 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Drawer
+//
+//  Component styling for drawer.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Modifiers
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$modal-backdrop                 : rgba($dark-700, .5) !default;
+$modal-backdrop-z-index         : 2000 !default;
+
+$drawer-z-index                 : 2010 !default;
+$drawer-z-index-parent          : 2020 !default;
+$drawer-z-index-child           : 2030 !default;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+
+.c-drawer {
+    display: block !important;
+    outline: 0;
+    position: fixed;
+    z-index: $drawer-z-index;
+
+    &.show {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+    .c-drawer__parent {
+        z-index: $drawer-z-index-parent;
+    }
+    .c-drawer__child {
+        z-index: $drawer-z-index-child;
+    }
+
+    .c-drawer__content {
+        background-color: $white;
+        position: fixed;
+        transition: transform .4s ease;
+    }
+
+    .c-drawer__close {
+        border-radius: 100%;
+        color: $font-muted-color;
+        cursor: pointer;
+        display: inline-block;
+        padding: $spacing-xxs;
+        text-decoration: none !important;
+    }
+
+    // Need Revision
+    .c-drawer__menu {
+        > li {
+            margin-bottom: 1px;
+
+            > a {
+                color: $font-base-color;
+                outline: none !important;
+                padding: 8px 16px 8px 24px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color:  $haze-100;
+                }
+            }
+
+            .icon {
+                color: $haze-500;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+            }
+        }
+
+        .c-collapse-toggle:not(.collapsed) {
+            background-color: $haze-100;
+        }
+
+        .c-collapse {
+            &.collapse.in {
+                background-color: $haze-100;
+            }
+
+            > li {
+                &:first-child {
+                    margin-top: $spacing-xs
+                }
+
+                &:last-child {
+                    margin-bottom: $spacing-md
+                }
+
+                > a {
+                    color: $font-muted-color;
+                    display: block;
+                    font-size: $font-base-size - 1;
+                    line-height: 24px;
+                    padding-left: 80px;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: $haze-200;
+                        color: $font-base-color;
+                    }
+                }
+            }
+        }
+    }
+
+
+//  4. Modifiers
+//  ----------------------------------------------------------------------------
+
+.c-drawer--left,
+.c-drawer--right {
+    bottom: 0;
+    display: block !important;
+    height: 100%;
+    top: 0;
+
+    > .c-drawer__content {
+        height: 100%;
+        top: 0;
+        width: 320px;
+        max-width: 80%;
+    }
+
+    &.show > .c-drawer__content {
+        transform: translateX(0);
+    }
+}
+
+.c-drawer--left  {
+    left: 0;
+
+    > .c-drawer__content {
+        left: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.c-drawer--right {
+    right: 0;
+
+    > .c-drawer__content {
+        right: 0;
+        transform: translateX(100%);
+    }
+}
+
+
+.c-drawer--bottom,
+.c-drawer--top {
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    > .c-drawer__content {
+        left: 0;
+        width: 100%;
+    }
+}
+
+.c-drawer--bottom  {
+    bottom: 0;
+
+    > .c-drawer__content {
+        bottom: -100%;
+        transform: translateY(100%);
+    }
+
+    &.show > .c-drawer__content {
+        bottom: 0;
+        transform: translateY(0);
+    }
+}
+
+.c-drawer--top  {
+    top: 0;
+
+    > .c-drawer__content {
+        top: -100%;
+        transform: translateY(-100%);
+    }
+
+    &.show > .c-drawer__content {
+        top: 0;
+        transform: translateY(0);
+    }
+}

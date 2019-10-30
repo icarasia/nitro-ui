@@ -1,0 +1,119 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Avatar
+//
+//  Component styling for avatars.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$use-component-avatar           : true !default;
+
+$avatar-bg-color                : $haze-300 !default;
+$avatar-radius                  : 100% !default;
+$avatar-size                    : 40px;
+$avatar-sizes                   : 24px, 40px, 64px, 128px !default;
+
+
+
+
+//  3. Mixin
+//  ----------------------------------------------------------------------------
+
+@mixin avatar-sizes($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    @each $size in $avatar-sizes {
+        .c-avatar--#{$size}#{$breakpoint-separator}#{$breakpoint} {
+            height: $size;
+            width: $size;
+            flex: 0 0 $size;
+
+            &::before {
+                font-size: $size/2;
+            }
+        }
+    }
+}
+
+
+@if $use-component-avatar {
+    .c-avatar {
+        background-color: $avatar-bg-color;
+        border-radius: $avatar-radius;
+        display: block;
+        height: $avatar-size;
+        position: relative;
+        text-align: center;
+        width: $avatar-size;
+
+
+        &::before {
+            display: block;
+            font-weight: $font-weight-medium;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+
+        &:not(.icon)::before {
+            content: attr(data-initial);
+        }
+
+        > img {
+            border-radius: $avatar-radius;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            z-index: 2;
+        }
+    }
+
+
+    //  4. Modifier - Square
+    //  ----------------------------------------------------------------------------
+
+    .c-avatar--square,
+    .c-avatar--square > img {
+        border-radius: $base-radius;
+    }
+
+
+    //  5. Modifier - Size
+    //  ----------------------------------------------------------------------------
+
+    @include avatar-sizes();
+
+    @if $responsive {
+        @include media-query('mobile') {
+            @include avatar-sizes('mobile');
+        }
+    }
+}

@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/container.css': [
-                        'src/container.scss'
+                    'dist/object-container.css': [
+                        'src/object-container.scss'
                     ]
                 }
             },
@@ -27,8 +27,8 @@ module.exports = function( grunt ) {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/container.min.css': [
-                        'src/container.scss'
+                    'dist/object-container.min.css': [
+                        'src/object-container.scss'
                     ]
                 }
             }

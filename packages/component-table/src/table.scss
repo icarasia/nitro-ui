@@ -1,0 +1,121 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Card
+//
+//  Component styling for cards
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$table-spacing-x                : $spacing-md !default;
+$table-spacing-y                : $spacing-sm !default;
+$table-border-color             : $haze-300 !default;
+$table-stripe                   : $haze-100 !default;
+
+$table-sm-spacing-x             : $spacing-xs !default;
+$table-sm-spacing-y             : $spacing-xxs !default;
+
+$table-thead-bg-light           : $haze-300;
+$table-thead-bg-dark            : $dark-100;
+
+$table-head-border-size         : 2px !default;
+$table-head-border-color        : $haze-400 !default;
+$table-head-font-color          : $font-dark-color !default;
+$table-head-spacing-x           : $table-spacing-x !default;
+$table-head-spacing-y           : $table-spacing-y !default;
+
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.c-table {
+    background-color: transparent;
+    border-collapse: collapse;
+    width: 100%;
+
+    th,
+    td {
+        border-top: 1px solid $table-border-color;
+        padding: $table-spacing-y $table-spacing-x;
+        vertical-align: top;
+    }
+
+    > thead {
+        > tr {
+            > th,
+            > td {
+                border-bottom: $table-head-border-size solid $table-head-border-color;
+                color: $table-head-font-color;
+                font-weight: $font-weight-bold;
+                font-size: $font-7-size;
+                line-height: $font-7-height;
+                padding: $table-head-spacing-y $table-head-spacing-x;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &:not(.c-table--bordered) {
+        > thead:first-child {
+            > tr {
+                > th,
+                > td {
+                    border-top: 0;
+                }
+            }
+        }
+    }
+}
+
+
+//  4. Modifier : Bordered
+//  ----------------------------------------------------------------------------
+
+.c-table--bordered {
+    th,
+    td {
+        border: 1px solid $table-border-color;
+    }
+}
+
+
+//  4. Modifier : Cell Spacing
+//  ----------------------------------------------------------------------------
+
+.c-table--sm {
+    > thead,
+    > tbody {
+        th,
+        td {
+            padding: $table-sm-spacing-y $table-sm-spacing-x !important;
+        }
+    }
+}
+
+
+//  4. Modifier : Cell Spacing
+//  ----------------------------------------------------------------------------
+
+.c-table--striped tbody tr:nth-of-type(odd) {
+    background-color: $table-stripe;
+}

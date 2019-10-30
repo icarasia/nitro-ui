@@ -2,19 +2,38 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Container - Nitro UI</title>
+        <title>Object Container - Nitro UI</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../dist/object-container.min.css">
     </head>
-    <body>
-        <div class="container py-5">
-
-            <div class="display-4 text-uppercase">
-                Nitro UI
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h2 class="font-weight-bold mb-3">Container</h2>
+                <div class="container  py-5  text-muted  mb-2">Container is the basic layout element.</div>
             </div>
-            <h1>Container <span class="small text-danger">@nitro-ui/css-object-container</span></h1>
-            <p class="text-muted">Container component for Nitro UI.</p>
-
-        </div>
+        </header>
+        <article>
+                <div class="container  py-5  text-muted  mb-2">Medium Container</div>
+                <div class="o-container  o-container--medium" style="background: #ffffff; padding-top: 12px; padding-bottom:12px; margin-bottom: 24px;">
+                    This is medium container (max-width = 800px)
+                </div>
+                <hr class="mt-4  mb-5">
+                <div class="container  py-5  text-muted  mb-2">Default Container</div>
+                <div class="o-container" style="background: #ffffff; padding-top: 12px; padding-bottom:12px; margin-bottom: 24px;">
+                    This is default container (max-width = 1080px)
+                </div>
+                <hr class="mt-4  mb-5">
+                <div class="container  py-5  text-muted  mb-2">Wide Container</div>
+                <div class="o-container  o-container--wide" style="background: #ffffff; padding-top: 12px; padding-bottom:12px; margin-bottom: 24px;">
+                    This is wide container (max-width = 1240px)
+                </div>
+                <hr class="mt-4  mb-5">
+                <div class="container  py-5  text-muted  mb-2">Fluid Container</div>
+                <div class="o-container  o-container--fluid" style="background: #ffffff; padding-top: 12px; padding-bottom:12px;">
+                    This is fluid container (max-width = 100%)
+                </div>
+        </article>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
