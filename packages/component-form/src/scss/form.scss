@@ -1,0 +1,408 @@
+//  ----------------------------------------------------------------------------
+//
+//  @FORM
+//
+//  Component styling for form elements
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  DEPENDENCIES
+//      2.  VARIABLES
+//      3.  MIXINS
+//      4.  GENERAL
+//      5.  ELEMENT - TEXTAREA
+//      6.  ELEMENT - SELECT
+//      7.  ELEMENT - CHECBOX / RADIO / SWITCH
+//      8.  FIELD
+//      9.  STATE - DISABLED
+//      10. STATE - FOCUS
+//      11. STATE - ERROR
+//      12. SIZE - SMALL
+//      13. SIZE - LARGE
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. DEPENDENCIES
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/animations';
+@import '@nitro-ui/core/src/mixins';
+
+
+
+//  2. VARIABLES
+//  ----------------------------------------------------------------------------
+
+@import 'variables';
+
+
+
+
+//  3. MIXINS
+//  ----------------------------------------------------------------------------
+
+@mixin input-disabled {
+    background-color: $input-disabled-background !important;
+    border-color: $input-disabled-border !important;
+    box-shadow: none !important;
+    color: $font-muted-color !important;
+    cursor: default;
+}
+
+@mixin input-focus {
+    border-color: $input-focus-border-color;
+    box-shadow: 0 0 0 2px rgba($input-focus-border-color,.2);
+    outline: none !important;
+}
+
+@mixin input-error {
+    border-color: $input-error-border-color;
+    box-shadow: 0 0 0 2px rgba($input-error-border-color,.2);
+}
+
+
+
+
+//  4. GENERAL
+//  ----------------------------------------------------------------------------
+
+.c-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $input-background;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-radius;
+    color: $input-font-color;
+    font-family: $input-font-family;
+    font-size: $input-font-size;
+    height: $input-height;
+    line-height: $input-font-height;
+    padding: $input-padding-vertical $input-padding-horizontal;
+    transition: border-color ease-in-out $input-transition-time;
+    vertical-align: top;
+    width: 100%;
+
+    // Placeholder
+    &::-webkit-input-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
+    }
+    &::-moz-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
+    }
+    &:-ms-input-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
+    }
+    &:-moz-placeholder {
+        color: $input-placholder-font-color;
+        font-weight: 400;
+    }
+
+    // Hover
+    &:hover {
+        border-color: $input-hover-border-color;
+    }
+}
+
+
+
+
+//  5. ELEMENT - TEXTAREA
+//  ----------------------------------------------------------------------------
+
+textarea.c-input {
+    height: auto;
+    resize: vertical;
+
+    &[rows="1"] {
+        height: $input-height;
+    }
+}
+
+
+
+
+//  6. ELEMENT - SELECT
+//  ----------------------------------------------------------------------------
+
+select.c-input {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAyMCAxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5TaGFwZTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9Imljb25zOC1leHBhbmRfYXJyb3ciIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iIzhBOUJBRCI+ICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBwb2ludHM9IjEuNzE4NzUgMC43ODEyNSAwLjI4MTI1IDIuMjE4NzUgOS4yODEyNSAxMS4yMTg3NSAxMCAxMS45MDYyNSAxMC43MTg3NSAxMS4yMTg3NSAxOS43MTg3NSAyLjIxODc1IDE4LjI4MTI1IDAuNzgxMjUgMTAgOS4wNjI1Ij48L3BvbHlnb24+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=');
+    background-position: right 12px top 50%;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    padding-right: 32px;
+}
+
+
+
+
+//  7. ELEMENT - CHECBOX / RADIO / SWITCH
+//  ----------------------------------------------------------------------------
+
+.c-check,
+.c-switch {
+    display: block;
+    margin: ($input-height - $input-font-height)/2 0;
+    position: relative;
+    min-height: $font-base-height;
+
+    > label {
+        display: block;
+        margin: 0;
+        padding-left: $input-check-size + $spacing-sm;
+        position: relative;
+        user-select: none;
+        z-index: 2;
+        color: $font-base-color;
+        top: 0;
+        left: 0;
+    }
+
+    input {
+        -webkit-appearance: none;
+        border: 1px solid $input-border-color;
+        display: inline-block;
+        height: $input-check-size;
+        left: 0;
+        outline: none !important;
+        position: absolute;
+        vertical-align: top;
+        z-index: 1;
+        top: 2px;
+    }
+}
+
+.c-check {
+    input {
+        background-color: $white;
+        border-radius: $input-radius;
+        color: transparent;
+        text-align: center;
+        width: $input-check-size;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    > label{
+        color: $font-base-color;
+    }
+
+    &:hover > input {
+        border-color: $input-hover-border-color;
+    }
+
+    // Checkbox
+    input[type="checkbox"] {
+        &::before {
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            content: '';
+            width: 6px;
+            height: 11px;
+            margin: auto;
+            transform: rotate(40deg);
+        }
+
+        &:checked {
+            background: $input-focus-border-color;
+            border-color: $input-focus-border-color;
+
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+    // Radio
+    input[type="radio"] {
+        border-radius: 100%;
+
+        &:checked {
+            border-width: 5px;
+            border-color: $input-focus-border-color;
+        }
+    }
+}
+
+.c-check--static {
+    margin: 0;
+    min-height: 0;
+    line-height: 1;
+
+    > input {
+        position: static;
+    }
+}
+
+.c-check-inline {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .c-check {
+        float: left;
+        margin-right: $spacing-xl;
+    }
+}
+
+
+.c-switch {
+    > label {
+        padding-left: $input-switch-width + $spacing-md;
+    }
+
+    > input[type="checkbox"]{
+        background-color: $haze-300;
+        border-radius: 100px;
+        width: $input-switch-width;
+        top: 0;
+
+        &:before {
+            background-color: $white;
+            border-radius: 100px;
+            content: '';
+            display: block;
+            height: $input-switch-circle-size;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: $input-switch-circle-size;
+            transition: left ease $input-transition-time;
+        }
+
+        &:checked {
+            background: $input-focus-border-color;
+            border-color: $input-focus-border-color;
+
+            &:before {
+                left: ($input-switch-width - 2) - $input-switch-circle-size;
+            }
+        }
+
+        &:disabled {
+            background-color: $haze-200;
+            border-color: transparent;
+        }
+    }
+}
+
+.c-switch--right {
+    > label {
+        padding-left: 0;
+        padding-right: $input-switch-width + $spacing-md;
+    }
+
+    > input {
+        left: auto;
+        right: 0;
+    }
+}
+
+
+
+
+//  8. FIELD
+//  ----------------------------------------------------------------------------
+//  Grouped form elements with label and message
+
+.c-field {
+    margin-bottom: $spacing-lg;
+
+    > label{
+        font-size: $font-7-size;
+        line-height: $font-7-height;
+    }
+}
+
+.c-field__message {
+    color: $font-muted-color;
+    font-size: $font-7-size;
+    margin-top: $spacing-xxs;
+}
+
+
+
+//  9. STATE - DISABLED
+//  ----------------------------------------------------------------------------
+
+.c-input.is--disabled,
+.c-input:disabled,
+.c-input[readonly],
+.c-check > input:disabled,
+.c-check > input:disabled:checked {
+    @include input-disabled;
+}
+
+.c-check > input:disabled:checked::before {
+    border-color: $input-disabled-border;
+}
+
+.c-input[readonly],
+.c-check > input:disabled ~ label {
+    cursor: default;
+}
+
+
+
+
+//  10. STATE - FOCUS
+//  ----------------------------------------------------------------------------
+
+.c-input.is--focus,
+.c-input:not(disabled):focus,
+.c-input:not(readonly):focus,
+.c-check  input[type="checkbox"]:focus,
+.c-check  input[type="radio"]:focus,
+.c-switch input[type="checkbox"]:focus {
+    @include input-focus;
+}
+
+
+
+
+//  11. STATE - ERROR
+//  ----------------------------------------------------------------------------
+
+.c-input.is--error,
+.c-field--error .c-input {
+    @include input-error;
+}
+
+.c-input.is--error ~ .c-field__message,
+.c-field--error .c-field__message {
+    color: $input-error-font-color;
+}
+
+
+
+
+//  12. SIZE - SMALL
+//  ----------------------------------------------------------------------------
+
+// .c-input--sm {
+//     height: $input-sm-height;
+//     padding: $input-sm-padding-vertical $input-sm-padding-horizontal;
+// }
+
+
+
+
+//  13. SIZE - LARGE
+//  ----------------------------------------------------------------------------
+
+// .c-input--lg {
+//     font-size: $input-lg-font-size + 4;
+//     line-height: $input-lg-font-height;
+//     height: $input-lg-height;
+//     padding: $input-lg-padding-vertical $input-lg-padding-horizontal;
+// }
