@@ -1,19 +1,19 @@
-# Nitro UI: Button
+# Nitro UI: Form
 
-Button component for Nitro UI.
+Form component for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/form](https://www.npmjs.com/package/@nitro-ui/form):
+Get latest version by installing via [NPM @nitro-ui/component-form](https://www.npmjs.com/package/@nitro-ui/component-form):
 
 ```sh
-npm install @nitro-ui/form
+npm install @nitro-ui/component-form
 ```
 
 Include this stylesheet code into your site:
 
 ```html
-<link rel="stylesheet" href="dist/button.min.css" />
+<link rel="stylesheet" href="dist/form.min.css" />
 ```
 
 ## Usage:

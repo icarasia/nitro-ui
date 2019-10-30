@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-popover",
-    "version": "0.0.0",
+    "version": "1.0.0-alpha.2",
     "description": "Popover styling for Nitro UI.",
     "main": "dist/popover.min.css",
     "publishConfig": {

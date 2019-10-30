@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-carousel",
-    "version": "0.0.0",
+    "version": "1.0.0-alpha.2",
     "description": "Carousel styling for Nitro UI.",
     "main": "dist/css/carousel.min.css",
     "publishConfig": {

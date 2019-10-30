@@ -1,12 +1,13 @@
 {
     "name": "@nitro-ui/component-tab",
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0-alpha.5",
     "description": "Tab component for Nitro UI.",
-    "main": "dist/tab.min.css",
+    "main": "dist/css/tab.min.css",
     "publishConfig": {
         "access": "public"
     },
     "scripts": {
+        "build": "grunt",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -23,7 +24,8 @@
     ],
     "author": "Hafizuddin Othman <zick.mho@gmail.com>",
     "contributors": [
-        "Hafizuddin Othman <zick.mho@gmail.com>"
+        "Hafizuddin Othman <zick.mho@gmail.com>",
+        "Syaiful Shah Zinan <i.works@live.com>"
     ],
     "license": "ISC",
     "bugs": {
@@ -31,11 +33,13 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
+        "@nitro-ui/core": "^1.0.0-alpha.2"
+    },
+    "devDependencies": {
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/component-button": "^1.0.0-alpha.1",
-        "@nitro-ui/core": "^1.0.0-alpha.2",
+        "@nitro-ui/component-button": "^1.0.0-alpha.5",
         "babelify": "^10.0.0",
         "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",
