@@ -31,6 +31,8 @@
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
+        "@nitro-ui/component-arrow": "^1.0.0-alpha.2",
+        "@nitro-ui/component-card": "^1.0.0-alpha.3",
         "@nitro-ui/core": "^1.0.0-alpha.2",
         "babelify": "^10.0.0",
         "bootstrap": "^4.3.1",
