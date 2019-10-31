@@ -37,6 +37,7 @@
         "@nitro-ui/core": "^1.0.0-alpha.3"
     },
     "devDependencies": {
+        "@nitro-ui/component-button": "^1.0.0-alpha.5",
         "node-sass": "^4.12.0"
     }
 }

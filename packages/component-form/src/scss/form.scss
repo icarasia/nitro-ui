@@ -15,12 +15,13 @@
 //      5.  ELEMENT - TEXTAREA
 //      6.  ELEMENT - SELECT
 //      7.  ELEMENT - CHECBOX / RADIO / SWITCH
-//      8.  FIELD
-//      9.  STATE - DISABLED
-//      10. STATE - FOCUS
-//      11. STATE - ERROR
-//      12. SIZE - SMALL
-//      13. SIZE - LARGE
+//      8.  ELEMENT - INPUT WITH BUTTON
+//      9.  FIELD
+//      10.  STATE - DISABLED
+//      11. STATE - FOCUS
+//      12. STATE - ERROR
+//      13. SIZE - SMALL
+//      14. SIZE - LARGE
 //
 //  ----------------------------------------------------------------------------
 
@@ -31,6 +32,7 @@
 @import '@nitro-ui/core/src/variables';
 @import '@nitro-ui/core/src/animations';
 @import '@nitro-ui/core/src/mixins';
+@import '@nitro-ui/component-button/src/scss/variables';
 
 
 
@@ -308,10 +310,59 @@ select.c-input {
     }
 }
 
+//  8. ELEMENT - INPUT WITH BUTTON
+//  ----------------------------------------------------------------------------
+
+.c-input-btn {
+    padding: 3px 0;
+    border: 1px solid $input-border-color;
+    border-radius: 3px;
+    display: flex;
+    transition: border-color ease-in-out $input-transition-time;
+    white-space: nowrap;
+
+    &:focus,
+    &:hover{
+       border-color: $input-focus-border-color;
+    }
+
+    .c-input {
+       background-color: transparent !important;
+       border: transparent !important;
+       box-shadow: none !important;
+       flex: 1 1 auto;
+       height: $input-sm-height;
+       padding: $input-sm-padding-vertical $input-sm-padding-horizontal;
+       white-space: normal;
+       // width: auto; //to fix IE
+    }
+
+    .c-btn {
+       display: block !important; // Ikram: override (display:inline-flex) from origin
+       font-size: $button-sm-font-size;
+       padding: ($button-sm-padding-vertical) ($button-sm-padding-horizontal);
+       margin: 0 3px;
+    }
 
 
+    &.is--disabled {
+       background-color: $input-disabled-background !important;
+       border-color: $input-disabled-border !important;
+       cursor: default;
+       pointer-events: none;
 
-//  8. FIELD
+       .c-input {
+           color: $font-muted-color !important;
+       }
+
+       .c-btn {
+           opacity: $button-secondary-disable-opacity;
+       }
+    }
+}
+
+
+//  9. FIELD
 //  ----------------------------------------------------------------------------
 //  Grouped form elements with label and message
 
@@ -332,7 +383,7 @@ select.c-input {
 
 
 
-//  9. STATE - DISABLED
+//  10. STATE - DISABLED
 //  ----------------------------------------------------------------------------
 
 .c-input.is--disabled,
@@ -355,7 +406,7 @@ select.c-input {
 
 
 
-//  10. STATE - FOCUS
+//  11. STATE - FOCUS
 //  ----------------------------------------------------------------------------
 
 .c-input.is--focus,
@@ -370,7 +421,7 @@ select.c-input {
 
 
 
-//  11. STATE - ERROR
+//  12. STATE - ERROR
 //  ----------------------------------------------------------------------------
 
 .c-input.is--error,
@@ -386,23 +437,23 @@ select.c-input {
 
 
 
-//  12. SIZE - SMALL
+//  13. SIZE - SMALL
 //  ----------------------------------------------------------------------------
 
-// .c-input--sm {
-//     height: $input-sm-height;
-//     padding: $input-sm-padding-vertical $input-sm-padding-horizontal;
-// }
+.c-input--sm {
+    height: $input-sm-height;
+    padding: $input-sm-padding-vertical $input-sm-padding-horizontal;
+}
 
 
 
 
-//  13. SIZE - LARGE
+//  14. SIZE - LARGE
 //  ----------------------------------------------------------------------------
 
-// .c-input--lg {
-//     font-size: $input-lg-font-size + 4;
-//     line-height: $input-lg-font-height;
-//     height: $input-lg-height;
-//     padding: $input-lg-padding-vertical $input-lg-padding-horizontal;
-// }
+.c-input--lg {
+    font-size: $input-lg-font-size + 4;
+    line-height: $input-lg-font-height;
+    height: $input-lg-height;
+    padding: $input-lg-padding-vertical $input-lg-padding-horizontal;
+}
