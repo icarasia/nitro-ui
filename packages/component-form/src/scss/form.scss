@@ -317,6 +317,7 @@ select.c-input {
     padding: 3px 0;
     border: 1px solid $input-border-color;
     border-radius: 3px;
+    background: $white;
     display: flex;
     transition: border-color ease-in-out $input-transition-time;
     white-space: nowrap;
