@@ -3,16 +3,13 @@ set -e
 
 NITRO_VERSION=$(node -p "require('./package.json').version")
 PACKAGE_NAME=$(node -p "require('./package.json').name")
-FILE_NAME="toolbar"
+FILE_NAME="container"
 
 echo "Building ${PACKAGE_NAME} ${NITRO_VERSION}"
 echo ''
 
-echo 'Cleanup (remove dist and build-temp dir)...'
+# Cleanup
 rm -rf dist
-rm -rf build-temp
-echo 'Done.'
-echo ''
 
 echo 'Compile SASS...'
 node-sass --include-path=node_modules \

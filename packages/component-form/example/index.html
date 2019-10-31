@@ -5,6 +5,7 @@
         <title>Nitro UI / Form</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="../dist/css/form.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/component-button/dist/css/button.min.css">
         <style>
             .container .col-md-8 {
                 font-family: Roboto;
@@ -332,6 +333,52 @@
                             </div>
                             <div class="c-field__message">Checkbox field error message</div>
                         </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Input with Button -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Input with Button</div>
+                    </div>
+
+                    <div class="c-field">
+                        <label>Label</label>
+                        <div class="c-input-btn">
+                            <input type="text" class="c-input"/>
+                            <button class="c-btn  c-btn--secondary">Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Input with small size -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Input with sm size</div>
+                    </div>
+
+                    <div class="c-field">
+                        <label>Default</label>
+                        <input type="text" class="c-input  c-input--sm" placeholder="Placeholder">
+                    </div>
+                </div>
+
+
+                <hr class="mt-4  mb-5">
+
+                <!-- Input with large size -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-muted">Input with lg size</div>
+                    </div>
+
+                    <div class="c-field">
+                        <label>Default</label>
+                        <input type="text" class="c-input  c-input--lg" placeholder="Placeholder">
                     </div>
                 </div>
             </div>

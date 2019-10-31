@@ -6,12 +6,12 @@
  * @author SweeLing <slee7199@gmail.com>
  */
 
-import $ from 'jquery';
+// import $ from 'jquery';
 // import Util  from "bootstrap/js/src/util";
 // import Popper from 'popper.js'
-import Util from "bootstrap/js/src/util.js";
-import Modal from "bootstrap/js/src/modal.js";
-import Collapse from "bootstrap/js/src/collapse.js";
+// import Util from "bootstrap/js/src/util.js";
+// import Modal from "bootstrap/js/src/modal.js";
+// import Collapse from "bootstrap/js/src/collapse.js";
 
 //***********************Sidebar JS start here *****************************//
 
