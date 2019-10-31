@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-avatar",
-    "version": "1.0.0-alpha.10",
+    "version": "1.0.0-alpha.11",
     "description": "Avatar styling for Nitro UI.",
     "main": "dist/css/avatar.min.css",
     "style": "dist/css/avatar.min.cs",

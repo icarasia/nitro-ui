@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-pagination",
-    "version": "1.0.0-alpha.5",
+    "version": "1.0.0-alpha.6",
     "description": "Pagination styling for Nitro UI.",
     "main": "dist/css/pagination.min.css",
     "style": "dist/css/pagination.min.css",
@@ -31,7 +31,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/component-button": "^1.0.0-alpha.5",
+        "@nitro-ui/component-button": "^1.0.0-alpha.6",
         "@nitro-ui/core": "^1.0.0-alpha.3"
     },
     "devDependencies": {

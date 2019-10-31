@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-form",
-    "version": "1.0.0-alpha.6",
+    "version": "1.0.0-alpha.7",
     "description": "Form component for Nitro UI.",
     "main": "dist/css/form.min.css",
     "style": "dist/css/form.min.css",
@@ -37,7 +37,7 @@
         "@nitro-ui/core": "^1.0.0-alpha.3"
     },
     "devDependencies": {
-        "@nitro-ui/component-button": "^1.0.0-alpha.5",
+        "@nitro-ui/component-button": "^1.0.0-alpha.6",
         "node-sass": "^4.12.0"
     }
 }
