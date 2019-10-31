@@ -1,0 +1,121 @@
+//  ----------------------------------------------------------------------------
+//
+//  @COMPONENT - Form Float
+//
+//  Component Form Float
+//*
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//
+//  ----------------------------------------------------------------------------
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/component-form/src/scss/variables';
+
+
+//  ----------------------------------------------------------------------------
+//  2. VARIABLES
+//  ----------------------------------------------------------------------------
+
+$input-height-float             : 52px !default;
+
+//  ----------------------------------------------------------------------------
+//  3. CORE
+//  ----------------------------------------------------------------------------
+
+.c-field-float {
+    margin-bottom: $spacing-md;
+    position: relative;
+
+    label {
+        color: $input-placholder-font-color;
+        font-size: $font-base-size;
+        left: $spacing-sm;
+        line-height: $font-base-height;
+        margin-bottom: 0;
+        pointer-events: none;
+        position: absolute;
+        transition: all .2s ease;
+        top: 16px;
+        width: calc(100% - 24px);
+
+        .c-field__hint {
+            color: $input-placholder-font-color;
+        }
+    }
+
+    //remove default dropdown for IE
+    select::-ms-expand {
+        display: none;
+    }
+
+    .c-input {
+        min-height: $input-height-float;
+        padding: $spacing-lg $spacing-sm $spacing-xxs;
+    }
+
+    &.is--active,
+    .c-input-btn.is--active {
+        label {
+            color: $font-muted-color;
+            font-size: $font-7-size;
+            line-height: $font-7-height;
+            top: 6px;
+
+            .c-field__hint {
+                color: $input-placholder-font-color;
+            }
+        }
+
+        .c-input:focus {
+            + label {
+                color: $input-focus-border-color;
+
+                .c-field__hint {
+                    color: $font-muted-color;
+                }
+            }
+        }
+    }
+
+
+    .c-input-btn {
+        &.is--focus{
+            border-color: $blue-400;
+        }
+
+        .c-input {
+            min-height: $input-height-float - 2px;
+        }
+
+        .c-btn {
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        label {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    &.is--active .is--focus{
+        label{
+            color: $font-link-color;
+        }
+    }
+
+    &.c-field--error {
+        label {
+            color: $input-error-font-color;
+        }
+    }
+}
