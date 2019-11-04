@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Component Form Float</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../component-form/dist/css/form.min.css">
+        <link rel="stylesheet" href="../../component-button/dist/css/button.min.css">
+        <link rel="stylesheet" href="../dist/css/form-float.min.css">
+        <style>
+            article {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white  border-bottom">
+            <div class="pt-5  px-5">
+                <style>
+                    .logo-nitro{color:#242e39;font-family:Arial;font-size:20px;line-height:1.2;margin-bottom:100px;position:relative;text-transform:uppercase}.logo-nitro::before{border:2px solid #8105FE;content:'';display:block;height:2em;margin:-1em;position:absolute;top:50%;width:2em;-ms-transform:skewX(25deg);-webkit-transform:skewX(25deg);transform:skewX(25deg)}.logo-nitro>b{display:inline-block;background-color:#fff;position:relative;vertical-align:top}.logo-nitro>b b{font-weight:700;display:block;background:linear-gradient(to bottom,#06080a 0,#687d94 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+                </style>
+                <div class="logo-nitro"><b><b>NITRO UI</b></b></div>
+            </div>
+            <div class="container py-5">
+                <h1 class="font-weight-bold  mb-3">Form Float</h1>
+                <div class="text-muted">
+                    <p>
+                        Toggle contextual overlays for displaying lists of links and more
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="container  py-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-muted  mb-3">Input</div>
+                        <div class="c-field-float">
+                            <input type="text" class="c-input"/>
+                            <label>Label</label>
+                            <div class="c-field__message">
+                                Message here
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-muted  mb-3">Disabled Stated</div>
+                        <div class="c-field-float">
+                            <input type="text" class="c-input" disabled/>
+                            <label>Label</label>
+                            <div class="c-field__message">
+                                Message here
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-muted  mb-3">Error State</div>
+                        <div class="c-field-float  c-field--error">
+                            <input type="text" class="c-input"/>
+                            <label>Label</label>
+                            <div class="c-field__message">
+                                Error message here
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-muted  mb-3">Select</div>
+                        <div class="c-field-float">
+                            <select class="c-input">
+                                <option></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <label>Select</label>
+                            <div class="c-field__message">
+                                Message here
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row  mt-5">
+                    <div class="col">
+                        <div class="text-muted  mb-3">Input button</div>
+
+                        <div class="c-field-float">
+                            <div class="c-input-btn">
+                                <div>
+                                    <input type="text" class="c-input"/>
+                                    <label>Label</label>
+                                </div>
+                                <button class="c-btn  c-btn--secondary">Button</button>
+                            </div>
+                            <div class="c-field__message">
+                                Message here
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="text-muted  mb-3">Input button - Error state</div>
+                        <div class="c-field-float  c-field--error">
+                            <div class="c-input-btn">
+                                <div>
+                                    <input type="text" class="c-input"/>
+                                    <label>Label</label>
+                                </div>
+                                <button class="c-btn  c-btn--secondary">Button</button>
+                            </div>
+                            <div class="c-field__message">
+                                Message here
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="text-muted  mb-3">Input button - Disabled state</div>
+                        <div class="c-field-float">
+                            <div class="c-input-btn  is--disabled">
+                                <div>
+                                    <input type="text" class="c-input"/>
+                                    <label>Label</label>
+                                </div>
+                                <button class="c-btn  c-btn--secondary">Button</button>
+                            </div>
+                            <div class="c-field__message">
+                                Message here
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </article>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../src/js/form-float.js"></script>
+    </body>
+</html>
