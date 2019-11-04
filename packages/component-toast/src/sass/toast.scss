@@ -19,19 +19,21 @@
 //  1. DEPENDENCIES
 //  ----------------------------------------------------------------------------
 
+@import '@nitro-ui/core/src/mixins';
 @import '@nitro-ui/core/src/variables';
 
 
 //  2. VARIABLES
 //  ----------------------------------------------------------------------------
 
-$toast-width            : 400px !default;
+$toast-width            : 350px !default;
 $toast-border-radius    : 4px !default;
 $toast-info-theme       : $blue-500 !default;
 $toast-tips-theme       : $purple-500 !default;
 $toast-success-theme    : $green-500 !default;
 $toast-error-theme      : $red-500 !default;
 $toast-warning-theme    : $orange-500 !default;
+$toast-z-index          : 8050 !default;
 
 
 //  3. MIXINS
@@ -92,7 +94,7 @@ $toast-warning-theme    : $orange-500 !default;
     display: flex;
     width: $toast-width;
     overflow: hidden;
-    //z-index: $z-index-toast;
+    z-index: $toast-z-index;
     opacity: 0;
     //@include shadow-4dp();
 
@@ -183,19 +185,19 @@ $toast-warning-theme    : $orange-500 !default;
 }
 
 
-// @include media-query(mobile) {
-//     .c-toast {
-//         max-width: 100% !important;
-//         width: 100% !important;
-//     }
-//
-//     .c-toast-stage {
-//         position: fixed;
-//         top: 8px;
-//         right: 8px !important;
-//         left: 8px !important;
-//     }
-// }
+@include media-query(mobile) {
+    .c-toast {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .c-toast-stage {
+        position: fixed;
+        top: 8px;
+        right: 8px !important;
+        left: 8px !important;
+    }
+}
 
 @include notification-setup('info', $toast-info-theme);
 @include notification-setup('tips', $toast-tips-theme);
