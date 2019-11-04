@@ -1,8 +1,10 @@
 {
-    "name": "@nitro-ui/component-modal",
+    "name": "@nitro-ui/component-form-float",
     "version": "1.0.0-alpha.4",
-    "description": "Modal styling for Nitro UI.",
-    "main": "dist/css/modal.min.css",
+    "description": "Form float styling for Nitro UI.",
+    "main": "dist/css/form-float.min.css",
+    "style": "dist/css/form-float.min.css",
+    "sass": "src/scss/form-float.scss",
     "publishConfig": {
         "access": "public"
     },
@@ -15,14 +17,14 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
-        "Modal",
+        "Form Float",
         "Nitro",
         "UI",
         "CSS",
         "Components",
         "iCarAsia"
     ],
-    "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "author": "SweeLing Lee<slee7199@gmail.com>",
     "contributors": [
         "Syaiful Shah Zinan <i.works@live.com>"
     ],
@@ -33,16 +35,15 @@
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/core": "^1.0.0-alpha.2",
-        "bootstrap": "^4.3.1",
-        "jquery": "^3.4.1",
-        "popper.js": "1.15.0"
+        "jquery": "^3.4.1"
     },
     "devDependencies": {
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
-        "@babel/preset-env": "^7.6.3",
         "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+        "@babel/preset-env": "^7.6.3",
         "@nitro-ui/component-button": "^1.0.0-alpha.6",
+        "@nitro-ui/component-form": "^1.0.0-alpha.7",
         "babelify": "^10.0.0",
         "browserify": "^16.5.0",
         "node-sass": "^4.12.0",
