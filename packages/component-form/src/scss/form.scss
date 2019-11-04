@@ -426,7 +426,8 @@ select.c-input {
 //  ----------------------------------------------------------------------------
 
 .c-input.is--error,
-.c-field--error .c-input {
+.c-field--error .c-input,
+.c-field--error .c-input-btn {
     @include input-error;
 }
 
