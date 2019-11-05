@@ -22,7 +22,7 @@ echo ''
 echo 'Compile SASS (Compress version)...'
 node-sass --include-path=node_modules \
           --output-style=compressed \
-          --source-map=dist/$FILE_NAME.css.min.map \
+          --source-map=dist/css/$FILE_NAME.css.min.map \
           src/scss/$FILE_NAME.scss \
           dist/css/$FILE_NAME.min.css
 echo 'Done.'
