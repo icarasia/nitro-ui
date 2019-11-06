@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-form-float",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Form float styling for Nitro UI.",
     "main": "dist/css/form-float.min.css",
     "style": "dist/css/form-float.min.css",
