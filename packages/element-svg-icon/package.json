@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/element-svg-icon",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "SVG icon styling for Nitro UI.",
     "main": "dist/css/svg-icon.min.css",
     "style": "dist/css/svg-icon.min.css",
