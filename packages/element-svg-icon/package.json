@@ -1,0 +1,41 @@
+{
+    "name": "@nitro-ui/element-svg-icon",
+    "version": "1.0.0",
+    "description": "SVG icon styling for Nitro UI.",
+    "main": "dist/css/svg-icon.min.css",
+    "style": "dist/css/svg-icon.min.css",
+    "sass": "src/scss/svg-icon.scss",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "bash scripts/build.sh",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/icarasia-engineering/nitro-ui"
+    },
+    "keywords": [
+        "SVG Icon",
+        "Nitro",
+        "UI",
+        "CSS",
+        "Components",
+        "iCarAsia"
+    ],
+    "author": "SweeLing Lee <slee7199@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+    },
+    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "dependencies": {
+        "@nitro-ui/core": "^1.0.0-alpha.2",
+        "@nitro-ui/svg-icons": "^1.0.0-alpha.0",
+    },
+    "devDependencies": {
+        "node-sass": "^4.12.0"
+    },
+    "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"
+}
