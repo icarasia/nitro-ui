@@ -1,13 +1,13 @@
-# Nitro UI: Component > Popover
+# Nitro UI: Component > SVG Icon
 
-Popover styling for Nitro UI.
+SVG Icon styling for Nitro UI.
 
 ## Getting Started
 
-Get latest version by installing via [NPM @nitro-ui/component-popover](https://www.npmjs.com/package/@nitro-ui/component-popover):
+Get latest version by installing via [NPM @nitro-ui/component-popover](https://www.npmjs.com/package/@nitro-ui/element-svg-icon):
 
 ```sh
-npm install @nitro-ui/component-popover
+npm install @nitro-ui/element-svg-icon
 ```
 
 

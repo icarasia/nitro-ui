@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-loader",
-    "version": "1.0.0-alpha.6",
+    "version": "1.0.0",
     "description": "Utility loader component for Nitro UI.",
     "main": "dist/utility-loader.min.css",
     "style": "dist/utility-loader.min.css",

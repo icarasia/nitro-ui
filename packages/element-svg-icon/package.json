@@ -1,10 +1,10 @@
 {
-    "name": "@nitro-ui/component-pagination",
+    "name": "@nitro-ui/element-svg-icon",
     "version": "1.0.0",
-    "description": "Pagination styling for Nitro UI.",
-    "main": "dist/css/pagination.min.css",
-    "style": "dist/css/pagination.min.css",
-    "sass": "src/scss/pagination.scss",
+    "description": "SVG icon styling for Nitro UI.",
+    "main": "dist/css/svg-icon.min.css",
+    "style": "dist/css/svg-icon.min.css",
+    "sass": "src/scss/svg-icon.scss",
     "publishConfig": {
         "access": "public"
     },
@@ -17,22 +17,22 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
-        "Pagination",
+        "SVG Icon",
         "Nitro",
         "UI",
         "CSS",
         "Components",
         "iCarAsia"
     ],
-    "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
+    "author": "SweeLing Lee <slee7199@gmail.com",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/component-button": "^1.0.0",
-        "@nitro-ui/core": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.0-alpha.2",
+        "@nitro-ui/svg-icons": "^1.0.0-alpha.0",
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
