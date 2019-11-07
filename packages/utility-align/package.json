@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-align",
-    "version": "1.0.0-alpha.5",
+    "version": "1.0.0-alpha.6",
     "description": "Utility align component for Nitro UI.",
     "main": "dist/utility-align.min.css",
     "style": "dist/utility-align.min.css",
