@@ -3,11 +3,13 @@
     "version": "1.0.1",
     "description": "Collapse & Accordian styling for Nitro UI.",
     "main": "dist/css/collapse.min.css",
+    "style": "dist/css/collapse.min.css",
+    "sass": "src/scss/collapse.scss",
     "publishConfig": {
         "access": "public"
     },
     "scripts": {
-        "build": "grunt",
+        "build": "bash scripts/build.sh",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -33,6 +35,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
+        "@nitro-ui/component-card": "^1.0.1",
         "@nitro-ui/core": "^1.0.0-alpha.2",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
@@ -41,18 +44,18 @@
     "devDependencies": {
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
-        "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/component-card": "^1.0.1",
+        "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+        "@babel/preset-env": "^7.6.3",
         "babelify": "^10.0.0",
-        "grunt": "^1.0.4",
-        "grunt-browserify": "^5.3.0",
-        "grunt-cli": "^1.3.2",
-        "grunt-contrib-clean": "^2.0.0",
-        "grunt-contrib-uglify": "^4.0.1",
-        "grunt-contrib-watch": "^1.1.0",
-        "grunt-notify": "^0.4.5",
-        "grunt-sass": "^3.0.2",
-        "node-sass": "^4.12.0"
+        "browserify": "^16.5.0",
+        "node-sass": "^4.12.0",
+        "rollup": "^1.25.2",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-babel-minify": "^9.1.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-peer-deps-external": "^2.2.0",
+        "terser": "^4.3.9"
     },
     "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"
 }
