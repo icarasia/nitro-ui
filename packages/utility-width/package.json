@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-width",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Utility Width component for Nitro UI.",
     "main": "dist/utility-width.min.css",
     "style": "dist/utility-width.min.css",
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.0"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

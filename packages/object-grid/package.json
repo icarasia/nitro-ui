@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-grid",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Grid styling for Nitro UI.",
     "main": "dist/object-grid.min.css",
     "publishConfig": {
@@ -33,7 +33,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.0"
     },
     "devDependencies": {
         "grunt": "^1.0.4",

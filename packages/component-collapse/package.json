@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-collapse",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Collapse & Accordian styling for Nitro UI.",
     "main": "dist/css/collapse.min.css",
     "style": "dist/css/collapse.min.css",
@@ -35,8 +35,8 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/component-card": "^1.0.2",
-        "@nitro-ui/core": "^1.0.0-alpha.2",
+        "@nitro-ui/component-card": "^1.0.3",
+        "@nitro-ui/core": "^1.0.0",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
         "popper.js": "1.15.0"
