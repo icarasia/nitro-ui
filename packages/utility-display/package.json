@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-display",
     "version": "1.0.2",
     "description": "Utility Display component for Nitro UI.",
-    "main": "dist/utility-display.min.css",
-    "style": "dist/utility-display.min.css",
-    "sass": "src/utility-display.scss",
+    "main": "dist/css/display.min.css",
+    "style": "dist/css/display.min.css",
+    "sass": "src/scss/display.scss",
     "publishConfig": {
         "access": "public"
     },
