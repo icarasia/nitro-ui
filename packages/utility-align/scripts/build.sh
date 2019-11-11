@@ -13,7 +13,7 @@ rm -rf dist
 
 echo 'Compile SASS...'
 node-sass --include-path=node_modules \
-          --source-map=dist/$FILE_NAME.css.map \
+          --source-map=dist/css/$FILE_NAME.css.map \
           src/scss/$FILE_NAME.scss \
           dist/css/$FILE_NAME.css
 echo 'Done.'
@@ -22,7 +22,7 @@ echo ''
 echo 'Compile SASS (Compress version)...'
 node-sass --include-path=node_modules \
           --output-style=compressed \
-          --source-map=dist/$FILE_NAME.css.min.map \
+          --source-map=dist/css/$FILE_NAME.css.min.map \
           src/scss/$FILE_NAME.scss \
           dist/css/$FILE_NAME.min.css
 echo 'Done.'
