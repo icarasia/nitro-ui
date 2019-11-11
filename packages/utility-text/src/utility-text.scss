@@ -33,21 +33,6 @@ $use-u-text--mobile         : true !default;
 .u-text-clamp           { overflow: hidden; word-break: break-word; }
 .u-text-unstyled        { text-decoration: none !important; }
 
-//Remove due to not using at the moment
-// .u-icon-text {
-//     align-items: center;
-//     display: flex !important;
-//     justify-content: center;
-//
-//     > .icon:first-child {
-//         margin-right: $spacing-xs;
-//     }
-//
-//     > .icon:last-child {
-//         margin-left: $spacing-xs;
-//     }
-// }
-
 
 
 /**
@@ -84,10 +69,9 @@ $use-u-text--mobile         : true !default;
  * Font sizes
  */
 
-@mixin text-size-setup($breakpoint: 'global') {
+@mixin text-setup($breakpoint: 'global') {
 
     $breakpoint-separator: \@ !default;
-
 
     @if $breakpoint == 'global' {
         $breakpoint-separator: '';
@@ -147,17 +131,16 @@ $use-u-text--mobile         : true !default;
         line-height: $font-8-height;
     }
 
-    .u-text-uppercase#{$breakpoint-separator}#{$breakpoint} {
-        text-transform: uppercase !important;
-    }
+    .u-text-uppercase#{$breakpoint-separator}#{$breakpoint}  { text-transform: uppercase !important; }
+    .u-text-lowercase#{$breakpoint-separator}#{$breakpoint}  { text-transform: lowercase !important; }
 
-    .u-text-lowercase#{$breakpoint-separator}#{$breakpoint} {
-        text-transform: lowercase !important;
-    }
+    .u-text-left#{$breakpoint-separator}#{$breakpoint}      { text-align: left    !important }
+    .u-text-center#{$breakpoint-separator}#{$breakpoint}    { text-align: center  !important }
+    .u-text-right#{$breakpoint-separator}#{$breakpoint}     { text-align: right   !important }
 }
 
 
-@include text-size-setup();
+@include text-setup();
 
 
 //  ----------------------------------------------------------------------------
@@ -165,8 +148,8 @@ $use-u-text--mobile         : true !default;
 //  ----------------------------------------------------------------------------
 @if $responsive{
     @if $responsive-text-portable {
-        @include media-query(portable) {
-            @include text-size-setup('portable');
+        @include media-query('portable') {
+            @include text-setup('portable');
         }
     }
 
@@ -179,8 +162,8 @@ $use-u-text--mobile         : true !default;
 //currently $use-u-text--tablet using at Autospinn, SPC, iCarSuite project
 //Please update accordingly
     @if $use-u-text--tablet {
-        @include media-query(tablet) {
-            @include text-size-setup('tablet');
+        @include media-query('tablet') {
+            @include text-setup('tablet');
         }
     }
 
