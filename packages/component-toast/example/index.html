@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Nitro UI / Toast</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/utility-shadow.min.css">
+        <link rel="stylesheet" href="../dist/css/toast.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <style>
+            .c-btn {
+              border: 1px solid #0162DD;
+              border-radius: 4px;
+              background-color: #0162DD;
+              color: #FFFFFF;
+              cursor: pointer;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 24px;
+              padding: 7px 16px;
+              transition: all ease 0.4s;
+              outline: 0 !important;
+              margin: 0 2px;
+            }
+
+            .c-btn.c-btn--positive {
+              background-color: #26C53A;
+              border-color: #26C53A;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="bg-white border-bottom">
+            <div class="container py-5">
+                <h1 class="font-weight-bold mb-3">Toast</h1>
+                <div class="text-muted">
+                    <p>
+                      Create toggleable notifications that fade out automatically.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="container  py-5">
+
+              <div class="row">
+                  <div class="col-md-12 mb-3">
+                      <div class="text-muted">Trigger Samples</div>
+                  </div>
+                  <div class="col-md-12">
+                      <div style="background: #ECEEF3; padding: 40px;">
+                        <div style="text-align: center;">
+                            <button class="c-btn" id="toast1">Click me for sample Toast!</button>
+                            <button class="c-btn c-btn--positive" id="toast2">Click me for sample Toast - Auto hide</button>
+                        </div>
+
+                          <!-- Sample Toast -->
+                          <div class="c-toast-stage" data-position="center" style="z-index: 10000;">
+                              <div class="c-toast  c-toast--info u-shadow-4dp toast-demo hide" id="notification-fixed1" data-autohide="false">
+                                  <div class="c-toast__icon">
+                                      <i class="fas fa-info-circle"></i>
+                                  </div>
+                                  <div class="c-toast__body">
+                                      This is Toast sample notification.
+                                  </div>
+                                  <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                              </div>
+
+                              <div class="c-toast  c-toast--success u-shadow-4dp toast-demo hide" id="notification-fixed2" data-delay="4000">
+                                  <div class="c-toast__icon">
+                                      <i class="fas fa-info-circle"></i>
+                                  </div>
+                                  <div class="c-toast__body">
+                                      This is Toast sample notification with auto hide.
+                                  </div>
+                                  <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <hr class="mt-4  mb-4">
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="text-muted">Variants</div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="presentation" style="background: #ECEEF3; padding: 40px;">
+                            <div class="row">
+                                <div class="col-md-6 my-2">
+                                    <div class="small  text-muted  mb-2">Info</div>
+                                    <div class="c-toast  c-toast--info u-shadow-4dp" data-autohide="false">
+                                        <div class="c-toast__icon">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="c-toast__body">
+                                            <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                            <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                        </div>
+                                        <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 my-2">
+                                    <div class="small  text-muted  mb-2">Tips</div>
+                                    <div class="c-toast  c-toast--tips u-shadow-4dp" data-autohide="false">
+                                        <div class="c-toast__icon">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="c-toast__body">
+                                            <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                            <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                        </div>
+                                        <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 my-2">
+                                    <div class="small  text-muted  mb-2">Success</div>
+                                    <div class="c-toast  c-toast--success u-shadow-4dp" data-autohide="false">
+                                        <div class="c-toast__icon">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="c-toast__body">
+                                            <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                            <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                        </div>
+                                        <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 my-2">
+                                    <div class="small  text-muted  mb-2">Error</div>
+                                    <div class="c-toast  c-toast--error u-shadow-4dp" data-autohide="false">
+                                        <div class="c-toast__icon">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="c-toast__body">
+                                            <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                            <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                        </div>
+                                        <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 my-2">
+                                    <div class="small  text-muted  mb-2">Warning</div>
+                                    <div class="c-toast  c-toast--warning u-shadow-4dp" data-autohide="false">
+                                        <div class="c-toast__icon">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div>
+                                        <div class="c-toast__body">
+                                            <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                            <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                        </div>
+                                        <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-4">
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="text-muted">Stage Position - Center</div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="presentation" style="background: #ECEEF3; padding: 40px;">
+                          <div class="c-toast-stage" data-position="center" style="position: relative; top: 0;">
+                                <div class="c-toast  c-toast--error u-shadow-4dp" data-autohide="false">
+                                    <div class="c-toast__icon">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                                <div class="c-toast  c-toast--info u-shadow-4dp" data-autohide="false">
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-4">
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="text-muted">Stage Position - Right</div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="presentation clearfix" style="background: #ECEEF3; padding: 40px;">
+                            <div class="c-toast-stage" data-position="right" style="position: relative; top: 0; right: 0; display: inline-block; float: right;">
+                                <div class="c-toast  c-toast--error u-shadow-4dp" data-autohide="false">
+                                    <div class="c-toast__icon">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                                <div class="c-toast  c-toast--info u-shadow-4dp" data-autohide="false">
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-4">
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="text-muted">Stage Position - Left</div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="presentation clearfix" style="background: #ECEEF3; padding: 40px;">
+                            <div class="c-toast-stage" data-position="right" style="position: relative; top: 0; left: 0; display: inline-block; float: left;">
+                                <div class="c-toast  c-toast--error u-shadow-4dp" data-autohide="false">
+                                    <div class="c-toast__icon">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                                <div class="c-toast  c-toast--info u-shadow-4dp" data-autohide="false">
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-4">
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="text-muted">Function - Auto Hide</div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="presentation" style="background: #ECEEF3; padding: 40px;">
+                          <div class="c-toast-stage" data-position="center" style="position: relative; top: 0;">
+                                <div class="c-toast  c-toast--error u-shadow-4dp" data-delay="10000">
+                                    <div class="c-toast__icon">
+                                        <span class="icon  icon--20  icon--info"></span>
+                                    </div>
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4  mb-4">
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="text-muted">Function - Disabled Auto Hide</div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="presentation" style="background: #ECEEF3; padding: 40px;">
+                          <div class="c-toast-stage" data-position="center" style="position: relative; top: 0;">
+                                <div class="c-toast  c-toast--info u-shadow-4dp" data-autohide="false">
+                                    <div class="c-toast__body">
+                                        <h6 class="c-toast__title">Looking for your dream car?</h6>
+                                        <div>Follow us to get the latest & hottest deals on your favorite cars! Follow us <a href="#">here</a>.</div>
+                                    </div>
+                                    <button class="c-toast__close" data-dismiss="toast">&#10005;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <script src="../dist/js/toast.js"></script>
+    </body>
+</html>
