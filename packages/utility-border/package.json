@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-border",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Utility border component for Nitro UI.",
     "main": "dist/utility-border.min.css",
     "style": "dist/utility-border.min.css",

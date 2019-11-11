@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-shadow",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Utility shadow styling for Nitro UI.",
     "main": "dist/utility-shadow.min.css",
     "style": "dist/utility-shadow.min.css",
