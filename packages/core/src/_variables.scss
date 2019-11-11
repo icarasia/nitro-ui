@@ -15,6 +15,7 @@
 //      5.  Font Setup
 //      6.  Spacing
 //      7.  Base
+//      8.  YIQ Variables
 //  ----------------------------------------------------------------------------
 
 
@@ -168,7 +169,7 @@ $spacing-xs             : 8px  !default;
 $spacing-xxs            : 4px  !default;
 
 
-//  8. Baseline
+//  7. Baseline
 //  ----------------------------------------------------------------------------
 
 $base-background        : $haze-200 !default;
@@ -177,3 +178,15 @@ $base-radius            : 4px !default;
 $base-radius-sm         : ($base-radius - 1) !default;
 $base-ui-color          : $haze-300 !default;
 $responsive             : true !default;
+
+
+//  8. YIQ Color Functions
+//  ----------------------------------------------------------------------------
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light".
+// Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold                       : 150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark                                  : $dark-400 !default;
+$yiq-text-light                                 : $white !default;
