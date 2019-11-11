@@ -10,4 +10,17 @@ import $ from 'jquery';
 import Toast from "bootstrap/js/src/toast";
 import Util from "bootstrap/js/src/util";
 
-$('.c-toast').toast('show')
+$('.presentation .c-toast').toast('show')
+
+// Demo Purposes
+
+$('.toast-demo').toast('hide')
+
+$('#toast1').on('click', function(){
+    $('#notification-fixed1').toast('show');
+    console.log('show0');
+})
+
+$('#toast2').on('click', function(){
+    $('#notification-fixed2').toast('show');
+})
