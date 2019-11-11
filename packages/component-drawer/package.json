@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-drawer",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.1",
     "description": "Drawer styling for Nitro UI.",
     "main": "dist/css/drawer.min.css",
     "publishConfig": {
@@ -43,7 +43,7 @@
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/component-button": "^1.0.0-alpha.5",
+        "@nitro-ui/component-button": "^1.0.1",
         "babelify": "^10.0.0",
         "grunt": "^1.0.4",
         "grunt-browserify": "^5.3.0",

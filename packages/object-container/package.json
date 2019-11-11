@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-container",
-    "version": "1.0.0-alpha.7",
+    "version": "1.0.1",
     "description": "Container component for Nitro UI.",
     "main": "dist/css/container.min.css",
     "style": "dist/css/container.min.css",
