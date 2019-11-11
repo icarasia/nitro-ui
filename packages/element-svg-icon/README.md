@@ -2,6 +2,7 @@
 
 SVG Icon styling for Nitro UI.
 
+
 ## Getting Started
 
 Get latest version by installing via [NPM @nitro-ui/component-popover](https://www.npmjs.com/package/@nitro-ui/element-svg-icon):
