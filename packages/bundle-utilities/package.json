@@ -1,10 +1,10 @@
 {
-    "name": "@nitro-ui/utility",
-    "version": "1.0.2",
+    "name": "@nitro-ui/bundle-utilities",
+    "version": "0.0.0",
     "description": "Utility bundle component for Nitro UI.",
-    "main": "dist/utility.min.css",
-    "style": "dist/utility.min.css",
-    "sass": "src/utility.scss",
+    "main": "dist/css/utility.min.css",
+    "style": "dist/css/utility.min.css",
+    "sass": "src/scss/utility.scss",
     "publishConfig": {
         "access": "public"
     },
@@ -17,6 +17,7 @@
         "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
+        "Bundle",
         "Utility",
         "Align",
         "Nitro",
