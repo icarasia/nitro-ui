@@ -1,0 +1,3 @@
+.c-table{background-color:transparent;border-collapse:collapse;width:100%}.c-table th,.c-table td{border-top:1px solid #CFD6DF;padding:12px 16px;vertical-align:top}.c-table>thead>tr>th,.c-table>thead>tr>td{border-bottom:2px solid #B8C2CE;color:#344251;font-weight:700;font-size:12px;line-height:18px;padding:12px 16px;vertical-align:middle}.c-table:not(.c-table--bordered)>thead:first-child>tr>th,.c-table:not(.c-table--bordered)>thead:first-child>tr>td{border-top:0}.c-table--bordered th,.c-table--bordered td{border:1px solid #CFD6DF}.c-table--sm>thead th,.c-table--sm>thead td,.c-table--sm>tbody th,.c-table--sm>tbody td{padding:4px 8px !important}.c-table--striped tbody tr:nth-of-type(odd){background-color:#F7F8FA}
+
+/*# sourceMappingURL=table.css.min.map */

@@ -1,0 +1,217 @@
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+.c-carousel .c-card {
+  margin: 1px; }
+
+.c-carousel .owl-nav,
+.c-carousel .owl-dots {
+  margin-top: 8px; }
+  .c-carousel .owl-nav > button,
+  .c-carousel .owl-dots > button {
+    border: 0;
+    padding: 0;
+    outline: none !important; }
+    .c-carousel .owl-nav > button span,
+    .c-carousel .owl-dots > button span {
+      display: none; }
+
+.c-carousel .owl-nav > button {
+  background-color: transparent;
+  border-radius: 100%;
+  cursor: pointer; }
+  .c-carousel .owl-nav > button:hover {
+    background-color: #ECEEF3; }
+  .c-carousel .owl-nav > button.owl-prev, .c-carousel .owl-nav > button.owl-next {
+    padding: 8px !important; }
+
+.c-carousel .owl-prev:before,
+.c-carousel .owl-next:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: solid #B8C2CE; }
+
+.c-carousel .owl-prev {
+  float: left; }
+  .c-carousel .owl-prev:before {
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg) translate(1px, -1px); }
+
+.c-carousel .owl-next {
+  float: right; }
+  .c-carousel .owl-next:before {
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg) translate(-1px, -1px); }
+
+.c-carousel .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .c-carousel .owl-dots > button {
+    background-color: #CFD6DF;
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    width: 24px;
+    margin: 12px 4px; }
+    .c-carousel .owl-dots > button:hover {
+      background-color: #A1AEBE; }
+    .c-carousel .owl-dots > button.active {
+      background-color: #73879B; }
+
+.c-carousel--banner .owl-nav {
+  left: 20px;
+  right: 20px; }
+  .c-carousel--banner .owl-nav > button.owl-prev, .c-carousel--banner .owl-nav > button.owl-next {
+    background-color: rgba(255, 255, 255, 0.4); }
+    .c-carousel--banner .owl-nav > button.owl-prev:hover, .c-carousel--banner .owl-nav > button.owl-next:hover {
+      background-color: #FFFFFF; }
+
+.c-carousel--banner .owl-dots {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+.c-carousel--card .owl-nav {
+  left: -20px;
+  right: -20px; }
+  .c-carousel--card .owl-nav > button.owl-prev, .c-carousel--card .owl-nav > button.owl-next {
+    background-color: #FFFFFF; }
+
+.c-carousel--card .owl-dots {
+  bottom: -36px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+.c-carousel--banner .owl-nav,
+.c-carousel--card .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); }
+  .c-carousel--banner .owl-nav > button.owl-prev, .c-carousel--banner .owl-nav > button.owl-next,
+  .c-carousel--card .owl-nav > button.owl-prev,
+  .c-carousel--card .owl-nav > button.owl-next {
+    box-shadow: 0 0 0 1px rgba(6, 8, 10, 0.05), 0 2px 4px rgba(6, 8, 10, 0.05);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px; }
+    .c-carousel--banner .owl-nav > button.owl-prev:before, .c-carousel--banner .owl-nav > button.owl-next:before,
+    .c-carousel--card .owl-nav > button.owl-prev:before,
+    .c-carousel--card .owl-nav > button.owl-next:before {
+      border-color: #06080A; }
+    .c-carousel--banner .owl-nav > button.owl-prev:hover, .c-carousel--banner .owl-nav > button.owl-next:hover,
+    .c-carousel--card .owl-nav > button.owl-prev:hover,
+    .c-carousel--card .owl-nav > button.owl-next:hover {
+      box-shadow: 0 0 0 1px rgba(6, 8, 10, 0.05), 0 2px 4px rgba(6, 8, 10, 0.05), 0 4px 8px rgba(6, 8, 10, 0.05), 0 8px 16px rgba(6, 8, 10, 0.05), 0 12px 24px rgba(6, 8, 10, 0.05);
+      background-color: #FFFFFF; }
+      .c-carousel--banner .owl-nav > button.owl-prev:hover:before, .c-carousel--banner .owl-nav > button.owl-next:hover:before,
+      .c-carousel--card .owl-nav > button.owl-prev:hover:before,
+      .c-carousel--card .owl-nav > button.owl-next:hover:before {
+        border-color: #0774FE; }
+  .c-carousel--banner .owl-nav > button.disabled:before,
+  .c-carousel--card .owl-nav > button.disabled:before {
+    border-color: #B8C2CE !important; }
+
+/*# sourceMappingURL=carousel.min.css.map */

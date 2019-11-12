@@ -1,0 +1,57 @@
+.c-tooltip {
+  position: relative; }
+  .c-tooltip::after {
+    background-color: #242E39;
+    border-radius: 4px;
+    bottom: 100%;
+    color: #fff;
+    content: attr(data-tooltip);
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    left: 50%;
+    max-width: 320px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 4px 8px;
+    position: absolute;
+    text-overflow: ellipsis;
+    transform: translate(-50%, 8px);
+    transition: all .2s ease;
+    white-space: pre;
+    z-index: 300; }
+  .c-tooltip:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -8px); }
+
+.c-tooltip--right::after {
+  bottom: 50%;
+  left: 100%;
+  transform: translate(-8px, 50%); }
+
+.c-tooltip--right:hover::after {
+  transform: translate(8px, 50%); }
+
+.c-tooltip--bottom::after {
+  bottom: auto;
+  top: 100%;
+  transform: translate(-50%, -8px); }
+
+.c-tooltip--bottom:hover::after {
+  transform: translate(-50%, 8px); }
+
+.c-tooltip--left::after {
+  bottom: 50%;
+  left: auto;
+  right: 100%;
+  transform: translate(8px, 50%); }
+
+.c-tooltip--left:hover::after {
+  transform: translate(-8px, 50%); }
+
+@media only screen and (max-width: 1080px) {
+  .c-tooltip::after {
+    display: none !important; } }
+
+/*# sourceMappingURL=component-tooltip.css.map */

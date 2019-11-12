@@ -1,0 +1,30 @@
+.c-breadcrumb {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .c-breadcrumb > li {
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+    .c-breadcrumb > li:last-child a {
+      color: inherit; }
+  .c-breadcrumb > li:not(:last-child) {
+    max-width: 160px; }
+    .c-breadcrumb > li:not(:last-child):after {
+      content: '';
+      display: block;
+      border-top: 1px solid #B8C2CE;
+      border-right: 1px solid #B8C2CE;
+      width: 8px;
+      height: 8px;
+      transform: rotate(45deg);
+      margin: 0 10px 0 6px; }
+
+/*# sourceMappingURL=breadcrumb.css.map */

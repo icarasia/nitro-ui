@@ -1,0 +1,148 @@
+.c-chip {
+  background-color: #ECEEF3;
+  border: 1px solid #ECEEF3;
+  border-radius: 4px;
+  color: #576A7F;
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 19px;
+  padding: 2px 8px;
+  text-decoration: none !important;
+  vertical-align: middle; }
+  .c-chip:not(a) {
+    cursor: default !important; }
+  .c-chip .c-chip__dismiss {
+    content: "\2715";
+    color: inherit;
+    margin: 0 -4px 0 4px;
+    opacity: .6;
+    width: 24px; }
+
+.c-chip--outline {
+  background-color: transparent;
+  border: 1px solid #576A7F; }
+  .c-chip--outline:hover {
+    background: #576A7F;
+    border-color: #576A7F;
+    color: #FFFFFF; }
+
+.c-chip--blue {
+  background-color: #0162DD;
+  border-color: #0162DD;
+  color: #FFFFFF; }
+
+.c-chip--blue-outline {
+  background-color: transparent;
+  border: 1px solid #0162DD;
+  color: #0162DD; }
+  .c-chip--blue-outline:hover {
+    background: #0162DD;
+    color: #FFFFFF; }
+
+.c-chip--blue-light {
+  background-color: #02AAEE;
+  border-color: #02AAEE;
+  color: #FFFFFF; }
+
+.c-chip--blue-light-outline {
+  background-color: transparent;
+  border: 1px solid #02AAEE;
+  color: #02AAEE; }
+  .c-chip--blue-light-outline:hover {
+    background: #02AAEE;
+    color: #FFFFFF; }
+
+.c-chip--green {
+  background-color: #26C53A;
+  border-color: #26C53A;
+  color: #FFFFFF; }
+
+.c-chip--green-outline {
+  background-color: transparent;
+  border: 1px solid #26C53A;
+  color: #26C53A; }
+  .c-chip--green-outline:hover {
+    background: #26C53A;
+    color: #FFFFFF; }
+
+.c-chip--orange {
+  background-color: #FE8104;
+  border-color: #FE8104;
+  color: #FFFFFF; }
+
+.c-chip--orange-outline {
+  background-color: transparent;
+  border: 1px solid #FE8104;
+  color: #FE8104; }
+  .c-chip--orange-outline:hover {
+    background: #FE8104;
+    color: #FFFFFF; }
+
+.c-chip--pink {
+  background-color: #D413DE;
+  border-color: #D413DE;
+  color: #FFFFFF; }
+
+.c-chip--pink-outline {
+  background-color: transparent;
+  border: 1px solid #D413DE;
+  color: #D413DE; }
+  .c-chip--pink-outline:hover {
+    background: #D413DE;
+    color: #FFFFFF; }
+
+.c-chip--purple {
+  background-color: #6D01DA;
+  border-color: #6D01DA;
+  color: #FFFFFF; }
+
+.c-chip--purple-outline {
+  background-color: transparent;
+  border: 1px solid #6D01DA;
+  color: #6D01DA; }
+  .c-chip--purple-outline:hover {
+    background: #6D01DA;
+    color: #FFFFFF; }
+
+.c-chip--red {
+  background-color: #FA0204;
+  border-color: #FA0204;
+  color: #FFFFFF; }
+
+.c-chip--red-outline {
+  background-color: transparent;
+  border: 1px solid #FA0204;
+  color: #FA0204; }
+  .c-chip--red-outline:hover {
+    background: #FA0204;
+    color: #FFFFFF; }
+
+.c-chip--yellow {
+  background-color: #FFC500;
+  border-color: #FFC500;
+  color: #FFFFFF; }
+
+.c-chip--yellow-outline {
+  background-color: transparent;
+  border: 1px solid #FFC500;
+  color: #FFC500; }
+  .c-chip--yellow-outline:hover {
+    background: #FFC500;
+    color: #FFFFFF; }
+
+.c-chip--sm {
+  line-height: 18px;
+  font-size: 12px; }
+
+.c-chip--xs {
+  line-height: 16px;
+  font-size: 10px; }
+
+.c-input.c-input--chips {
+  line-height: 24px;
+  height: auto;
+  padding: 5px 8px; }
+  .c-input.c-input--chips .c-chip {
+    margin: 2px; }
+
+/*# sourceMappingURL=chips.css.map */
