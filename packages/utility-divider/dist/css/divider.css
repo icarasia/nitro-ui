@@ -1,0 +1,12 @@
+.u-divider {
+  color: #ECEEF3;
+  clear: both;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 0; }
+
+.u-divider--darker {
+  color: #CFD6DF; }
+
+/*# sourceMappingURL=divider.css.map */

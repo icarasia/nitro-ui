@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "transition.css",
+	"sources": [
+		"../../src/scss/transition.scss"
+	],
+	"names": [],
+	"mappings": "AAwCQ,AAAA,kBAAkB,CAAA;EACd,UAAU,EAxBE,GAAG,CAAC,IAAG,CAAC,IAAI,GAyB3B;;AAFD,AAAA,qBAAqB,CAAH;EACd,UAAU,EAvBE,GAAG,CAAC,IAAG,CAAC,IAAI,GAwB3B;;AAFD,AAAA,kBAAkB,CAAA;EACd,UAAU,EAtBE,GAAG,CAAC,IAAG,CAAC,IAAI,GAuB3B"
+}

@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "clearfix.min.css",
+	"sources": [
+		"../../src/scss/clearfix.scss",
+		"../../node_modules/@nitro-ui/core/src/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AA0BI,ACOA,WDPW,ACOV,OAAO,AAAC,CACL,OAAO,CAAE,KAAK,CACd,OAAO,CAAE,EAAE,CACX,KAAK,CAAE,IAAI,CACd"
+}

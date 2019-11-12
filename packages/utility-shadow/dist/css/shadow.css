@@ -1,0 +1,26 @@
+.u-shadow-1dp\@hover:hover,
+.u-shadow-2dp\@hover:hover,
+.u-shadow-3dp\@hover:hover,
+.u-shadow-4dp\@hover:hover {
+  transition: all ease .5s; }
+
+.u-shadow-none {
+  box-shadow: none; }
+
+.u-shadow-1dp,
+.u-shadow-1dp\@hover:hover {
+  box-shadow: 0 0 0 1px rgba(6, 8, 10, 0.05), 0 2px 4px rgba(6, 8, 10, 0.05); }
+
+.u-shadow-2dp,
+.u-shadow-2dp\@hover:hover {
+  box-shadow: 0 0 0 1px rgba(6, 8, 10, 0.05), 0 2px 4px rgba(6, 8, 10, 0.05), 0 4px 8px rgba(6, 8, 10, 0.05); }
+
+.u-shadow-3dp,
+.u-shadow-3dp\@hover:hover {
+  box-shadow: 0 0 0 1px rgba(6, 8, 10, 0.05), 0 2px 4px rgba(6, 8, 10, 0.05), 0 4px 8px rgba(6, 8, 10, 0.05), 0 8px 16px rgba(6, 8, 10, 0.05), 0 12px 24px rgba(6, 8, 10, 0.05); }
+
+.u-shadow-4dp,
+.u-shadow-4dp\@hover:hover {
+  box-shadow: 0 0 0 1px rgba(6, 8, 10, 0.05), 0 2px 4px rgba(6, 8, 10, 0.05), 0 4px 8px rgba(6, 8, 10, 0.05), 0 8px 16px rgba(6, 8, 10, 0.05), 0 12px 24px rgba(6, 8, 10, 0.05), 0 16px 32px rgba(6, 8, 10, 0.05), 0 20px 40px rgba(6, 8, 10, 0.05); }
+
+/*# sourceMappingURL=shadow.css.map */
