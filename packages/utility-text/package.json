@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-text",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Utility Text component for Nitro UI.",
     "main": "dist/css/text.min.css",
     "style": "dist/css/text.min.css",
