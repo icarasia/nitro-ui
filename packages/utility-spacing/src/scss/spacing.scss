@@ -21,6 +21,9 @@
 @import '@nitro-ui/core/src/variables';
 @import '@nitro-ui/core/src/mixins';
 
+
+$use-utility-spacing            : true !default;
+
 $spacing-xxl                    : 64px !default;
 $spacing-xl                     : 48px !default;
 $spacing-lg                     : 24px !default;
@@ -29,12 +32,11 @@ $spacing-sm                     : 12px !default;
 $spacing-xs                     : 8px  !default;
 $spacing-xxs                    : 4px  !default;
 
-$use-spacing--portable          : true !default; //portable will need to be removed on next release
-$use-spacing--mobile-tablet     : true !default;
-
-$use-spacing--tablet            : true !default;
-$use-spacing--mobile            : true !default;
-$use-spacing--mobile-small      : false !default;
+$responsive-spacing-portable          : true !default;
+$responsive-spacing-mobile-tablet     : true !default;
+$responsive-spacing-tablet            : true !default;
+$responsive-spacing-mobile            : true !default;
+$responsive-spacing-mobile-small      : false !default;
 
 
 //  ----------------------------------------------------------------------------
@@ -150,87 +152,88 @@ $use-spacing--mobile-small      : false !default;
  * Calling the Spacing setup
  */
 
+@if $use-utility-spacing {
+    @include spacing-setup('-xxl');
+    @include spacing-setup('-xl');
+    @include spacing-setup('-lg');
+    @include spacing-setup('-md');
+    @include spacing-setup('-sm');
+    @include spacing-setup('-xs');
+    @include spacing-setup('-xxs');
+    @include spacing-reset();
 
-@include spacing-setup('-xxl');
-@include spacing-setup('-xl');
-@include spacing-setup('-lg');
-@include spacing-setup('-md');
-@include spacing-setup('-sm');
-@include spacing-setup('-xs');
-@include spacing-setup('-xxs');
-@include spacing-reset();
 
+    @if $responsive {
 
-@if $responsive {
+        // portable will be getting rid on next version
+        @if $responsive-spacing-portable{
 
-    // portable will be getting rid on next version
-    @if $use-spacing--portable{
-
-        @include media-query('portable') {
-            @include spacing-setup('-xxl', 'portable');
-            @include spacing-setup('-xl', 'portable');
-            @include spacing-setup('-lg', 'portable');
-            @include spacing-setup('-md', 'portable');
-            @include spacing-setup('-sm', 'portable');
-            @include spacing-setup('-xs', 'portable');
-            @include spacing-setup('-xxs', 'portable');
-            @include spacing-reset('portable');
+            @include media-query('portable') {
+                @include spacing-setup('-xxl', 'portable');
+                @include spacing-setup('-xl', 'portable');
+                @include spacing-setup('-lg', 'portable');
+                @include spacing-setup('-md', 'portable');
+                @include spacing-setup('-sm', 'portable');
+                @include spacing-setup('-xs', 'portable');
+                @include spacing-setup('-xxs', 'portable');
+                @include spacing-reset('portable');
+            }
         }
-    }
 
-    @if $use-spacing--mobile-tablet{
+        @if $responsive-spacing-mobile-tablet{
 
-        @include media-query('mobile-tablet') {
-            @include spacing-setup('-xxl', 'mobile-tablet');
-            @include spacing-setup('-xl', 'mobile-tablet');
-            @include spacing-setup('-lg', 'mobile-tablet');
-            @include spacing-setup('-md', 'mobile-tablet');
-            @include spacing-setup('-sm', 'mobile-tablet');
-            @include spacing-setup('-xs', 'mobile-tablet');
-            @include spacing-setup('-xxs', 'mobile-tablet');
-            @include spacing-reset('mobile-tablet');
+            @include media-query('mobile-tablet') {
+                @include spacing-setup('-xxl', 'mobile-tablet');
+                @include spacing-setup('-xl', 'mobile-tablet');
+                @include spacing-setup('-lg', 'mobile-tablet');
+                @include spacing-setup('-md', 'mobile-tablet');
+                @include spacing-setup('-sm', 'mobile-tablet');
+                @include spacing-setup('-xs', 'mobile-tablet');
+                @include spacing-setup('-xxs', 'mobile-tablet');
+                @include spacing-reset('mobile-tablet');
+            }
         }
-    }
 
-    @if $use-spacing--tablet {
+        @if $responsive-spacing-tablet {
 
-        @include media-query('tablet') {
-            @include spacing-setup('-xxl', 'tablet');
-            @include spacing-setup('-xl', 'tablet');
-            @include spacing-setup('-lg', 'tablet');
-            @include spacing-setup('-md', 'tablet');
-            @include spacing-setup('-sm', 'tablet');
-            @include spacing-setup('-xs', 'tablet');
-            @include spacing-setup('-xxs', 'tablet');
-            @include spacing-reset('tablet');
+            @include media-query('tablet') {
+                @include spacing-setup('-xxl', 'tablet');
+                @include spacing-setup('-xl', 'tablet');
+                @include spacing-setup('-lg', 'tablet');
+                @include spacing-setup('-md', 'tablet');
+                @include spacing-setup('-sm', 'tablet');
+                @include spacing-setup('-xs', 'tablet');
+                @include spacing-setup('-xxs', 'tablet');
+                @include spacing-reset('tablet');
+            }
         }
-    }
 
-    @if $use-spacing--mobile {
+        @if $responsive-spacing-mobile {
 
-        @include media-query('mobile') {
-            @include spacing-setup('-xxl', 'mobile');
-            @include spacing-setup('-xl', 'mobile');
-            @include spacing-setup('-lg', 'mobile');
-            @include spacing-setup('-md', 'mobile');
-            @include spacing-setup('-sm', 'mobile');
-            @include spacing-setup('-xs', 'mobile');
-            @include spacing-setup('-xxs', 'mobile');
-            @include spacing-reset('mobile');
+            @include media-query('mobile') {
+                @include spacing-setup('-xxl', 'mobile');
+                @include spacing-setup('-xl', 'mobile');
+                @include spacing-setup('-lg', 'mobile');
+                @include spacing-setup('-md', 'mobile');
+                @include spacing-setup('-sm', 'mobile');
+                @include spacing-setup('-xs', 'mobile');
+                @include spacing-setup('-xxs', 'mobile');
+                @include spacing-reset('mobile');
+            }
         }
-    }
 
-    // mobile-small currently in false state
-    @if $use-spacing--mobile-small {
-        @include media-query('mobile-small') {
-            @include spacing-setup('-xxl', 'mobile-small');
-            @include spacing-setup('-xl', 'mobile-small');
-            @include spacing-setup('-lg', 'mobile-small');
-            @include spacing-setup('-md', 'mobile-small');
-            @include spacing-setup('-sm', 'mobile-small');
-            @include spacing-setup('-xs', 'mobile-small');
-            @include spacing-setup('-xxs', 'mobile-small');
-            @include spacing-reset('mobile-small');
+        // mobile-small currently in false state
+        @if $responsive-spacing-mobile-small {
+            @include media-query('mobile-small') {
+                @include spacing-setup('-xxl', 'mobile-small');
+                @include spacing-setup('-xl', 'mobile-small');
+                @include spacing-setup('-lg', 'mobile-small');
+                @include spacing-setup('-md', 'mobile-small');
+                @include spacing-setup('-sm', 'mobile-small');
+                @include spacing-setup('-xs', 'mobile-small');
+                @include spacing-setup('-xxs', 'mobile-small');
+                @include spacing-reset('mobile-small');
+            }
         }
     }
 }

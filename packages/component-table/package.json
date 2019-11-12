@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-table",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Table styling for Nitro UI.",
     "main": "dist/table.min.css",
     "style": "dist/table.min.css",

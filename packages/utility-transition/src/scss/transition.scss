@@ -34,8 +34,12 @@ $transitions: map-merge(
     $transitions
 );
 
-@each $transition, $value in $transitions {
-    .u-#{$transition} {
-        transition: $value
+
+
+@if $use-utility-transition {
+    @each $transition, $value in $transitions {
+        .u-#{$transition} {
+            transition: $value
+        }
     }
-}
+} //END @if

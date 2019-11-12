@@ -1,10 +1,10 @@
 {
     "name": "@nitro-ui/utility-opacity",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Utility opacity styling for Nitro UI.",
-    "main": "dist/utility-opacity.min.css",
-    "style": "dist/utility-opacity.min.css",
-    "sass": "src/utility-opacity.scss",
+    "main": "dist/css/opacity.min.css",
+    "style": "dist/css/opacity.min.css",
+    "sass": "src/scss/opacity.scss",
     "publishConfig": {
         "access": "public"
     },

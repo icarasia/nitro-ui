@@ -20,10 +20,12 @@
 //  ----------------------------------------------------------------------------
 @import '@nitro-ui/core/src/core';
 
-$responsive-width-desktop           : true   !default;
-$responsive-width-portable          : true   !default;
-$responsive-width-mobile-tablet     : true   !default;
-$responsive-width-mobile            : true   !default;
+$use-utility-width                  : true !default;
+
+$responsive-width-desktop           : true !default;
+$responsive-width-portable          : true !default;
+$responsive-width-mobile-tablet     : true !default;
+$responsive-width-mobile            : true !default;
 
 //  ----------------------------------------------------------------------------
 //  2. Core
@@ -96,39 +98,36 @@ $responsive-width-mobile            : true   !default;
 @include width-setup();
 
 
-//  ----------------------------------------------------------------------------
-//  3. Responsive - Desktop
-//  ----------------------------------------------------------------------------
+
 @if $responsive {
+    //  3. Responsive - Desktop
+    //  ------------------------------------------------------------------------
     @if $responsive-width-desktop {
-        @include media-query(desktop){
+        @include media-query('desktop'){
             @include width-setup('desktop');
         }
     }
 
-//  ----------------------------------------------------------------------------
-//  4. Responsive - Portable
-//  ----------------------------------------------------------------------------
+    //  4. Responsive - Portable
+    //  ------------------------------------------------------------------------
     @if $responsive-width-portable {
-        @include media-query(portable){
+        @include media-query('portable'){
             @include width-setup('portable');
         }
     }
 
-//  ----------------------------------------------------------------------------
-//  3. Responsive - Mobile Tablet
-//  ----------------------------------------------------------------------------
+    //  3. Responsive - Mobile Tablet
+    //  ------------------------------------------------------------------------
     @if $responsive-width-mobile-tablet {
-        @include media-query(mobile-tablet){
+        @include media-query('mobile-tablet'){
             @include width-setup('mobile-tablet');
         }
     }
 
-//  ----------------------------------------------------------------------------
-//  4. Responsive - Mobile
-//  ----------------------------------------------------------------------------
+    //  4. Responsive - Mobile
+    //  ------------------------------------------------------------------------
     @if $responsive-width-mobile {
-        @include media-query(mobile){
+        @include media-query('mobile'){
             @include width-setup('mobile');
         }
     }

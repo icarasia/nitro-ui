@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-form-float",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Form float styling for Nitro UI.",
     "main": "dist/css/form-float.min.css",
     "style": "dist/css/form-float.min.css",
@@ -42,8 +42,8 @@
         "@babel/core": "^7.6.2",
         "@babel/plugin-transform-modules-commonjs": "^7.6.0",
         "@babel/preset-env": "^7.6.3",
-        "@nitro-ui/component-button": "^1.0.1",
-        "@nitro-ui/component-form": "^1.0.3",
+        "@nitro-ui/component-button": "^1.0.2",
+        "@nitro-ui/component-form": "^1.0.4",
         "babelify": "^10.0.0",
         "browserify": "^16.5.0",
         "node-sass": "^4.12.0",

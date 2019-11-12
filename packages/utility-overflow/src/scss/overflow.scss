@@ -15,7 +15,8 @@
 //  1. Variables
 //  ----------------------------------------------------------------------------
 
-$use-u-overflow           : true !default;
+$use-utility-overflow       : true !default;
+$responsive-overflow-mobile : true !default;
 
 //  ----------------------------------------------------------------------------
 //  2. Mixins & Import
@@ -41,14 +42,15 @@ $use-u-overflow           : true !default;
 //  2. Setup
 //  ----------------------------------------------------------------------------
 
-@if $use-u-overflow {
+@if $use-utility-overflow {
 
     @include overflow-setup();
 
     @if $responsive {
-
-        @include media-query(mobile) {
-            @include overflow-setup('mobile');
+        @if $responsive-overflow-mobile {
+            @include media-query('mobile') {
+                @include overflow-setup('mobile');
+            }
         }
     }
-}
+} //END @if

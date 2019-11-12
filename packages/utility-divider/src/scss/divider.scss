@@ -14,25 +14,30 @@
 @import '@nitro-ui/core/src/variables';
 @import '@nitro-ui/core/src/mixins';
 
-//  ----------------------------------------------------------------------------
+
 //  1. Variables
 //  ----------------------------------------------------------------------------
-$base-divider                   : $haze-200 !default;
-$base-divider-dark              : $haze-300 !default;
 
-//  ----------------------------------------------------------------------------
+$use-utility-divider            : true !default;
+
+$divider-color-base             : $haze-200 !default;
+$divider-color-dark             : $haze-300 !default;
+
+
 //  2. Core
 //  ----------------------------------------------------------------------------
-.u-divider {
-    color: $base-divider;
-    clear: both;
-    border: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    margin:0;
-}
 
+@if $use-utility-divider {
+    .u-divider {
+        color: $divider-color-base;
+        clear: both;
+        border: none;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        margin: 0;
+    }
 
-.u-divider--darker {
-    color: $base-divider-dark;
+    .u-divider--darker {
+        color: $divider-color-dark;
+    }
 }
