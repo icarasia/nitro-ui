@@ -26,6 +26,7 @@ Include this stylesheet code into your site:
 ```
 
 
+
 #### Text Color
 ```html
 <p class="u-color-base">Text color base</p>

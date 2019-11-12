@@ -11,6 +11,7 @@ npm install @nitro-ui/module-dashboard-toolbar
 ```
 **Dependencies**
 
+
 Sidebar require the following dependencies:
 component-avatar
 component-collapse
