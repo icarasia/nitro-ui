@@ -26,8 +26,10 @@
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
-$use-portable-float:    true !default;
-$use-mobile-float:      true !default;
+$use-utility-float                  : true !default;
+
+$use-responsive-float-portable      : true !default;
+$use-responsive-float-mobile        : true !default;
 
 
 //  3. Mixin
@@ -47,24 +49,25 @@ $use-mobile-float:      true !default;
     .u-float-none#{$breakpoint-separator}#{$breakpoint}      { float: none  !important }
 }
 
+@if $use-utility-float {
+    //  4. Default
+    //  ----------------------------------------------------------------------------
 
-//  4. Default
-//  ----------------------------------------------------------------------------
-
-@include float-setup();
+    @include float-setup();
 
 
-//  5. Responsive
-//  ----------------------------------------------------------------------------
+    //  5. Responsive
+    //  ----------------------------------------------------------------------------
 
-@if $use-portable-float {
-    @include media-query('portable') {
-        @include float-setup('portable');
+    @if $use-responsive-float-portable {
+        @include media-query('portable') {
+            @include float-setup('portable');
+        }
     }
-}
 
-@if $use-mobile-float {
-    @include media-query('mobile') {
-        @include float-setup('mobile');
+    @if $use-responsive-float-mobile {
+        @include media-query('mobile') {
+            @include float-setup('mobile');
+        }
     }
-}
+} //END @if
