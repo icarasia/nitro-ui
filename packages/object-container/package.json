@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-container",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Container component for Nitro UI.",
     "main": "dist/css/container.min.css",
     "style": "dist/css/container.min.css",
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0"
+        "@nitro-ui/core": "^1.0.1"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-rating",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Rating styling for Nitro UI.",
     "main": "dist/component-rating.min.css",
     "publishConfig": {

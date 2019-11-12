@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-embed",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Object embed styling for Nitro UI.",
     "main": "dist/object-embed.min.css",
     "publishConfig": {
@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0",
+        "@nitro-ui/core": "^1.0.1",
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
         "grunt-contrib-clean": "^2.0.0",

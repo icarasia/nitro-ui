@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-float",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Utility Float component for Nitro UI.",
     "main": "dist/css/float.min.css",
     "style": "dist/css/float.min.css",
@@ -33,7 +33,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0"
+        "@nitro-ui/core": "^1.0.1"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

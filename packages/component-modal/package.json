@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-modal",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Modal styling for Nitro UI.",
     "main": "dist/css/modal.min.css",
     "publishConfig": {
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0",
+        "@nitro-ui/core": "^1.0.1",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
         "popper.js": "1.15.0"
@@ -42,7 +42,7 @@
         "@babel/core": "^7.6.2",
         "@babel/plugin-transform-modules-commonjs": "^7.6.0",
         "@babel/preset-env": "^7.6.3",
-        "@nitro-ui/component-button": "^1.0.3",
+        "@nitro-ui/component-button": "^1.0.4",
         "babelify": "^10.0.0",
         "browserify": "^16.5.0",
         "node-sass": "^4.12.0",
