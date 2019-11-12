@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-shadow",
     "version": "1.0.2",
     "description": "Utility shadow styling for Nitro UI.",
-    "main": "dist/utility-shadow.min.css",
-    "style": "dist/utility-shadow.min.css",
-    "sass": "src/utility-shadow.scss",
+    "main": "dist/css/shadow.min.css",
+    "style": "dist/css/shadow.min.css",
+    "sass": "src/scss/shadow.scss",
     "publishConfig": {
         "access": "public"
     },
