@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Utility bundle component for Nitro UI.",
     "main": "dist/utility.min.css",
     "style": "dist/utility.min.css",
@@ -34,7 +34,7 @@
     "dependencies": {
         "@nitro-ui/core": "^1.0.1",
         "@nitro-ui/utility-align": "^1.0.7",
-        "@nitro-ui/utility-background": "^1.0.6",
+        "@nitro-ui/utility-background": "^1.0.7",
         "@nitro-ui/utility-border": "^1.0.6",
         "@nitro-ui/utility-clearfix": "^1.0.6",
         "@nitro-ui/utility-display": "^1.0.6",
