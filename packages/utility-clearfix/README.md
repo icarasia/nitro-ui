@@ -16,6 +16,7 @@ Include this stylesheet code into your site:
 <div class="u-clearfix">u-clearfix</div>
 ```
 
+
 ## Usage:
 
 Example with `<div>` tag:

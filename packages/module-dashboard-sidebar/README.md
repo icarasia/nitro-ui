@@ -10,6 +10,7 @@ Get latest version by installing via [NPM @nitro-ui/module-dashboard-sidebar](ht
 ```sh
 npm install @nitro-ui/module-dashboard-sidebar
 ```
+
 **Dependencies**
 
 Sidebar require the following dependencies:
