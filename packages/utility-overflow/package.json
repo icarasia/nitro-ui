@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-overflow",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Utility overflow component for Nitro UI.",
     "main": "dist/css/overflow.min.css",
     "style": "dist/css/overflow.min.css",
