@@ -19,6 +19,7 @@ Hide is the alternative of `display:none` property. Element will be rendered in 
 ```
 
 
+
 ## Responsive Usage
 
 Hide support `mobile`,`tablet`, `portable`, `desktop` and `tablet-desktop` responsive class

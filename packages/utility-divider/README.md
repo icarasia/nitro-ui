@@ -17,6 +17,7 @@ Include this stylesheet code into your site:
 <hr class="u-divider--darker"/>
 ```
 
+
 ## Usage:
 
 Example with `<hr/>` tag:

@@ -16,6 +16,7 @@ Include this stylesheet code into your site:
 <div class="loader"></div>
 ```
 
+
 ## Usage:
 
 Example with `<button>` tag:

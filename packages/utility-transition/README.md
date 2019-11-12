@@ -20,6 +20,7 @@ Transition utilities contains 3 properties : `slow`, `default` and `fast`. Use t
 <div class="u-transition-fast">Fast transition</div>
 ```
 
+
 ## Development
 
 To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia-engineering/nitro-ui) and made a pull request.

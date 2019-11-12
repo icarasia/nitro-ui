@@ -12,6 +12,7 @@ npm install @nitro-ui/utility-float
 
 Include this stylesheet code into your site:
 
+
 ```html
 <strong>Float</strong>
 <div class="u-float-left">Float Left</div>
