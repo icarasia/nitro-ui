@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-position",
     "version": "1.0.3",
     "description": "Utility position component for Nitro UI.",
-    "main": "dist/utility-position.min.css",
-    "style": "dist/utility-position.min.css",
-    "sass": "src/utility-position.scss",
+    "main": "dist/css/position.min.css",
+    "style": "dist/css/position.min.css",
+    "sass": "src/scss/position.scss",
     "publishConfig": {
         "access": "public"
     },

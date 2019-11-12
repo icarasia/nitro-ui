@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-clearfix",
     "version": "1.0.3",
     "description": "Utility clearfix component for Nitro UI.",
-    "main": "dist/utility-clearfix.min.css",
-    "style": "dist/utility-clearfix.min.css",
-    "sass": "src/utility-clearfix.scss",
+    "main": "dist/css/clearfix.min.css",
+    "style": "dist/css/clearfix.min.css",
+    "sass": "src/scss/clearfix.scss",
     "publishConfig": {
         "access": "public"
     },

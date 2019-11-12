@@ -17,8 +17,9 @@
 @import '@nitro-ui/core/src/mixins';
 @import '@nitro-ui/core/src/variables';
 
-$base-background-primary        : $blue-light-500 !default;
+$use-utility-background         : true !default;
 
+$background-primary             : $blue-light-500 !default;
 $background-white               : $white !default;
 $background-haze-light          : $haze-100 !default;
 $background-haze-dark           : $haze-200 !default;
@@ -30,36 +31,38 @@ $background-gradient-dark       : $dark-600 !default;
 //  ----------------------------------------------------------------------------
 //  2. Core
 //  ----------------------------------------------------------------------------
-.u-bg-primary {
-    background-color: $base-background-primary;
-}
+@if $use-utility-background {
+    .u-bg-primary {
+        background-color: $background-primary;
+    }
 
-.u-bg-white {
-    background-color: $background-white;
-}
+    .u-bg-white {
+        background-color: $background-white;
+    }
 
-.u-bg-haze-light {
-    background-color: $background-haze-light;
-}
+    .u-bg-haze-light {
+        background-color: $background-haze-light;
+    }
 
-.u-bg-haze-dark {
-    background-color: $background-haze-dark;
-}
+    .u-bg-haze-dark {
+        background-color: $background-haze-dark;
+    }
 
-.u-bg-dark {
-    background-color: $background-dark;
-}
+    .u-bg-dark {
+        background-color: $background-dark;
+    }
 
-.u-bg-gradient-light {
-    @include vertical-gradient(rgba($background-gradient-light,0), $background-gradient-light);
-}
+    .u-bg-gradient-light {
+        @include vertical-gradient(rgba($background-gradient-light,0), $background-gradient-light);
+    }
 
-.u-bg-gradient-dark {
-    @include vertical-gradient(rgba($background-gradient-dark,0), $background-gradient-dark);
-}
+    .u-bg-gradient-dark {
+        @include vertical-gradient(rgba($background-gradient-dark,0), $background-gradient-dark);
+    }
 
-.u-bg-cover{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+    .u-bg-cover{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+} //END @if

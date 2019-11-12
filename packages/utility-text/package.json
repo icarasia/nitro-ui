@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-text",
     "version": "1.0.3",
     "description": "Utility Text component for Nitro UI.",
-    "main": "dist/utility-text.min.css",
-    "style": "dist/utility-text.min.css",
-    "sass": "src/utility-text.scss",
+    "main": "dist/css/text.min.css",
+    "style": "dist/css/text.min.css",
+    "sass": "src/scss/text.scss",
     "publishConfig": {
         "access": "public"
     },

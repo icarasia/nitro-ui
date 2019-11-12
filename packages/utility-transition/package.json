@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-transition",
     "version": "1.0.3",
     "description": "Utility transition component for Nitro UI.",
-    "main": "dist/utility-transition.min.css",
-    "style": "dist/utility-transition.min.css",
-    "sass": "src/utility-transition.scss",
+    "main": "dist/css/transition.min.css",
+    "style": "dist/css/transition.min.css",
+    "sass": "src/scss/transition.scss",
     "publishConfig": {
         "access": "public"
     },

@@ -2,9 +2,9 @@
     "name": "@nitro-ui/utility-loader",
     "version": "1.0.3",
     "description": "Utility loader component for Nitro UI.",
-    "main": "dist/utility-loader.min.css",
-    "style": "dist/utility-loader.min.css",
-    "sass": "src/utility-loader.scss",
+    "main": "dist/css/loader.min.css",
+    "style": "dist/css/loader.min.css",
+    "sass": "src/scss/loader.scss",
     "publishConfig": {
         "access": "public"
     },

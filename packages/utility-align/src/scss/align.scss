@@ -13,16 +13,18 @@
 //      3. Responsive - Portable
 //      4. Responsive - Mobile
 
-//  ----------------------------------------------------------------------------
 //  1. Variables
 //  ----------------------------------------------------------------------------
 @import '@nitro-ui/core/src/mixins';
 @import '@nitro-ui/core/src/variables';
 
+$use-utility-align                  : true   !default;
 $responsive-align-portable          : true   !default;
 $responsive-align-mobile            : true   !default;
 
-//  ----------------------------------------------------------------------------
+
+
+
 //  2. Core
 //  ----------------------------------------------------------------------------
 @mixin align-setup($breakpoint: 'global') {
@@ -55,35 +57,32 @@ $responsive-align-mobile            : true   !default;
 }
 
 
+@if $use-utility-align {
+    @include align-setup();
+    @include valign-setup();
 
-
-@include align-setup();
-@include valign-setup();
-
-
-.u-center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-//  ----------------------------------------------------------------------------
-//  3. Responsive - Portable
-//  ----------------------------------------------------------------------------
-
-@if $responsive {
-    @if $responsive-align-portable {
-        @include media-query(portable) {
-            @include align-setup('portable');
-        }
+    .u-center {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-//  ----------------------------------------------------------------------------
-//  4. Responsive - Mobile
-//  ----------------------------------------------------------------------------
+    //  3. Responsive - Portable
+    //  ----------------------------------------------------------------------------
 
-    @if $responsive-align-mobile {
-        @include media-query(mobile) {
-            @include align-setup('mobile');
+    @if $responsive {
+        @if $responsive-align-portable {
+            @include media-query(portable) {
+                @include align-setup('portable');
+            }
+        }
+
+    //  4. Responsive - Mobile
+    //  ----------------------------------------------------------------------------
+
+        @if $responsive-align-mobile {
+            @include media-query(mobile) {
+                @include align-setup('mobile');
+            }
         }
     }
-}
+} // END @if
