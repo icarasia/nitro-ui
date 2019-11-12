@@ -18,13 +18,14 @@
 @import '@nitro-ui/core/src/variables';
 @import '@nitro-ui/core/src/mixins';
 
-$flex-columns                   : 12 !default;
+$flex-columns               : 12 !default;
 
-$use-utility-flex               : true !default;
-$use-responsive-flex-desktop    : false !default;
-$use-responsive-flex-portable   : true !default;
-$use-responsive-flex-tablet     : false !default;
-$use-responsive-flex-mobile     : true !default;
+$use-utility-flex           : true !default;
+
+$responsive-flex-desktop    : false !default;
+$responsive-flex-portable   : true !default;
+$responsive-flex-tablet     : false !default;
+$responsive-flex-mobile     : true !default;
 
 
 @mixin flex-setup($breakpoint: 'global') {
@@ -153,25 +154,25 @@ $use-responsive-flex-mobile     : true !default;
     @include flex-setup();
 
     @if $responsive {
-        @if $use-responsive-flex-desktop {
+        @if $responsive-flex-desktop {
             @include media-query(desktop) {
                 @include flex-setup('portable');
             }
         }
 
-        @if $use-responsive-flex-portable {
+        @if $responsive-flex-portable {
             @include media-query(portable) {
                 @include flex-setup('portable');
             }
         }
 
-        @if $use-responsive-flex-tablet {
+        @if $responsive-flex-tablet {
             @include media-query(tablet) {
                 @include flex-setup('portable');
             }
         }
 
-        @if $use-responsive-flex-mobile {
+        @if $responsive-flex-mobile {
             @include media-query(mobile) {
                 @include flex-setup('mobile');
             }

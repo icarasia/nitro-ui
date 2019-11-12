@@ -32,12 +32,11 @@ $spacing-sm                     : 12px !default;
 $spacing-xs                     : 8px  !default;
 $spacing-xxs                    : 4px  !default;
 
-$use-responsive-spacing-portable          : true !default; //portable will need to be removed on next release
-$use-responsive-spacing-mobile-tablet     : true !default;
-
-$use-responsive-spacing-tablet            : true !default;
-$use-responsive-spacing-mobile            : true !default;
-$use-responsive-spacing-mobile-small      : false !default;
+$responsive-spacing-portable          : true !default;
+$responsive-spacing-mobile-tablet     : true !default;
+$responsive-spacing-tablet            : true !default;
+$responsive-spacing-mobile            : true !default;
+$responsive-spacing-mobile-small      : false !default;
 
 
 //  ----------------------------------------------------------------------------
@@ -167,7 +166,7 @@ $use-responsive-spacing-mobile-small      : false !default;
     @if $responsive {
 
         // portable will be getting rid on next version
-        @if $use-responsive-spacing-portable{
+        @if $responsive-spacing-portable{
 
             @include media-query('portable') {
                 @include spacing-setup('-xxl', 'portable');
@@ -181,7 +180,7 @@ $use-responsive-spacing-mobile-small      : false !default;
             }
         }
 
-        @if $use-responsive-spacing-mobile-tablet{
+        @if $responsive-spacing-mobile-tablet{
 
             @include media-query('mobile-tablet') {
                 @include spacing-setup('-xxl', 'mobile-tablet');
@@ -195,7 +194,7 @@ $use-responsive-spacing-mobile-small      : false !default;
             }
         }
 
-        @if $use-responsive-spacing-tablet {
+        @if $responsive-spacing-tablet {
 
             @include media-query('tablet') {
                 @include spacing-setup('-xxl', 'tablet');
@@ -209,7 +208,7 @@ $use-responsive-spacing-mobile-small      : false !default;
             }
         }
 
-        @if $use-responsive-spacing-mobile {
+        @if $responsive-spacing-mobile {
 
             @include media-query('mobile') {
                 @include spacing-setup('-xxl', 'mobile');
@@ -224,7 +223,7 @@ $use-responsive-spacing-mobile-small      : false !default;
         }
 
         // mobile-small currently in false state
-        @if $use-responsive-spacing-mobile-small {
+        @if $responsive-spacing-mobile-small {
             @include media-query('mobile-small') {
                 @include spacing-setup('-xxl', 'mobile-small');
                 @include spacing-setup('-xl', 'mobile-small');

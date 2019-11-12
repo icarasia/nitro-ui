@@ -26,10 +26,10 @@
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
-$use-utility-float                  : true !default;
+$use-utility-float              : true !default;
 
-$use-responsive-float-portable      : true !default;
-$use-responsive-float-mobile        : true !default;
+$responsive-float-portable      : true !default;
+$responsive-float-mobile        : true !default;
 
 
 //  3. Mixin
@@ -49,23 +49,20 @@ $use-responsive-float-mobile        : true !default;
     .u-float-none#{$breakpoint-separator}#{$breakpoint}      { float: none  !important }
 }
 
-@if $use-utility-float {
-    //  4. Default
-    //  ----------------------------------------------------------------------------
 
+
+
+@if $use-utility-float {
     @include float-setup();
 
 
-    //  5. Responsive
-    //  ----------------------------------------------------------------------------
-
-    @if $use-responsive-float-portable {
+    @if $responsive-float-portable {
         @include media-query('portable') {
             @include float-setup('portable');
         }
     }
 
-    @if $use-responsive-float-mobile {
+    @if $responsive-float-mobile {
         @include media-query('mobile') {
             @include float-setup('mobile');
         }
