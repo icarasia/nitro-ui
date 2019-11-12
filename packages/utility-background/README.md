@@ -13,6 +13,7 @@ npm install @nitro-ui/utility-background
 Include this stylesheet code into your site:
 
 
+
 ```html
 <div class="u-bg-primary">u-bg-primary</div>
 <div class="u-bg-white">u-bg-white</div>
