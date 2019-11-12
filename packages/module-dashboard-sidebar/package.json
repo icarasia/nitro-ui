@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-sidebar",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Sidebar module for all the products",
     "main": "dist/css/sidebar.min.css",
     "style": "dist/css/sidebar.min.css",
@@ -49,7 +49,7 @@
         "@nitro-ui/utility-position": "^1.0.5",
         "@nitro-ui/utility-shadow": "^1.0.4",
         "@nitro-ui/utility-spacing": "^1.0.4",
-        "@nitro-ui/utility-text": "^1.0.5",
+        "@nitro-ui/utility-text": "^1.0.6",
         "@nitro-ui/utility-transition": "^1.0.4",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",

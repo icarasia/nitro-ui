@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Utility bundle component for Nitro UI.",
     "main": "dist/utility.min.css",
     "style": "dist/utility.min.css",
@@ -50,9 +50,9 @@
         "@nitro-ui/utility-rounded": "^1.0.4",
         "@nitro-ui/utility-shadow": "^1.0.4",
         "@nitro-ui/utility-spacing": "^1.0.4",
-        "@nitro-ui/utility-text": "^1.0.5",
+        "@nitro-ui/utility-text": "^1.0.6",
         "@nitro-ui/utility-transition": "^1.0.4",
-        "@nitro-ui/utility-width": "^1.0.5"
+        "@nitro-ui/utility-width": "^1.0.6"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
