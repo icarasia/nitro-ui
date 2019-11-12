@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-embed",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Object embed styling for Nitro UI.",
     "main": "dist/object-embed.min.css",
     "publishConfig": {
