@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-spacing",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Spacing component for Nitro UI.",
     "main": "dist/css/spacing.min.css",
     "style": "dist/css/spacing.min.css",

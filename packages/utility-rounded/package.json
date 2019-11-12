@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-rounded",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Utility rounded styling for Nitro UI.",
     "main": "dist/css/rounded.min.css",
     "style": "dist/css/rounded.min.css",

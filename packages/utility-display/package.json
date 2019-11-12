@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-display",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Utility Display component for Nitro UI.",
     "main": "dist/css/display.min.css",
     "style": "dist/css/display.min.css",
