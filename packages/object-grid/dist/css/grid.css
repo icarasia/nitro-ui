@@ -223,6 +223,10 @@ sub {
 u, ins {
   text-decoration: underline; }
 
+label {
+  display: block;
+  margin-bottom: 4px; }
+
 .o-grid {
   display: flex;
   flex-flow: row wrap;
@@ -277,4 +281,4 @@ u, ins {
     .o-grid--none\@mobile > .o-grid__item {
       padding: 0 0; } }
 
-/*# sourceMappingURL=object-grid.css.map */
+/*# sourceMappingURL=grid.css.map */
