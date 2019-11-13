@@ -10,8 +10,8 @@
 //
 //      1.  Dependencies
 //      2.  Variables
-//      3.  Core
-//      4.  Size
+//      3.  Size
+//      4.  Core
 //
 //  ----------------------------------------------------------------------------
 
@@ -26,26 +26,11 @@
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
+$use-object-list        : true !default;
 $list-divider-color     : $haze-200;
 
 
-//  3. Core
-//  ----------------------------------------------------------------------------
-
-.o-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.o-list--divider {
-    > .o-list__item:not(:first-child) {
-        border-top: 1px solid $list-divider-color;
-    }
-}
-
-
-//  4. Size
+//  3. Size
 //  ----------------------------------------------------------------------------
 
 @mixin list-setup($size) {
@@ -83,7 +68,25 @@ $list-divider-color     : $haze-200;
     }
 }
 
-@include list-setup('lg');
-@include list-setup('md');
-@include list-setup('sm');
-@include list-setup('xs');
+//  4. Core
+//  ----------------------------------------------------------------------------
+
+@if $use-object-list {
+    .o-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .o-list--divider {
+        > .o-list__item:not(:first-child) {
+            border-top: 1px solid $list-divider-color;
+        }
+    }
+
+
+    @include list-setup('lg');
+    @include list-setup('md');
+    @include list-setup('sm');
+    @include list-setup('xs');
+}
