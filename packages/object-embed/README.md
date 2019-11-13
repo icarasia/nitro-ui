@@ -59,7 +59,7 @@ npm install
 Run:
 
 ```sh
-grunt
+npm run build
 ```
 ---
 

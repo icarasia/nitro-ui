@@ -13,7 +13,7 @@ npm install @nitro-ui/object-container
 Include this stylesheet code into your site:
 
 ```html
-<link rel="stylesheet" href="dist/container.min.css" />
+<link rel="stylesheet" href="dist/css/container.min.css" />
 ```
 
 ### Usage:
@@ -66,7 +66,7 @@ npm install
 Run:
 
 ```sh
-grunt
+npm run build
 ```
 ---
 
