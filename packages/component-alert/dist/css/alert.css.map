@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "alert.css",
 	"sources": [
-		"../../src/sass/alert.scss",
+		"../../src/scss/alert.scss",
 		"../../node_modules/@nitro-ui/core/src/_variables.scss"
 	],
 	"names": [],
