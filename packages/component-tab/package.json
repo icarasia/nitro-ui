@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-tab",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Tab component for Nitro UI.",
     "main": "dist/css/tab.min.css",
     "publishConfig": {
@@ -33,13 +33,13 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.2"
+        "@nitro-ui/core": "^1.0.3"
     },
     "devDependencies": {
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/component-button": "^1.0.5",
+        "@nitro-ui/component-button": "^1.0.6",
         "babelify": "^10.0.0",
         "bootstrap": "^4.3.1",
         "grunt": "^1.0.4",

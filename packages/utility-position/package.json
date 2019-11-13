@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-position",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "Utility position component for Nitro UI.",
     "main": "dist/css/position.min.css",
     "style": "dist/css/position.min.css",
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.2"
+        "@nitro-ui/core": "^1.0.3"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
