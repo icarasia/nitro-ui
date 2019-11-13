@@ -343,3 +343,12 @@ sub { bottom: -0.25em; }
 u,ins{
     text-decoration: underline;
 }
+
+
+//  18. FORM : LABEL
+//  ----------------------------------------------------------------------------
+
+label {
+    display: block;
+    margin-bottom: $spacing-xxs;
+}
