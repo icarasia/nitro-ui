@@ -223,4 +223,8 @@ sub {
 u, ins {
   text-decoration: underline; }
 
+label {
+  display: block;
+  margin-bottom: 4px; }
+
 /*# sourceMappingURL=core.css.map */
