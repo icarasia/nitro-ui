@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-arrow",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Arrow styling for Nitro UI.",
     "main": "dist/arrow.min.css",
     "publishConfig": {
