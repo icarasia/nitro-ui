@@ -82,3 +82,12 @@ $arrow-size     : 8px;
     transform: rotate(90deg);
     top: 50%;
 }
+
+.c-card--dark {
+    .c-arrow {
+        &:before,
+        &:after {
+            border-top-color: $dark-600;
+        }
+    }
+}
