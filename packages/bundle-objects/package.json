@@ -34,11 +34,11 @@
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/core": "^1.0.3",
-        "@nitro-ui/object-container": "^1.0.6",
-        "@nitro-ui/object-embed": "^1.0.4",
-        "@nitro-ui/object-grid": "^1.0.6",
-        "@nitro-ui/object-list": "^1.0.6",
-        "@nitro-ui/object-menu": "^1.0.3"
+        "@nitro-ui/object-container": "^1.0.7",
+        "@nitro-ui/object-embed": "^1.0.7",
+        "@nitro-ui/object-grid": "^1.0.7",
+        "@nitro-ui/object-list": "^1.0.7",
+        "@nitro-ui/object-menu": "^1.0.4"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

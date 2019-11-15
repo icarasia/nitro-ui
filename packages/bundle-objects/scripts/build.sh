@@ -3,7 +3,7 @@ set -e
 
 NITRO_VERSION=$(node -p "require('./package.json').version")
 PACKAGE_NAME=$(node -p "require('./package.json').name")
-FILE_NAME="utilities"
+FILE_NAME="objects"
 
 echo "Building ${PACKAGE_NAME} ${NITRO_VERSION}"
 echo ''
