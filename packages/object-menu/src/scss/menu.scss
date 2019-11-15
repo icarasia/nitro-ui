@@ -27,6 +27,7 @@
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
+$use-object-menu        : true !default;
 $menu-spacing-ends      : 8px !default;
 $menu-spacing-sides     : 16px !default;
 $menu-line-height       : 24px !default;
@@ -35,13 +36,14 @@ $menu-line-height       : 24px !default;
 //  3. Core
 //  ----------------------------------------------------------------------------
 
-.o-menu {
-    align-items: center;
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+@if $use-object-menu {
+    .o-menu {
+        align-items: center;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
     .o-menu__item {
         position: relative;
@@ -64,25 +66,25 @@ $menu-line-height       : 24px !default;
     }
 
 
-//  4. Modifiers
-//  ----------------------------------------------------------------------------
+    //  4. Modifiers
+    //  ----------------------------------------------------------------------------
 
-.o-menu--center {
-    justify-content: center;
+    .o-menu--center {
+        justify-content: center;
+    }
+
+    .o-menu--right {
+        justify-content: flex-end;
+    }
+
+    .o-menu--space-around {
+        justify-content: space-around;
+    }
+
+    .o-menu--space-between {
+        justify-content: space-between;
+    }
 }
-
-.o-menu--right {
-    justify-content: flex-end;
-}
-
-.o-menu--space-around {
-    justify-content: space-around;
-}
-
-.o-menu--space-between {
-    justify-content: space-between;
-}
-
 
 //  5. Responsive
 //  ----------------------------------------------------------------------------

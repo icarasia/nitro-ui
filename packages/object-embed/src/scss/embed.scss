@@ -10,9 +10,9 @@
 //
 //      1.  Dependencies
 //      2.  Variables
-//      3.  Core
-//      4.  Modifiers - Ratio
-//      5.  Modifiers - Width
+//      3.  Modifiers - Ratio
+//      4.  Modifiers - Width
+//      5.  Core
 //      6.  Setup - Global
 //      7.  Setup - Responsive
 //
@@ -29,6 +29,7 @@
 //  2. Variables
 //  ----------------------------------------------------------------------------
 
+$use-object-embed                   : true !default;
 $responsive-embed-desktop           : true !default;
 $responsive-embed-tablet-desktop    : true !default;
 $responsive-embed-mobile-tablet     : true !default;
@@ -49,63 +50,7 @@ $embed-sm                           : 76px  !default;
 $embed-xs                           : 52px  !default;
 
 
-//  3. Core
-//  ----------------------------------------------------------------------------
-
-.o-embed {
-    background-color: $embed-background;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    min-width: 20px;
-    position: relative;
-    overflow: hidden;
-
-    &:before {
-        content: '';
-        display: block;
-        padding-top: 100%;
-    }
-
-    img,
-    embed,
-    iframe,
-    object,
-    video {
-        bottom: 0;
-        display: block;
-        height: 100%;
-        left: 0;
-        object-fit: cover;
-        position: absolute !important;
-        top: 0;
-        width: 100%;
-    }
-}
-
-.o-embed--video {
-    background-color: $dark-600;
-}
-
-
-.o-embed--shade::after {
-    background: linear-gradient(to bottom, $embed-shade-top, $embed-shade-middle, $embed-shade-bottom);
-    bottom: 0;
-    content: '';
-    display: block;
-    left: 0;
-    padding-top: 75%;
-    position: absolute;
-    right: 0;
-}
-
-.o-embed--transparent {
-    background-color: transparent;
-}
-
-
-//  4. Modifiers - Ratio
+//  3. Modifiers - Ratio
 //  ----------------------------------------------------------------------------
 
 @mixin embed-ratio($breakpoint: 'global') {
@@ -136,7 +81,7 @@ $embed-xs                           : 52px  !default;
 }
 
 
-//  5. Modifiers - Width
+//  4. Modifiers - Width
 //  ----------------------------------------------------------------------------
 
 @mixin embed-width($breakpoint: 'global') {
@@ -179,46 +124,102 @@ $embed-xs                           : 52px  !default;
     }
 }
 
-
-//  6. Setup - Global
+//  5. Core
 //  ----------------------------------------------------------------------------
 
-@include embed-ratio();
-@include embed-width();
+@if $use-object-embed {
+    .o-embed {
+        background-color: $embed-background;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        min-width: 20px;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+
+        img,
+        embed,
+        iframe,
+        object,
+        video {
+            bottom: 0;
+            display: block;
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: absolute !important;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .o-embed--video {
+        background-color: $dark-600;
+    }
 
 
-//  7. Setup - Responsive
-//  ----------------------------------------------------------------------------
+    .o-embed--shade::after {
+        background: linear-gradient(to bottom, $embed-shade-top, $embed-shade-middle, $embed-shade-bottom);
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        padding-top: 75%;
+        position: absolute;
+        right: 0;
+    }
 
-@if $responsive {
-    @if $responsive-embed-desktop {
-        @include media-query('desktop') {
-            @include embed-ratio('desktop');
-            @include embed-width('desktop');
-        }
+    .o-embed--transparent {
+        background-color: transparent;
     }
-    @if $responsive-embed-tablet-desktop {
-        @include media-query('tablet-desktop') {
-            @include embed-ratio('tablet-desktop');
-            @include embed-width('tablet-desktop');
+
+    //  6. Setup - Global
+    //  ----------------------------------------------------------------------------
+
+    @include embed-ratio();
+    @include embed-width();
+
+
+    //  7. Setup - Responsive
+    //  ----------------------------------------------------------------------------
+
+    @if $responsive {
+        @if $responsive-embed-desktop {
+            @include media-query('desktop') {
+                @include embed-ratio('desktop');
+                @include embed-width('desktop');
+            }
         }
-    }
-    @if $responsive-embed-mobile-tablet {
-        @include media-query('mobile-tablet') {
-            @include embed-ratio('mobile-tablet');
-            @include embed-width('mobile-tablet');
+        @if $responsive-embed-tablet-desktop {
+            @include media-query('tablet-desktop') {
+                @include embed-ratio('tablet-desktop');
+                @include embed-width('tablet-desktop');
+            }
         }
-    }
-    @if $responsive-embed-tablet {
-        @include media-query('tablet') {
-            @include embed-ratio('tablet');
-            @include embed-width('tablet');
+        @if $responsive-embed-mobile-tablet {
+            @include media-query('mobile-tablet') {
+                @include embed-ratio('mobile-tablet');
+                @include embed-width('mobile-tablet');
+            }
         }
-    }
-    @if $responsive-embed-mobile {
-        @include media-query('mobile') {
-            @include embed-ratio('mobile');
-            @include embed-width('mobile');
+        @if $responsive-embed-tablet {
+            @include media-query('tablet') {
+                @include embed-ratio('tablet');
+                @include embed-width('tablet');
+            }
+        }
+        @if $responsive-embed-mobile {
+            @include media-query('mobile') {
+                @include embed-ratio('mobile');
+                @include embed-width('mobile');
+            }
         }
     }
 }

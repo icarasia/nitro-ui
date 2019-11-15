@@ -1,3 +1,3 @@
 .o-menu{align-items:center;display:flex;list-style:none;padding:0;margin:0}.o-menu__item{position:relative}.o-menu__link{display:block;outline:none !important;text-decoration:none !important;padding:8px 16px;line-height:24px}.o-menu__link.is--active{color:#576A7F}.o-menu__link.is--disabled{color:#8A9BAD}.o-menu--center{justify-content:center}.o-menu--right{justify-content:flex-end}.o-menu--space-around{justify-content:space-around}.o-menu--space-between{justify-content:space-between}@media only screen and (max-width: 1080px){.o-menu--responsive\@mobile-tablet{display:block}}@media only screen and (max-width: 767px){.o-menu--responsive\@mobile{display:block}}
 
-/*# sourceMappingURL=object-menu.min.css.map */
+/*# sourceMappingURL=menu.css.min.map */

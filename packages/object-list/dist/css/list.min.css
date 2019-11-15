@@ -1,3 +1,3 @@
 .o-list{list-style:none;padding:0;margin:0}.o-list--divider>.o-list__item:not(:first-child){border-top:1px solid #ECEEF3}.o-list--lg>.o-list__item:not(:first-child){margin-top:24px}.o-list--lg.o-list--divider>.o-list__item:not(:first-child){padding-top:24px}.o-list--md>.o-list__item:not(:first-child){margin-top:16px}.o-list--md.o-list--divider>.o-list__item:not(:first-child){padding-top:16px}.o-list--sm>.o-list__item:not(:first-child){margin-top:12px}.o-list--sm.o-list--divider>.o-list__item:not(:first-child){padding-top:12px}.o-list--xs>.o-list__item:not(:first-child){margin-top:8px}.o-list--xs.o-list--divider>.o-list__item:not(:first-child){padding-top:8px}
 
-/*# sourceMappingURL=object-list.min.css.map */
+/*# sourceMappingURL=list.css.min.map */
