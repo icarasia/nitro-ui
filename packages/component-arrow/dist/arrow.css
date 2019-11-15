@@ -36,4 +36,7 @@
   transform: rotate(90deg);
   top: 50%; }
 
+.c-card--dark .c-arrow:before, .c-card--dark .c-arrow:after {
+  border-top-color: #151B22; }
+
 /*# sourceMappingURL=arrow.css.map */
