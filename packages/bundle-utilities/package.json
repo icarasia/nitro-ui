@@ -2,9 +2,9 @@
     "name": "@nitro-ui/bundle-utilities",
     "version": "1.0.2",
     "description": "Utility bundle component for Nitro UI.",
-    "main": "dist/css/utility.min.css",
-    "style": "dist/css/utility.min.css",
-    "sass": "src/scss/utility.scss",
+    "main": "dist/css/utilities.min.css",
+    "style": "dist/css/utilities.min.css",
+    "sass": "src/scss/utilities.scss",
     "publishConfig": {
         "access": "public"
     },

@@ -7,7 +7,7 @@ Utility Bundle component for Nitro UI.
 Get latest version by installing via [NPM @nitro-ui/utility-align](https://www.npmjs.com/package/@nitro-ui/utility-align):
 
 ```sh
-npm install @nitro-ui/utility
+npm install @nitro-ui/bundle-utilities
 ```
 
 
