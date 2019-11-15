@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-sidebar",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "description": "Sidebar module for all the products",
     "main": "dist/css/sidebar.min.css",
     "style": "dist/css/sidebar.min.css",
@@ -35,11 +35,11 @@
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/component-avatar": "^1.0.6",
-        "@nitro-ui/component-collapse": "^1.0.9",
+        "@nitro-ui/component-collapse": "^1.0.10",
         "@nitro-ui/component-drawer": "^1.0.6",
         "@nitro-ui/core": "^1.0.3",
-        "@nitro-ui/object-container": "^1.0.6",
-        "@nitro-ui/object-list": "^1.0.6",
+        "@nitro-ui/object-container": "^1.0.7",
+        "@nitro-ui/object-list": "^1.0.7",
         "@nitro-ui/utility-background": "^1.0.10",
         "@nitro-ui/utility-display": "^1.0.9",
         "@nitro-ui/utility-flex": "^1.0.10",
