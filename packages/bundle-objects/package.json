@@ -1,5 +1,5 @@
 {
-    "name": "@nitro-ui/bundle-utilities",
+    "name": "@nitro-ui/bundle-objects",
     "version": "1.0.2",
     "description": "Objects bundle component for Nitro UI.",
     "main": "dist/css/objects.min.css",
@@ -18,7 +18,7 @@
     },
     "keywords": [
         "Bundle",
-        "Utility",
+        "Object",
         "Align",
         "Nitro",
         "UI",

@@ -24,8 +24,8 @@
 //  2. Objects file import
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/objects-container/src/scss/container.scss';
-@import '@nitro-ui/objects-embed/src/scss/embed.scss';
-@import '@nitro-ui/objects-grid/src/scss/grid.scss';
-@import '@nitro-ui/objects-list/src/scss/list.scss';
-@import '@nitro-ui/objects-menu/src/scss/menu.scss';
+@import '@nitro-ui/object-container/src/scss/container.scss';
+@import '@nitro-ui/object-embed/src/object-embed.scss';
+@import '@nitro-ui/object-grid/src/object-grid.scss';
+@import '@nitro-ui/object-list/src/object-list.scss';
+@import '@nitro-ui/object-menu/src/object-menu.scss';
