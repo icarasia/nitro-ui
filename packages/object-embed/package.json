@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-embed",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Embed component for Nitro UI.",
     "main": "dist/css/embed.min.css",
     "style": "dist/css/embed.min.css",
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.3"
+        "@nitro-ui/core": "^1.0.4"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
