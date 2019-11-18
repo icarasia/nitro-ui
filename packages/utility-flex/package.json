@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-flex",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Flex component for Nitro UI.",
     "main": "dist/css/flex.min.css",
     "style": "dist/css/flex.min.css",
@@ -36,8 +36,8 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.3",
-        "@nitro-ui/utility-spacing": "^1.0.9"
+        "@nitro-ui/core": "^1.0.4",
+        "@nitro-ui/utility-spacing": "^1.0.10"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
