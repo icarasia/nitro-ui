@@ -1,0 +1,73 @@
+.c-popover {
+  position: relative; }
+  .c-popover .c-popover-container {
+    left: 50%;
+    opacity: 0;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    color: #576A7F;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .2s ease;
+    text-align: left;
+    width: 320px;
+    z-index: 5;
+    white-space: normal; }
+  .c-popover *:focus + .c-popover-container,
+  .c-popover:hover .c-popover-container,
+  .c-popover .c-popover-container:hover {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1); }
+
+.c-popover--left .c-popover-container {
+  left: 0;
+  top: 50%; }
+
+.c-popover--left :focus + .c-popover-container,
+.c-popover--left:hover .c-popover-container,
+.c-popover--left .c-popover-container:hover {
+  transform: translate(-100%, -50%) scale(1); }
+
+.c-popover--right .c-popover-container {
+  left: 100%;
+  top: 50%; }
+
+.c-popover--right :focus + .c-popover-container,
+.c-popover--right:hover .c-popover-container,
+.c-popover--right .c-popover-container:hover {
+  transform: translate(0, -50%) scale(1); }
+
+.c-popover--top {
+  display: inline-block;
+  position: relative; }
+  .c-popover--top .c-popover-container {
+    left: 50%;
+    opacity: 0;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    color: #576A7F;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .2s ease;
+    text-align: left;
+    width: 320px;
+    z-index: 5;
+    white-space: normal; }
+  .c-popover--top *:focus + .c-popover-container,
+  .c-popover--top:hover .c-popover-container,
+  .c-popover--top .c-popover-container:hover {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1); }
+
+.c-popover--bottom .c-popover-container {
+  left: 50%;
+  top: 100%; }
+
+.c-popover--bottom :focus + .c-popover-container,
+.c-popover--bottom:hover .c-popover-container,
+.c-popover--bottom .c-popover-container:hover {
+  transform: translate(-50%, 0) scale(1); }
+
+/*# sourceMappingURL=popover.css.map */

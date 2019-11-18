@@ -20,6 +20,8 @@
 
 @import '@nitro-ui/core/src/mixins';
 
+$use-object-container           : true   !default;
+
 $container-spacing              : 12px;
 $container-width-default        : 1080px;
 $container-width-medium         : 800px;
@@ -29,28 +31,29 @@ $container-width-wide           : 1240px;
 //  2. Core
 //  ----------------------------------------------------------------------------
 
-.o-container {
-    @include clearfix();
-    margin: 0 auto;
-    max-width: $container-width-default;
-    padding-left: $container-spacing;
-    padding-right: $container-spacing;
-    width: 100%;
-}
+@if $use-object-container {
+    .o-container {
+        @include clearfix();
+        margin: 0 auto;
+        max-width: $container-width-default;
+        padding-left: $container-spacing;
+        padding-right: $container-spacing;
+        width: 100%;
+    }
 
-//  ----------------------------------------------------------------------------
-//  3. Modifier
-//  ----------------------------------------------------------------------------
+    //  ----------------------------------------------------------------------------
+    //  3. Modifier
+    //  ----------------------------------------------------------------------------
 
-.o-container--medium {
-    max-width: $container-width-medium;
-}
+    .o-container--medium {
+        max-width: $container-width-medium;
+    }
 
-.o-container--wide {
-    max-width: $container-width-wide;
-}
+    .o-container--wide {
+        max-width: $container-width-wide;
+    }
 
-
-.o-container--fluid {
-    max-width: 100%;
+    .o-container--fluid {
+        max-width: 100%;
+    }
 }

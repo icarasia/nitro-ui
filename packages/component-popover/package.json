@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-popover",
-    "version": "1.0.3",
+    "version": "1.0.12",
     "description": "Popover styling for Nitro UI.",
     "main": "dist/css/popover.min.css",
     "style": "dist/css/popover.min.css",
@@ -31,9 +31,9 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/component-arrow": "^1.0.2",
-        "@nitro-ui/component-card": "^1.0.2",
-        "@nitro-ui/core": "^1.0.0-alpha.2"
+        "@nitro-ui/component-arrow": "^1.0.11",
+        "@nitro-ui/component-card": "^1.0.10",
+        "@nitro-ui/core": "^1.0.3"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

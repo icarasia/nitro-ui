@@ -1,0 +1,92 @@
+//  ----------------------------------------------------------------------------
+//
+//  @OBJECT - List
+//
+//  Object styling for item listing
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Size
+//      4.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '@nitro-ui/core/src/variables';
+@import '@nitro-ui/core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$use-object-list        : true !default;
+$list-divider-color     : $haze-200;
+
+
+//  3. Size
+//  ----------------------------------------------------------------------------
+
+@mixin list-setup($size) {
+
+    $spacing: '';
+
+    @if $size == 'xl' {
+        $spacing: $spacing-xl;
+    }
+
+    @if $size == 'lg' {
+        $spacing: $spacing-lg;
+    }
+
+    @if $size == 'md' {
+        $spacing: $spacing-md;
+    }
+
+    @if $size == 'sm' {
+        $spacing: $spacing-sm;
+    }
+
+    @if $size == 'xs' {
+        $spacing: $spacing-xs;
+    }
+
+    .o-list--#{$size} {
+        > .o-list__item:not(:first-child) {
+            margin-top: $spacing;
+        }
+
+        &.o-list--divider > .o-list__item:not(:first-child) {
+            padding-top: $spacing;
+        }
+    }
+}
+
+//  4. Core
+//  ----------------------------------------------------------------------------
+
+@if $use-object-list {
+    .o-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .o-list--divider {
+        > .o-list__item:not(:first-child) {
+            border-top: 1px solid $list-divider-color;
+        }
+    }
+
+
+    @include list-setup('lg');
+    @include list-setup('md');
+    @include list-setup('sm');
+    @include list-setup('xs');
+}

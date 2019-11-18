@@ -1,0 +1,85 @@
+.c-avatar {
+  background-color: #CFD6DF;
+  border-radius: 100%;
+  display: block;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  width: 40px; }
+  .c-avatar::before {
+    display: block;
+    font-weight: 500;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .c-avatar:not(.icon)::before {
+    content: attr(data-initial); }
+  .c-avatar > img {
+    border-radius: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    z-index: 2; }
+
+.c-avatar--square,
+.c-avatar--square > img {
+  border-radius: 4px; }
+
+.c-avatar--24px {
+  height: 24px;
+  width: 24px;
+  flex: 0 0 24px; }
+  .c-avatar--24px::before {
+    font-size: 12px; }
+
+.c-avatar--40px {
+  height: 40px;
+  width: 40px;
+  flex: 0 0 40px; }
+  .c-avatar--40px::before {
+    font-size: 20px; }
+
+.c-avatar--64px {
+  height: 64px;
+  width: 64px;
+  flex: 0 0 64px; }
+  .c-avatar--64px::before {
+    font-size: 32px; }
+
+.c-avatar--128px {
+  height: 128px;
+  width: 128px;
+  flex: 0 0 128px; }
+  .c-avatar--128px::before {
+    font-size: 64px; }
+
+@media only screen and (max-width: 767px) {
+  .c-avatar--24px\@mobile {
+    height: 24px;
+    width: 24px;
+    flex: 0 0 24px; }
+    .c-avatar--24px\@mobile::before {
+      font-size: 12px; }
+  .c-avatar--40px\@mobile {
+    height: 40px;
+    width: 40px;
+    flex: 0 0 40px; }
+    .c-avatar--40px\@mobile::before {
+      font-size: 20px; }
+  .c-avatar--64px\@mobile {
+    height: 64px;
+    width: 64px;
+    flex: 0 0 64px; }
+    .c-avatar--64px\@mobile::before {
+      font-size: 32px; }
+  .c-avatar--128px\@mobile {
+    height: 128px;
+    width: 128px;
+    flex: 0 0 128px; }
+    .c-avatar--128px\@mobile::before {
+      font-size: 64px; } }
+
+/*# sourceMappingURL=avatar.css.map */

@@ -12,6 +12,7 @@ npm install @nitro-ui/object-embed
 
 Embed Ratio
 
+
 ```html
 <div class="o-embed  o-embed--3x1"></div>
 <div class="o-embed  o-embed--16x9"></div>
@@ -58,7 +59,7 @@ npm install
 Run:
 
 ```sh
-grunt
+npm run build
 ```
 ---
 

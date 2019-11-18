@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "divider.min.css",
+	"sources": [
+		"../../src/scss/divider.scss",
+		"../../node_modules/@nitro-ui/core/src/_variables.scss",
+		"../../node_modules/@nitro-ui/core/src/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AA8BI,AAAA,UAAU,AAAC,CACP,KAAK,CCuBa,OAAO,CDtBzB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,mBAAmB,CAAE,GAAG,CACxB,mBAAmB,CAAE,KAAK,CAC1B,MAAM,CAAE,CAAC,CACZ,AAED,AAAA,kBAAkB,AAAC,CACf,KAAK,CCea,OAAO,CDd5B"
+}

@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/core",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.3",
     "description": "Core CSS for Nitro UI.",
     "main": "dist/core.min.css",
     "publishConfig": {

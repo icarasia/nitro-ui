@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-avatar",
-    "version": "1.0.2",
+    "version": "1.0.6",
     "description": "Avatar styling for Nitro UI.",
     "main": "dist/css/avatar.min.css",
     "style": "dist/css/avatar.min.cs",
@@ -34,7 +34,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.3"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

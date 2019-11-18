@@ -1,13 +1,15 @@
 {
     "name": "@nitro-ui/component-card",
-    "version": "1.0.2",
+    "version": "1.0.10",
     "description": "Card styling for Nitro UI.",
     "main": "dist/css/card.min.css",
+    "style": "dist/css/card.min.css",
+    "sass": "src/scss/card.scss",
     "publishConfig": {
         "access": "public"
     },
     "scripts": {
-        "build": "grunt",
+        "build": "bash scripts/build.sh",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -32,16 +34,10 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3",
-        "@nitro-ui/object-embed": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.3",
+        "@nitro-ui/object-embed": "^1.0.7"
     },
     "devDependencies": {
-        "grunt": "^1.0.4",
-        "grunt-cli": "^1.3.2",
-        "grunt-contrib-clean": "^2.0.0",
-        "grunt-contrib-watch": "^1.1.0",
-        "grunt-notify": "^0.4.5",
-        "grunt-sass": "^3.0.2",
         "node-sass": "^4.12.0"
     },
     "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"

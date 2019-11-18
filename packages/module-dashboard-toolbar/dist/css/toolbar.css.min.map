@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "toolbar.min.css",
+	"sources": [
+		"../../src/scss/toolbar.scss",
+		"../../node_modules/@nitro-ui/core/src/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AA2BC,AACI,eADW,CACX,kBAAkB,AAAA,CACd,UAAU,CCwDO,OAAO,CDvDxB,MAAM,CAAE,GAAG,CACX,KAAK,CAAE,GAAG,CACV,GAAG,CAAE,GAAG,CACR,KAAK,CAAE,GAAG,CACb,AAPL,AASI,eATW,CASX,iBAAiB,AAAA,CACb,SAAS,CAAE,KAAK,CAChB,UAAU,CAAE,KAAK,CACjB,UAAU,CAAE,IAAI,CACnB,AAbL,AAeI,eAfW,CAeX,WAAW,AAAA,CACP,UAAU,CCXO,OAAO,CDgB3B,AArBL,AAkBQ,eAlBO,CAeX,WAAW,CAGP,SAAS,AAAA,CACL,IAAI,CCXS,OAAO,CDYvB"
+}

@@ -1,0 +1,114 @@
+.modal-backdrop {
+  background-color: rgba(6, 8, 10, 0.5);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000; }
+  .modal-backdrop:not(.show) {
+    display: none; }
+  .modal-backdrop + .modal-backdrop {
+    z-index: 2001; }
+
+body.modal-open {
+  overflow: hidden; }
+
+.c-modal {
+  -webkit-overflow-scrolling: touch;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2010; }
+
+.c-dialog {
+  animation: slide-down .2s ease 1;
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin: 24px auto;
+  width: 480px;
+  outline: none !important;
+  position: relative; }
+  .c-dialog.is--shaking {
+    animation: shake-horizontal .5s ease-in-out; }
+  .c-dialog--sm {
+    width: 320px; }
+  .c-dialog--md {
+    width: 640px; }
+  .c-dialog--lg {
+    width: 960px; }
+  .c-dialog .is--filled {
+    background-color: #F7F8FA; }
+
+.c-dialog__head {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between; }
+
+.c-dialog__title {
+  font-weight: 700;
+  margin: 24px;
+  margin-bottom: 16px; }
+
+.c-dialog__close {
+  -webkit-appearance: none;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 100%;
+  justify-content: center;
+  line-height: 1;
+  color: #8A9BAD;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin: 8px; }
+  .c-dialog__close:hover {
+    background-color: #ECEEF3; }
+  .c-dialog__close:focus {
+    background-color: #E2F0FF;
+    color: #0162DD;
+    outline: none; }
+
+.c-dialog__alert {
+  border-radius: 0;
+  padding-left: 24px;
+  margin-bottom: 16px; }
+
+.c-dialog__body,
+.c-dialog__foot {
+  padding: 24px;
+  padding-top: 0; }
+  .c-dialog__body:before, .c-dialog__body:after,
+  .c-dialog__foot:before,
+  .c-dialog__foot:after {
+    content: '';
+    display: table;
+    height: 0;
+    clear: both; }
+
+.c-dialog__foot {
+  border-radius: 0 0 4px 4px; }
+
+@media only screen and (max-width: 1080px) {
+  .c-dialog--lg {
+    width: 100%; } }
+
+@media only screen and (max-width: 767px) {
+  .c-modal {
+    padding: 8px; }
+  .c-dialog {
+    width: 100%; } }
+
+/*# sourceMappingURL=modal.css.map */
