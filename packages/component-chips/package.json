@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-chips",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Chips component for Nitro UI.",
     "main": "dist/css/chips.min.css",
     "publishConfig": {
