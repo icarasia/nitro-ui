@@ -3,7 +3,7 @@
 	"file": "clearfix.css",
 	"sources": [
 		"../../src/scss/clearfix.scss",
-		"../../node_modules/@nitro-ui/core/src/_mixins.scss"
+		"../../../core/src/_mixins.scss"
 	],
 	"names": [],
 	"mappings": "AA0BI,ACOA,WDPW,ACOV,OAAO,CAAC;EACL,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,IAAI,GACd"
