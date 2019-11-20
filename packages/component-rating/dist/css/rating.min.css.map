@@ -1,10 +1,10 @@
 {
 	"version": 3,
-	"file": "component-rating.min.css",
+	"file": "rating.min.css",
 	"sources": [
-		"../src/component-rating.scss",
-		"../node_modules/@nitro-ui/core/src/_variables.scss",
-		"../node_modules/@nitro-ui/core/src/_mixins.scss"
+		"../../src/scss/rating.scss",
+		"../../../core/src/_variables.scss",
+		"../../../core/src/_mixins.scss"
 	],
 	"names": [],
 	"mappings": "AA4CI,AAAA,gBAAgB,AAAC,CACb,OAAO,CAAE,YAAY,CACrB,SAAS,CAAE,CAAC,CACZ,WAAW,CAAE,CAAC,CACd,QAAQ,CAAE,QAAQ,CAClB,WAAW,CAAE,MAAM,CAoBtB,AAzBD,AAOI,gBAPY,CAOZ,KAAK,AAAC,CACF,SAAS,CAvBS,IAAI,CAwBtB,OAAO,CAAE,YAAY,CACrB,OAAO,CAxBW,GAAG,CAyBxB,AAXL,AAaI,gBAbY,CAaZ,eAAe,AAAC,CACZ,KAAK,CCHS,OAAO,CDIxB,AAfL,AAiBI,gBAjBY,CAiBZ,gBAAgB,AAAC,CACb,KAAK,CCES,OAAO,CDDrB,SAAS,CAAE,GAAG,CACd,QAAQ,CAAE,MAAM,CAChB,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACV,AAGL,AAAA,cAAc,AAAC,CACX,UAAU,CCjBQ,OAAO,CDkBzB,aAAa,CAtCS,GAAG,CAuCzB,MAAM,CAxCgB,GAAG,CAyCzB,QAAQ,CAAE,MAAM,CAChB,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,MAAM,CAUjB,AAhBD,AAQI,cARU,CAQR,IAAI,AAAC,CACH,gBAAgB,CCHF,OAAO,CDIrB,aAAa,CA9CK,GAAG,CA+CrB,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,CAAC,CACP,GAAG,CAAE,CAAC,CACN,MAAM,CAAE,CAAC,CACZ"

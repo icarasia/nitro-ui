@@ -1,10 +1,10 @@
 {
 	"version": 3,
-	"file": "component-rating.css",
+	"file": "rating.css",
 	"sources": [
-		"../src/component-rating.scss",
-		"../node_modules/@nitro-ui/core/src/_variables.scss",
-		"../node_modules/@nitro-ui/core/src/_mixins.scss"
+		"../../src/scss/rating.scss",
+		"../../../core/src/_variables.scss",
+		"../../../core/src/_mixins.scss"
 	],
 	"names": [],
 	"mappings": "AA4CI,AAAA,gBAAgB,CAAC;EACb,OAAO,EAAE,YAAY;EACrB,SAAS,EAAE,CAAC;EACZ,WAAW,EAAE,CAAC;EACd,QAAQ,EAAE,QAAQ;EAClB,WAAW,EAAE,MAAM,GAoBtB;EAzBD,AAOI,gBAPY,CAOZ,KAAK,CAAC;IACF,SAAS,EAvBS,IAAI;IAwBtB,OAAO,EAAE,YAAY;IACrB,OAAO,EAxBW,GAAG,GAyBxB;EAXL,AAaI,gBAbY,CAaZ,eAAe,CAAC;IACZ,KAAK,ECHS,OAAO,GDIxB;EAfL,AAiBI,gBAjBY,CAiBZ,gBAAgB,CAAC;IACb,KAAK,ECES,OAAO;IDDrB,SAAS,EAAE,GAAG;IACd,QAAQ,EAAE,MAAM;IAChB,QAAQ,EAAE,QAAQ;IAClB,GAAG,EAAE,CAAC;IACN,IAAI,EAAE,CAAC,GACV;;AAGL,AAAA,cAAc,CAAC;EACX,UAAU,ECjBQ,OAAO;EDkBzB,aAAa,EAtCS,GAAG;EAuCzB,MAAM,EAxCgB,GAAG;EAyCzB,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,MAAM,GAUjB;EAhBD,AAQI,cARU,GAQR,IAAI,CAAC;IACH,gBAAgB,ECHF,OAAO;IDIrB,aAAa,EA9CK,GAAG;IA+CrB,QAAQ,EAAE,QAAQ;IAClB,IAAI,EAAE,CAAC;IACP,GAAG,EAAE,CAAC;IACN,MAAM,EAAE,CAAC,GACZ"
