@@ -3,8 +3,8 @@
 	"file": "overflow.css",
 	"sources": [
 		"../../src/scss/overflow.scss",
-		"../../node_modules/@nitro-ui/core/src/_variables.scss",
-		"../../node_modules/@nitro-ui/core/src/_mixins.scss"
+		"../../../core/src/_variables.scss",
+		"../../../core/src/_mixins.scss"
 	],
 	"names": [],
 	"mappings": "AAmCI,AAAA,kBAAkB,CAAuC;EAAE,QAAQ,EAAE,iBAAkB,GAAE;;AACzF,AAAA,kBAAkB,CAAuC;EAAE,UAAU,EAAE,eAAgB,GAAE;;AACzF,AAAA,kBAAkB,CAAuC;EAAE,UAAU,EAAE,eAAgB,GAAE;;AEwJrF,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EF1J5C,AAAA,0BAA0B,CAA+B;IAAE,QAAQ,EAAE,iBAAkB,GAAE;EACzF,AAAA,0BAA0B,CAA+B;IAAE,UAAU,EAAE,eAAgB,GAAE;EACzF,AAAA,0BAA0B,CAA+B;IAAE,UAAU,EAAE,eAAgB,GAAE"
