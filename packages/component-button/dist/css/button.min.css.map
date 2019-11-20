@@ -3,9 +3,9 @@
 	"file": "button.min.css",
 	"sources": [
 		"../../src/scss/button.scss",
-		"../../node_modules/@nitro-ui/core/src/_variables.scss",
-		"../../node_modules/@nitro-ui/core/src/_animations.scss",
-		"../../node_modules/@nitro-ui/core/src/_mixins.scss",
+		"../../../core/src/_variables.scss",
+		"../../../core/src/_animations.scss",
+		"../../../core/src/_mixins.scss",
 		"../../src/scss/_variables.scss"
 	],
 	"names": [],

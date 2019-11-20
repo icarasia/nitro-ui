@@ -15,30 +15,30 @@
 //  1. Variables
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/core/src/mixins';
-@import '@nitro-ui/core/src/variables';
+@import '../../../core/src/mixins';
+@import '../../../core/src/variables';
 
 //  ----------------------------------------------------------------------------
 //  2. Utility file import
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/utility-align/src/scss/align.scss';
-@import '@nitro-ui/utility-background/src/scss/background.scss';
-@import '@nitro-ui/utility-border/src/scss/border.scss';
-@import '@nitro-ui/utility-clearfix/src/scss/clearfix.scss';
-@import '@nitro-ui/utility-display/src/scss/display.scss';
-@import '@nitro-ui/utility-divider/src/scss/divider.scss';
-@import '@nitro-ui/utility-flex/src/scss/flex.scss';
-@import '@nitro-ui/utility-float/src/scss/float.scss';
-@import '@nitro-ui/utility-height/src/scss/height.scss';
-@import '@nitro-ui/utility-hide/src/scss/hide.scss';
-@import '@nitro-ui/utility-loader/src/scss/loader.scss';
-@import '@nitro-ui/utility-opacity/src/scss/opacity.scss';
-@import '@nitro-ui/utility-overflow/src/scss/overflow.scss';
-@import '@nitro-ui/utility-position/src/scss/position.scss';
-@import '@nitro-ui/utility-rounded/src/scss/rounded.scss';
-@import '@nitro-ui/utility-shadow/src/scss/shadow.scss';
-@import '@nitro-ui/utility-spacing/src/scss/spacing.scss';
-@import '@nitro-ui/utility-text/src/scss/text.scss';
-@import '@nitro-ui/utility-transition/src/scss/transition.scss';
-@import '@nitro-ui/utility-width/src/scss/width.scss';
+@import '../../../utility-align/src/scss/align.scss';
+@import '../../../utility-background/src/scss/background.scss';
+@import '../../../utility-border/src/scss/border.scss';
+@import '../../../utility-clearfix/src/scss/clearfix.scss';
+@import '../../../utility-display/src/scss/display.scss';
+@import '../../../utility-divider/src/scss/divider.scss';
+@import '../../../utility-flex/src/scss/flex.scss';
+@import '../../../utility-float/src/scss/float.scss';
+@import '../../../utility-height/src/scss/height.scss';
+@import '../../../utility-hide/src/scss/hide.scss';
+@import '../../../utility-loader/src/scss/loader.scss';
+@import '../../../utility-opacity/src/scss/opacity.scss';
+@import '../../../utility-overflow/src/scss/overflow.scss';
+@import '../../../utility-position/src/scss/position.scss';
+@import '../../../utility-rounded/src/scss/rounded.scss';
+@import '../../../utility-shadow/src/scss/shadow.scss';
+@import '../../../utility-spacing/src/scss/spacing.scss';
+@import '../../../utility-text/src/scss/text.scss';
+@import '../../../utility-transition/src/scss/transition.scss';
+@import '../../../utility-width/src/scss/width.scss';

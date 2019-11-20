@@ -17,7 +17,7 @@ module.exports = function( grunt ) {
             },
             build: {
                 files: {
-                    'dist/arrow.css': [
+                    'dist/css/arrow.css': [
                         'src/scss/arrow.scss'
                     ]
                 }
@@ -27,7 +27,7 @@ module.exports = function( grunt ) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'dist/arrow.min.css': [
+                    'dist/css/arrow.min.css': [
                         'src/scss/arrow.scss'
                     ]
                 }

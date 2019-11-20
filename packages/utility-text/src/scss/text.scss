@@ -19,8 +19,8 @@
 
 //  1. Variables
 //  ----------------------------------------------------------------------------
-@import '@nitro-ui/core/src/mixins';
-@import '@nitro-ui/core/src/variables';
+@import '../../../core/src/mixins';
+@import '../../../core/src/variables';
 
 $responsive-text-portable   : true !default;
 $responsive-text-tablet     : false !default;
