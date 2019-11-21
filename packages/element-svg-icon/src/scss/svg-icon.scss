@@ -28,7 +28,8 @@ $icon-color-negative        : $red-500 !default
 $icon-color-warning         : $yellow-500 !default
 $icon-color-muted           : $haze-600 !default
 
-
+$color-product-bump         : $green-400 !default;
+$color-product-combo        : $orange-700 !default;
 $color-product-hotdeal      : $red-400 !default;
 $color-product-featured     : $blue-500 !default;
 $color-product-highlight    : $blue-light-400 !default;
@@ -69,6 +70,8 @@ $color-product-trusted      : $green-500 !default;
     &.icon--product-highlight-square, &.icon--product-highlight         { fill: $color-product-highlight; }
     &.icon--product-showcase-square, &.icon--product-showcase           { fill: $color-product-showcase; }
     &.icon--product-video-square, &.icon--product-video                 { fill: $color-product-video; }
+    &.icon--product-bump-square, &.icon--product-bump                   { fill: $color-product-bump; }
+    &.icon--product-combo-square, &.icon--product-combo                 { fill: $color-product-combo; }
 
 }
 
