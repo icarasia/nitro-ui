@@ -19,6 +19,10 @@
     fill: #6D01DA; }
   .icon-svg.icon--product-video-square, .icon-svg.icon--product-video {
     fill: #FF5151; }
+  .icon-svg.icon--product-bump-square, .icon-svg.icon--product-bump {
+    fill: #3AD94E; }
+  .icon-svg.icon--product-combo-square, .icon-svg.icon--product-combo {
+    fill: #E35805; }
 
 .icon-svg--inline {
   display: inline-block; }
