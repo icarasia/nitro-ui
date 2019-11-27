@@ -212,6 +212,10 @@ select.c-input {
     right: 13px;
     left: auto; }
 
+.c-switch--right > input[type="checkbox"]:checked ~ label:after {
+  right: 1px;
+  left: auto; }
+
 .c-input-btn {
   padding: 3px 0;
   border: 1px solid #B8C2CE;

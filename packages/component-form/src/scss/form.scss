@@ -335,6 +335,15 @@ select.c-input {
 
         }
     }
+
+    > input[type="checkbox"]:checked ~ {
+        label {
+            &:after {
+                right: 1px;
+                left: auto;
+            }
+        }
+    }
 }
 
 //  8. ELEMENT - INPUT WITH BUTTON
