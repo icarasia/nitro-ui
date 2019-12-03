@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-dropdown",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Dropdown styling for Nitro UI.",
     "main": "dist/css/dropdown.min.css",
     "style": "dist/css/dropdown.min.css",
@@ -44,7 +44,7 @@
         "@babel/core": "^7.6.2",
         "@babel/plugin-transform-modules-commonjs": "^7.6.0",
         "@babel/preset-env": "^7.6.3",
-        "@nitro-ui/component-avatar": "^1.0.7",
+        "@nitro-ui/component-avatar": "^1.0.8",
         "babelify": "^10.0.0",
         "browserify": "^16.5.0",
         "node-sass": "^4.12.0",
