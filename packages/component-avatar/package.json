@@ -3,7 +3,7 @@
     "version": "1.0.7",
     "description": "Avatar styling for Nitro UI.",
     "main": "dist/css/avatar.min.css",
-    "style": "dist/css/avatar.min.cs",
+    "style": "dist/css/avatar.min.css",
     "sass": "src/scss/avatar.scss",
     "publishConfig": {
         "access": "public"
