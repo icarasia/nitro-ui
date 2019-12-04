@@ -10,6 +10,7 @@ Get latest version by installing via [NPM @nitro-ui/component-card](https://www.
 npm install @nitro-ui/component-card
 ```
 
+Test
 
 Default
 
