@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/module-dashboard-toolbar",
-    "version": "1.0.18",
+    "version": "1.0.19",
     "description": "Toolbar module for all the products",
     "main": "dist/css/toolbar.min.css",
     "style": "dist/css/toolbar.min.css",
@@ -33,11 +33,11 @@
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/component-avatar": "^1.0.8",
-        "@nitro-ui/component-collapse": "^1.0.11",
+        "@nitro-ui/component-collapse": "^1.0.12",
         "@nitro-ui/component-drawer": "^1.0.7",
         "@nitro-ui/component-dropdown": "^1.0.8",
         "@nitro-ui/core": "^1.0.4",
-        "@nitro-ui/module-dashboard-sidebar": "^1.0.18",
+        "@nitro-ui/module-dashboard-sidebar": "^1.0.19",
         "@nitro-ui/object-container": "^1.0.8",
         "@nitro-ui/object-list": "^1.0.8",
         "@nitro-ui/utility-background": "^1.0.11",
