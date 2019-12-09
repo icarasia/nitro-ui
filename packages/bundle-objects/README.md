@@ -17,7 +17,7 @@ npm install @nitro-ui/bundle-objects
 
 ## Usage:
 
-Example and usage can be found at the respective page.
+Example and usage can be found at the respective page
 
 ## Development
 
