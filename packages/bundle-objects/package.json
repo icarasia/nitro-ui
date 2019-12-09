@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/bundle-objects",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Objects bundle component for Nitro UI.",
     "main": "dist/css/objects.min.css",
     "style": "dist/css/objects.min.css",
