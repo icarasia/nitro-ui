@@ -21,8 +21,8 @@ $responsive-overflow-mobile : true !default;
 //  ----------------------------------------------------------------------------
 //  2. Mixins & Import
 //  ----------------------------------------------------------------------------
-@import '@nitro-ui/core/src/variables';
-@import '@nitro-ui/core/src/mixins';
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
 
 @mixin overflow-setup($breakpoint: 'global') {
 

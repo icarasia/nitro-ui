@@ -17,15 +17,15 @@
 //  1. Variables
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/core/src/mixins';
-@import '@nitro-ui/core/src/variables';
+@import '../../../core/src/mixins';
+@import '../../../core/src/variables';
 
 
 //  2. Objects file import
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/object-container/src/scss/container.scss';
-@import '@nitro-ui/object-embed/src/scss/embed.scss';
-@import '@nitro-ui/object-grid/src/scss/grid.scss';
-@import '@nitro-ui/object-list/src/scss/list.scss';
-@import '@nitro-ui/object-menu/src/scss/menu.scss';
+@import '../../../object-container/src/scss/container.scss';
+@import '../../../object-embed/src/scss/embed.scss';
+@import '../../../object-grid/src/scss/grid.scss';
+@import '../../../object-list/src/scss/list.scss';
+@import '../../../object-menu/src/scss/menu.scss';

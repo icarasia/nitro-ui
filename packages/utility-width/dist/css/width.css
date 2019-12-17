@@ -223,6 +223,10 @@ sub {
 u, ins {
   text-decoration: underline; }
 
+label {
+  display: block;
+  margin-bottom: 4px; }
+
 .u-width-1 {
   max-width: 100%;
   width: 100%;

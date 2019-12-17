@@ -25,8 +25,8 @@ $responsive-position-mobile         : false !default;
 //  2. Import
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/core/src/variables';
-@import '@nitro-ui/core/src/mixins';
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
 
 
 //  ----------------------------------------------------------------------------
