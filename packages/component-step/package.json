@@ -1,10 +1,10 @@
 {
     "name": "@nitro-ui/component-step",
-    "version": "1.0.7",
+    "version": "1.0.0-alpha.2",
     "description": "Step component for Nitro UI.",
-    "main": "dist/css/step.min.css",
-    "style": "dist/css/step.min.css",
-    "sass": "src/scss/step.scss",
+    "main": "dist/step.min.css",
+    "style": "dist/step.min.css",
+    "sass": "src/step.scss",
     "publishConfig": {
         "access": "public"
     },
@@ -27,8 +27,7 @@
     ],
     "author": "Hafizuddin Othman <zick.mho@gmail.com>",
     "contributors": [
-        "Hafizuddin Othman <zick.mho@gmail.com>",
-        "Syaiful Shah Zinan <i.works@live.com>"
+        "Hafizuddin Othman <zick.mho@gmail.com>"
     ],
     "license": "ISC",
     "bugs": {
@@ -36,7 +35,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4"
+        "@nitro-ui/core": "^1.0.0-alpha.3"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
