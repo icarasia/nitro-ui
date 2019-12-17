@@ -41,6 +41,7 @@
 //  1. HTML
 //  ----------------------------------------------------------------------------
 
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -64,6 +65,14 @@ body {
 
 //  3. RESET : BLOCK
 //  ----------------------------------------------------------------------------
+
+* {
+    &,
+    &:before,
+    &:after{
+        box-sizing: border-box
+    }
+}
 
 article,
 aside,
@@ -333,4 +342,13 @@ sub { bottom: -0.25em; }
 
 u,ins{
     text-decoration: underline;
+}
+
+
+//  18. FORM : LABEL
+//  ----------------------------------------------------------------------------
+
+label {
+    display: block;
+    margin-bottom: $spacing-xxs;
 }

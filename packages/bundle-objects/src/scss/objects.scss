@@ -1,0 +1,31 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Object Bundle
+//
+//  Object Bundle component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Utility file import
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/mixins';
+@import '../../../core/src/variables';
+
+
+//  2. Objects file import
+//  ----------------------------------------------------------------------------
+
+@import '../../../object-container/src/scss/container.scss';
+@import '../../../object-embed/src/scss/embed.scss';
+@import '../../../object-grid/src/scss/grid.scss';
+@import '../../../object-list/src/scss/list.scss';
+@import '../../../object-menu/src/scss/menu.scss';

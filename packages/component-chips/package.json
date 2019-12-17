@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-chips",
-    "version": "1.0.0-alpha.4",
+    "version": "1.0.8",
     "description": "Chips component for Nitro UI.",
     "main": "dist/css/chips.min.css",
     "publishConfig": {
@@ -29,7 +29,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.4"
     },
     "devDependencies": {
         "grunt": "^1.0.4",

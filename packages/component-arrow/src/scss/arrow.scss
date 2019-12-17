@@ -18,8 +18,8 @@
 //  1. Dependencies
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/core/src/variables';
-@import '@nitro-ui/core/src/mixins';
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
 
 
 
@@ -81,4 +81,13 @@ $arrow-size     : 8px;
     margin: -4px -10px;
     transform: rotate(90deg);
     top: 50%;
+}
+
+.c-card--dark {
+    .c-arrow {
+        &:before,
+        &:after {
+            border-top-color: $dark-600;
+        }
+    }
 }

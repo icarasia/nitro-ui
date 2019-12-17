@@ -1,0 +1,239 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility Text
+//
+//  Utility Text component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core Spacing
+//      3. Responsive - Portable
+//      4. Responsive - Tablet
+//      5. Responsive - Mobile
+//
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
+
+
+$use-utility-spacing            : true !default;
+
+$spacing-xxl                    : 64px !default;
+$spacing-xl                     : 48px !default;
+$spacing-lg                     : 24px !default;
+$spacing-md                     : 16px !default;
+$spacing-sm                     : 12px !default;
+$spacing-xs                     : 8px  !default;
+$spacing-xxs                    : 4px  !default;
+
+$responsive-spacing-portable          : true !default;
+$responsive-spacing-mobile-tablet     : true !default;
+$responsive-spacing-tablet            : true !default;
+$responsive-spacing-mobile            : true !default;
+$responsive-spacing-mobile-small      : false !default;
+
+
+//  ----------------------------------------------------------------------------
+//  2. Core Spacing
+//  ----------------------------------------------------------------------------
+
+
+@mixin spacing-setup($size, $breakpoint: 'global') {
+
+    $spacing: '';
+    $breakpoint-separator: \@ !default;
+
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    @if $size == '-xxl' {
+        $spacing: $spacing-xxl;
+    }
+
+    @if $size == '-xl' {
+        $spacing: $spacing-xl;
+    }
+
+    @if $size == '-lg' {
+        $spacing: $spacing-lg;
+    }
+
+    @if $size == '-md' {
+        $spacing: $spacing-md;
+    }
+
+    @if $size == '-sm' {
+        $spacing: $spacing-sm;
+    }
+
+    @if $size == '-xs' {
+        $spacing: $spacing-xs;
+    }
+
+    @if $size == '-xxs' {
+        $spacing: $spacing-xxs;
+    }
+
+
+    .u-margin#{$size}#{$breakpoint-separator}#{$breakpoint}         { margin:        $spacing !important; }
+    .u-margin-top#{$size}#{$breakpoint-separator}#{$breakpoint}     { margin-top:    $spacing !important; }
+    .u-margin-right#{$size}#{$breakpoint-separator}#{$breakpoint}   { margin-right:  $spacing !important; }
+    .u-margin-bottom#{$size}#{$breakpoint-separator}#{$breakpoint}  { margin-bottom: $spacing !important; }
+    .u-margin-left#{$size}#{$breakpoint-separator}#{$breakpoint}    { margin-left:   $spacing !important; }
+    .u-margin-ends#{$size}#{$breakpoint-separator}#{$breakpoint}    { margin-top:    $spacing !important; margin-bottom: $spacing !important; }
+    .u-margin-sides#{$size}#{$breakpoint-separator}#{$breakpoint}   { margin-right:  $spacing !important; margin-left:   $spacing !important; }
+
+
+    .u-padding#{$size}#{$breakpoint-separator}#{$breakpoint}         { padding:       $spacing !important; }
+    .u-padding-top#{$size}#{$breakpoint-separator}#{$breakpoint}     { padding-top:   $spacing !important; }
+    .u-padding-right#{$size}#{$breakpoint-separator}#{$breakpoint}   { padding-right: $spacing !important; }
+    .u-padding-bottom#{$size}#{$breakpoint-separator}#{$breakpoint}  { padding-bottom:$spacing !important; }
+    .u-padding-left#{$size}#{$breakpoint-separator}#{$breakpoint}    { padding-left:  $spacing !important; }
+    .u-padding-ends#{$size}#{$breakpoint-separator}#{$breakpoint}    { padding-top:   $spacing !important; padding-bottom: $spacing !important; }
+    .u-padding-sides#{$size}#{$breakpoint-separator}#{$breakpoint}   { padding-right: $spacing !important; padding-left:   $spacing !important; }
+
+}
+
+
+/**
+ * Spacing Auto & Reset
+ */
+
+@mixin spacing-reset($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+
+    .u-margin-none#{$breakpoint-separator}#{$breakpoint}                     { margin:       0 !important; }
+    .u-margin-top-none#{$breakpoint-separator}#{$breakpoint}                 { margin-top:   0 !important; }
+    .u-margin-right-none#{$breakpoint-separator}#{$breakpoint}               { margin-right: 0 !important; }
+    .u-margin-bottom-none#{$breakpoint-separator}#{$breakpoint}              { margin-bottom:0 !important; }
+    .u-margin-left-none#{$breakpoint-separator}#{$breakpoint}                { margin-left:  0 !important; }
+    .u-margin-ends-none#{$breakpoint-separator}#{$breakpoint}                { margin-top:   0 !important; margin-bottom:0 !important; }
+    .u-margin-sides-none#{$breakpoint-separator}#{$breakpoint}               { margin-right: 0 !important; margin-left:  0 !important; }
+
+
+    .u-margin-auto#{$breakpoint-separator}#{$breakpoint}                     { margin:       auto !important; }
+    .u-margin-top-auto#{$breakpoint-separator}#{$breakpoint}                 { margin-top:   auto !important; }
+    .u-margin-right-auto#{$breakpoint-separator}#{$breakpoint}               { margin-right: auto !important; }
+    .u-margin-bottom-auto#{$breakpoint-separator}#{$breakpoint}              { margin-bottom:auto !important; }
+    .u-margin-left-auto#{$breakpoint-separator}#{$breakpoint}                { margin-left:  auto !important; }
+    .u-margin-ends-auto#{$breakpoint-separator}#{$breakpoint}                { margin-top:   auto !important; margin-bottom:auto !important; }
+    .u-margin-sides-auto#{$breakpoint-separator}#{$breakpoint}               { margin-right: auto !important; margin-left:  auto !important; }
+
+
+    .u-padding-none#{$breakpoint-separator}#{$breakpoint}                      { padding:       0 !important; }
+    .u-padding-top-none#{$breakpoint-separator}#{$breakpoint}                  { padding-top:   0 !important; }
+    .u-padding-right-none#{$breakpoint-separator}#{$breakpoint}                { padding-right: 0 !important; }
+    .u-padding-bottom-none#{$breakpoint-separator}#{$breakpoint}               { padding-bottom:0 !important; }
+    .u-padding-left-none#{$breakpoint-separator}#{$breakpoint}                 { padding-left:  0 !important; }
+    .u-padding-ends-none#{$breakpoint-separator}#{$breakpoint}                 { padding-top:   0 !important; padding-bottom:0 !important; }
+    .u-padding-sides-none#{$breakpoint-separator}#{$breakpoint}                { padding-right: 0 !important; padding-left:  0 !important; }
+
+}
+
+
+/**
+ * Calling the Spacing setup
+ */
+
+@if $use-utility-spacing {
+    @include spacing-setup('-xxl');
+    @include spacing-setup('-xl');
+    @include spacing-setup('-lg');
+    @include spacing-setup('-md');
+    @include spacing-setup('-sm');
+    @include spacing-setup('-xs');
+    @include spacing-setup('-xxs');
+    @include spacing-reset();
+
+
+    @if $responsive {
+
+        // portable will be getting rid on next version
+        @if $responsive-spacing-portable{
+
+            @include media-query('portable') {
+                @include spacing-setup('-xxl', 'portable');
+                @include spacing-setup('-xl', 'portable');
+                @include spacing-setup('-lg', 'portable');
+                @include spacing-setup('-md', 'portable');
+                @include spacing-setup('-sm', 'portable');
+                @include spacing-setup('-xs', 'portable');
+                @include spacing-setup('-xxs', 'portable');
+                @include spacing-reset('portable');
+            }
+        }
+
+        @if $responsive-spacing-mobile-tablet{
+
+            @include media-query('mobile-tablet') {
+                @include spacing-setup('-xxl', 'mobile-tablet');
+                @include spacing-setup('-xl', 'mobile-tablet');
+                @include spacing-setup('-lg', 'mobile-tablet');
+                @include spacing-setup('-md', 'mobile-tablet');
+                @include spacing-setup('-sm', 'mobile-tablet');
+                @include spacing-setup('-xs', 'mobile-tablet');
+                @include spacing-setup('-xxs', 'mobile-tablet');
+                @include spacing-reset('mobile-tablet');
+            }
+        }
+
+        @if $responsive-spacing-tablet {
+
+            @include media-query('tablet') {
+                @include spacing-setup('-xxl', 'tablet');
+                @include spacing-setup('-xl', 'tablet');
+                @include spacing-setup('-lg', 'tablet');
+                @include spacing-setup('-md', 'tablet');
+                @include spacing-setup('-sm', 'tablet');
+                @include spacing-setup('-xs', 'tablet');
+                @include spacing-setup('-xxs', 'tablet');
+                @include spacing-reset('tablet');
+            }
+        }
+
+        @if $responsive-spacing-mobile {
+
+            @include media-query('mobile') {
+                @include spacing-setup('-xxl', 'mobile');
+                @include spacing-setup('-xl', 'mobile');
+                @include spacing-setup('-lg', 'mobile');
+                @include spacing-setup('-md', 'mobile');
+                @include spacing-setup('-sm', 'mobile');
+                @include spacing-setup('-xs', 'mobile');
+                @include spacing-setup('-xxs', 'mobile');
+                @include spacing-reset('mobile');
+            }
+        }
+
+        // mobile-small currently in false state
+        @if $responsive-spacing-mobile-small {
+            @include media-query('mobile-small') {
+                @include spacing-setup('-xxl', 'mobile-small');
+                @include spacing-setup('-xl', 'mobile-small');
+                @include spacing-setup('-lg', 'mobile-small');
+                @include spacing-setup('-md', 'mobile-small');
+                @include spacing-setup('-sm', 'mobile-small');
+                @include spacing-setup('-xs', 'mobile-small');
+                @include spacing-setup('-xxs', 'mobile-small');
+                @include spacing-reset('mobile-small');
+            }
+        }
+    }
+}

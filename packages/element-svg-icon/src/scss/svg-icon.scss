@@ -1,0 +1,125 @@
+//  ----------------------------------------------------------------------------
+//
+//  @ELEMENT - ICON SVG
+//
+//  Element styling for Icon SVG.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Variables
+//      3.  Core
+//      4.  Mixin
+//
+//  ----------------------------------------------------------------------------
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+$icon-color-positive        : $green-500 !default
+$icon-color-negative        : $red-500 !default
+$icon-color-warning         : $yellow-500 !default
+$icon-color-muted           : $haze-600 !default
+
+$color-product-bump         : $green-400 !default;
+$color-product-combo        : $orange-700 !default;
+$color-product-hotdeal      : $red-400 !default;
+$color-product-featured     : $blue-500 !default;
+$color-product-highlight    : $blue-light-400 !default;
+$color-product-showcase     : $purple-500 !default;
+$color-product-video        : $red-300 !default;
+$color-product-trusted      : $green-500 !default;
+
+
+//  3. Core
+//  ----------------------------------------------------------------------------
+
+.icon-svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+
+    &:before,
+    &:after{
+        display: none;
+    }
+
+    // Predefined Social Icon's Colors
+    &.icon--social-whatsapp,
+    &.icon--social-facebook,
+    &.icon--social-googleplus,
+    &.icon--social-instagram,
+    &.icon--social-rss,
+    &.icon--social-twitter,
+    &.icon--social-youtube,
+    &.icon--social-line{
+        fill: currentColor;
+    }
+
+    &.icon--product-trusted                                             { fill: $color-product-trusted; }
+    &.icon--product-hotdeal-square, &.icon--product-hotdeal             { fill: $color-product-hotdeal; }
+    &.icon--product-featured, &.icon--product-featured-square           { fill: $color-product-featured; }
+    &.icon--product-highlight-square, &.icon--product-highlight         { fill: $color-product-highlight; }
+    &.icon--product-showcase-square, &.icon--product-showcase           { fill: $color-product-showcase; }
+    &.icon--product-video-square, &.icon--product-video                 { fill: $color-product-video; }
+    &.icon--product-bump-square, &.icon--product-bump                   { fill: $color-product-bump; }
+    &.icon--product-combo-square, &.icon--product-combo                 { fill: $color-product-combo; }
+
+}
+
+.icon-svg--inline{
+    display: inline-block;
+}
+
+// Icons Colors
+.icon-svg--white                            { fill: $white !important; }
+.icon-svg--muted                            { fill: $icon-color-muted !important; }
+.icon-svg--positive                         { fill: $icon-color-positive !important; }
+.icon-svg--negative                         { fill: $icon-color-negative !important; }
+.icon-svg--light-blue                       { fill: $blue-light-500 !important; }
+
+
+//  4. Mixin
+//  ----------------------------------------------------------------------------
+@mixin icon-svg-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .icon-svg--12#{$breakpoint-separator}#{$breakpoint} { width: 12px !important; height: 12px; }
+    .icon-svg--16#{$breakpoint-separator}#{$breakpoint} { width: 16px !important; height: 16px; }
+    .icon-svg--20#{$breakpoint-separator}#{$breakpoint} { width: 20px !important; height: 20px; }
+    .icon-svg--24#{$breakpoint-separator}#{$breakpoint} { width: 24px !important; height: 24px; }
+    .icon-svg--32#{$breakpoint-separator}#{$breakpoint} { width: 32px !important; height: 32px; }
+    .icon-svg--48#{$breakpoint-separator}#{$breakpoint} { width: 48px !important; height: 48px; }
+    .icon-svg--64#{$breakpoint-separator}#{$breakpoint} { width: 64px !important; height: 64px; }
+
+}
+
+@include icon-svg-setup();
+
+@if $responsive {
+    @include media-query(portable) {
+        @include icon-svg-setup('portable');
+    }
+
+    @include media-query(tablet) {
+        @include icon-svg-setup('tablet');
+    }
+
+    @include media-query(mobile) {
+        @include icon-svg-setup('mobile');
+    }
+}

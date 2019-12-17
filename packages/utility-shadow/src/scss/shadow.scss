@@ -1,0 +1,60 @@
+//  ----------------------------------------------------------------------------
+//
+//  @UTILITY - Shadow
+//
+//  Utility styling for shadow
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Dependencies
+//      2.  Core
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
+
+
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+$use-utility-shadow : true !default;
+
+@if $use-utility-shadow {
+    .u-shadow-1dp\@hover:hover,
+    .u-shadow-2dp\@hover:hover,
+    .u-shadow-3dp\@hover:hover,
+    .u-shadow-4dp\@hover:hover {
+        transition: all ease .5s;
+    }
+
+    .u-shadow-none {
+        @include shadow-none();
+    }
+
+    .u-shadow-1dp,
+    .u-shadow-1dp\@hover:hover {
+        @include shadow-1dp();
+    }
+
+    .u-shadow-2dp,
+    .u-shadow-2dp\@hover:hover {
+        @include shadow-2dp();
+    }
+
+    .u-shadow-3dp,
+    .u-shadow-3dp\@hover:hover {
+        @include shadow-3dp();
+    }
+
+    .u-shadow-4dp,
+    .u-shadow-4dp\@hover:hover {
+        @include shadow-4dp();
+    }
+}

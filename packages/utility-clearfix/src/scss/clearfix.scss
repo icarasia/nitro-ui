@@ -1,0 +1,30 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility clearfix
+//
+//  Utility clearfix component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+
+
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/mixins';
+
+$use-utility-clearfix   : true !default;
+
+
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+@if $use-utility-clearfix {
+    .u-clearfix {
+        @include clearfix();
+    }
+} //END @if

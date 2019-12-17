@@ -1,0 +1,70 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility Float
+//
+//  Utility Float component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Dependencies
+//      2. Variables
+//      3. Mixin
+//      4. Default
+//      5. Responsive
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Dependencies
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/mixins';
+
+
+//  2. Variables
+//  ----------------------------------------------------------------------------
+
+$use-utility-float              : true !default;
+
+$responsive-float-portable      : true !default;
+$responsive-float-mobile        : true !default;
+
+
+//  3. Mixin
+//  ----------------------------------------------------------------------------
+
+@mixin float-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .u-float-right#{$breakpoint-separator}#{$breakpoint}     { float: right !important }
+    .u-float-left#{$breakpoint-separator}#{$breakpoint}      { float: left  !important }
+    .u-float-none#{$breakpoint-separator}#{$breakpoint}      { float: none  !important }
+}
+
+
+
+
+@if $use-utility-float {
+    @include float-setup();
+
+
+    @if $responsive-float-portable {
+        @include media-query('portable') {
+            @include float-setup('portable');
+        }
+    }
+
+    @if $responsive-float-mobile {
+        @include media-query('mobile') {
+            @include float-setup('mobile');
+        }
+    }
+} //END @if

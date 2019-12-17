@@ -1,0 +1,18 @@
+.u-overflow-hidden {
+  overflow: hidden !important; }
+
+.u-overflow-x-auto {
+  overflow-x: auto !important; }
+
+.u-overflow-y-auto {
+  overflow-y: auto !important; }
+
+@media only screen and (max-width: 767px) {
+  .u-overflow-hidden\@mobile {
+    overflow: hidden !important; }
+  .u-overflow-x-auto\@mobile {
+    overflow-x: auto !important; }
+  .u-overflow-y-auto\@mobile {
+    overflow-y: auto !important; } }
+
+/*# sourceMappingURL=overflow.css.map */

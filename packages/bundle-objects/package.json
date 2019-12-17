@@ -1,0 +1,47 @@
+{
+    "name": "@nitro-ui/bundle-objects",
+    "version": "1.0.2",
+    "description": "Objects bundle component for Nitro UI.",
+    "main": "dist/css/objects.min.css",
+    "style": "dist/css/objects.min.css",
+    "sass": "src/scss/objects.scss",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "bash scripts/build.sh",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/icarasia-engineering/nitro-ui"
+    },
+    "keywords": [
+        "Bundle",
+        "Object",
+        "Align",
+        "Nitro",
+        "UI",
+        "CSS",
+        "Components",
+        "iCarAsia"
+    ],
+    "author": "Syaiful Shah Zinan <i.works@live.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+    },
+    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "dependencies": {
+        "@nitro-ui/core": "^1.0.4",
+        "@nitro-ui/object-container": "^1.0.8",
+        "@nitro-ui/object-embed": "^1.0.8",
+        "@nitro-ui/object-grid": "^1.0.8",
+        "@nitro-ui/object-list": "^1.0.8",
+        "@nitro-ui/object-menu": "^1.0.5"
+    },
+    "devDependencies": {
+        "node-sass": "^4.12.0"
+    },
+    "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"
+}

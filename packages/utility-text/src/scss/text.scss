@@ -1,0 +1,124 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility Text
+//
+//  Utility Text component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+//      3. Responsive - Portable
+//      4. Responsive - Tablet
+//      5. Responsive - Mobile
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Variables
+//  ----------------------------------------------------------------------------
+@import '../../../core/src/mixins';
+@import '../../../core/src/variables';
+
+$responsive-text-portable   : true !default;
+$responsive-text-tablet     : false !default;
+$responsive-text-mobile     : true !default;
+
+
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+//  Text Style
+
+.u-text-truncate        { @include text-truncate(100%) }
+.u-text-strike          { text-decoration: line-through; }
+.u-text-unstyled        { text-decoration: none !important; }
+.u-text-clamp           { overflow: hidden; word-break: break-word; }
+
+
+//  Text Colors
+
+.u-color-base           { color: $font-base-color; }
+.u-color-dark           { color: $font-dark-color; }
+.u-color-link           { color: $font-link-color; }
+.u-color-link:hover     { text-decoration: underline; }
+.u-color-muted          { color: $font-muted-color; }
+.u-color-white          { color: $white;  }
+.u-color-positive       { color: $font-positive-color;  }
+.u-color-negative       { color: $font-negative-color;  }
+.u-color-warning        { color: $font-warning-color;  }
+
+
+
+
+@mixin text-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    //  Text Alignments
+    .u-text-center#{$breakpoint-separator}#{$breakpoint}        { text-align: center;}
+    .u-text-left#{$breakpoint-separator}#{$breakpoint}          { text-align: left;}
+    .u-text-right#{$breakpoint-separator}#{$breakpoint}         { text-align: right;}
+
+    //  Text Weights
+    .u-text-light#{$breakpoint-separator}#{$breakpoint}         { font-weight: $font-weight-light }
+    .u-text-normal#{$breakpoint-separator}#{$breakpoint}        { font-weight: $font-weight-normal }
+    .u-text-medium#{$breakpoint-separator}#{$breakpoint}        { font-weight: $font-weight-medium }
+    .u-text-semibold#{$breakpoint-separator}#{$breakpoint}      { font-weight: $font-weight-medium }
+    .u-text-bold#{$breakpoint-separator}#{$breakpoint}          { font-weight: $font-weight-bold }
+
+    //  Text Cases
+    .u-text-uppercase#{$breakpoint-separator}#{$breakpoint}     { text-transform: uppercase; }
+    .u-text-lowercase#{$breakpoint-separator}#{$breakpoint}     { text-transform: lowercase; }
+
+    //  Text Sizes
+    .u-text-1#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-1-size; line-height: $font-1-height; }
+    .u-text-2#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-2-size; line-height: $font-2-height; }
+    .u-text-3#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-3-size; line-height: $font-3-height; }
+    .u-text-4#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-4-size; line-height: $font-4-height; }
+    .u-text-5#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-5-size; line-height: $font-5-height; }
+    .u-text-6#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-6-size; line-height: $font-6-height; }
+    .u-text-7#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-7-size; line-height: $font-7-height; }
+    .u-text-8#{$breakpoint-separator}#{$breakpoint}             { font-size: $font-8-size; line-height: $font-8-height; }
+
+    //  Text Clamps
+    .u-text-clamp {
+        &.u-text-5#{$breakpoint-separator}#{$breakpoint} { max-height: $font-5-height*2; }
+        &.u-text-6#{$breakpoint-separator}#{$breakpoint} { max-height: $font-6-height*2; }
+        &.u-text-7#{$breakpoint-separator}#{$breakpoint} { max-height: $font-7-height*2; }
+    }
+}
+
+
+@include text-setup();
+
+
+//  3. Responsive
+//  ----------------------------------------------------------------------------
+
+@if $responsive {
+    @if $responsive-text-portable {
+        @include media-query('portable') {
+            @include text-setup('portable');
+        }
+    }
+
+    @if $responsive-text-tablet {
+        @include media-query('tablet') {
+            @include text-setup('tablet');
+        }
+    }
+
+    @if $responsive-text-mobile {
+        @include media-query('mobile') {
+            @include text-setup('mobile');
+        }
+    }
+}

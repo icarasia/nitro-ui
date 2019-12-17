@@ -1,0 +1,107 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility display
+//
+//  Utility display component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+//      3. Responsive - Desktop
+//      4. Responsive - Tablet Desktop
+//      5. Responsive - Portable
+//      6. Responsive - Mobile-Tablet
+//      7. Responsive - Tablet
+//      8. Responsive - Mobile
+
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
+
+$use-utility-display                    : true !default;
+
+$responsive-display-desktop             : true !default;
+$responsive-display-tablet-desktop      : true !default;
+$responsive-display-portable            : true !default;
+$responsive-display-mobile-tablet       : true !default;
+$responsive-display-tablet              : true !default;
+$responsive-display-mobile              : true !default;
+
+
+//  2. Core
+//  ----------------------------------------------------------------------------
+@mixin display-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .u-hidden#{$breakpoint-separator}#{$breakpoint} { display: none !important }
+    .u-inline#{$breakpoint-separator}#{$breakpoint} { display: inline !important }
+    .u-inline-block#{$breakpoint-separator}#{$breakpoint} { display: inline-block !important }
+    .u-block#{$breakpoint-separator}#{$breakpoint} { display: block !important }
+}
+
+
+@if $use-utility-display {
+    @include display-setup();
+
+    @if $responsive {
+        //  3. Responsive - Desktop
+        //  ------------------------------------------------------------------------
+        @if $responsive-display-desktop {
+            @include media-query('desktop'){
+                @include display-setup('desktop');
+            }
+        }
+
+        //  4. Responsive - Tablet Desktop
+        //  ------------------------------------------------------------------------
+        @if $responsive-display-tablet-desktop {
+            @include media-query('tablet-desktop'){
+                @include display-setup('tablet-desktop');
+            }
+        }
+
+        //  5. Responsive - Portable
+        //  ------------------------------------------------------------------------
+        @if $responsive-display-portable {
+            @include media-query('portable'){
+                @include display-setup('portable');
+            }
+        }
+
+        //  6. Responsive - Mobile Tablet
+        //  ------------------------------------------------------------------------
+        @if $responsive-display-mobile-tablet {
+            @include media-query('mobile-tablet'){
+                @include display-setup('mobile-tablet');
+            }
+        }
+
+        //  7. Responsive - Tablet
+        //  ------------------------------------------------------------------------
+        @if $responsive-display-tablet {
+            @include media-query('tablet'){
+                @include display-setup('tablet');
+            }
+        }
+
+        //  8. Responsive - Mobile
+        //  ------------------------------------------------------------------------
+        @if $responsive-display-mobile {
+            @include media-query('mobile'){
+                @include display-setup('mobile');
+            }
+        }
+    }
+} //@END @if

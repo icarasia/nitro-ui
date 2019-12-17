@@ -20,8 +20,8 @@
 //  1. Dependencies
 //  ----------------------------------------------------------------------------
 
-@import '@nitro-ui/core/src/variables';
-@import '@nitro-ui/core/src/mixins';
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
 
 
 //  2. Variables
@@ -133,7 +133,7 @@ body.modal-open {
 }
 
     .c-dialog__head {
-        align-items: start;
+        align-items: flex-start;
         display: flex;
         justify-content: space-between;
     }

@@ -1,0 +1,43 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility divider
+//
+//  Utility divider component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1. Variables
+//      2. Core
+
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
+
+
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+$use-utility-divider            : true !default;
+
+$divider-color-base             : $haze-200 !default;
+$divider-color-dark             : $haze-300 !default;
+
+
+//  2. Core
+//  ----------------------------------------------------------------------------
+
+@if $use-utility-divider {
+    .u-divider {
+        color: $divider-color-base;
+        clear: both;
+        border: none;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        margin: 0;
+    }
+
+    .u-divider--darker {
+        color: $divider-color-dark;
+    }
+}

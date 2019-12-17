@@ -1,0 +1,118 @@
+.c-chip {
+  background-color: #ECEEF3;
+  border-radius: 100px;
+  color: #576A7F;
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 23px;
+  padding: 1px 8px 0px;
+  text-decoration: none !important;
+  vertical-align: middle; }
+  .c-chip:not(a) {
+    cursor: default !important; }
+  .c-chip .c-chip__avatar {
+    margin: 0 8px 0 -8px; }
+  .c-chip .icon,
+  .c-chip .icon::before {
+    line-height: inherit;
+    height: auto; }
+  .c-chip .c-chip__icon {
+    font-size: 16px;
+    margin: 0 8px 0 0; }
+    .c-chip .c-chip__icon.icon--muted {
+      color: inherit;
+      opacity: .4; }
+  .c-chip .c-chip__dismiss {
+    color: inherit;
+    margin: 0 -4px 0 0;
+    opacity: .6;
+    width: 24px; }
+
+.c-chip--sm {
+  line-height: 19px;
+  font-size: 12px; }
+
+.c-chip--xs {
+  line-height: 15px;
+  font-size: 10px; }
+
+.c-input.c-input--chips {
+  line-height: 24px;
+  height: auto;
+  padding: 5px 8px; }
+  .c-input.c-input--chips .c-chip {
+    margin: 2px; }
+
+.c-chip--blue {
+  background-color: #E2F0FF;
+  color: #0148A2; }
+
+.c-chip--blue-inverted {
+  background-color: #0148A2;
+  color: #FFFFFF; }
+
+.c-chip--blue-light {
+  background-color: #E7F9FF;
+  color: #0280B4; }
+
+.c-chip--blue-light-inverted {
+  background-color: #0280B4;
+  color: #FFFFFF; }
+
+.c-chip--green {
+  background-color: #DEF9E2;
+  color: #1D942B; }
+
+.c-chip--green-inverted {
+  background-color: #1D942B;
+  color: #FFFFFF; }
+
+.c-chip--orange {
+  background-color: #FFF0DB;
+  color: #FE6C04; }
+
+.c-chip--orange-inverted {
+  background-color: #FE6C04;
+  color: #FFFFFF; }
+
+.c-chip--pink {
+  background-color: #FDF3FE;
+  color: #A00FA8; }
+
+.c-chip--pink-inverted {
+  background-color: #A00FA8;
+  color: #FFFFFF; }
+
+.c-chip--purple {
+  background-color: #F2E7FF;
+  color: #5001A0; }
+
+.c-chip--purple-inverted {
+  background-color: #5001A0;
+  color: #FFFFFF; }
+
+.c-chip--red {
+  background-color: #FFEEEE;
+  color: #FA0204; }
+
+.c-chip--red-inverted {
+  background-color: #FA0204;
+  color: #FFFFFF; }
+
+.c-chip--yellow {
+  background-color: #FFF8D2;
+  color: #F5A500; }
+
+.c-chip--yellow-inverted {
+  background-color: #F5A500;
+  color: #FFFFFF; }
+
+.c-chip--outline {
+  background-color: transparent;
+  border: 1px solid #CFD6DF; }
+  .c-chip--outline:hover {
+    background: #0774FE;
+    border-color: #0774FE;
+    color: #FFFFFF; }
+
+/*# sourceMappingURL=chips.min.css.map */

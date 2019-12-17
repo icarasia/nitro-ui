@@ -20,6 +20,7 @@ Note that the modifier that applied to Flex child  there will be 2x underscore `
 ```html
 <div class="u-flex">I am a flexbox container</div>
 ```
+
 ```html
 <div class="u-inline-flex">I am an inline flexbox container</div>
 ```

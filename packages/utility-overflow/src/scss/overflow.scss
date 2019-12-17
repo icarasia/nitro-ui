@@ -1,0 +1,56 @@
+//  ----------------------------------------------------------------------------
+//
+//  Nitro UI: Utility Overflow
+//
+//  Utility Overflow component for Nitro UI.
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//      1. Variables
+//      2. Mixins
+//      3. Setup
+
+//  ----------------------------------------------------------------------------
+//  1. Variables
+//  ----------------------------------------------------------------------------
+
+$use-utility-overflow       : true !default;
+$responsive-overflow-mobile : true !default;
+
+//  ----------------------------------------------------------------------------
+//  2. Mixins & Import
+//  ----------------------------------------------------------------------------
+@import '../../../core/src/variables';
+@import '../../../core/src/mixins';
+
+@mixin overflow-setup($breakpoint: 'global') {
+
+    $breakpoint-separator: \@ !default;
+
+    @if $breakpoint == 'global' {
+        $breakpoint-separator: '';
+        $breakpoint: '';
+    }
+
+    .u-overflow-hidden#{$breakpoint-separator}#{$breakpoint} { overflow: hidden !important }
+    .u-overflow-x-auto#{$breakpoint-separator}#{$breakpoint} { overflow-x: auto !important }
+    .u-overflow-y-auto#{$breakpoint-separator}#{$breakpoint} { overflow-y: auto !important }
+}
+
+//  ----------------------------------------------------------------------------
+//  2. Setup
+//  ----------------------------------------------------------------------------
+
+@if $use-utility-overflow {
+
+    @include overflow-setup();
+
+    @if $responsive {
+        @if $responsive-overflow-mobile {
+            @include media-query('mobile') {
+                @include overflow-setup('mobile');
+            }
+        }
+    }
+} //END @if

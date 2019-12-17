@@ -1,0 +1,219 @@
+.u-text-truncate {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.u-text-strike {
+  text-decoration: line-through; }
+
+.u-text-unstyled {
+  text-decoration: none !important; }
+
+.u-text-clamp {
+  overflow: hidden;
+  word-break: break-word; }
+
+.u-color-base {
+  color: #576A7F; }
+
+.u-color-dark {
+  color: #344251; }
+
+.u-color-link {
+  color: #0162DD; }
+
+.u-color-link:hover {
+  text-decoration: underline; }
+
+.u-color-muted {
+  color: #8A9BAD; }
+
+.u-color-white {
+  color: #FFFFFF; }
+
+.u-color-positive {
+  color: #1D942B; }
+
+.u-color-negative {
+  color: #DA0000; }
+
+.u-color-warning {
+  color: #FE6C04; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-text-left {
+  text-align: left; }
+
+.u-text-right {
+  text-align: right; }
+
+.u-text-light {
+  font-weight: 300; }
+
+.u-text-normal {
+  font-weight: 400; }
+
+.u-text-medium {
+  font-weight: 500; }
+
+.u-text-semibold {
+  font-weight: 500; }
+
+.u-text-bold {
+  font-weight: 700; }
+
+.u-text-uppercase {
+  text-transform: uppercase; }
+
+.u-text-lowercase {
+  text-transform: lowercase; }
+
+.u-text-1 {
+  font-size: 40px;
+  line-height: 48px; }
+
+.u-text-2 {
+  font-size: 32px;
+  line-height: 40px; }
+
+.u-text-3 {
+  font-size: 24px;
+  line-height: 32px; }
+
+.u-text-4 {
+  font-size: 18px;
+  line-height: 24px; }
+
+.u-text-5 {
+  font-size: 16px;
+  line-height: 20px; }
+
+.u-text-6 {
+  font-size: 14px;
+  line-height: 20px; }
+
+.u-text-7 {
+  font-size: 12px;
+  line-height: 18px; }
+
+.u-text-8 {
+  font-size: 10px;
+  line-height: 16px; }
+
+.u-text-clamp.u-text-5 {
+  max-height: 40px; }
+
+.u-text-clamp.u-text-6 {
+  max-height: 40px; }
+
+.u-text-clamp.u-text-7 {
+  max-height: 36px; }
+
+@media only screen and (max-width: 1080px) {
+  .u-text-center\@portable {
+    text-align: center; }
+  .u-text-left\@portable {
+    text-align: left; }
+  .u-text-right\@portable {
+    text-align: right; }
+  .u-text-light\@portable {
+    font-weight: 300; }
+  .u-text-normal\@portable {
+    font-weight: 400; }
+  .u-text-medium\@portable {
+    font-weight: 500; }
+  .u-text-semibold\@portable {
+    font-weight: 500; }
+  .u-text-bold\@portable {
+    font-weight: 700; }
+  .u-text-uppercase\@portable {
+    text-transform: uppercase; }
+  .u-text-lowercase\@portable {
+    text-transform: lowercase; }
+  .u-text-1\@portable {
+    font-size: 40px;
+    line-height: 48px; }
+  .u-text-2\@portable {
+    font-size: 32px;
+    line-height: 40px; }
+  .u-text-3\@portable {
+    font-size: 24px;
+    line-height: 32px; }
+  .u-text-4\@portable {
+    font-size: 18px;
+    line-height: 24px; }
+  .u-text-5\@portable {
+    font-size: 16px;
+    line-height: 20px; }
+  .u-text-6\@portable {
+    font-size: 14px;
+    line-height: 20px; }
+  .u-text-7\@portable {
+    font-size: 12px;
+    line-height: 18px; }
+  .u-text-8\@portable {
+    font-size: 10px;
+    line-height: 16px; }
+  .u-text-clamp.u-text-5\@portable {
+    max-height: 40px; }
+  .u-text-clamp.u-text-6\@portable {
+    max-height: 40px; }
+  .u-text-clamp.u-text-7\@portable {
+    max-height: 36px; } }
+
+@media only screen and (max-width: 767px) {
+  .u-text-center\@mobile {
+    text-align: center; }
+  .u-text-left\@mobile {
+    text-align: left; }
+  .u-text-right\@mobile {
+    text-align: right; }
+  .u-text-light\@mobile {
+    font-weight: 300; }
+  .u-text-normal\@mobile {
+    font-weight: 400; }
+  .u-text-medium\@mobile {
+    font-weight: 500; }
+  .u-text-semibold\@mobile {
+    font-weight: 500; }
+  .u-text-bold\@mobile {
+    font-weight: 700; }
+  .u-text-uppercase\@mobile {
+    text-transform: uppercase; }
+  .u-text-lowercase\@mobile {
+    text-transform: lowercase; }
+  .u-text-1\@mobile {
+    font-size: 40px;
+    line-height: 48px; }
+  .u-text-2\@mobile {
+    font-size: 32px;
+    line-height: 40px; }
+  .u-text-3\@mobile {
+    font-size: 24px;
+    line-height: 32px; }
+  .u-text-4\@mobile {
+    font-size: 18px;
+    line-height: 24px; }
+  .u-text-5\@mobile {
+    font-size: 16px;
+    line-height: 20px; }
+  .u-text-6\@mobile {
+    font-size: 14px;
+    line-height: 20px; }
+  .u-text-7\@mobile {
+    font-size: 12px;
+    line-height: 18px; }
+  .u-text-8\@mobile {
+    font-size: 10px;
+    line-height: 16px; }
+  .u-text-clamp.u-text-5\@mobile {
+    max-height: 40px; }
+  .u-text-clamp.u-text-6\@mobile {
+    max-height: 40px; }
+  .u-text-clamp.u-text-7\@mobile {
+    max-height: 36px; } }
+
+/*# sourceMappingURL=text.css.map */

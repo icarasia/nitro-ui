@@ -1,0 +1,206 @@
+//  ----------------------------------------------------------------------------
+//
+//  @ALERT
+//
+//  Component styling for toast
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  DEPENDENCIES
+//      2.  VARIABLES
+//      3.  MIXINS
+//      4.  CORE
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. DEPENDENCIES
+//  ----------------------------------------------------------------------------
+
+@import '../../../core/src/mixins';
+@import '../../../core/src/variables';
+
+
+//  2. VARIABLES
+//  ----------------------------------------------------------------------------
+
+$toast-width            : 350px !default;
+$toast-border-radius    : 4px !default;
+$toast-info-theme       : $blue-500 !default;
+$toast-tips-theme       : $purple-500 !default;
+$toast-success-theme    : $green-500 !default;
+$toast-error-theme      : $red-500 !default;
+$toast-warning-theme    : $orange-500 !default;
+$toast-z-index          : 8050 !default;
+
+
+//  3. MIXINS
+//  ----------------------------------------------------------------------------
+
+@mixin notification-setup($theme, $color) {
+    .c-toast--#{$theme} {
+        border-color: $color;
+
+        .c-toast__icon {
+            color: $color;
+        }
+    }
+}
+
+
+//  4. CORE
+//  ----------------------------------------------------------------------------
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.c-toast {
+    background-color: $white;
+    border: 1px solid;
+    border-left-width: 4px;
+    display: flex;
+    width: $toast-width;
+    overflow: hidden;
+    z-index: $toast-z-index;
+    opacity: 0;
+    //@include shadow-4dp();
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &.show,
+    &.showing {
+        opacity: 1;
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+.c-toast-stage {
+    position: fixed;
+    top: 24px;
+    z-index: 9999;
+
+    &[data-position="center"],
+    &[data-position="right"] {
+        right: 24px;
+    }
+
+    &[data-position="center"],
+    &[data-position="left"] {
+        left: 24px;
+    }
+
+    &[data-position="right"] {
+        .c-toast {
+            animation: slide-in-right .4s ease;
+        }
+    }
+
+    &[data-position="left"] {
+        .c-toast {
+            animation: slide-in-left .4s ease;
+        }
+    }
+
+    &[data-position="center"] {
+        .c-toast {
+            animation: slide-in-top .4s ease;
+            width: auto;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.c-toast__icon {
+    opacity: .8;
+    padding: 16px 0 16px 16px;
+}
+
+.c-toast__body {
+    flex: 1 1 auto;
+    padding: 16px 8px 16px 16px;
+}
+
+.c-toast__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.c-toast__close {
+    -webkit-appearance: none;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    display: flex;
+    font-size: 14px;
+    height: 22px;
+    justify-content: center;
+    margin: $spacing-xs $spacing-sm;
+    opacity: .5;
+    padding: 0;
+    width: 22px;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+@include media-query(mobile) {
+    .c-toast {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .c-toast-stage {
+        position: fixed;
+        top: 8px;
+        right: 8px !important;
+        left: 8px !important;
+    }
+}
+
+@include notification-setup('info', $toast-info-theme);
+@include notification-setup('tips', $toast-tips-theme);
+@include notification-setup('success', $toast-success-theme);
+@include notification-setup('error', $toast-error-theme);
+@include notification-setup('warning', $toast-warning-theme);

@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "divider.css",
+	"sources": [
+		"../../src/scss/divider.scss",
+		"../../../core/src/_variables.scss",
+		"../../../core/src/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AA8BI,AAAA,UAAU,CAAC;EACP,KAAK,ECuBa,OAAO;EDtBzB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,mBAAmB,EAAE,GAAG;EACxB,mBAAmB,EAAE,KAAK;EAC1B,MAAM,EAAE,CAAC,GACZ;;AAED,AAAA,kBAAkB,CAAC;EACf,KAAK,ECea,OAAO,GDd5B"
+}

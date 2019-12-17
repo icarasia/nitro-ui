@@ -1,10 +1,10 @@
 {
     "name": "@nitro-ui/utility-border",
-    "version": "1.0.0-alpha.8",
+    "version": "1.0.10",
     "description": "Utility border component for Nitro UI.",
-    "main": "dist/utility-border.min.css",
-    "style": "dist/utility-border.min.css",
-    "sass": "src/utility-border.scss",
+    "main": "dist/css/border.min.css",
+    "style": "dist/css/border.min.css",
+    "sass": "src/scss/border.scss",
     "publishConfig": {
         "access": "public"
     },
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.0-alpha.3"
+        "@nitro-ui/core": "^1.0.4"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
