@@ -3,8 +3,8 @@
 	"file": "carousel.min.css",
 	"sources": [
 		"../../src/scss/carousel.scss",
-		"../../node_modules/@nitro-ui/core/src/_variables.scss",
-		"../../node_modules/@nitro-ui/core/src/_mixins.scss",
+		"../../../core/src/_variables.scss",
+		"../../../core/src/_mixins.scss",
 		"../../node_modules/owl.carousel/src/scss/_core.scss",
 		"../../node_modules/owl.carousel/src/scss/_autoheight.scss"
 	],

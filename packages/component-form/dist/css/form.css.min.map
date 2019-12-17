@@ -3,10 +3,10 @@
 	"file": "form.min.css",
 	"sources": [
 		"../../src/scss/form.scss",
-		"../../node_modules/@nitro-ui/core/src/_variables.scss",
-		"../../node_modules/@nitro-ui/core/src/_animations.scss",
-		"../../node_modules/@nitro-ui/core/src/_mixins.scss",
-		"../../node_modules/@nitro-ui/component-button/src/scss/_variables.scss",
+		"../../../core/src/_variables.scss",
+		"../../../core/src/_animations.scss",
+		"../../../core/src/_mixins.scss",
+		"../../../component-button/src/scss/_variables.scss",
 		"../../src/scss/_variables.scss"
 	],
 	"names": [],
