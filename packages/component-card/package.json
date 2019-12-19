@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-card",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "Card styling for Nitro UI.",
     "main": "dist/css/card.min.css",
     "style": "dist/css/card.min.css",
@@ -35,7 +35,7 @@
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/core": "^1.0.4",
-        "@nitro-ui/object-embed": "^1.0.8"
+        "@nitro-ui/object-embed": "^1.0.9"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

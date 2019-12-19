@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-float",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Utility Float component for Nitro UI.",
     "main": "dist/css/float.min.css",
     "style": "dist/css/float.min.css",

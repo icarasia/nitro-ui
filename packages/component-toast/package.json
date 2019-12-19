@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-toast",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Toast component for Nitro UI.",
     "main": "dist/css/toast.min.css",
     "publishConfig": {
@@ -33,7 +33,7 @@
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/core": "^1.0.4",
-        "@nitro-ui/utility-shadow": "^1.0.10"
+        "@nitro-ui/utility-shadow": "^1.0.11"
     },
     "devDependencies": {
         "@babel/cli": "^7.6.2",

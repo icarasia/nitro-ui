@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/object-menu",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Menu component for Nitro UI.",
     "main": "dist/css/menu.min.css",
     "style": "dist/css/menu.min.css",

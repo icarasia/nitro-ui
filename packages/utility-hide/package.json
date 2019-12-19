@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-hide",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Utility hide component for Nitro UI.",
     "main": "dist/css/hide.min.css",
     "style": "dist/css/hide.min.css",
