@@ -67,7 +67,7 @@ By default the responsive support for position is `false`. To turn it on you wil
 
 ## Development
 
-To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia/nitro-ui) and made a pull request.
+To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia-engineering/nitro-ui) and made a pull request.
 
 ### Development Requirements
 

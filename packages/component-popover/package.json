@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia/nitro-ui"
+        "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
         "Popover",
@@ -27,9 +27,9 @@
     "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia/nitro-ui/issues"
+        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/component-arrow": "^1.0.14",
         "@nitro-ui/component-card": "^1.0.13",

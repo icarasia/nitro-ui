@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia/nitro-ui"
+        "url": "https://github.com/icarasia-engineering/nitro-ui"
     },
     "keywords": [
         "Core",
@@ -24,9 +24,9 @@
     "author": "Syaiful Shah Zinan <i.works@live.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia/nitro-ui/issues"
+        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
         "grunt": "^1.0.4",
         "grunt-cli": "^1.3.2",
