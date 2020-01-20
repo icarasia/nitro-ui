@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-border",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Utility border component for Nitro UI.",
     "main": "dist/css/border.min.css",
     "style": "dist/css/border.min.css",
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4"
+        "@nitro-ui/core": "^1.0.5"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

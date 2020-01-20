@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/bundle-objects",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Objects bundle component for Nitro UI.",
     "main": "dist/css/objects.min.css",
     "style": "dist/css/objects.min.css",
@@ -33,12 +33,12 @@
     },
     "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4",
-        "@nitro-ui/object-container": "^1.0.8",
-        "@nitro-ui/object-embed": "^1.0.8",
-        "@nitro-ui/object-grid": "^1.0.8",
-        "@nitro-ui/object-list": "^1.0.8",
-        "@nitro-ui/object-menu": "^1.0.5"
+        "@nitro-ui/core": "^1.0.5",
+        "@nitro-ui/object-container": "^1.0.9",
+        "@nitro-ui/object-embed": "^1.0.9",
+        "@nitro-ui/object-grid": "^1.0.9",
+        "@nitro-ui/object-list": "^1.0.9",
+        "@nitro-ui/object-menu": "^1.0.6"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
