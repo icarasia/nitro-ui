@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-table",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Table styling for Nitro UI.",
     "main": "dist/table.min.css",
     "style": "dist/table.min.css",
@@ -31,7 +31,7 @@
     },
     "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.6"
+        "@nitro-ui/core": "^1.0.7"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

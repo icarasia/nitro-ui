@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-button",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Button component for Nitro UI.",
     "main": "dist/css/button.min.css",
     "publishConfig": {
@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.6"
+        "@nitro-ui/core": "^1.0.7"
     },
     "devDependencies": {
         "grunt": "^1.0.4",
