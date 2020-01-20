@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Toolbar",
@@ -28,9 +28,9 @@
     "author": "SweeLing <slee7199@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/component-avatar": "^1.0.9",
         "@nitro-ui/component-collapse": "^1.0.13",

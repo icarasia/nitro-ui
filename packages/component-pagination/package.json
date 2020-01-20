@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Pagination",
@@ -27,9 +27,9 @@
     "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/component-button": "^1.0.8",
         "@nitro-ui/core": "^1.0.5"

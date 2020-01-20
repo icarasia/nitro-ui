@@ -98,7 +98,7 @@ List of responsive breakpoint available
 
 ## Development
 
-To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia-/nitro-ui) and made a pull request.
+To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia/nitro-ui) and made a pull request.
 
 ### Development Requirements
 

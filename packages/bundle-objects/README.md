@@ -12,7 +12,7 @@ npm install @nitro-ui/bundle-objects
 
 
 ## List of Utility in this Bundle:
-- [Utility Align](https://github.com/icarasia-/nitro-ui/tree/master/packages/utility-align)
+- [Utility Align](https://github.com/icarasia/nitro-ui/tree/master/packages/utility-align)
 
 
 ## Usage:
@@ -21,7 +21,7 @@ Example and usage can be found at the respective page.
 
 ## Development
 
-To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia-/nitro-ui) and made a pull request.
+To extends, develop or contribute to this component, you're required to fork our main [repository](https://github.com/icarasia/nitro-ui) and made a pull request.
 
 ### Development Requirements
 
