@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-engineering/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Card",
@@ -30,9 +30,9 @@
     ],
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
         "@nitro-ui/core": "^1.0.6",
         "@nitro-ui/object-embed": "^1.0.10"
