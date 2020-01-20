@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-form",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "Form component for Nitro UI.",
     "main": "dist/css/form.min.css",
     "style": "dist/css/form.min.css",
@@ -34,10 +34,10 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.5"
+        "@nitro-ui/core": "^1.0.6"
     },
     "devDependencies": {
-        "@nitro-ui/component-button": "^1.0.8",
+        "@nitro-ui/component-button": "^1.0.9",
         "node-sass": "^4.12.0"
     }
 }

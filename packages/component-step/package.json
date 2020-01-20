@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-step",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "Step component for Nitro UI.",
     "main": "dist/css/step.min.css",
     "style": "dist/css/step.min.css",
@@ -36,7 +36,7 @@
     },
     "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.5"
+        "@nitro-ui/core": "^1.0.6"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
