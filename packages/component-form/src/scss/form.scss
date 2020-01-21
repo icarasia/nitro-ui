@@ -166,7 +166,7 @@ select.c-input {
         left: 0;
     }
 
-    input {
+    > input {
         -webkit-appearance: none;
         border: 1px solid $input-border-color;
         display: inline-block;
@@ -181,7 +181,7 @@ select.c-input {
 }
 
 .c-check {
-    input {
+    > input {
         background-color: $white;
         border-radius: $input-radius;
         color: transparent;
@@ -202,7 +202,7 @@ select.c-input {
     }
 
     // Checkbox
-    input[type="checkbox"] {
+    > input[type="checkbox"] {
         &::before {
             border-bottom: 2px solid #fff;
             border-right: 2px solid #fff;
@@ -224,7 +224,7 @@ select.c-input {
     }
 
     // Radio
-    input[type="radio"] {
+    > input[type="radio"] {
         border-radius: 100%;
 
         &:checked {
@@ -251,7 +251,7 @@ select.c-input {
         clear: both;
     }
 
-    .c-check {
+    > .c-check {
         float: left;
         margin-right: $spacing-xl;
     }
