@@ -98,8 +98,8 @@ select.c-input {
     color: #576A7F;
     top: 0;
     left: 0; }
-  .c-check input,
-  .c-switch input {
+  .c-check > input,
+  .c-switch > input {
     -webkit-appearance: none;
     border: 1px solid #B8C2CE;
     display: inline-block;
@@ -111,13 +111,13 @@ select.c-input {
     z-index: 1;
     top: 2px; }
 
-.c-check input {
+.c-check > input {
   background-color: #FFFFFF;
   border-radius: 4px;
   color: transparent;
   text-align: center;
   width: 16px; }
-  .c-check input:before {
+  .c-check > input:before {
     display: none; }
 
 .c-check > label {
@@ -126,7 +126,7 @@ select.c-input {
 .c-check:hover > input {
   border-color: #0774FE; }
 
-.c-check input[type="checkbox"]::before {
+.c-check > input[type="checkbox"]::before {
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
   content: '';
@@ -135,15 +135,15 @@ select.c-input {
   margin: auto;
   transform: rotate(40deg); }
 
-.c-check input[type="checkbox"]:checked {
+.c-check > input[type="checkbox"]:checked {
   background: #0774FE;
   border-color: #0774FE; }
-  .c-check input[type="checkbox"]:checked::before {
+  .c-check > input[type="checkbox"]:checked::before {
     display: block; }
 
-.c-check input[type="radio"] {
+.c-check > input[type="radio"] {
   border-radius: 100%; }
-  .c-check input[type="radio"]:checked {
+  .c-check > input[type="radio"]:checked {
     border-width: 5px;
     border-color: #0774FE; }
 
@@ -159,7 +159,7 @@ select.c-input {
   display: table;
   clear: both; }
 
-.c-check-inline .c-check {
+.c-check-inline > .c-check {
   float: left;
   margin-right: 48px; }
 
