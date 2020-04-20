@@ -588,7 +588,6 @@
                     </div>
                 </div>
             </div>
-
             <br>
             <br>
             <br>
@@ -608,6 +607,12 @@
         </article>
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <scritp src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></scritp>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+            $('.c-dropdown__control').click(function(){
+                $(this).parent().toggleClass('is--open').attr('aria-expanded', false);
+            });
+        </script>
     </body>
 </html>
