@@ -31,39 +31,39 @@ node-sass --include-path=node_modules \
 echo 'Done.'
 echo ''
 
-# echo 'Rolling up...'
-# rollup -c scripts/rollup.config.js
-# echo 'Done.'
-# echo ''
+echo 'Rolling up...'
+rollup -c scripts/rollup.config.js
+echo 'Done.'
+echo ''
 
-# echo 'Build Bundle JS...'
-# node scripts/build-bundle.js;
-# cp build-temp/$FILE_NAME-bundle.js dist/js/$FILE_NAME-bundle.js
-# echo 'Done.'
-# echo ''
+echo 'Build Bundle JS...'
+node scripts/build-bundle.js;
+cp build-temp/$FILE_NAME-bundle.js dist/js/$FILE_NAME-bundle.js
+echo 'Done.'
+echo ''
 
-# echo 'Minify BUNDLE JS...'
-# terser dist/js/$FILE_NAME-bundle.js \
-#        --compress typeofs=false \
-#        --mangle --comments "/^!/" \
-#        --output dist/js/$FILE_NAME-bundle.min.js
-# echo 'Done.'
-# echo ''
+echo 'Minify BUNDLE JS...'
+terser dist/js/$FILE_NAME-bundle.js \
+       --compress typeofs=false \
+       --mangle --comments "/^!/" \
+       --output dist/js/$FILE_NAME-bundle.min.js
+echo 'Done.'
+echo ''
 
-# echo 'Minify CJS JS...'
-# terser dist/js/$FILE_NAME.cjs.js \
-#        --compress typeofs=false \
-#        --mangle --comments "/^!/" \
-#        --output dist/js/$FILE_NAME.cjs.min.js
-# echo 'Done.'
-# echo ''
+echo 'Minify CJS JS...'
+terser dist/js/$FILE_NAME.cjs.js \
+       --compress typeofs=false \
+       --mangle --comments "/^!/" \
+       --output dist/js/$FILE_NAME.cjs.min.js
+echo 'Done.'
+echo ''
 
-# echo 'Minify ESM JS...'
-# terser dist/js/$FILE_NAME.esm.js \
-#        --compress typeofs=false \
-#        --mangle --comments "/^!/" \
-#        --output dist/js/$FILE_NAME.esm.min.js
-# echo 'Done.'
-# echo ''
+echo 'Minify ESM JS...'
+terser dist/js/$FILE_NAME.esm.js \
+       --compress typeofs=false \
+       --mangle --comments "/^!/" \
+       --output dist/js/$FILE_NAME.esm.min.js
+echo 'Done.'
+echo ''
 
 echo 'Done building dist.'
