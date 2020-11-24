@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-chips",
-    "version": "1.0.9",
+    "version": "1.0.11",
     "description": "Chips component for Nitro UI.",
     "main": "dist/css/chips.min.css",
     "publishConfig": {
@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-engineering/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Chips",
@@ -25,11 +25,11 @@
     "author": "Syaiful Shah Zinan <i.works@live.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4"
+        "@nitro-ui/core": "^1.0.7"
     },
     "devDependencies": {
         "grunt": "^1.0.4",

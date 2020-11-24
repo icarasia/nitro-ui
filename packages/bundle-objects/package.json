@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/bundle-objects",
-    "version": "1.0.3",
+    "version": "1.0.7",
     "description": "Objects bundle component for Nitro UI.",
     "main": "dist/css/objects.min.css",
     "style": "dist/css/objects.min.css",
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-engineering/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Bundle",
@@ -29,16 +29,16 @@
     "author": "Syaiful Shah Zinan <i.works@live.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4",
-        "@nitro-ui/object-container": "^1.0.9",
-        "@nitro-ui/object-embed": "^1.0.9",
-        "@nitro-ui/object-grid": "^1.0.9",
-        "@nitro-ui/object-list": "^1.0.9",
-        "@nitro-ui/object-menu": "^1.0.6"
+        "@nitro-ui/core": "^1.0.7",
+        "@nitro-ui/object-container": "^1.0.11",
+        "@nitro-ui/object-embed": "^1.0.11",
+        "@nitro-ui/object-grid": "^1.0.11",
+        "@nitro-ui/object-list": "^1.0.11",
+        "@nitro-ui/object-menu": "^1.0.8"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

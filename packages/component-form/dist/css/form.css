@@ -98,8 +98,8 @@ select.c-input {
     color: #576A7F;
     top: 0;
     left: 0; }
-  .c-check input,
-  .c-switch input {
+  .c-check > input,
+  .c-switch > input {
     -webkit-appearance: none;
     border: 1px solid #CFD6DF;
     display: inline-block;
@@ -111,13 +111,13 @@ select.c-input {
     z-index: 1;
     top: 2px; }
 
-.c-check input {
+.c-check > input {
   background-color: #FFFFFF;
   border-radius: 4px;
   color: transparent;
   text-align: center;
   width: 16px; }
-  .c-check input:before {
+  .c-check > input:before {
     display: none; }
 
 .c-check > label {
@@ -126,7 +126,7 @@ select.c-input {
 .c-check:hover > input {
   border-color: #0774FE; }
 
-.c-check input[type="checkbox"]::before {
+.c-check > input[type="checkbox"]::before {
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
   content: '';
@@ -135,15 +135,15 @@ select.c-input {
   margin: auto;
   transform: rotate(40deg); }
 
-.c-check input[type="checkbox"]:checked {
+.c-check > input[type="checkbox"]:checked {
   background: #0774FE;
   border-color: #0774FE; }
-  .c-check input[type="checkbox"]:checked::before {
+  .c-check > input[type="checkbox"]:checked::before {
     display: block; }
 
-.c-check input[type="radio"] {
+.c-check > input[type="radio"] {
   border-radius: 100%; }
-  .c-check input[type="radio"]:checked {
+  .c-check > input[type="radio"]:checked {
     border-width: 5px;
     border-color: #0774FE; }
 
@@ -159,45 +159,62 @@ select.c-input {
   display: table;
   clear: both; }
 
-.c-check-inline .c-check {
+.c-check-inline > .c-check {
   float: left;
   margin-right: 48px; }
 
 .c-switch > label {
   padding-left: 44px; }
-
-.c-switch > input[type="checkbox"] {
-  background-color: #CFD6DF;
-  border-radius: 100px;
-  width: 28px;
-  top: 0; }
-  .c-switch > input[type="checkbox"]:before {
+  .c-switch > label:before {
+    background-color: #CFD6DF;
+    border: 1px solid #B8C2CE;
+    border-radius: 100px;
+    content: '';
+    height: 16px;
+    position: absolute;
+    width: 28px;
+    top: 2px;
+    left: 0; }
+  .c-switch > label:after {
     background-color: #FFFFFF;
     border-radius: 100px;
     content: '';
     display: block;
     height: 14px;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 1px;
+    top: 3px;
     width: 14px;
-    transition: left ease 0.2s; }
-  .c-switch > input[type="checkbox"]:checked {
-    background: #0774FE;
+    transition: all ease 0.2s; }
+
+.c-switch > input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+  .c-switch > input[type="checkbox"]:checked ~ label:before {
+    background-color: #0774FE;
     border-color: #0774FE; }
-    .c-switch > input[type="checkbox"]:checked:before {
-      left: 12px; }
-  .c-switch > input[type="checkbox"]:disabled {
+  .c-switch > input[type="checkbox"]:checked ~ label:after {
+    left: 13px; }
+  .c-switch > input[type="checkbox"]:disabled ~ label:before {
     background-color: #ECEEF3;
     border-color: transparent; }
 
 .c-switch--right > label {
+  width: 100%;
+  position: relative;
   padding-left: 0;
   padding-right: 44px; }
+  .c-switch--right > label:before {
+    right: 0;
+    left: auto; }
+  .c-switch--right > label:after {
+    right: 13px;
+    left: auto; }
 
-.c-switch--right > input {
-  left: auto;
-  right: 0; }
+.c-switch--right > input[type="checkbox"]:checked ~ label:after {
+  right: 1px;
+  left: auto; }
 
 .c-input-btn {
   padding: 3px 0;

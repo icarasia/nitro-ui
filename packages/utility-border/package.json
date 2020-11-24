@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/utility-border",
-    "version": "1.0.11",
+    "version": "1.0.13",
     "description": "Utility border component for Nitro UI.",
     "main": "dist/css/border.min.css",
     "style": "dist/css/border.min.css",
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-engineering/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Utility",
@@ -28,11 +28,11 @@
     "author": "Syaiful Shah Zinan <i.works@live.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4"
+        "@nitro-ui/core": "^1.0.7"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

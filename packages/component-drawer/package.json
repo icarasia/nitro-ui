@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-drawer",
-    "version": "1.0.8",
+    "version": "1.0.10",
     "description": "Drawer styling for Nitro UI.",
     "main": "dist/css/drawer.min.css",
     "publishConfig": {
@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-engineering/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Drawer",
@@ -30,11 +30,11 @@
     ],
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4",
+        "@nitro-ui/core": "^1.0.7",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
         "popper.js": "1.15.0"
@@ -43,7 +43,7 @@
         "@babel/cli": "^7.6.2",
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
-        "@nitro-ui/component-button": "^1.0.8",
+        "@nitro-ui/component-button": "^1.0.10",
         "babelify": "^10.0.0",
         "grunt": "^1.0.4",
         "grunt-browserify": "^5.3.0",

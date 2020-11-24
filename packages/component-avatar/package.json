@@ -1,9 +1,9 @@
 {
     "name": "@nitro-ui/component-avatar",
-    "version": "1.0.8",
+    "version": "1.0.11",
     "description": "Avatar styling for Nitro UI.",
     "main": "dist/css/avatar.min.css",
-    "style": "dist/css/avatar.min.cs",
+    "style": "dist/css/avatar.min.css",
     "sass": "src/scss/avatar.scss",
     "publishConfig": {
         "access": "public"
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-engineering/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Avatar",
@@ -30,11 +30,11 @@
     ],
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/core": "^1.0.4"
+        "@nitro-ui/core": "^1.0.7"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"

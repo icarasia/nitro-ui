@@ -1,6 +1,6 @@
 {
     "name": "@nitro-ui/component-pagination",
-    "version": "1.0.8",
+    "version": "1.0.10",
     "description": "Pagination styling for Nitro UI.",
     "main": "dist/css/pagination.min.css",
     "style": "dist/css/pagination.min.css",
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icarasia-engineering/nitro-ui"
+        "url": "https://github.com/icarasia/nitro-ui"
     },
     "keywords": [
         "Pagination",
@@ -27,15 +27,15 @@
     "author": "Ikram Hakimi <ikramhakimi@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/icarasia-engineering/nitro-ui/issues"
+        "url": "https://github.com/icarasia/nitro-ui/issues"
     },
-    "homepage": "https://github.com/icarasia-engineering/nitro-ui#readme",
+    "homepage": "https://github.com/icarasia/nitro-ui#readme",
     "dependencies": {
-        "@nitro-ui/component-button": "^1.0.8",
-        "@nitro-ui/core": "^1.0.4"
+        "@nitro-ui/component-button": "^1.0.10",
+        "@nitro-ui/core": "^1.0.7"
     },
     "devDependencies": {
-        "node-sass": "^4.13.1"
+        "node-sass": "^4.12.0"
     },
     "gitHead": "fb9b8c36e2ee12297b7b70e9eb0c676cb5214321"
 }
