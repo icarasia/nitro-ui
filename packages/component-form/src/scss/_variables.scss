@@ -30,8 +30,8 @@ $input-sm-height                : ($button-font-height + $button-sm-padding-vert
 $input-sm-padding-vertical      : ($input-sm-height - $input-sm-font-height)/2 !default;
 $input-sm-padding-horizontal    : $button-sm-padding-horizontal !default;
 
-$input-lg-font-size             : $button-lg-font-size !default
-$input-lg-font-height           : $button-lg-font-height !default
-$input-lg-height                : ($button-lg-font-height + $button-lg-padding-vertical*2) + 2 !default
-$input-lg-padding-vertical      : ($input-lg-height - $input-lg-font-height)/2 !default
-$input-lg-padding-horizontal    : $button-lg-padding-horizontal !default
+$input-lg-font-size             : $button-lg-font-size !default;
+$input-lg-font-height           : $button-lg-font-height !default;
+$input-lg-height                : ($button-lg-font-height + $button-lg-padding-vertical*2) + 2 !default;
+$input-lg-padding-vertical      : ($input-lg-height - $input-lg-font-height)/2 !default;
+$input-lg-padding-horizontal    : $button-lg-padding-horizontal !default;
