@@ -9,19 +9,19 @@
         <link rel="stylesheet" href="../node_modules/@nitro-ui/component-drawer/dist/css/drawer.min.css">
         <link rel="stylesheet" href="../node_modules/@nitro-ui/component-collapse/dist/css/collapse.min.css">
         <link rel="stylesheet" href="../node_modules/@nitro-ui/component-avatar/dist/css/avatar.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/object-container/dist/object-container.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/object-list/dist/object-list.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-display/dist/utility-display.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-flex/dist/utility-flex.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-height/dist/utility-height.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-spacing/dist/utility-spacing.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-background/dist/utility-background.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-text/dist/utility-text.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-position/dist/utility-position.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-opacity/dist/utility-opacity.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-overflow/dist/utility-overflow.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/utility-shadow.min.css">
-        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-transition/dist/utility-transition.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/object-container/dist/css/container.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/object-list/dist/css/list.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-display/dist/css/display.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-flex/dist/css/flex.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-height/dist/css/height.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-spacing/dist/css/spacing.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-background/dist/css/background.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-text/dist/css/text.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-position/dist/css/position.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-opacity/dist/css/opacity.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-overflow/dist/css/overflow.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-shadow/dist/css/shadow.min.css">
+        <link rel="stylesheet" href="../node_modules/@nitro-ui/utility-transition/dist/css/transition.min.css">
         <link rel="stylesheet" href="../dist/css/sidebar.min.css">
         <style>
             article {
@@ -61,6 +61,126 @@
         </header>
 
         <article>
+          <div class="c-sidebar">
+            <ul class="c-sidebar__menu  o-list  o-list--md">
+              <li class="o-list__item">
+                <a href="#" class="c-tooltip  c-tooltip--right" data-tooltip="Menu" data-toggle="modal" data-dismiss="modal" data-target="#drawer--toolbar-menu">
+                  <span class="icon  icon--24  icon--menu  u-center"></span>
+                </a>
+              </li>
+
+              <li class="o-list__item">
+                <a href="#" class="c-tooltip  c-tooltip--right" data-tooltip="Search" data-toggle="modal" data-dismiss="modal" data-target="#drawer--example-left">
+                  <span class="icon  icon--24  icon--search  u-center"></span>
+                </a>
+              </li>
+
+              <li class="o-list__item">
+                <a href="#" class="c-tooltip  c-tooltip--right" data-tooltip="Notifications" data-toggle="modal" data-dismiss="modal" data-target="#drawer--example-left">
+                  <span class="icon  icon--24  icon--notifications  u-center"></span>
+                </a>
+              </li>
+
+
+              <li class="o-list__item">
+                <a href="#" class="c-tooltip  c-tooltip--right" data-tooltip="Chats">
+                  <span class="icon  icon--20  icon--chat  u-center  has--badge" data-badge=""></span>
+                </a>
+              </li>
+
+            </ul>
+
+            <ul class="c-sidebar__menu  o-list  o-list--md  is--bottom">
+              <li class="o-list__item">
+                <a href="#" class="c-tooltip  c-tooltip--right" data-tooltip="Documentation" data-toggle="modal" data-target="#drawer--toolbar-documentation">
+                  <span class="icon  icon--24  icon--compass  u-center"></span>
+                </a>
+              </li>
+
+              <li class="o-list__item">
+                <a href="#" class="c-tooltip  c-tooltip--right" data-tooltip="Logout" data-toggle="modal" data-target="#drawer--example-left">
+                  <span class="icon  icon--24  icon--exit  u-center"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="c-drawer  c-drawer--left" tabindex="-1" role="dialog" id="drawer--example-left">
+
+            <div class="c-drawer__parent  c-drawer__content" style="padding-left: 64px !important; background-color: #F7F8FA !important;">
+              <div class="u-padding-lg">
+                Left Drawer
+
+                <a href="#" data-toggle="modal" data-target="#drawer-farthers-left-2">Open More</a>
+              </div>
+            </div>
+
+            <div class="c-drawer__child   c-drawer  c-drawer--left" id="drawer-farthers-left-2"  data-backdrop="static" tabindex="-1" role="dialog">
+              <div class="c-drawer__content" style="padding-left: 400px !important; width: 800px;">
+                <div class="u-padding-lg">
+                  <a href="#" data-toggle="modal" data-target="#drawer-farthers-left-2">Open More</a>
+                  Further Drawer
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-drawer  c-drawer--left" tabindex="-1" role="dialog" id="drawer--toolbar-menu">
+            <div class="c-drawer__content  c-drawer--level-1" style="padding-left: 64px !important; background-color: #FFF !important;">
+              <div class="o-tile  o-tile--middle  u-padding-lg">
+                <div class="o-tile__left">
+                  <div class="c-avatar  c-avatar--square" data-initial="MY"></div>
+                </div>
+
+                <div class="o-tile__body">
+                  <h1 class="u-text-5  u-margin-none">Carlist.my</h1>
+                  <div class="u-text-7">Customer Relationship Manager</div>
+                </div>
+              </div>
+
+              <ul class="c-drawer__menu  o-list  u-padding-bottom-md">
+                <?php foreach ($menu_main as $item => $menu) { ?>
+                  <?php if(!$menu['sub']) {?>
+                    <li>
+                      <a href="<?=$menu['url']?>.php" class="o-tile  o-tile--middle">
+                        <span class="o-tile__left"><span class="icon  icon--apps  icon--20  <?=$menu['icon']?>  u-align-center" style="width: 40px;"></span></span>
+                        <span class="o-tile__body"><?=$menu['label']?></span>
+                        <span class="o-tile__right"><span class="c-btn  c-btn--xs  c-btn--secondary">Add</span></span>
+                      </a>
+                    </li>
+                  <?php } else { ?>
+                    <li>
+                      <a class="o-tile  o-tile--middle  c-collapse-toggle  collapsed" data-toggle="collapse" href="#collapse--<?=seoURL($menu['label'])?>">
+                        <span class="o-tile__left"><span class="icon  icon--apps  icon--20  <?=$menu['icon']?>  u-align-center" style="width: 40px;"></span></span>
+                        <span class="o-tile__body"><?=$menu['label']?></span>
+                        <span class="o-tile__right"><span class="icon  icon--20  icon--chevron-down  u-muted"></span></span>
+                      </a>
+                      <ul id="collapse--<?=seoURL($menu['label'])?>" class="c-collapse  collapse">
+                        <?php foreach ($menu['sub'] as $item => $menu) { ?>
+                          <li><a href="<?=$menu['url']?>.php"><?=$menu['label']?></a></li>
+                        <?php } ?>
+                      </ul>
+                    </li>
+                  <?php }?>
+                <?php } ?>
+              </ul>
+            </div>
+          </div>
+
+          <div class="c-drawer  c-drawer--left" tabindex="-1" role="dialog" id="drawer--toolbar-documentation">
+            <div class="c-drawer__content" style="padding-left: 64px !important; background-color: #FFF !important;">
+              <div class="o-list  o-list--divider">
+                <div class="o-list__item">
+                  <a href="elements.php">Elements</a>
+                </div>
+
+                <div class="o-list__item">
+                  <a href="components.php">Components</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
             <!-- Sidebar Start Here-->
             <div class="c-sidebar  c-drawer  c-drawer--left" id="drawer-mobile-menu" tabindex="-1" role="dialog">
                 <div class="c-drawer__content  u-bg-haze-light  u-flex  u-flex--justify-between  u-flex--column  u-shadow-1dp">

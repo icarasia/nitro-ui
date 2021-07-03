@@ -1,0 +1,116 @@
+//  ----------------------------------------------------------------------------
+//
+//  @ANIMATIONS
+//
+//  Collections of animation's keyframes
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      1.  Keyframe : Rotate
+//      2.  Keyframe : Shake Horizontal
+//      3.  Keyframe : Shake Horizontal (Small)
+//      4.  Keyframe : Slide Down
+//
+//  ----------------------------------------------------------------------------
+
+
+//  1. Keyframe : Rotate
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .shake {
+//          animation: rotate 1.2s infinite linear;
+//      }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+//  2. Keyframe : Shake Horizontal
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .shake {
+//          animation: shake-horizontal 1s infinite;
+//      }
+
+@keyframes shake-horizontal {
+    0% {
+        transform: translate(-$spacing-md, 0);
+    }
+
+    25% {
+        transform: translate($spacing-md, 0);
+    }
+
+    50% {
+        transform: translate(-$spacing-md, 0);
+    }
+
+    75% {
+        transform: translate($spacing-md, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+//  3. Keyframe : Shake Horizontal (Small)
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .shake-small {
+//          animation: shake-horizontal-small 1s infinite;
+//      }
+
+@keyframes shake-horizontal-small {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-4px, 0);
+    }
+
+    40% {
+        transform: translate(4px, 0);
+    }
+
+    60% {
+        transform: translate(-4px, 0);
+    }
+
+    80% {
+        transform: translate(4px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+//  4. Keyframe : Slide Down
+//  ----------------------------------------------------------------------------
+//  Usage Example:
+//      .slide-down {
+//          animation: slide-down .2s ease;
+//      }
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

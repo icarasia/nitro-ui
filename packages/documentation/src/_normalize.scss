@@ -1,0 +1,354 @@
+//  ----------------------------------------------------------------------------
+//
+//  @NORMALIZE
+//
+//  Collections of dependable default variables
+//
+//  ----------------------------------------------------------------------------
+//
+//  CONTENTS
+//
+//      0.  IMPORTS
+//      1.  HTML
+//      2.  BODY
+//      3.  RESET : BLOCK
+//      4.  RESET : HIDE
+//      5.  RESET : DISABLED
+//      6.  RESET : PADDING & MARGIN
+//      7.  RESET : MARGIN BOTTOM
+//      8.  LIST
+//      9.  RULE
+//      10. TABLE
+//      11. TYPOGRAPHY : BOLD/STRONG
+//      12. TYPOGRAPHY : CODE
+//      13. TYPOGRAPHY : HEADINGS
+//      14. TYPOGRAPHY : LINK
+//      15. TYPOGRAPHY : SMALL
+//      16. TYPOGRAPHY : (SUB/SUP)SCRIPT
+//      17. TYPOGRAPHY : UNDERLINE
+//
+//  ----------------------------------------------------------------------------
+
+
+//  0. IMPORTS
+//  ----------------------------------------------------------------------------
+
+//  NOTE: We should prepare import logic for below Roboto Font
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
+
+
+//  1. HTML
+//  ----------------------------------------------------------------------------
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: $font-base-family;
+    font-size: $font-base-size;
+    line-height: $font-base-height;
+    letter-spacing: .2px;
+    height: 100%;
+}
+
+
+//  2. BODY
+//  ----------------------------------------------------------------------------
+
+body {
+    background: $base-background;
+    color: $font-base-color;
+    position: relative;
+}
+
+
+//  3. RESET : BLOCK
+//  ----------------------------------------------------------------------------
+
+* {
+    &,
+    &:before,
+    &:after{
+        box-sizing: border-box
+    }
+}
+
+article,
+aside,
+audio,
+canvas,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary,
+video {
+    display: block;
+}
+
+//  4. RESET : HIDE
+//  ----------------------------------------------------------------------------
+
+[hidden] {
+    display: none;
+}
+
+//  5. RESET : DISABLED
+//  ----------------------------------------------------------------------------
+
+[disabled] {
+    pointer-events: none;
+}
+
+
+//  6. RESET : PADDING & MARGIN
+//  ----------------------------------------------------------------------------
+
+body, html,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+figure, figcaption, img,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+
+//  7. RESET : MARGIN BOTTOM
+//  ----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol, dl,
+blockquote {
+    margin-bottom: $spacing-md
+}
+
+
+//  8. LIST
+//  ----------------------------------------------------------------------------
+
+ul, ol, dd {
+    margin-left: $spacing-lg;
+}
+
+li {
+    > ul,
+    > ol{
+         margin-bottom: $spacing-xs;
+     }
+}
+
+
+//  9. RULE
+//  ----------------------------------------------------------------------------
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    margin: 0;
+}
+
+
+//  10. TABLE
+//  ----------------------------------------------------------------------------
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+}
+
+th,
+td {
+    padding: $spacing-md;
+    text-align: left;
+    vertical-align: top;
+
+    &.is--tight {
+        width: 1px;
+        white-space: nowrap;
+    }
+
+    &[valign="middle"] {
+        vertical-align: middle;
+    }
+
+    &[valign="bottom"] {
+        vertical-align: bottom;
+    }
+}
+
+thead {
+    th,
+    td {
+        padding-bottom: $spacing-xs;
+        padding-top: $spacing-xs;
+    }
+
+    tr:last-child {
+        > th,
+        > td {
+            border-bottom: 1px solid $haze-200;
+        }
+    }
+
+    th {
+        font-size: $font-7-size;
+    }
+}
+
+tbody {
+    th,
+    td {
+        border-bottom: 1px solid $haze-200;
+    }
+}
+
+
+//  11. TYPOGRAPHY : BOLD/STRONG
+//  ----------------------------------------------------------------------------
+b,
+strong {
+    font-weight: $font-weight-medium;
+}
+
+
+//  12. TYPOGRAPHY : CODE
+//  ----------------------------------------------------------------------------
+
+//  Correct font family set oddly in Safari 5 and Chrome.
+
+code,
+kbd,
+pre,
+samp {
+    font-family: $font-mono-family;
+    font-size: 1em;
+}
+
+//  Improve readability of pre-formatted text in all browsers.
+
+pre {
+    background: $haze-200;
+    padding: $spacing-md;
+    white-space: pre-wrap;
+}
+
+
+//  13. TYPOGRAPHY : HEADINGS
+//  ----------------------------------------------------------------------------
+
+h1 {
+    font-size: $font-1-size;
+    line-height: $font-1-height;
+}
+h2 {
+    font-size: $font-2-size;
+    line-height: $font-2-height;
+}
+h3 {
+    font-size: $font-3-size;
+    line-height: $font-3-height;
+}
+h4 {
+    font-size: $font-4-size;
+    line-height: $font-4-height;
+}
+h5 {
+    font-size: $font-5-size;
+    line-height: $font-5-height;
+}
+h6 {
+    font-size: $font-6-size;
+    line-height: $font-6-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $font-dark-color;
+    font-weight: $font-weight-medium;
+}
+
+
+//  14. TYPOGRAPHY : LINK
+//  ----------------------------------------------------------------------------
+
+a {
+    color: $font-link-color;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:not(.c-btn) {
+        &.is--disabled {
+            color: $haze-400;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        &.no--underline {
+            text-decoration: none !important;
+        }
+    }
+}
+
+//  Address `outline` inconsistency between Chrome and other browsers.
+
+a:focus {
+    outline: none !important;
+}
+
+//  Improve readability when focused and also mouse hovered in all browsers.
+
+a:active,
+a:hover {
+    outline: 0;
+
+    @if $base-link-underline {
+        text-decoration: underline;
+    }
+}
+
+
+//  15. TYPOGRAPHY : SMALL
+//  ----------------------------------------------------------------------------
+
+small {
+    font-size: $font-7-size;
+}
+
+
+//  16. TYPOGRAPHY : (SUB/SUP)SCRIPT
+//  ----------------------------------------------------------------------------
+
+sub,
+sup {
+    font-size: $font-8-size;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+//  17. TYPOGRAPHY : UNDERLINE
+//  ----------------------------------------------------------------------------
+
+u,ins{
+    text-decoration: underline;
+}
+
+
+//  18. FORM : LABEL
+//  ----------------------------------------------------------------------------
+
+label {
+    display: block;
+    margin-bottom: $spacing-xxs;
+}
