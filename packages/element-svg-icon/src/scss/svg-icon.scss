@@ -85,6 +85,8 @@ $color-product-trusted      : $green-500 !default;
 .icon-svg--positive                         { fill: $icon-color-positive !important; }
 .icon-svg--negative                         { fill: $icon-color-negative !important; }
 .icon-svg--light-blue                       { fill: $blue-light-500 !important; }
+.icon-svg--blue                             { fill: $blue-400 !important; }
+.icon-svg--black                            { fill: $dark-400 !important; }
 
 
 //  4. Mixin
