@@ -176,6 +176,7 @@ $tablet-end                    : $desktop-start - 1px !default;
 $tablet-start                  : 768px  !default;
 $mobile-end                    : $tablet-start - 1px !default;
 $mobile-small-start            : 321px  !default;
+$desktop-xl                    : 1400px !default;
 
 @mixin media-query($media-query){
     @if $media-query == 'mobile-small' {
@@ -208,6 +209,9 @@ $mobile-small-start            : 321px  !default;
 
     @if $media-query == 'desktop' {
         @media only screen and (min-width:$desktop-start) { @content; }
+    }
+    @if $media-query == 'desktop-large' {
+        @media only screen and (min-width:$desktop-xl) { @content; }
     }
 }
 
