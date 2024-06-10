@@ -1,4 +1,4 @@
-'use strict';/**
+"use strict";/**
  * Dashboard Sidebar module with combine using of Drawer(modal) and Collapse component
  *
  * @package @nitro-ui/module-dashboard-sidebar
@@ -21,4 +21,6 @@ var mqMobile=window.matchMedia("(max-width: 767px)"),mqTabletDesktop=window.matc
 //     })
 // }
 mqMobile.matches&&($(".c-sidebar").hasClass("show")?remainAccordionOpen():enableAccordion(),$("#drawer-mobile-menu").on("show.bs.modal",function(){enableAccordion()})),mqTabletDesktop.matches&&($(".c-sidebar").hasClass("show")?remainAccordionOpen():disableAccordion(),$("#drawer-mobile-menu").on("show.bs.modal",function(){enableAccordion()})),$(function(){var b=$(".c-sidebar__floating-menu"),c=$(".c-sidebar:not(.show) .c-drawer__menu > li > a"),d=$(this).attr("id");c.hover(function(){var a=$(this).position(),c=$(this).data("submenu"),d=$(".c-sidebar  .c-drawer__content").width();$(".c-sidebar").hasClass("show")||(b.css({visibility:"hidden"}),$("#"+c).animate({top:a.top,left:d},0,"linear").css({visibility:"visible"}).addClass("is--open"));var e=$("#"+c+" .c-sidebar__label").innerHeight(),f=a.top+$("#"+c).innerHeight(),g=a.top-$("#"+c).innerHeight()+e,h=$(window).height();// calculate the label height
+//calculate the height of the item from top plus the submenu height
+//set the submenu position
 f>=h&&b.css({top:g})});var f=$(".c-sidebar__top-menu");c.on("mouseleave",function(a){$(a.relatedTarget).is(f)&&b.css({visibility:"hidden"}).removeClass("is--open")}),b.on("mouseenter",function(){var a=$(this).attr("id");$(".c-drawer__menu > li > a[data-submenu=\""+a+"\"]").addClass("is--hover")}),b.on("mouseleave",function(){var a=$(this).data("submenu"),c=$(this).attr("id");b.css({visibility:"hidden"}).removeClass("is--open"),$(".c-drawer__menu > li > a[data-submenu=\""+c+"\"]").removeClass("is--hover")}),$(".c-drawer__content").scroll(function(){b.css({visibility:"hidden"}).removeClass("is--open"),console.log("scroll drawer")})});

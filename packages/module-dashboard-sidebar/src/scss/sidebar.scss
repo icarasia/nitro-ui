@@ -32,14 +32,14 @@ $use-crm                        :   false !default;
 
 $sidebar-profile-bgcolor        :   $dark-400 !default;
 $sidebar-icon-color             :   $blue-500 !default;
-$sidebar-hover-bgcolor          :   $blue-500 !default;
-$sidebar-second-level-bgcolor   :   $blue-600 !default;
+$sidebar-hover-bgcolor          :   $blue-100 !default;
+$sidebar-second-level-bgcolor   :   $white !default;
 
 // if use-sidebar == true
 $sidebar-profilename-color      :   $white !default;
 $sidebar-bg-color               :   $haze-100 !default;
 $sidebar-first-level-color      :   $font-base-color !default;
-$sidebar-width                  :   60px !default;
+$sidebar-width                  :   85px !default;
 $sidebar-submenu-width          :   240px !default;
 
 // if use-crm == true
@@ -98,6 +98,7 @@ $sidebar-crm-chip-color         :   $white !default;
 
     .c-drawer__menu {
         > li {
+            margin-bottom: 8px;
 
             > ul {
                 background: $sidebar-second-level-bgcolor!important;
@@ -110,7 +111,7 @@ $sidebar-crm-chip-color         :   $white !default;
                 }
 
                 .icon-svg {
-                    fill: $sidebar-icon-color;
+                    fill: $dark-200;
 
                     @if $use-crm == true{
                         opacity: 0.6;
@@ -121,11 +122,11 @@ $sidebar-crm-chip-color         :   $white !default;
                 &.is--hover,
                 &.is--active {
                     background: $sidebar-hover-bgcolor;
-                    color: $white;
+                    color: $blue-500;
+                    border-radius: $base-radius;
 
                     .icon-svg {
-                        fill: $white !important;
-
+                        fill: $blue-500;
                         @if $use-crm == true {
                             opacity: 1;
                         }
@@ -152,29 +153,13 @@ $sidebar-crm-chip-color         :   $white !default;
 
             li {
                 a {
-                    padding: 4px 16px 4px 56px;
+                    padding: 4px 16px 4px 52px;
 
                     &:hover,
                     &.is--active {
-                        background: transparent;
-                        opacity: 1;
-
-                        &:before {
-                            background: $white;
-                            border-radius: 50%;
-                            bottom: 45%;
-                            content: '';
-                            height: 6px;
-                            left: 42px;
-                            position: absolute;
-                            width: 6px;
-                        }
+                        color: $blue-500;
+                        background-color: $sidebar-hover-bgcolor;
                     }
-
-                    &:last-child {
-                        margin-bottom: 8px;
-                    }
-
                 }
             }
         }
@@ -263,24 +248,7 @@ $sidebar-crm-chip-color         :   $white !default;
      .c-sidebar__floating-menu{
          li{
              a{
-                 padding: 4px 16px 4px 56px;
-
-                 &:hover,
-                 &.is--active{
-                     background: transparent;
-                     opacity: 1;
-
-                     &:before{
-                         background: $white;
-                         border-radius: 50%;
-                         bottom: 45%;
-                         content: '';
-                         height: 6px;
-                         left: 42px;
-                         position: absolute;
-                         width: 6px;
-                     }
-                 }
+                 padding: 8px 16px 8px 56px;
              }
 
              &:last-child{
@@ -303,6 +271,13 @@ $sidebar-crm-chip-color         :   $white !default;
 @if $use-sidebar == true {
     @include media-query(tablet-desktop) {
         .c-sidebar:not(.show)  .c-drawer__menu {
+            > li {
+                border-radius: $base-radius;
+                > a {
+                    margin: 0 8px;
+                }
+            }
+            
             .c-sidebar__submenu{
                 position: absolute;
                 width: $sidebar-submenu-width;
@@ -327,11 +302,14 @@ $sidebar-crm-chip-color         :   $white !default;
                     line-height: 24px;
                     text-decoration: none;
 
-                    &.is--active,
+                    &.is--active {
+                        background: $sidebar-hover-bgcolor;
+                        color: $blue-500;
+                    }
+
                     &:hover {
-                        &:before {
-                         left: 20px!important;
-                        }
+                        background: $haze-100;
+                        color: $dark-200;
                     }
                 }
             }
