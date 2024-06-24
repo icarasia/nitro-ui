@@ -42,7 +42,7 @@
   -webkit-appearance: none;
   appearance: none;
   background-color: #FFFFFF;
-  border: 1px solid #B8C2CE;
+  border: 1px solid #CFD6DF;
   border-radius: 4px;
   color: #576A7F;
   font-family: "Roboto", Arial, sans-serif;
@@ -101,7 +101,7 @@ select.c-input {
   .c-check > input,
   .c-switch > input {
     -webkit-appearance: none;
-    border: 1px solid #B8C2CE;
+    border: 1px solid #CFD6DF;
     display: inline-block;
     height: 16px;
     left: 0;
@@ -218,7 +218,7 @@ select.c-input {
 
 .c-input-btn {
   padding: 3px 0;
-  border: 1px solid #B8C2CE;
+  border: 1px solid #CFD6DF;
   border-radius: 3px;
   background: #FFFFFF;
   display: flex;
